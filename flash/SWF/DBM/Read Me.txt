@@ -1,0 +1,22 @@
+Set-up and Installation:
+
+1. Un-zip
+2. Open DBM.htm (Web Page file)
+3. Use
+
+Installing Photoshop Script:
+
+1. You must have Photoshop CS2/CS or Photoshop 7 with the Scripting Plugin.
+2. Copy DBM.js to your Photoshop Script's folder.
+
+<Photoshop folder*>\Presets\Scripts
+
+* Default for CS2 in
+Windows: C:\Program Files\Adobe\Adobe Photoshop CS()2
+Mac: Applications-> Adobe Photoshop CS (2)-> Presets-> Scripts
+
+3. Restart Photoshop if it was running while we did that.
+4. In Photoshop, go to File -> Scripts and you should see DBM in the list. 
+
+Questions, comments or suggestions:
+Send kingkool6 a note @ http://kingkool6.deviantart.com

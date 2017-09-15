@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Mozilla Should Fix This Firefox Annoyance</title>
+	<atom:link href="http://www.russellheimlich.com/blog/mozilla-should-fix-this-firefox-annoyance/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.russellheimlich.com/blog/mozilla-should-fix-this-firefox-annoyance/</link>
+	<description>The Blog of Russell Heimlich</description>
+	<lastBuildDate>Thu, 26 Nov 2015 14:13:48 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.2</generator>
+	<item>
+		<title>By: Russell Heimlich</title>
+		<link>http://www.russellheimlich.com/blog/mozilla-should-fix-this-firefox-annoyance/comment-page-1/#comment-581</link>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+		<pubDate>Fri, 14 Mar 2008 04:41:35 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/mozilla-should-fix-this-firefox-annoyance/#comment-581</guid>
+		<description><![CDATA[Anti-virus isn&#039;t really necessary anymore. But AVG stays out of the way, unlike the other ones that are always in your face!]]></description>
+		<content:encoded><![CDATA[<p>Anti-virus isn&#8217;t really necessary anymore. But AVG stays out of the way, unlike the other ones that are always in your face!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: andro</title>
+		<link>http://www.russellheimlich.com/blog/mozilla-should-fix-this-firefox-annoyance/comment-page-1/#comment-578</link>
+		<dc:creator><![CDATA[andro]]></dc:creator>
+		<pubDate>Thu, 13 Mar 2008 15:19:14 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/mozilla-should-fix-this-firefox-annoyance/#comment-578</guid>
+		<description><![CDATA[i despise avg]]></description>
+		<content:encoded><![CDATA[<p>i despise avg</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: CloudFlare Can Boost Sites Performance For Free</title>
+	<atom:link href="http://www.russellheimlich.com/blog/cloudflare-can-boost-sites-performance-for-free/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.russellheimlich.com/blog/cloudflare-can-boost-sites-performance-for-free/</link>
+	<description>The Blog of Russell Heimlich</description>
+	<lastBuildDate>Thu, 26 Nov 2015 14:13:48 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.2</generator>
+	<item>
+		<title>By: Cloudflare: Speed up your websites for FREE! &#171; Riding the Blog Flume</title>
+		<link>http://www.russellheimlich.com/blog/cloudflare-can-boost-sites-performance-for-free/comment-page-1/#comment-2721</link>
+		<dc:creator><![CDATA[Cloudflare: Speed up your websites for FREE! &#171; Riding the Blog Flume]]></dc:creator>
+		<pubDate>Sun, 22 Jan 2012 11:02:42 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2378#comment-2721</guid>
+		<description><![CDATA[[...] CloudFlare provides free and paid-for services that can enhance your website performance.  The key to the service is a Content Delivery Network that aims to speed up your site but has added benefits such as: some protection from Denial Of Service (DOS) attacks; Optimising code for mobile browsers; Usage Statistics and providing additional services (Like global Google Analytics or PunchTab loyalty programme) for free or a fee.  An example case study can be found here. [...]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] CloudFlare provides free and paid-for services that can enhance your website performance.  The key to the service is a Content Delivery Network that aims to speed up your site but has added benefits such as: some protection from Denial Of Service (DOS) attacks; Optimising code for mobile browsers; Usage Statistics and providing additional services (Like global Google Analytics or PunchTab loyalty programme) for free or a fee.  An example case study can be found here. [&#8230;]</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Russell Heimlich</title>
+		<link>http://www.russellheimlich.com/blog/cloudflare-can-boost-sites-performance-for-free/comment-page-1/#comment-1750</link>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+		<pubDate>Wed, 01 Dec 2010 14:31:56 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2378#comment-1750</guid>
+		<description><![CDATA[Oops! Here is the link -&#062; http://www.cloudflare.com/wiki/CloudFlare_DNS_and_the_Wordpress_Dashboard
+
+Your flash files that check the domain form which it is run should still work. Otherwise you can expand the logic in your SWF to accept the CloudFlare domain as well.]]></description>
+		<content:encoded><![CDATA[<p>Oops! Here is the link -&gt; <a href="http://www.cloudflare.com/wiki/CloudFlare_DNS_and_the_Wordpress_Dashboard" rel="nofollow">http://www.cloudflare.com/wiki....._Dashboard</a></p>
+<p>Your flash files that check the domain form which it is run should still work. Otherwise you can expand the logic in your SWF to accept the CloudFlare domain as well.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Patrick S</title>
+		<link>http://www.russellheimlich.com/blog/cloudflare-can-boost-sites-performance-for-free/comment-page-1/#comment-1749</link>
+		<dc:creator><![CDATA[Patrick S]]></dc:creator>
+		<pubDate>Tue, 30 Nov 2010 23:24:41 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2378#comment-1749</guid>
+		<description><![CDATA[Thank you, that was helpful :-)  Your answer referred to a guide with code that would point the Remote Address variable to the User&#039;s IP, but does not actually point to the guide.
+
+One more Q you may know the answer to.  I have flash movie (swf) files that first check that they&#039;re being run from my domain before executing; otherwise they close automatically.  For instance, if a user downloaded and saved the swf file and tried to open it locally, it wouldn&#039;t work.  Any idea whether such files would be able to run once I use CloudFlare? My fear is that since CloudFlare will be caching the files offsite, they will not run.
+
+-Patrick S]]></description>
+		<content:encoded><![CDATA[<p>Thank you, that was helpful <img src="http://www.russellheimlich.com/blog/wp-includes/images/smilies/simple-smile.png" alt=":-)" class="wp-smiley" style="height: 1em; max-height: 1em;" />  Your answer referred to a guide with code that would point the Remote Address variable to the User&#8217;s IP, but does not actually point to the guide.</p>
+<p>One more Q you may know the answer to.  I have flash movie (swf) files that first check that they&#8217;re being run from my domain before executing; otherwise they close automatically.  For instance, if a user downloaded and saved the swf file and tried to open it locally, it wouldn&#8217;t work.  Any idea whether such files would be able to run once I use CloudFlare? My fear is that since CloudFlare will be caching the files offsite, they will not run.</p>
+<p>-Patrick S</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Russell Heimlich</title>
+		<link>http://www.russellheimlich.com/blog/cloudflare-can-boost-sites-performance-for-free/comment-page-1/#comment-1748</link>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+		<pubDate>Tue, 30 Nov 2010 22:06:24 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2378#comment-1748</guid>
+		<description><![CDATA[Hello,
+1. I don&#039;t think CloudFlare cache media from another domain. You can still continue to use embeds just like you always have been using them without any problem. 
+
+2. CloudFlare makes it easy to get the IP address of the user server side. Just follow the code in this guide to make sure the Remote Address variable is the Users IP and not CloudFlare&#039;s. This should be pretty much the first thing in your PHP script. 
+
+3. There shouldn&#039;t be any downtime. What is happening is you are saying &quot;Hey my server is over here (pointing to CloudFlare)&quot; and if your audiences DNS records haven&#039;t been updated then they will just go straight to your site. 
+
+Have fun.]]></description>
+		<content:encoded><![CDATA[<p>Hello,<br />
+1. I don&#8217;t think CloudFlare cache media from another domain. You can still continue to use embeds just like you always have been using them without any problem. </p>
+<p>2. CloudFlare makes it easy to get the IP address of the user server side. Just follow the code in this guide to make sure the Remote Address variable is the Users IP and not CloudFlare&#8217;s. This should be pretty much the first thing in your PHP script. </p>
+<p>3. There shouldn&#8217;t be any downtime. What is happening is you are saying &#8220;Hey my server is over here (pointing to CloudFlare)&#8221; and if your audiences DNS records haven&#8217;t been updated then they will just go straight to your site. </p>
+<p>Have fun.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Patrick S</title>
+		<link>http://www.russellheimlich.com/blog/cloudflare-can-boost-sites-performance-for-free/comment-page-1/#comment-1747</link>
+		<dc:creator><![CDATA[Patrick S]]></dc:creator>
+		<pubDate>Tue, 30 Nov 2010 20:24:26 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2378#comment-1747</guid>
+		<description><![CDATA[hello,
+
+I&#039;m considering using CloudFlare to improve the performance of a flash/php/mysql/ajax site but have just a couple of questions. Hope you can help out:
+
+1- Does CloudFlare natively handle embeds from other domains?  For instance on my site I embed content hosted on scribd.com
+
+2- Does CloudFlare support IP authentication? I mean some of my scripts check a visitor&#039;s IP address to assess what to show him in browser.
+
+3- When I change DNS settings in switching to CloudFlare, will my website be down? If so, for how long?
+
+I&#039;m not a coder, so info as easy to follow as possible would be very helpful.
+
+thank you,
+-Patrick S]]></description>
+		<content:encoded><![CDATA[<p>hello,</p>
+<p>I&#8217;m considering using CloudFlare to improve the performance of a flash/php/mysql/ajax site but have just a couple of questions. Hope you can help out:</p>
+<p>1- Does CloudFlare natively handle embeds from other domains?  For instance on my site I embed content hosted on scribd.com</p>
+<p>2- Does CloudFlare support IP authentication? I mean some of my scripts check a visitor&#8217;s IP address to assess what to show him in browser.</p>
+<p>3- When I change DNS settings in switching to CloudFlare, will my website be down? If so, for how long?</p>
+<p>I&#8217;m not a coder, so info as easy to follow as possible would be very helpful.</p>
+<p>thank you,<br />
+-Patrick S</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Damon Billian</title>
+		<link>http://www.russellheimlich.com/blog/cloudflare-can-boost-sites-performance-for-free/comment-page-1/#comment-1701</link>
+		<dc:creator><![CDATA[Damon Billian]]></dc:creator>
+		<pubDate>Thu, 21 Oct 2010 15:06:03 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2378#comment-1701</guid>
+		<description><![CDATA[Hi Russ,
+
+Thanks. Pinged our UI and stats&#039; guy.]]></description>
+		<content:encoded><![CDATA[<p>Hi Russ,</p>
+<p>Thanks. Pinged our UI and stats&#8217; guy.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Russell Heimlich</title>
+		<link>http://www.russellheimlich.com/blog/cloudflare-can-boost-sites-performance-for-free/comment-page-1/#comment-1700</link>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+		<pubDate>Thu, 21 Oct 2010 15:03:35 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2378#comment-1700</guid>
+		<description><![CDATA[Mac OSX 10.6.4 Firefox 3.6.11 
+
+Come to think of it, it works just fine in Chrome. Good to know.]]></description>
+		<content:encoded><![CDATA[<p>Mac OSX 10.6.4 Firefox 3.6.11 </p>
+<p>Come to think of it, it works just fine in Chrome. Good to know.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Damon Billian</title>
+		<link>http://www.russellheimlich.com/blog/cloudflare-can-boost-sites-performance-for-free/comment-page-1/#comment-1699</link>
+		<dc:creator><![CDATA[Damon Billian]]></dc:creator>
+		<pubDate>Thu, 21 Oct 2010 14:59:00 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2378#comment-1699</guid>
+		<description><![CDATA[Hi Russ,
+
+Very strange. Which browser and OS are you using? This is happening with any browser you try as well?]]></description>
+		<content:encoded><![CDATA[<p>Hi Russ,</p>
+<p>Very strange. Which browser and OS are you using? This is happening with any browser you try as well?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Russell Heimlich</title>
+		<link>http://www.russellheimlich.com/blog/cloudflare-can-boost-sites-performance-for-free/comment-page-1/#comment-1697</link>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+		<pubDate>Thu, 21 Oct 2010 13:32:16 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2378#comment-1697</guid>
+		<description><![CDATA[Here&#039;s a screencast of what it looks like on my end when trying to access the stats. It&#039;s like this most of the time I try to get to the dashboard. The video is a minute and a half and weighs in at 9megs.
+
+http://kingkool68.com/cloudflare-analytics-issue.mov]]></description>
+		<content:encoded><![CDATA[<p>Here&#8217;s a screencast of what it looks like on my end when trying to access the stats. It&#8217;s like this most of the time I try to get to the dashboard. The video is a minute and a half and weighs in at 9megs.</p>
+<p><a href="http://kingkool68.com/cloudflare-analytics-issue.mov" rel="nofollow">http://kingkool68.com/cloudfla.....-issue.mov</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Russell Heimlich</title>
+		<link>http://www.russellheimlich.com/blog/cloudflare-can-boost-sites-performance-for-free/comment-page-1/#comment-1696</link>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+		<pubDate>Thu, 21 Oct 2010 13:18:02 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2378#comment-1696</guid>
+		<description><![CDATA[CloudFlare can block threats before they get to your site. That would explain why the purple line is greater than the red line. The first graphic is telling you how many threats tried getting to your door, and the second shows how many made it to your site.]]></description>
+		<content:encoded><![CDATA[<p>CloudFlare can block threats before they get to your site. That would explain why the purple line is greater than the red line. The first graphic is telling you how many threats tried getting to your door, and the second shows how many made it to your site.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

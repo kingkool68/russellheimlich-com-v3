@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Use a reset stylesheet - Frontend Development Tips &amp; Tricks by Russell Heimlich</title>
+<link href="css/reset.css" rel="stylesheet" media="all">
+<link href="css/main.css" rel="stylesheet" media="all">
+<link href="css/print.css" rel="stylesheet" media="print">
+</head>
+<body>
+<h1>Use a reset stylesheet</h1>
+<p>Creates a baseline starting point</p>
+<p>Eliminates differences between default browser styles</p>
+<p>Reduces cross-browser debugging</p>
+<h2>Eric Meyer's Reset Reloaded</h2>
+<pre class="code">
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+</pre>
+<p class="source">Source: <a href="http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/">Eric Meyer's Reset Reloaded</a></p>
+<script type="text/javascript" src="js/jquery.js"/>
+</script>
+</body>
+</html>

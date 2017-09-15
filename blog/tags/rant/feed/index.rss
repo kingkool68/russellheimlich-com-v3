@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Rant &#8211; Russell Heimlich</title>
+	<atom:link href="http://www.russellheimlich.com/blog/tags/rant/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.russellheimlich.com/blog</link>
+	<description>The Blog of Russell Heimlich</description>
+	<lastBuildDate>Fri, 02 Nov 2012 18:39:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.2</generator>
+	<item>
+		<title>U.S.News &#038; World Report Needs To Bet On The Web</title>
+		<link>http://www.russellheimlich.com/blog/u-s-news-world-report-needs-to-bet-on-the-web/</link>
+		<comments>http://www.russellheimlich.com/blog/u-s-news-world-report-needs-to-bet-on-the-web/#respond</comments>
+		<pubDate>Mon, 08 Nov 2010 00:53:56 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Media]]></category>
+		<category><![CDATA[Rant]]></category>
+		<category><![CDATA[Android]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[apps]]></category>
+		<category><![CDATA[ipad]]></category>
+		<category><![CDATA[media]]></category>
+		<category><![CDATA[native]]></category>
+		<category><![CDATA[publishing]]></category>
+		<category><![CDATA[tablets]]></category>
+		<category><![CDATA[USNews]]></category>
+		<category><![CDATA[Web]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2421</guid>
+		<description><![CDATA[Disclaimer: I worked as a developer at U.S.News &#38; World Report from 2006 &#8211; 2009. News broke late on Friday that U.S.News &#38; World Report was ending the monthly print version of it&#8217;s magazine. The focus going forward will be &#8220;a predominantly digital publishing model&#8221; according to editor Brian Kelly. The leaked  e-mail mentioned shifting [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><em>Disclaimer: I worked as a developer at U.S.News &amp; World Report from 2006 &#8211; 2009.</em></p>
+<p>News broke late on Friday that U.S.News &amp; World Report was <a href="http://www.poynter.org/column.asp?id=45&amp;aid=194030">ending the monthly print version of it&#8217;s magazine</a>. The focus going forward will be &#8220;a predominantly digital publishing model&#8221; according to editor Brian Kelly. The leaked  e-mail mentioned shifting their focus to emerging platforms, specifically tablet computers.</p>
+<blockquote><p><em>&#8220;&#8230;these latest moves will accelerate our ability to grow our online  businesses and position ourselves to take advantage of the emerging  platforms for distributing information such as the iPad and Android  tablets.&#8221;</em></p></blockquote>
+<p>I&#8217;m generally a fan of this position but I really hope USNews executes their strategy the right way. When it comes to mobile platforms, their are two options: web apps and native apps. When most people think of apps on phones and tablets they are thinking about native apps. Apple&#8217;s App Store and the Android Marketplace distribute and sell native apps; apps which need to be built specifically for each platform and need to be downloaded and installed. Web apps, on the other hand, are open to anything running a web browser.</p>
+<p><img class="alignnone size-full wp-image-2431" title="The game plan for USNews sans print" src="http://www.russellheimlich.com/blog/wp-content/uploads/2010/11/USNews-should-build-on-the-web.jpg" alt="" width="576" height="548" /></p>
+<p>Mobile web apps are what USNews should be focused on. Chances are they don&#8217;t have anyone in-house with knowledge of building native apps, so that task would have to be outsourced at an additional cost. Meanwhile the stable of talented in-house web developers could start work on building a platform-independent experience as soon as possible. In the meantime they should read this online book, <a href="http://building-iphone-apps.labs.oreilly.com/">Building iPhone Apps with HTML, CSS, and JavaScript: Making App Store Apps Without Objective-C or Cocoa</a>.</p>
+<p>But development talent aside, building on top of the open web is flexible. Updates can be pushed out nearly instantly without the need to go through a gatekeeper or approval process. As new platforms emerge, you&#8217;re brand is covered so long as it can connect to the web. Much of the functionality of native apps can be accomplished in non-desktop browsers like those found on phones and tablets. See <a href="http://check.in/">check.in</a>, <a href="http://iphone.netvibes.com/">iphone.netvibes.com</a>, and even <a href="http://www.apple.com/webapps/">Apple&#8217;s own webapps catalog</a> for examples of apps built on the web. For content publishers, native apps present far more problems than they appear to solve.</p>
+<p>But what about money? Perhaps the biggest allure of native apps is the fact that they are attached to marketplaces where everyone browsing has a credit card attached to their account and purchases can happen with a single click. But do you get direct contact with your customers? Apps that want to span many platforms need their own payment process that they can be in control of. That way regardless of how or what platform your audience uses to accesses your content, they will get a consistent experience. And if you want to charge a recurring subscription for premium access your only option is to run your own payment platform. USNews already has this up and running with their <a href="http://www.usnews.com/usnews/store/best_colleges.htm">Best Colleges</a> and <a href="http://www.usnews.com/usnews/store/usnews_weekly_order.htm" class="broken_link">Digital Weekly</a> products so why not extend that?</p>
+<p>And judging from the past releases of magazine brands on the iPad, the industry is getting it wrong. They can&#8217;t just shove their traditional print product onto a touchscreen device with a few gestural interactions and call it a day. Jeffery Zeldman sums it up best in his post <a href="http://www.zeldman.com/2010/10/17/ipad-as-the-new-flash/">iPad as the new Flash</a></p>
+<blockquote><p><em>&#8220;Everything we’ve learned in the past decade about preferring open  standards to proprietary platforms and user-focused interfaces to  masturbatory ones is forgotten as designers and publishers once again  scramble to create novelty interfaces no one but them cares about.&#8221;</em></p></blockquote>
+<p>So usnews.com is at a pivotal point where the company can focus on building a proprietary native app or an open web app. Today, it just seems so obvious to me to go the web app route. Native apps may seem like the answer today in the short term, but in the long term, their fragmentation overhead will hold them back for publishers while the open web will reign supreme.</p>
+<p>I hope U.S.News &amp; World Report doesn&#8217;t fuck this up.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/u-s-news-world-report-needs-to-bet-on-the-web/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Who Needs An Apple Tablet?</title>
+		<link>http://www.russellheimlich.com/blog/who-needs-an-apple-tablet/</link>
+		<comments>http://www.russellheimlich.com/blog/who-needs-an-apple-tablet/#respond</comments>
+		<pubDate>Mon, 28 Dec 2009 13:10:27 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Gadgets]]></category>
+		<category><![CDATA[Rant]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[device]]></category>
+		<category><![CDATA[gadget]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[Macbook Air]]></category>
+		<category><![CDATA[rumor]]></category>
+		<category><![CDATA[tablet]]></category>
+		<category><![CDATA[touch]]></category>
+		<category><![CDATA[Verizon]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2043</guid>
+		<description><![CDATA[Rumors that Apple is building a tablet computer have reached a fever-pitch over the past six months. The basic gist is it will have a 7 inch screen and run a version of the iPhone OS making a good chunk of the apps available to also run on this new tablet. But why do we [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Rumors that Apple is building a tablet computer have reached a fever-pitch over the past six months. The basic gist is it will have a 7 inch screen and run a version of the iPhone OS making a good chunk of the apps available to also run on this new tablet. But why do we even need such a thing?</p>
+<p><a href="http://www.russellheimlich.com/blog/wp-content/uploads/2009/12/macbook-touch.jpg"><img class="alignnone size-full wp-image-2047" title="MacBook Touch: A mockup of what the rumored Apple Tablet will look like." src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/12/macbook-touch.jpg" alt="" width="600" height="511" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/12/macbook-touch-300x255.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/12/macbook-touch.jpg 600w" sizes="(max-width: 600px) 100vw, 600px" /></a></p>
+<p>This thing sounds too big to be carried around with you wherever you go like an iPhone or iPod Touch but too small for long periods of work. It almost seems like it is aimed at two lifestyles: 1) Frequent flyers, 2) a TV watching companion device. This sounds just like the <a href="http://www.apple.com/macbookair/">MacBook Air</a> which was introduced on January 15, 2008.</p>
+<p>I wonder, how long the battery will last in order to power a 7 inch display? And what extra functionality will this bring to our lives? According to <a href="http://www.appleinsider.com/articles/09/12/23/apple_developers_told_to_prepare_full_screen_apps_for_jan_demo.html">one rumor blog</a>, Apple Insider,</p>
+<blockquote><p><em>&#8220;The tablet is expected to be portrayed as a multimedia device capable of browsing the Web, watching movies, and reading content.&#8221; </em></p></blockquote>
+<p>Wow, you mean just like my laptop of today? Again, why is everyone getting worked up over this?</p>
+<p>There have also been rumors swirling that the <a href="http://www.usatoday.com/tech/wireless/phones/2009-04-26-apple-verizon-iphone_N.htm">iPhone is coming to Verizon</a>, which seems less likely from a technical stance (CDMA vs. GSM). I think if we ever see an Apple/Verizon partnership it will be for a data plan for this tablet device so you can use the web wherever you go. Verizon currently does this with a few netbooks, though it is a horrible deal. $199.99 + a 2 year contract of at least $39.99 per month ($1,159.75 total), all for a dinky, underpowered netbook that retails for $399.99 on <a href="http://www.shopping.hp.com/webapp/shopping/computer_series.do?storeName=computer_store&amp;category=notebooks&amp;series_name=mini311_series&amp;aoid=20715&amp;ci_src=14110944&amp;ci_sku=VL838AV">HP&#8217;s own site</a>.</p>
+<p>So the idea of an Apple tablet looks lackluster from my point of view pre-announcement. Maybe Apple has a card up its sleeve when it announces the device and the world will wonder how we lived in the pre-tablet era. Perhaps this post will go down in Apple fanboy history just like all the <a href="http://forums.macrumors.com/showthread.php?t=500">negative reactions when Apple first introduced the iPod</a> in October, 2001. Or maybe the Apple Tablet will just fade away into gadget history just like the <a href="http://www.engadget.com/2007/09/06/apple-hi-fi-rip-2006-2007/">Apple Hi-Fi</a>.</p>
+<blockquote><p><em>&#8220;Great just what the world needs, another freaking MP3 player. Go Steve! Where&#8217;s the Newton?!&#8221;</em></p></blockquote>
+<p><cite> &mdash;WeezerX80&#8217;s reaction to the announcement of the iPod.</cite></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/who-needs-an-apple-tablet/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>3D TVs? Not For Me</title>
+		<link>http://www.russellheimlich.com/blog/3d-tvs-not-for-me/</link>
+		<comments>http://www.russellheimlich.com/blog/3d-tvs-not-for-me/#respond</comments>
+		<pubDate>Tue, 08 Dec 2009 03:33:24 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Gadgets]]></category>
+		<category><![CDATA[Rant]]></category>
+		<category><![CDATA[3D]]></category>
+		<category><![CDATA[film]]></category>
+		<category><![CDATA[movie]]></category>
+		<category><![CDATA[South Korea]]></category>
+		<category><![CDATA[technology]]></category>
+		<category><![CDATA[TV]]></category>
+		<category><![CDATA[Up]]></category>
+		<category><![CDATA[visual]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2018</guid>
+		<description><![CDATA[South Korea is poised to launch a broadcast network in full HD 3D. Lots of TV manufacturers are touting 2010 as the year of 3D. I think this effort will fall flat on it&#8217;s face just like it did in the 50&#8217;s and again in the late 70&#8217;s. While there continue to be innovations eliminating [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><img class="alignnone size-full wp-image-2021" title="Koreans watching 3D TV" src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/12/koreans-watching-3d-tv.jpg" alt="Koreans watching 3D TV" width="600" height="400" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/12/koreans-watching-3d-tv-300x200.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/12/koreans-watching-3d-tv.jpg 600w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p>South Korea is poised to launch a<a href="http://www.engadget.com/2009/11/26/korean-3d-television-broadcasts-in-full-hd-just-weeks-away/"> broadcast network in full HD 3D</a>. Lots of TV manufacturers are touting 2010 as the year of 3D. I think this effort will fall flat on it&#8217;s face just like it did in the<a href="http://www.sensio.tv/en/3d/3d_history/default.3d" class="broken_link"> 50&#8217;s and again in the late 70&#8217;s</a>. While there continue to be innovations eliminating the need for funky red and blue glasses, the added value of 3D is slim to none.</p>
+<p>I saw the Disney film <a href="http://www.amazon.com/gp/product/B001KVZ6FW?ie=UTF8&amp;tag=thebloofrushe-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B001KVZ6FW">UP</a> at the theater in 3D. The glasses were fine and the movie was enjoyable. I was in awe at the beginning of the film with the increased depth. The movie was playing the 3D effect up with characters that lunge towards the camera to jolt the audience. But near the end of the film I noticed the 3D less and less. <strong>After the initial wow factor, 3D was more of a gimmick rather than an aide to the telling of the story</strong>. This shouldn&#8217;t be a surprise as the same part of the brain that <a href="http://futurity.org/science-technology/scans-show-brain%E2%80%99s-2d-region-processes-3d/">processes 2D images, also handles 3D images</a>.</p>
+<p>The technology behind 3D video still needs to improve to become as seamless as human vision before we&#8217;ll see a big pickup in the consumer electronic industry.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/3d-tvs-not-for-me/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Paying For JavaScripts? Just View Source</title>
+		<link>http://www.russellheimlich.com/blog/paying-for-javascripts-just-view-source/</link>
+		<comments>http://www.russellheimlich.com/blog/paying-for-javascripts-just-view-source/#comments</comments>
+		<pubDate>Tue, 03 Nov 2009 02:15:46 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Rant]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[Envato]]></category>
+		<category><![CDATA[front-end]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[ThemeForest]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1943</guid>
+		<description><![CDATA[ThemeForest.net is an online marketplace for developers to sell themes, templates, and other web development related goodies. A lot of the files are for the backend making it next to impossible for someone to copy them without breaking into your server. But ThemeForest offers JavaScripts for sale and even offers a live preview. By the [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><a href="http://themeforest.net/?ref=kingkool68">ThemeForest.net</a> is an online marketplace for developers to sell themes, templates, and other web development related goodies. A lot of the files are for the backend making it next to impossible for someone to copy them without breaking into your server. But ThemeForest offers JavaScripts for sale and even offers a live preview.</p>
+<p>By the very nature of the web, a front end technology like JavaScript requires the source code to be downloaded to your computer before it can run. This means anyone with a little know-how can easily bypass the need to buy the script and piece it together themselves.</p>
+<p>For example, take this <a href="http://themeforest.net/item/jscalendar/67528">JavaScript calendar widget</a> which has 0 sales as of this writing. All you have to do is go to the live preview and remove the frame by clicking the link in the top left corner. From there it&#8217;s just a matter of viewing the source (Choose View-&gt;Source in Internet Explorer, View-&gt;Page Source in Firefox) and copying the necessary JavaScript and CSS files. Here&#8217;s everything you need for this calendar widget:</p>
+<ul>
+<li><a href="http://s3.envato.com/files/199652/css/calendar.css">http://s3.envato.com/files/199652/css/calendar.css</a></li>
+<li><a href="http://s3.envato.com/files/199652/css/setup.css">http://s3.envato.com/files/199652/css/setup.css</a></li>
+<li><a href="http://s3.envato.com/files/199652/css/text.css">http://s3.envato.com/files/199652/css/text.css</a></li>
+<li><a href="http://s3.envato.com/files/199652/js/resources.js">http://s3.envato.com/files/199652/js/resources.js</a></li>
+<li><a href="http://s3.envato.com/files/199652/js/config.js">http://s3.envato.com/files/199652/js/config.js</a></li>
+<li><a href="http://s3.envato.com/files/199652/js/calendar.js">http://s3.envato.com/files/199652/js/calendar.js</a></li>
+</ul>
+<p>Now before you get all upitty about the ethics behind this, you should know that this script is freely available from the <a href="http://www.fogtower.com/products/jscalendar.html" class="broken_link">author&#8217;s own site</a>, which was based on an open source project from around 2006 according to comments in the CSS files.</p>
+<p>Granted ThemeForest isn&#8217;t targeted at professional developers like me so someone might be more than happy to plunk down $8 to download everything in one nice, neat package. But if I were selling scripts on ThemeForest, with the expectation of a profit, I would be pissed that ThemeForest didn&#8217;t take more precaution to protect my source code. At the least they could obfuscate the live preview code using a tool like <a href="http://dean.edwards.name/packer/">/packer/</a>.</p>
+<p>At any rate this demonstrates why it&#8217;s so hard to sell JavaScripts by themselves due to the very nature of how they work in an open web.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/paying-for-javascripts-just-view-source/feed/</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+		</item>
+		<item>
+		<title>Death To The Div</title>
+		<link>http://www.russellheimlich.com/blog/death-to-the-div/</link>
+		<comments>http://www.russellheimlich.com/blog/death-to-the-div/#comments</comments>
+		<pubDate>Wed, 02 Sep 2009 00:32:27 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[CSS/HTML]]></category>
+		<category><![CDATA[Rant]]></category>
+		<category><![CDATA[booger test]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[div]]></category>
+		<category><![CDATA[DOM]]></category>
+		<category><![CDATA[elements]]></category>
+		<category><![CDATA[HTML]]></category>
+		<category><![CDATA[HTML5]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[John Allsopp]]></category>
+		<category><![CDATA[markup]]></category>
+		<category><![CDATA[standards]]></category>
+		<category><![CDATA[W3C]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1802</guid>
+		<description><![CDATA[Every web developer is looking forward to the new HTML spec, HTML 5. The new spec will birth 20 new elements to add more underlying semantic meaning to content. The new elements came out of popular IDs and Class attributes for common situations in web design: &#60;nav&#62; is just like &#60;div id=&#8221;nav&#8221;&#62;. But these new [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Every web developer is looking forward to the new HTML spec, HTML 5. The new spec will birth <a href="http://www.w3.org/TR/html5-diff/#new-elements">20 new elements</a> to add more underlying semantic meaning to content. The new elements came out of popular IDs and Class attributes for common situations in web design: &lt;nav&gt; is just like &lt;div id=&#8221;nav&#8221;&gt;. But these new elements are just a stop gap.</p>
+<p><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/09/death-to-div.jpg" alt="Death to the Div Tag" title="Death to the Div Tag" width="600" height="361" class="alignnone size-full wp-image-1816" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/09/death-to-div-300x180.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/09/death-to-div.jpg 600w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p>I wish the web community could move beyond pigeon-holing ourselves with specific elements. Why can&#8217;t we make our own elements to better describe our content? If I had my way &lt;div&gt;s would be ancient history and any element <a href="http://simon.html5.org/html5-elements">not already defined in the HTML spec</a> would be treated by browsers like a &lt;div&gt;. </p>
+<p>There are many benefits to opening up the element nomenclature like this. </p>
+<p><strong>1) It will be much easier to describe content.</strong> No longer will we need to shoehorn our content into quasi-relevant elements. Did you know the &lt;address&gt; tag is to define the contact information for the author or owner of a document and not to hold a plain street address? </p>
+<p><strong>2) No more div-itis.</strong> Web developers will no longer have to wade through a dozen &lt;/div&gt; tags. &lt;div&gt; tags are the least-semantic structural elements in a web designers toolbox; it literally means &#8216;division&#8217; of a page and is used to mark off different sections within a document. Things can get pretty messy when using too many &lt;div&gt;s however as it is hard to tell where they end. Take a look at this code example:</p>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="html" style="font-family:monospace;">&lt;div id=&quot;container&quot;&gt;
+   &lt;div id=&quot;article&quot;&gt;
+      ...
+     &lt;div id=&quot;chart&quot;&gt;
+      ...
+     &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;</pre></td></tr></table></div>
+
+<p>Look how much better this markup looks from both a readability and maintainability perspective:</p>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="html" style="font-family:monospace;">&lt;container&gt;
+   &lt;article&gt;
+      ...
+     &lt;chart&gt;
+      ...
+     &lt;/chart&gt;
+   &lt;/article&gt;
+&lt;/container&gt;</pre></td></tr></table></div>
+
+<p>A benefit to free-form elements is the semantic closing tags making it clear where each element begins <em>and</em> ends.</p>
+<p><strong>3) <a href="http://www.google.com/search?q=define%3A+microformats">Microformats</a> might actually work.</strong> The movement to create semantic markup using loosely agreed upon Classes slowly died off due to the extra bloat it introduced to the underlying code. With the ability to create your own tags, Microformats could flourish and we can begin to set-up our own best practices for describing content.</p>
+<p><strong>4) Faster JavaScript.</strong> Not many browsers support the JavaScript method <a href="http://www.quirksmode.org/dom/w3c_core.html#t11">getElementsByClassName</a> but every browser supports <a href="http://www.quirksmode.org/dom/w3c_core.html#t12">getElementsByTagName</a>. Because of this many libraries have had to write their own implementations which are many times slower than native methods. Faster <abbr title="Document Object Model">DOM</abbr> traversal = faster JavaScript!</p>
+<h4>What will it take to make this a reality? Boogers</h4>
+<p>We&#8217;re already going to have issues with older browsers supporting brand new elements with HTML 5. We might as well go all the way and make sure every browser can support whatever element we can come up with. After all we only have <a href="http://www.zeldman.com/2009/07/13/html-5-nav-ambiguity-resolved/#comment-44699">one shot to get HTML right for this generation</a> according to John Allsopp. </p>
+<p>Many browsers already support free-form elements both with CSS and JavaScript. To really flesh this out I created the <a href="http://www.russellheimlich.com/booger-test.htm">Booger Test</a> and below are my findings.</p>
+<ul>
+<li>Firefox 3+ supports the &lt;booger&gt; tag as if it were a native element but has to be explicitly set to <em>display:block</em>. </li>
+<li>Firefox 2 has no problem with CSS unless there children elements in which case the  &lt;booger&gt; tag collapses. Weird!</li>
+<li>All versions of Internet Explorer don&#8217;t know what to do with the  &lt;booger&gt; tag but they do function normally when using a <a href="http://ejohn.org/blog/html5-shiv/">JavaScript shiv</a></li>
+<li>Safari and Chrome have no problems.</li>
+<li>Every browser I tested passed the JavaScript portions (getElementsByTagName(&#8220;booger&#8221;)) of the booger test with flying colors!</li>
+</ul>
+<p>So as you can see, we are really close to being able to use our own elements. HTML 5 is already going in this direction but it would be a real shame if everyone got hung up on what frivolous new element names we should all agree to use instead of coming up with new functionality to move the capabilities of the web forward.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/death-to-the-div/feed/</wfw:commentRss>
+		<slash:comments>67</slash:comments>
+		</item>
+		<item>
+		<title>Developers: Stop Whining About IE6</title>
+		<link>http://www.russellheimlich.com/blog/developers-stop-whining-about-ie6/</link>
+		<comments>http://www.russellheimlich.com/blog/developers-stop-whining-about-ie6/#respond</comments>
+		<pubDate>Thu, 13 Aug 2009 03:43:03 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[CSS/HTML]]></category>
+		<category><![CDATA[Rant]]></category>
+		<category><![CDATA[developing]]></category>
+		<category><![CDATA[IE6]]></category>
+		<category><![CDATA[Internet Explorer]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[web browser]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[whining]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1763</guid>
+		<description><![CDATA[I&#8217;m sick of the developer community whining and moaning about IE6. It&#8217;s amazing how many different campaigns have been created in an attempt to get people to upgrade. From the simple brochure sites like stopie6.com to the unethical IE6 update script which tricks a user into thinking an IE upgrade is a critical update. There [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/08/i-want-you-to-stop-whining.jpg" alt="I WANT YOU TO STOP WHINING" title="I WANT YOU TO STOP WHINING" width="374" height="500" class="alignnone size-full wp-image-1772" /></p>
+<p>I&#8217;m sick of the developer community whining and moaning about IE6. It&#8217;s amazing how many different campaigns have been created in an attempt to get people to upgrade. From the simple brochure sites like <a href="http://www.stopie6.com/">stopie6.com</a> to the unethical <a href="http://ie6update.com/">IE6 update script</a> which tricks a user into thinking an IE upgrade is a critical update. There was even a <a href="http://www.cnn.com/2009/TECH/08/06/internet.explorer.six/">CNN story about the anti-IE campaign</a> on the front page (which I think they ran mostly because they stood to benefit from people upgrading). And lets not forget the jovial tweets when news broke that <a href="http://www.techcrunch.com/2009/07/14/youtube-will-be-next-to-kiss-ie6-support-goodbye/">YouTube would be dropping support for IE6</a>.</p>
+<p>The only major site that has a valid plan for leaving IE6 behind is Digg.com which was <a href="http://blog.digg.com/?p=878">a business decision</a>. According to their stats, IE6 accounts for 10% of visits and 5% of all pageviews. The biggest IE6 headaches for Digg is supporting the functionality to digg a story, bury a story, or leave a comment. IE6 only accounts for a mere 1% of these actions which Digg can&#8217;t justify the extra development time needed to support them for such a small group of users. They even conducted a survey to find out why people don&#8217;t upgrade their browsers with a majority of the respondents stating they aren&#8217;t allowed or they don&#8217;t have the proper rights to install new software on their computers. </p>
+<p><a href="http://blog.digg.com/?p=878"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/08/digg-ie6-survey.jpg" alt="Digg IE6 Survey chart" title="Digg IE6 Survey chart" width="512" height="175" class="alignnone size-full wp-image-1771" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/08/digg-ie6-survey-300x102.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/08/digg-ie6-survey.jpg 512w" sizes="(max-width: 512px) 100vw, 512px" /></a></p>
+<p>All of this hoopla so the lives of developers are easier. After all it is the job of developers to build a site and make sure it works across a variety of operating systems, browsers, and devices in order to serve its audience. Martin Ringlein put it best in his post <a href="http://marylandmedia.com/2008/11/stop-being-a-dick-support-ie6/">Stop being a dick, support IE6</a>, &#8220;We are in the business of creating usable, accessible and intuitive experiences for our users; we are not in the business of changing users, user agents and user behavior all in a pursuit for what we’ve deemed a &#8216;better&#8217; web.&#8221; </p>
+<p>I became a developer because I enjoyed solving problems. Internet Explorer is just another obstacle to get over when solving a problem. Rather than wasting energy on things I couldn&#8217;t control like trying to persuade the public to upgrade, I dove into learning how to get past the quirks of IE. Here are my 5 tips:</p>
+<ol>
+<li><strong>Start with a reset stylesheet</strong> &#8211; This removes any default styles set by the browser so you can start styling on a consistent base. I prefer <a href="http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/">Eric Myer&#8217;s CSS Reset Reloaded</a> , but there are <a href="http://perishablepress.com/press/2007/10/23/a-killer-collection-of-global-css-reset-styles/">many to choose from</a>.</li>
+<li><strong>Use a strict HTML doctype</strong> &#8211; <a href="http://www.alistapart.com/articles/doctype/">Doctypes</a> tell the browser how to interpret the HTML and transitional and loose doctypes introduce rendering quirks known as triggering &#8220;<a href="http://www.quirksmode.org/css/quirksmode.html">quirksmode</a>&#8220;. Any <a href="http://www.456bereastreet.com/archive/200904/using_an_xml_declaration_triggers_quirks_mode_in_ie_6/">XML doctype</a> (including XHTML flavors) triggers quirks mode in IE as well. </li>
+<li><strong>Don&#8217;t be afraid of <a href="http://www.456bereastreet.com/archive/200411/the_underscore_hack/">CSS conditional hacks</a></strong> &#8211; Did you know you can send IE a different property by putting an underscore in front of it? It works like this:
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #6666ff;">.style</span> <span style="color: #00AA00;">&#123;</span>
+<span style="color: #000000; font-weight: bold;">margin-left</span><span style="color: #00AA00;">:</span><span style="color: #933;">15px</span><span style="color: #00AA00;">;</span> //Caught by every browser
+_margin-left<span style="color: #00AA00;">:</span><span style="color: #933;">10px</span><span style="color: #00AA00;">;</span> //Caught by IE <span style="color: #cc66cc;">6</span> &amp; <span style="color: #cc66cc;">7</span>
+<span style="color: #6666ff;">.margin-left</span><span style="color: #00AA00;">:</span><span style="color: #933;">8px</span><span style="color: #00AA00;">;</span> //Only caught by IE6
+<span style="color: #00AA00;">&#125;</span></pre></td></tr></table></div>
+
+<p>You can also use <a href="http://www.quirksmode.org/css/condcom.html">conditional stylesheets</a> to serve different stylesheets but that becomes difficult to maintain.
+</li>
+<li><strong>Learn to love the <a href="http://www.belafontecode.com/create-transparent-pngs-in-ie6-using-alphaimageloader-no-hacks/">AlphaImageLoader filter</a> for transparent PNGs</strong> &#8211; There is no way around it.</li>
+<li><strong>Learn to clear floats the simple way</strong> &#8211; Just set the <a href="http://www.quirksmode.org/css/clearing.html">&#8220;overflow&#8221; property of the container to auto or hidden</a> and set the width or height to something other than auto. This applies to all browsers not just IE. I hate seeing the overly complicated <a href="http://www.positioniseverything.net/easyclearing.html">clearfix solution</a>.</li>
+</ol>
+<p>Other tips for taming IE quirks:</p>
+<ul>
+<li><a href="http://sixrevisions.com/web-development/definitive-guide-to-taming-the-ie6-beast/">Definitive Guide to Taming the IE6 Beast</a> &#8211; SixRevisions.com</li>
+<li><a href="http://www.sitepoint.com/blogs/2009/03/06/10-fixes-for-ie6-problems/">10 Fixes for IE6 Problems</a> &#8211; Sitepoint.com</li>
+</ul>
+<p>So if studying up on these workarounds and techniques sound like too much work, then maybe you shouldn&#8217;t be a developer. Perhaps a professional lobbyist is right up your alley. They&#8217;re pretty good at ignoring the details of reality. </p>
+<p>Here&#8217;s a list of some of the more prominent anti-IE6 sites:</p>
+<ul>
+<li><a href="http://www.stopie6.com/">StopIE6.com</a></li>
+<li><a href="http://ie6update.com/">IE6Update.com</a></li>
+<li><a href="http://www.stoplivinginthepast.com/">StopLivingInThePast.com</a></li>
+<li><a href="http://www.saveie6.com/">SaveIE6.com</a> (April Fools Joke)</li>
+<li><a href="http://iedeathmarch.org/">IEDeathMarch.org</a></li>
+<li><a href="http://www.dearie6.com/">DearIE6.com</a></li>
+<li><a href="http://idroppedie6.com/">IDroppedIE6.com</a></li>
+</ul>
+<p>And David DeSandro <a href="http://desandro.com/articles/i-like-ie6-because" class="broken_link">agrees with my attitude towards IE6</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/developers-stop-whining-about-ie6/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Patents Are Getting On My Nerves</title>
+		<link>http://www.russellheimlich.com/blog/patents-are-getting-on-my-nerves/</link>
+		<comments>http://www.russellheimlich.com/blog/patents-are-getting-on-my-nerves/#comments</comments>
+		<pubDate>Wed, 11 Feb 2009 04:00:12 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Gadgets]]></category>
+		<category><![CDATA[Rant]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1418</guid>
+		<description><![CDATA[I was reading the latest post on Daring Fireball about Apple, Google, and Palm when I read the following: &#8230;the other feature that Apple objected to was using a standard headphone jack. Apple apparently owns a patent on controlling software using buttons connected by a standard 3.5mm headphone jack (at least for music and video [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>I was reading the latest post on Daring Fireball about <a href="http://daringfireball.net/2009/02/apple_google_palm">Apple, Google, and Palm</a> when I read the following:</p>
+<blockquote cite="http://daringfireball.net/2009/02/apple_google_palm"><p><em>&hellip;the other feature that Apple objected to was using a standard headphone jack. Apple apparently owns a patent on controlling software using buttons connected by a standard 3.5mm headphone jack (at least for music and video playback controls), and would not grant Google a license to the patent. Hence the G1’s use of a proprietary ExtUSB port rather than a standard 3.5mm headphone jack.</em></p></blockquote>
+<p>So let me get this straight? No cell phone company is going to incorporate a standard 3.5mm headphone jack anytime soon due to the possibility of feeling the wrath from Apple&#8217;s lawyers? What has the world come to? How come one company can lock down the use of a jack forcing others to offer a pointless dongle to get around the issue? What would happen if the dongle was built into the phone so while not technically a straight 3.5mm jack but would appear like one to a normal person? Would this be allowed? </p>
+<p><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/02/extusb-blame-apple.jpg" alt="No 3.5mm jack? Blame Apple!" title="No 3.5mm jack? Blame Apple!" width="600" height="416" class="size-full wp-image-1419" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/02/extusb-blame-apple-300x208.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/02/extusb-blame-apple.jpg 600w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p>This pales in comparison to Apple&#8217;s <a href="http://yro.slashdot.org/article.pl?sid=09/02/07/1920243&#038;from=rss">dubious multi-touch patent</a>.</p>
+<p>Now I&#8217;m all for taking a crack at challenging problems, but being forced to work around an issue because someone holds a patent on it is holding back innovative ideas.   </p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/patents-are-getting-on-my-nerves/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Steve Jobs Cannot Design A Mouse</title>
+		<link>http://www.russellheimlich.com/blog/steve-jobs-cannot-design-a-mouse/</link>
+		<comments>http://www.russellheimlich.com/blog/steve-jobs-cannot-design-a-mouse/#comments</comments>
+		<pubDate>Sun, 18 May 2008 21:43:06 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Gadgets]]></category>
+		<category><![CDATA[Mac]]></category>
+		<category><![CDATA[Rant]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[computer]]></category>
+		<category><![CDATA[device]]></category>
+		<category><![CDATA[hardware]]></category>
+		<category><![CDATA[iMac]]></category>
+		<category><![CDATA[mouse]]></category>
+		<category><![CDATA[Steve Jobs]]></category>
+		<category><![CDATA[user input]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=830</guid>
+		<description><![CDATA[Over the weekend I began reading Inside Steve&#8217;s Brain by Leander Kahney which has given me an insight into the control-freak that is Steve Jobs. Take the design of the mouse for the first Mac computer: &#8220;Jobs paid close attention to every detail. Even the mouse was designed to reflect the shape of the computer: [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Over the weekend I began reading <a href="http://www.amazon.com/gp/product/1591841984?ie=UTF8&#038;tag=thebloofrushe-20&#038;linkCode=as2&#038;camp=1789&#038;creative=9325&#038;creativeASIN=1591841984">Inside Steve&#8217;s Brain</a><img src="http://www.assoc-amazon.com/e/ir?t=thebloofrushe-20&#038;l=as2&#038;o=1&#038;a=1591841984" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> by Leander Kahney which has given me an insight into the control-freak that is Steve Jobs.  Take the design of the mouse for the first Mac computer:</p>
+<blockquote><p><em>&#8220;Jobs paid close attention to every detail. Even the mouse was designed to reflect the shape of the computer: it has the same dimensions, and its single square button corresponds to the shape and placement of the screen.&#8221;</em></p></blockquote>
+<p><a href="http://en.wikipedia.org/wiki/Apple_mouse"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2008/05/macse-and-mouse.jpg" alt="Macintosh SE and the ADB mouse were designed with the same proportions in mind." title="Macintosh SE and the ADB mouse" width="461" height="322" class="alignnone size-full wp-image-831" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2008/05/macse-and-mouse-300x209.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2008/05/macse-and-mouse.jpg 461w" sizes="(max-width: 461px) 100vw, 461px" /></a></p>
+<p>Fast forward 24 years and when I go to use the <a href="http://www.amazon.com/gp/product/B000V1IFR8?ie=UTF8&#038;tag=thebloofrushe-20&#038;linkCode=as2&#038;camp=1789&#038;creative=9325&#038;creativeASIN=B000V1IFR8">Mighty Mouse</a><img src="http://www.assoc-amazon.com/e/ir?t=thebloofrushe-20&#038;l=as2&#038;o=1&#038;a=B000V1IFR8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> connected to my fiance&#8217;s 24&#8243; iMac I find the scrollball unwilling to scroll down. The gray nipple-like scroll mechanism might have been good on paper but after just a year of normal, everyday use the thing becomes flaky and useless. About every other week I need to flip the mouse upside down and rub the scroll ball vigorously along the length of my finger to restore functionality (<a href="http://a248.e.akamai.net/7/248/51/3024171180545059/www.info.apple.com/images/kbase/302417/302417_1.mov">video demonstration</a>).  In extreme cases when that doesn&#8217;t work I apply a dab of rubbing alcohol on the ball and gently turn the ball around in all possible directions to scrub the runners clean. Some people have even <a href="http://www.veoh.com/videos/v378809PrA5a3pg">taken the Mighty Mouse apart</a> in order to clean it. Since Apple&#8217;s products have won numerous industrial design awards, it escapes me how the mouse has been so neglected considering it is one of the most frequently used input devices on a computer.  </p>
+<p>The Mighty Mouse wasn&#8217;t the first unsuccessful mouse released by the Cupertino company. In 1998 to coincide the <a href="http://www.russellheimlich.com/blog/steve-jobs-announces-new-imac/">release of the first iMac</a>, Apple created the USB Mouse which became known as the &#8220;hockey puck&#8221;. While considered stylish with it&#8217;s translucent colors and circular design the USB mouse was actually very uncomfortable to use. Third parties released USB to ADB converters so people could use the older, more comfortable <a href="http://vectronicsappleworld.com/macintosh/mouse.html" class="broken_link">Apple mouses</a> with their new iMac computers. There was even an adaptive shell called the <a href="http://www.welovemacs.com/icatch.html">iCatch</a> which elongated the circular mouse making it more comfortable to hold and similar looking to the old Desktop Mouse II.</p>
+<p><a href="http://vectronicsappleworld.com/macintosh/mouse.html" class="broken_link"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2008/05/apple-hockey-puck-mouse.jpg" alt="The Apple USB mouse that came with new iMacs looked and felt like a hockey puck." title="Apple Hockey Puck USB Mouse" width="400" height="400" class="alignnone size-full wp-image-832" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2008/05/apple-hockey-puck-mouse-150x150.jpg 150w, http://www.russellheimlich.com/blog/wp-content/uploads/2008/05/apple-hockey-puck-mouse-300x300.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2008/05/apple-hockey-puck-mouse.jpg 400w" sizes="(max-width: 400px) 100vw, 400px" /></a></p>
+<p>So while Apple dared to be different by making computers that were easy to use while being gorgeous to look at, their mice could never compare. But on the other hand the trackpads on Apple&#8217;s new MacBook and MacBook Pro laptops are marvelously responsive and <a href="http://reviews.cnet.com/4660-10621_7-6697176.html">a joy to use</a>. Apple is at the top of it&#8217;s game when it comes to user inputs on non-desktop products. Perhaps Steve Jobs should ditch the whole mouse concept and bundle his desktops with a USB powered trackpad. That would certainly be better than <a href="http://en.wikipedia.org/wiki/Apple_Mighty_Mouse">licensing the trademark</a> of a popular cartoon series to tack on to a crappy product.</p>
+<p><a href="http://support.apple.com/kb/HT1115"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2008/05/multi-finger-trackpad.jpg" alt="Finger gestures make using an Apple laptop easy." title="Multi-touch Trackpad from Apple" width="250" height="216" class="alignnone size-full wp-image-833" /></a></p>
+<p><em>P.S. I had to &#8220;clean&#8221; the trackball 3 times while writing this blog post.</em></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/steve-jobs-cannot-design-a-mouse/feed/</wfw:commentRss>
+		<slash:comments>18</slash:comments>
+<enclosure url="http://a248.e.akamai.net/7/248/51/3024171180545059/www.info.apple.com/images/kbase/302417/302417_1.mov" length="600145" type="video/quicktime" />
+		</item>
+		<item>
+		<title>Flickr Should Copy DeviantART Not YouTube</title>
+		<link>http://www.russellheimlich.com/blog/flickr-should-copy-deviantart-not-youtube/</link>
+		<comments>http://www.russellheimlich.com/blog/flickr-should-copy-deviantart-not-youtube/#comments</comments>
+		<pubDate>Fri, 21 Mar 2008 03:27:51 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Photo]]></category>
+		<category><![CDATA[Rant]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[commerce]]></category>
+		<category><![CDATA[community]]></category>
+		<category><![CDATA[Flickr]]></category>
+		<category><![CDATA[money]]></category>
+		<category><![CDATA[photos]]></category>
+		<category><![CDATA[prints]]></category>
+		<category><![CDATA[revenue]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/flickr-should-copy-deviantart-not-youtube/</guid>
+		<description><![CDATA[When I heard that Flickr is nearly ready to add video capabilities, I felt a bit queasy. Flickr is the leader in the photo sharing arena by a large margin. The main reason it reached critical mass was because of the community it built around the photos uploaded by users. It is also one of [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>When I heard that Flickr is nearly ready to <a href="http://www.techcrunch.com/2007/08/03/reconfirmation-flickr-to-add-video/">add video capabilities</a>, I felt a bit queasy.  <a href="http://www.flickr.com">Flickr</a> is the leader in the photo sharing arena by a large margin. The main reason it reached critical mass was because of the community it built around the photos uploaded by users. It is also one of the harder sites to monetize since display advertising clashes with photo viewing and there isn&#8217;t enough text content for contextual advertising to work.  The $24.95 Pro memberships (which can be <a href="http://flickr.com/gift">given as gifts</a> *wink wink*) keep Flickr from being a total money-sink.</p>
+<p><img src='http://www.russellheimlich.com/blog/wp-content/uploads/2008/03/flickr-bleeds-money.gif' alt='Flickr Bleeds Money' /></p>
+<p>Photos require a large chunk of bandwidth to serve up to the millions of Flickr users, but that is nothing compared to the overhead of video. This is probably a moot point considering the company is running off the pipes of it&#8217;s owner, web pioneer <a href="http://www.flickr.com/photos/ross/6963744/">Yahoo</a>.</p>
+<p>While there are good and bad reasons for Flickr to add video, I don&#8217;t think they can compete in such a crowded video-sharing marketplace. Did <a href="http://vimeo.com/">Vimeo</a>, <a href="http://www.viddler.com/">Viddler</a>, <a href="http://revver.com/">Revver</a>, <a href="http://www.dailymotion.com/us">Daily Motion</a>, <a href="http://www.blip.tv">Blip.tv</a>, <a href="http://www.veoh.com/">Veoh</a>, and the all mighty <a href="http://www.youtube.com">YouTube</a> leave anything for Flickr to improve upon? It looks like Flickr will have a long, uphill battle to even catch up to the middle of the pack. </p>
+<p>Flickr has a huge community around photos and what they need to do is offer more photo related services. Many artists on Flickr have an account at 3rd party sites for selling prints of their work. Flickr could offer fine-art prints from members that opt-in to sell their photos with the service.  This way Flickr would tie the browsing and buying experience together and could make a small profit off of each transaction.  An example of another art site doing something similar is DeviantART.com (see <a href="http://kingkool6.deviantart.com/prints/">my prints</a>.).  </p>
+<p><a href="http://www.deviantart.com">DeviantART</a> lets users upload as many photos as they want with no file size limitations, just like Flickr.  Every member is eligible to opt-in to the standard print account which allows them to sell their art work and receive a cut of the profits. A <a href="http://my.deviantart.com/services/#prints">Premium print account</a> is available for $24.95 a year and offers more print customizations and a higher share of the profits from a sale. These are not run-of-the-mill snapshot prints like at Walmart or Costco. DeviantART <a href="http://help.deviantart.com/210/">does high quality work</a>. The beauty of this is DeviantART can set a base price which includes a tiny profit with every transaction as well as helping out it&#8217;s communities. When community members profit, the company profits as well.</p>
+<p><a href="http://www.deviantart.com/print/263439/"><img src='http://www.russellheimlich.com/blog/wp-content/uploads/2008/03/deviantarts-print-management.gif' alt='DeviantART’s Print Management' /></a></p>
+<p>Flickr needs something like this! How could such a megasite sit back and watch it&#8217;s users point potential customers off to make a purchase? This is money that they are letting go by under their noses. And what do they plan to do with video anyways? Nobody has figured out a successful way to monetize video.</p>
+<p>Flickr already has an intuitive interface for uploading, tagging, and browsing photos, why can&#8217;t they add selling photos to that list? I feel offering a way for the community to profit off their work while helping Flickr earn it&#8217;s keep makes everyone happy. This is way better than adding the latest me-too feature that is already pervasive throughout the web.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/flickr-should-copy-deviantart-not-youtube/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Re: Why Social Applications Will Thrive In A Recession</title>
+		<link>http://www.russellheimlich.com/blog/re-why-social-applications-will-thrive-in-a-recession/</link>
+		<comments>http://www.russellheimlich.com/blog/re-why-social-applications-will-thrive-in-a-recession/#respond</comments>
+		<pubDate>Thu, 07 Feb 2008 02:18:02 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Media]]></category>
+		<category><![CDATA[Rant]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[applications]]></category>
+		<category><![CDATA[company]]></category>
+		<category><![CDATA[networking]]></category>
+		<category><![CDATA[recession]]></category>
+		<category><![CDATA[Social Networks]]></category>
+		<category><![CDATA[spending]]></category>
+		<category><![CDATA[unemployed]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/re-why-social-applications-will-thrive-in-a-recession/</guid>
+		<description><![CDATA[Josh Bernoff wrote about how social applications will thrive during a recession. He noted advertising facts and figures from the 2001 recession to backup his claims, which all seem perfectly valid. But poor Josh seems to be missing the most important reason for social apps to keep on chugging. When massive layoffs hit companies needing [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Josh Bernoff wrote about how <a href="http://blogs.forrester.com/charleneli/2008/02/why-social-appl.html">social applications will thrive during a recession</a>.  He noted advertising <a href="http://www.vss.com/industry_research/publications/product_purchase/publicationslist.asp" class="broken_link">facts and figures</a> from the 2001 recession to backup his claims, which all seem perfectly valid. But poor Josh seems to be missing the most important reason for social apps to keep on chugging. When massive layoffs hit companies needing to cut the fat for survival, ex-employees will be left with an abundance of time. And what can they fill that time with? Poking their friends virtually or starting a massive vampire/<a href="http://www.facebook.com/apps/application.php?id=2341504841&amp;b" class="broken_link">zombie</a> war.</p>
+<p>Now I don&#8217;t want to say social networks are a complete waste of time. They are kind of like a mullet: business in the front and party in the back. People will flock to social networks looking for job openings, utilizing connections, and otherwise use it for strictly business. But once the practicality runs dry they will turn to socializing and in turn pointless applications. This overload of free time is what will get social networks through the economic slump. As logical as it sounds for advertisers to keep pumping money into online advertising because it is more targeted providing a greater return on investment, social advertising is still an unproven experiment. </p>
+<p>Targeting ads based on what people are searching for is safe. Sneaking a recommendation into a users news feed hoping they will share it with their friends, <a href="http://blog.auinteractive.com/facebook-ads-dont-work-heres-proof">not so much</a>. </p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/re-why-social-applications-will-thrive-in-a-recession/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

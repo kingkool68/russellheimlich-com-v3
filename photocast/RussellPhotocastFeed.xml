@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rss version="2.0">
+  <channel>
+    <title>The Russell Heimlich Photocast</title>
+    <description>Photos by Russell Heimlich in a short slideshow video podcast. Updated weekly!</description>
+    <link>http://www.russellheimlich.com/photocast/</link>
+    <category domain="">Photography</category>
+    <copyright>2006 Russell Heimlich</copyright>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <language>en</language>
+    <lastBuildDate>Sat, 1 Jul 2006 01:34:17 -0400</lastBuildDate>
+    <managingEditor>Russell Heimlich</managingEditor>
+    <pubDate>Sat, 1 Jul 2006 01:33:14 -0400</pubDate>
+    <webMaster>Russell Heimlich</webMaster>
+    <generator>FeedForAll v1.0 (1.0.2.0)</generator>
+    <image>
+      <url>http://www.russellheimlich.com/photocast/videoPodcast.jpg</url>
+      <title>The Russell Heimlich Photocast</title>
+      <width>144</width>
+      <height>96</height>
+    </image>
+    <item>
+      <title>FEED HAS MOVED!</title>
+      <description>This feed is dead.  Please update your podcatcher to go to http://feeds.feedburner.com/TheRussellHeimlichPhotocast</description>
+      <link>http://feeds.feedburner.com/TheRussellHeimlichPhotocast</link>
+      <enclosure url="http://feeds.feedburner.com/TheRussellHeimlichPhotocast" length="" type=""></enclosure>
+      <pubDate>Sat, 1 Jul 2006 01:33:11 -0400</pubDate>
+    </item>
+  </channel>
+</rss>

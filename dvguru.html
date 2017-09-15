@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Install DV Guru Search</title>
+</head>
+
+<body>
+<p>
+  <script
+type="text/javascript">
+<!--
+function errorMsg()
+{
+alert("Netscape 6 or Mozilla is needed to install a sherlock plugin");
+}
+function addEngine(name,ext,cat,type)
+{
+
+if ((typeof window.sidebar == "object") && (typeof
+window.sidebar.addSearchEngine == "function"))
+{
+//cat="Web";
+//cat=prompt(’In what category should this engine be installed?’,'Web’)
+window.sidebar.addSearchEngine(
+"http://www.russellheimlich.com/"+name+".src",
+"http://www.russellheimlich.com/"+name+"."+ext, name, cat );
+}
+else
+{
+errorMsg();
+}
+}
+
+//–>
+</script>
+  <img src="DVGurulogo.gif" alt="DV Guru Logo" width="248" height="100" /></p>
+<p><a href="javascript:addEngine('dvguru','gif','Reference',0)">Install the DV Guru Search Bar</a>
+</p>
+</body>
+</html>

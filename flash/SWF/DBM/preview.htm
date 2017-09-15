@@ -1,0 +1,286 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+.step1 {	background-color: #999999;
+}
+</style>
+
+<script language="javascript">
+
+function parseCookie(name) //Reads the cookie and extracts different values depending on what value you are looking for.  "name" is the name of the cookie that you wrote earlier.
+{
+	var firstChar, lastChar
+	var theBigCookie = document.cookie
+	firstChar = theBigCookie.indexOf(name) // find where "name" begins in the long cookie string.
+	
+	if(firstChar != -1)
+		{
+			firstChar += name.length + 1 // skip "name" and "=" to begin extracting where the actual value of the cookie is.
+   			lastChar = theBigCookie.indexOf(';', firstChar) -3 // Find the end of the value string (i.e. the next ';').
+			
+			if(lastChar == -4) 
+				{
+					lastChar = theBigCookie.length - 3
+				}
+				
+			return unescape(theBigCookie.substring(firstChar, lastChar)) // Returns the extracted value.
+			
+
+		} 
+}
+
+function createCookie(val)
+{
+	var expire = new Date((new Date()).getTime() + 99 * 3600000);
+	expire = "; expires=" + expire.toGMTString();
+	document.cookie = "bgColor=" + escape(val) + expire;
+}
+
+function readCookie()
+{
+	var search = "bgColor=";
+	if(document.cookie.length > 0)
+  		{ 
+    		offset = document.cookie.indexOf(search);
+    		if (offset != -1)
+    			{ 
+      				offset += search.length;
+      				end = document.cookie.indexOf(";", offset);
+      				if (end == -1) end = document.cookie.length;
+      				var Val = unescape(document.cookie.substring(offset, end))
+    			}
+  		}
+	document.abc.abc.value = Val
+	changecolor()
+}
+
+function changecolor()
+{
+	ColorCode = document.abc.abc.value
+	var textCol = "#000000"
+	if (ColorCode == 000000)
+		{
+			textCol = "#FFFFFF"
+		}
+	document.bgColor="#" + ColorCode
+	document.getElementById("tab1").style.color = textCol;
+	createCookie(ColorCode)
+}
+
+function fix(fixNumber)
+{
+	var div = Math.pow(10,2)
+	fixRatio = Math.round(fixNumber * div) / div
+	fixRatio = fixRatio.toFixed(2)
+	return fixRatio
+}
+
+function fixIMG(fixNumberr)
+{
+	var div = Math.pow(10,2)
+	fixIMGRatio = Math.round(fixNumberr * div) / div
+	fixIMGRatio = fixIMGRatio.toFixed(2)
+	return fixIMGRatio
+}
+
+function windowWidth(){
+//Gets the Width of the window to determine how much to resize the photo and borders.
+    if (window.innerWidth){
+        if (document.body.offsetWidth){
+            if (window.innerWidth!=document.body.offsetWidth)
+                return document.body.offsetWidth;
+            }
+        return (window.innerWidth);                     // Mozilla
+    }
+
+
+    if (document.documentElement.clientWidth)
+        return document.documentElement.clientWidth;    // IE6
+
+
+    if (document.body.clientWidth)
+        return document.body.clientWidth;               // IE DHTML-compliant any other
+}
+
+function windowHeight(){
+//Gets the height of the window to determine how much to resize the photo and borders.
+    if (window.innerHeight){
+        if (document.body.offsetHeight){
+            if (window.innerHeight!=document.body.offsetHeight)
+                return document.body.offsetHeight;
+            }
+        return (window.innerHeight);                     // Mozilla
+    }
+
+
+    if (document.documentElement.clientHeight)
+        return document.documentElement.clientHeight;    // IE6
+
+
+    if (document.body.clientHeight)
+        return document.body.clientHeight;               // IE DHTML-compliant any other
+}
+</script>
+
+<title>Preview</title></head>
+<body id="tab1" onLoad=readCookie()>
+<script>
+	var H = Number(parseCookie("borderHeight"))
+	var totH = H
+
+	var W = Number(parseCookie("borderWidth"))
+	var totW = W
+	
+	var IMG = parseCookie("ImagePath")
+
+	var imgH = Number(parseCookie("imgHeight"))
+	var OrgImgH = imgH
+
+	var imgW = Number(parseCookie("imgWidth"))
+	var OrgImgW = imgW
+
+	var bColor = parseCookie("borderColor")
+
+	var ratio = 0 //Ratio = Window Height / Total height of the image
+	var winW = windowWidth() //Gets the Window width to use when calculating the scale of the image.
+	var winH = windowHeight() //Gets the Window Height to use when calculating the scale of the image.
+
+	if (winW>winH)
+		{
+			var diff = winW - winH
+			winW= winW - diff - 75
+			winH= winH-75
+		}
+	if (winH>winW)
+		{
+			var diff = winH - winW
+			winH= winH - diff - 75
+			winW= winW - 75
+		}
+	if (winW<W && winH>H)
+		{
+			ratio = (winW/W)
+		}
+	else
+		{
+			ratio = (winH/H)
+		}
+	if (W>H)
+		{
+		var totRatio = W/H
+		if (ratio >= 1)
+			{
+				ratio = 1
+				W = W*ratio // Once you figure out the ratio, you can multiple everything by that same ratio.
+				H = H*ratio
+		
+				imgW = imgW*ratio
+				imgH = imgH*ratio
+			}
+		else
+			{
+				W = W*ratio
+				H = H*ratio
+		
+				imgW = imgW*ratio
+				imgH = imgH*ratio
+			}
+		}
+	
+	else if (W<H)
+		{
+			var totRatio = H/W
+		if (ratio >= 1)
+			{
+				ratio = 1
+				W = W*ratio
+				H = H*ratio
+		
+				imgW = imgW*ratio
+				imgH = imgH*ratio
+			}
+		else
+			{
+				W = W*ratio
+				H = H*ratio
+				var imgW = imgW*ratio
+				var imgH = imgH*ratio
+			}
+		}
+	if (W==H)
+		{
+			var totRatio = H/W
+		if (ratio >= 1)
+			{
+				ratio = 1
+				W = W*ratio
+				H = H*ratio
+		
+				imgW = imgW*ratio
+				imgH = imgH*ratio
+			}
+		else
+			{
+				W = W*ratio
+				H = H*ratio
+				var imgW = imgW*ratio
+				var imgH = imgH*ratio
+			}
+		}
+	var bordH = Number(totH-OrgImgH)
+	var bordW = Number(totW-OrgImgW)
+
+	if (imgW>imgH)
+		{
+			var imgRatio = imgW/imgH
+			bordH = Number(bordW/totRatio)
+		}
+	else
+		{
+			var imgRatio = imgH/imgW
+			bordW = Number(bordH/totRatio)
+	
+		}
+
+	fix(totRatio)
+	fixIMG(imgRatio)
+
+	document.write('<div align="center"><form name="form1" method="post" action="">Scale = <input name="scale" type="text" id="scale" value="0" size="4" maxlength="4"></form>') // Writes the textfield with the scale percentage.
+	document.form1.scale.value = parseInt(ratio * 100) + "%"
+	document.write('<div align="center"><table border="1" cellpadding="0" id="BORDER" bgcolor="#' + bColor + '" width="' + W + '" height="' + H + '">')  //Writes the table used to create the border plugging in the total height and width calculated from the previous page and adjusted to the scale.  
+	document.write('<tr><td><div align="center"><img src="' + 'file:///' + IMG + '" name="temp" width="' + imgW + '" height="' + imgH + '"></div></td></tr></table><p>') //Places the image in the middle of the table adjusting the width and height according to the scale.
+	document.write('<table width="63%" border="0" id="tab1"align="center"><tr><h3 align="center">Info <br>')
+		if (OrgImgW>totW || OrgImgH>totH)
+			{
+				document.write("**Clipping will Occur**</h3></tr>")
+			}
+		else
+			{
+				document.write("</h3></tr>")
+			}
+	document.write('<tr><b>Image Path:</b> ' + IMG + '</tr>')
+	document.write('<tr><td><div align="right"><b>Image Width:</b> ' + OrgImgW + ' pixels</div></td><td><div align="right"><b>Image Height:</b> ' + OrgImgH + ' pixels</div></td><td><div align="right"><b>Old Ratio:</b> ' + fixIMGRatio + '</div></td></tr>')
+	document.write('<tr><td><div align="right"><b>Total Width:</b> ' + parseInt(totW) + ' pixels</div></td><td><div align="right"><b>Total Height:</b> ' + parseInt(totH) + ' pixels</div></td><td><div align="right"><b>New Ratio:</b> ' + fixRatio + '</div></td></tr>')
+	document.write('<tr><td><div align="right"><b>Border Width:</b> ' + parseInt(bordW) + ' pixels</div></td><td><div align="right"><b>Border Height:</b> ' + parseInt(bordH) + ' pixels</div></td><td><div align="right"><b>Border Color:</b> #' + bColor + '</div></td></tr></table>')
+ </script>
+</div>
+<div align="center"><br>
+  <form action="" method="post" name="abc" id="abc">
+    <div align="right">
+      <p>
+    <select name="abc" id="abc" onChange="changecolor()">
+	<!-- Hack02 -->
+          <option value="FFFFFF" selected>White</option>
+          <option value="CCCCCC">Gray</option>
+          <option value="000000">Black</option>
+        </select>
+    <input type="button" name="Button" value="Change Background Color"  onClick="changecolor()">
+      </p>
+    </div>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,639 @@
+#sh-back-to-school * {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+#sh-back-to-school {
+	font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+	color:#323232;
+	padding-bottom: 75px;
+}
+#sh-back-to-school .holder {
+	max-width: 946px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#sh-back-to-school img {
+	max-width:100%;
+	height:auto;
+}
+#sh-back-to-school a {
+	font-family:inherit;
+	text-decoration: none;
+}
+#sh-back-to-school p {
+	margin-bottom:16px;
+}
+
+#sh-back-to-school .icon {
+	background-image: url(img/icon-sprite.png);
+	width: 130px;
+	height: 130px;
+}
+#sh-back-to-school .quick-nav .icon {
+	background-image: url(img/quick-nav-icon-sprite.png);
+	width: 70px;
+	height: 70px;
+}
+
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+	#sh-back-to-school .icon {
+		 background-image: url(img/icon-sprite2x.png);
+		 background-size: 1560px 130px;
+	}
+	#sh-back-to-school .quick-nav .icon {
+		background-image: url(img/quick-nav-icon-sprite2x.png);
+		background-size: 560px 70px;
+	}
+}
+
+#sh-back-to-school .icon-eat-drink-white {
+	background-position: 0 0;
+}
+#sh-back-to-school .icon-dorm-life-white {
+	background-position: -130px 0;
+}
+#sh-back-to-school .icon-school-supplies-white {
+	background-position: -260px 0;
+}
+#sh-back-to-school .icon-tech-white {
+	background-position: -390px 0;
+}
+
+#sh-back-to-school .icon-eat-drink {
+	background-position: -520px 0;
+}
+#sh-back-to-school .icon-dorm-life {
+	background-position: -650px 0;
+}
+#sh-back-to-school .icon-school-supplies {
+	background-position: -780px 0;
+}
+#sh-back-to-school .icon-tech {
+	background-position: -910px 0;
+}
+
+#sh-back-to-school :hover .icon-eat-drink,
+#sh-back-to-school :focus .icon-eat-drink {
+	background-position: -1040px 0;
+}
+#sh-back-to-school :hover .icon-dorm-life,
+#sh-back-to-school :focus .icon-dorm-life {
+	background-position: -1170px 0;
+}
+#sh-back-to-school :hover .icon-school-supplies,
+#sh-back-to-school :focus .icon-school-supplies {
+	background-position: -1300px 0;
+}
+#sh-back-to-school :hover .icon-tech,
+#sh-back-to-school :focus .icon-tech {
+	background-position: -1430px 0;
+}
+
+#sh-back-to-school .quick-nav .icon-dorm-life {
+	background-position: -70px 0;
+}
+#sh-back-to-school .quick-nav .icon-eat-drink {
+	background-position: -210px 0;
+}
+#sh-back-to-school .quick-nav .icon-school-supplies {
+	background-position: -350px 0;
+}
+#sh-back-to-school .quick-nav .icon-tech {
+	background-position: -490px 0;
+}
+
+#sh-back-to-school .quick-nav :hover .icon-dorm-life,
+#sh-back-to-school .quick-nav :focus .icon-dorm-life {
+	background-position: 0 0;
+}
+#sh-back-to-school .quick-nav :hover .icon-eat-drink,
+#sh-back-to-school .quick-nav :focus .icon-eat-drink {
+	background-position: -140px 0;
+}
+#sh-back-to-school .quick-nav :hover .icon-school-supplies,
+#sh-back-to-school .quick-nav :focus .icon-school-supplies {
+	background-position: -280px 0;
+}
+#sh-back-to-school .quick-nav :hover .icon-tech,
+#sh-back-to-school .quick-nav :focus .icon-tech {
+	background-position: -420px 0;
+}
+
+#sh-back-to-school .sh-back-to-school-intro {
+	background-image: url(img/intro-tile.png);
+	background-repeat: repeat;
+	color:#6f6f6f;
+}
+#sh-back-to-school .intro-gradient-layer {
+	background: #ffffff;
+	background: rgba(255,255,255,0.65);
+	background: -moz-linear-gradient(left,  rgba(255,255,255,0) 1%, rgba(255,255,255,0.8) 30%, rgba(255,255,255,0.8) 70%, rgba(255,255,255,0) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(1%,rgba(255,255,255,0)), color-stop(30%,rgba(255,255,255,0.8)), color-stop(70%,rgba(255,255,255,0.8)), color-stop(100%,rgba(255,255,255,0)));
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 1%,rgba(255,255,255,0.8) 30%,rgba(255,255,255,0.8) 70%,rgba(255,255,255,0) 100%);
+	background: -o-linear-gradient(left, rgba(255,255,255,0) 1%,rgba(255,255,255,0.8) 30%,rgba(255,255,255,0.8) 70%,rgba(255,255,255,0) 100%);
+	background: -ms-linear-gradient(left, rgba(255,255,255,0) 1%,rgba(255,255,255,0.8) 30%,rgba(255,255,255,0.8) 70%,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 1%,rgba(255,255,255,0.8) 30%,rgba(255,255,255,0.8) 70%,rgba(255,255,255,0) 100%);
+}
+#sh-back-to-school .sh-back-to-school-intro .holder {
+	padding-top:80px;
+	padding-bottom:70px;
+	overflow: auto;
+}
+#sh-back-to-school .sh-back-to-school-intro a {
+	color:#ff3d00;
+}
+#sh-back-to-school .intro-sweethome-logo {
+	display:block;
+	margin:0 auto;
+	margin-bottom: 50px;
+}
+#sh-back-to-school .intro-image {
+	padding-bottom: 50px;
+	border-bottom: 1px solid #aaaaaa;
+	margin-bottom: 50px;
+}
+#sh-back-to-school .intro-blurb {
+	float:left;
+	font-size:22px;
+	width:61%;
+	margin-bottom:0;
+}
+#sh-back-to-school .intro-for-more {
+	float:right;
+	font-size:16px;
+	line-height: 1.375;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	width: 225px;
+	margin-bottom:0;
+	padding-top:5px;
+}
+#sh-back-to-school .intro-ruler {
+	display: block;
+	margin-bottom: 14px;
+}
+
+
+
+#sh-back-to-school .table-of-contents {
+	background-color: #f0f0f0;
+	background-image: url(img/bg-paper.jpg);
+	background-repeat: repeat;
+	clear:both;
+	overflow: auto;
+	padding:50px 0 45px;
+}
+#sh-back-to-school .table-of-contents-group {
+	float:left;
+	width:25%;
+}
+#sh-back-to-school .table-of-contents .icon {
+	display:block;
+	margin-bottom:33px;
+}
+#sh-back-to-school .table-of-contents-title {
+	text-align: justify;
+	margin:0 0 37px 35px;
+	min-height: 44px;
+	font-size: 20px;
+	line-height: 1.1;
+	width:62px;
+	text-transform: uppercase;
+}
+#sh-back-to-school .school-supplies .table-of-contents-title {
+	text-align: center;
+	margin-left: 28px;
+	width:90px;
+}
+#sh-back-to-school .table-of-contents ul {
+	padding-left:0;
+}
+#sh-back-to-school .table-of-contents li {
+	border-bottom:1px solid #dadada;
+	font-size:16px;
+	line-height: 1.375;
+	padding:3px 0;
+	list-style-position: inside;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#sh-back-to-school .table-of-contents .filler {
+	list-style: none;
+}
+#sh-back-to-school .table-of-contents li a {
+	color:#6f6f6f;
+}
+#sh-back-to-school .table-of-contents .tech h2,
+#sh-back-to-school .table-of-contents .tech li,
+#sh-back-to-school .table-of-contents .tech li a:hover,
+#sh-back-to-school .table-of-contents .tech li a:focus,
+#sh-back-to-school .quick-nav .tech,
+
+#sh-back-to-school .tech a,
+#sh-back-to-school .tech h4,
+#sh-back-to-school .tech h5,
+#sh-back-to-school .tech p.widget-tagline,
+#sh-back-to-school .tech .widget-title {
+	color:#4e58d8;
+}
+#sh-back-to-school .tech a.widget-add-to-cart {
+	background-color:#4e58d8;
+}
+#sh-back-to-school .tech a:hover,
+#sh-back-to-school .tech a:focus {
+	color:#959be8;
+}
+
+#sh-back-to-school .tech a.widget-add-to-cart:hover,
+#sh-back-to-school .tech a.widget-add-to-cart:focus {
+	background-color:#959be8;
+}
+#sh-back-to-school .table-of-contents .school-supplies h2,
+#sh-back-to-school .table-of-contents .school-supplies li,
+#sh-back-to-school .table-of-contents .school-supplies li a:hover,
+#sh-back-to-school .table-of-contents .school-supplies li a:focus,
+#sh-back-to-school .quick-nav .school-supplies,
+
+#sh-back-to-school .school-supplies a,
+#sh-back-to-school .school-supplies h4,
+#sh-back-to-school .school-supplies p.widget-tagline,
+#sh-back-to-school .school-supplies .widget-title {
+	color:#ff3d00;
+}
+#sh-back-to-school .school-supplies a.widget-add-to-cart {
+	background-color:#ff3d00;
+}
+#sh-back-to-school .school-supplies a:hover,
+#sh-back-to-school .school-supplies a:focus {
+	color:#FF8E66;
+}
+#sh-back-to-school .school-supplies a.widget-add-to-cart:hover,
+#sh-back-to-school .school-supplies a.widget-add-to-cart:focus {
+	background-color:#FF8E66;
+}
+#sh-back-to-school .table-of-contents .dorm-life h2,
+#sh-back-to-school .table-of-contents .dorm-life li,
+#sh-back-to-school .table-of-contents .dorm-life li a:hover,
+#sh-back-to-school .table-of-contents .dorm-life li a:focus,
+#sh-back-to-school .quick-nav .dorm-life,
+
+#sh-back-to-school .dorm-life a,
+#sh-back-to-school .dorm-life h4,
+#sh-back-to-school .dorm-life p.widget-tagline,
+#sh-back-to-school .dorm-life .widget-title {
+	color:#b41981;
+}
+#sh-back-to-school .dorm-life a.widget-add-to-cart {
+	background-color:#b41981;
+}
+#sh-back-to-school .dorm-life a:hover,
+#sh-back-to-school .dorm-life a:focus {
+	color:#D275B3;
+}
+#sh-back-to-school .dorm-life a.widget-add-to-cart:hover,
+#sh-back-to-school .dorm-life a.widget-add-to-cart:focus {
+	background-color:#D275B3;
+}
+#sh-back-to-school .table-of-contents .eat-drink h2,
+#sh-back-to-school .table-of-contents .eat-drink li,
+#sh-back-to-school .table-of-contents .eat-drink li a:hover,
+#sh-back-to-school .table-of-contents .eat-drink li a:focus,
+#sh-back-to-school .quick-nav .eat-drink,
+
+#sh-back-to-school .eat-drink a,
+#sh-back-to-school .eat-drink h4,
+#sh-back-to-school .eat-drink p.widget-tagline,
+#sh-back-to-school .eat-drink .widget-title {
+	color:#db8100;
+}
+#sh-back-to-school .eat-drink a.widget-add-to-cart {
+	background-color:#db8100;
+}
+#sh-back-to-school .eat-drink a:hover,
+#sh-back-to-school .eat-drink a:focus {
+	color:#EFB168;
+}
+#sh-back-to-school .eat-drink a.widget-add-to-cart:hover,
+#sh-back-to-school .eat-drink a.widget-add-to-cart:focus {
+	background-color:#EFB168;
+}
+
+#sh-back-to-school .section-divider {
+	background-repeat: repeat;
+	color:#fff;
+	padding:90px 0;
+	margin-bottom: 60px;
+	margin-top: 140px;
+}
+#sh-back-to-school .tech-section {
+	background-color: #4e56d0;
+	background-image: url(img/section-divider-tile-tech.png);
+	margin-top:0;
+}
+#sh-back-to-school .school-supplies-section {
+	background-color: #ff3d00;
+	background-image: url(img/section-divider-tile-school-supplies.png);
+}
+#sh-back-to-school .dorm-life-section {
+	background-color: #b41981;
+	background-image: url(img/section-divider-tile-dorm-life.png);
+}
+#sh-back-to-school .eat-drink-section {
+	background-color: #db8100;
+	background-image: url(img/section-divider-tile-eat-drink.png);
+}
+#sh-back-to-school .section-divider .holder {
+	overflow: auto;
+}
+#sh-back-to-school .section-divider .icon {
+	float:left;
+	margin-right:20px;
+}
+#sh-back-to-school .section-divider-title {
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	float:left;
+	font-size:58px;
+	padding-top:30px;
+	color:#fff;
+}
+#sh-back-to-school .section-divider .back-to-top {
+	float:right;
+	color:#fff;
+	font-size:14px;
+	padding-top:46px;
+	padding-right:10px;
+	display: none;
+}
+#sh-back-to-school .section-divider .back-to-top span {
+	font-size:150%;
+}
+
+#sh-back-to-school .section-divider .holder {
+	max-width:830px;
+}
+#sh-back-to-school .review {
+	max-width:700px;
+	margin-left:auto;
+	margin-right: auto;
+}
+#sh-back-to-school .review {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 200;
+}
+#sh-back-to-school .review p {
+	font-size:18px;
+	line-height: 1.55555555;
+}
+#sh-back-to-school .review h4,
+#sh-back-to-school .review h5 {
+	font-size:34px;
+	font-weight: normal;
+	line-height: 1.25;
+	margin-bottom:10px;
+	padding-top: 40px;
+	font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+	text-transform: uppercase;
+}
+#sh-back-to-school .review h5 {
+	font-size:26px;
+	margin-bottom:6px;
+	padding-top:18px;
+	text-transform:none;
+}
+#sh-back-to-school .product-name {
+	font-weight: 700;
+}
+#sh-back-to-school .product-image {
+	margin-top: 16px;
+	margin-bottom:32px;
+}
+
+#sh-back-to-school .widget {
+	width:180px;
+	float:right;
+	clear:right;
+	margin: 0 0 20px 33px;
+	color:#6f6f6f;
+}
+@media (min-width: 1160px ) {
+	#sh-back-to-school .widget {
+		margin-right:-213px;
+	}
+}
+#sh-back-to-school p.widget-tagline {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:14px;
+	font-weight: 700;
+	display: block;
+	color:#fff;
+	margin-bottom:0;
+}
+#sh-back-to-school .widget-title {
+	font-size:14px;
+	padding-bottom:5px;
+}
+#sh-back-to-school .widget-image {
+	margin-bottom:0;
+}
+#sh-back-to-school a.widget-add-to-cart {
+	display: block;
+	color:#fff;
+	background-color: #ddd;
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+	padding:12px 0;
+	margin-bottom: 20px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+#sh-back-to-school a.widget-add-to-cart:hover,
+#sh-back-to-school a.widget-add-to-cart:focus {
+	color:#fff;
+}
+#sh-back-to-school p.widget-tease {
+	font-size:14px;
+	line-height: 1.375;
+	color: #323232;
+}
+
+#sh-back-to-school .quick-nav {
+	position: fixed;
+	left:0;
+	bottom:0;
+	display: table;
+	width:100%;
+	background-color:#fff;
+	background-color: rgba(255, 255, 255, 0.85);
+	padding: 15px 0;
+}
+#sh-back-to-school .quick-nav a {
+	margin:6.5px 0;
+	font-size:16px;
+	line-height:1.375;
+	overflow: auto;
+	display:table-cell;
+	width:25%;
+	text-align: center;
+}
+#sh-back-to-school .quick-nav .icon {
+	margin-right:auto;
+	margin-left:auto;
+	display: block;
+	/* Hides text visually */
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+@media (min-width: 1130px ) {
+	#sh-back-to-school .quick-nav {
+		width:auto;
+		bottom:0;
+		padding:0 15px 15px;
+		background-color: transparent;
+	}
+	#sh-back-to-school .quick-nav,
+	#sh-back-to-school .quick-nav a {
+		display: block;
+	}
+	#sh-back-to-school .quick-nav a {
+		width:100%;
+	}
+
+}
+@media (max-width: 928px ) {
+	#sh-back-to-school .holder {
+		margin-left:10px;
+		margin-right:10px;
+	}
+	#sh-back-to-school .review {
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+@media (max-width: 860px ) {
+	#sh-back-to-school .table-of-contents-group {
+		width:50%;
+		margin-bottom:25px;
+	}
+	#sh-back-to-school .table-of-contents-title,
+	#sh-back-to-school .school-supplies .table-of-contents-title {
+		margin:0 auto 22px;
+	}
+	#sh-back-to-school .table-of-contents .icon {
+		margin-left:auto;
+		margin-right:auto;
+	}
+	#sh-back-to-school .table-of-contents .tech ul,
+	#sh-back-to-school .table-of-contents .dorm-life ul {
+		padding-left:15px;
+	}
+	#sh-back-to-school .table-of-contents .school-supplies ul,
+	#sh-back-to-school .table-of-contents .eat-drink ul {
+		padding-right:15px;
+	}
+	#sh-back-to-school .table-of-contents .dorm-life .filler-1,
+	#sh-back-to-school .table-of-contents .dorm-life .filler-2,
+	#sh-back-to-school .table-of-contents .eat-drink .filler-1,
+	#sh-back-to-school .table-of-contents .eat-drink .filler-2 {
+		display:none;
+	}
+}
+@media (max-width: 800px ) {
+	#sh-back-to-school .section-divider {
+		padding: 40px 0;
+	}
+	#sh-back-to-school .section-divider .icon {
+		margin:0 auto;
+		float:none;
+		display: block;
+	}
+	#sh-back-to-school .section-divider-title {
+		float:none;
+		text-align: center;
+	}
+	#sh-back-to-school .section-divider .back-to-top {
+		display:block;
+	}
+}
+@media (max-width: 780px ) {
+	#sh-back-to-school .review {
+		margin-left:20px;
+		margin-right: 20px;
+	}
+}
+@media (max-width: 680px ) {
+	#sh-back-to-school .intro-blurb,
+	#sh-back-to-school .intro-for-more {
+		width:auto;
+		float:none;
+	}
+	#sh-back-to-school .intro-blurb {
+		margin-bottom:25px;
+	}
+}
+
+@media (max-width: 640px ) {
+	#sh-back-to-school .intro-sweethome-logo {
+		max-width:40%;
+		margin-bottom: 5%;
+	}
+	#sh-back-to-school .table-of-contents-group {
+		float:none;
+		width:auto;
+		text-align: center;
+		padding-bottom:20px;
+	}
+	#sh-back-to-school .table-of-contents ul {
+		padding-left:15px;
+		padding-right:15px;
+	}
+	#sh-back-to-school .table-of-contents li {
+		text-align: left;
+	}
+	#sh-back-to-school .table-of-contents .filler {
+		display: none;
+	}
+}
+
+@media (max-width: 480px ) {
+	#sh-back-to-school .widget {
+		float:none;
+		display: block;;
+		margin-left: 0;
+		margin-bottom: 0;
+		width:auto;
+		padding:14px 0;
+	}
+	#sh-back-to-school p.widget-tagline {
+		display: block;
+		text-align: center;
+	}
+	#sh-back-to-school .widget-title {
+		text-align: center;
+	}
+	#sh-back-to-school .widget-image {
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+
+/* iPad 1 and 2 only since they don't support position:fixed; very well. Via http://stephen.io/mediaqueries/#iPad */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){
+	#sh-back-to-school {
+		padding-top:100px;
+	}
+	#sh-back-to-school .quick-nav {
+		top:0;
+		bottom:auto;
+	}
+}

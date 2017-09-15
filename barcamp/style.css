@@ -1,0 +1,28 @@
+body {
+	font: 80% arial, helvetica, sans-serif;
+	margin: 0;
+}
+#navigation {
+	position: absolute;
+	left: 0;
+	width: 15em;
+}
+#content {
+	margin-left: 15em;
+	width:500px;
+}
+#content p {
+	background-color:#FFF;
+}
+p {
+	background-color:#F00;
+}
+a {
+	color: red;
+}
+.one {
+	background-color:#CCC;
+}
+.two {
+	background-color:#FFC0CB;
+}

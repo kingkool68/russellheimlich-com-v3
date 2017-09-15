@@ -1,0 +1,390 @@
+body{
+	margin:0px auto;
+	font-family: "Trebuchet MS", Arial;
+	font-size: 1.0em;
+	line-height: 1.2em;
+	letter-spacing: 0;
+	color: #666666;
+	background-color:#FFFFFF;
+}
+
+a {
+	text-decoration:none;
+	color:#0099FF;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1, h2, h3 {
+	color:#0099FF;
+}
+
+.container{
+	width:770px;
+	margin:0px auto;
+	background-image:url(images/layout/shadow.jpg);
+	background-repeat:repeat-y;
+	background-position:center;
+	
+}
+#flash {
+	float:right;
+}
+
+/*---Content-------------------------------------------------------------------------------------------*/
+.content{
+	margin-right: 40px;
+	margin-left: 40px;
+	clear:left;
+}
+
+.content-descrip {
+	width: 600px;
+	margin: auto;
+
+}
+
+.content-nav {
+	float:left;
+	width: 300px;
+	list-style:none;
+	padding-right: 15px;
+	margin-left: 15px;
+}
+
+.content-nav li {
+	background-color:#eee;
+	list-style: none;
+	padding: 5px;
+	text-align:left;
+	border-bottom:#fff 1px solid;
+	
+}
+
+.content-nav a {
+	padding-left: 25px;
+}
+
+.content-nav a:hover {
+	font-style: normal;
+	font-weight: bold;
+}
+
+.content-nav a:visited {
+	background-image:url(images/layout/visited-smilie.gif);
+	background-position:left;
+	background-repeat:no-repeat;
+	color:#65C1FF
+}
+
+.content-preview {
+	float:left;
+	width:255px;
+	margin-left: 30px;
+}
+
+.content-preview p {
+	font-size: .8em;
+}
+
+.content-preview img {
+	padding-bottom: 5px;
+	
+}
+
+.content-preview a:hover img {
+	background-color:#0099FF;
+}
+
+.content-preview span {
+	font-weight:bold;
+}
+
+.embed-container {
+	padding-top: 15px;
+}
+
+
+.view {
+	float:right;
+	margin-right: 15px;
+}
+/*---Header-------------------------------------------------------------------------------------------*/
+.header{
+	background-image:url(images/layout/header-bg.gif);
+	background-repeat:repeat-x;
+	margin: 0px auto;
+	width: 742px;
+	height:85px;
+}
+
+.logo {
+	float:left;
+}
+
+.nav {
+	float:right;
+	top: 7px;
+	position: relative;
+	text-align: center;
+	line-height: 1em;
+	margin-right: 8px;
+}
+
+.nav span {
+	font-size: 0.8em;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.nav a {
+color:#99ccff;
+text-decoration:none;
+}
+
+.nav a:hover {
+text-decoration:none;
+color: #FFFFFF;
+}
+
+.icons {
+	margin-left: 13px;
+}
+
+.video, .photo, .development, .distribute {
+	float:left;
+	padding-right: 5px;
+}
+
+.video a, .photo a, .development a, .distribute a {
+	display:block;
+	height: 28px;
+}
+
+.video a:hover, .photo a:hover, .development a:hover, .distribute a:hover {
+	background-position: 0 -28px;
+}
+
+.video {
+	width:46px;
+}
+
+.photo {
+	width:31px;
+}
+
+.development {
+	width: 24px;
+}
+
+.distribute {
+	width: 32px;
+}
+
+.video a {
+	background:url(images/navicons/VideoIcon.gif) 0 0 no-repeat;
+}
+
+.photo a {
+	background:url(images/navicons/PhotoIcon.gif) 0 0 no-repeat;
+}
+
+.development a {
+	background:url(images/navicons/DevelopmentIcon.gif) 0 0 no-repeat;
+}
+
+.distribute a {
+	background:url(images/navicons/DistributeIcon.gif) 0 0 no-repeat;
+}
+
+/*---Footer-------------------------------------------------------------------------------------------*/
+.footer{
+	clear:both;
+	position: relative;
+	background-image:url(images/layout/footer.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+	height: 80px;
+	text-align:center;
+	color:#CCCCCC;
+	font-size: 0.9em;
+	}
+	
+.footer a, .footer a:active, .footer a:visited {
+	text-align:center;
+	color: #cccccc;
+	text-decoration:none;
+}
+
+.footer a:hover {
+	color:#0099FF;
+	text-decoration: underline;
+}
+/*---index.html-------------------------------------------------------------------------------------------*/
+
+#BigIcons {
+	position: relative;
+	margin-left: 25px;
+	height: 250px;
+	top: 20px;
+}
+
+#VideoBig, #PhotoBig, #DevelopmentBig, #DistributeBig {
+	float:left;
+	padding-right: 25px;
+}
+
+#VideoBig a, #PhotoBig a, #DevelopmentBig a, #DistributeBig a {
+	display:block;
+	height: 190px;
+}
+
+#VideoBig a:hover, #PhotoBig a:hover, #DevelopmentBig a:hover, #DistributeBig a:hover {
+	background-position: 0 -190px;
+}
+
+#VideoBig {
+	width: 165px;
+}
+
+#PhotoBig {
+	width: 116px;
+}
+
+#DevelopmentBig {
+	width: 151px;
+}
+
+#DistributeBig {
+	width: 114px;
+}
+
+#VideoBig a {
+	background:url(images/Video-Big.gif) 0 0 no-repeat;
+}
+
+#PhotoBig a {
+	background:url(images/Photo-Big.gif) 0 0 no-repeat;
+}
+
+#DevelopmentBig a {
+	background:url(images/Development-Big.gif) 0 0 no-repeat;
+}
+
+#DistributeBig a {
+	background:url(images/Distribute-Big.gif) 0 0 no-repeat;
+}
+
+/*---contact.html-------------------------------------------------------------------------------------------*/
+
+#contactForm {
+	width: 250px;
+	float:left;
+}
+
+#contact {
+	width: 215px;
+	float:right;
+	margin-right:50px;
+}
+
+.good {
+
+}
+
+.bad {
+	color:#FF0000;
+	font-size:1em;
+}
+input {
+	background-image:url(images/layout/header-bg.gif);
+	background-repeat:repeat-x;
+	background-color:#0099FF;
+	color:#ffffff;
+	font-size: 1.2em;
+}
+
+textarea {
+	background-color:#0099FF;
+	color:#FFFFFF;
+	font-size: 1.2em;
+}
+
+
+.buttonright {
+	margin-left: 255px;
+	background-color:#0099FF;
+}
+/*---resume.html-------------------------------------------------------------------------------------------*/
+
+#PDFicon {
+	text-align:right;
+}
+#resume h2 {
+	text-decoration:underline;
+}
+#resume h3 {
+	margin:0px;
+}
+#resume h4 {
+	margin:0px;
+}
+#resume p {
+	margin:10px 0 5px;
+}
+#resume ul {
+	margin:10px 0;
+}
+#resume ul ul {
+	margin:0 0 3px;
+}
+#resume li {
+	padding:3px 0;
+}
+abbr {
+	cursor:help;
+}
+#resume .date {
+	display:block;
+	font-size:85%;
+}
+#resume #best-of-quarter .date {
+	display:inline;
+}
+
+/*---video.html-------------------------------------------------------------------------------------------*/
+#video-container {
+
+}
+
+.video-right {
+	float:right;
+	width: 330px;
+
+}
+
+.video-left {
+	width: 225px;
+
+}
+
+
+
+.embed-download {
+
+}
+
+.embed-download li {
+	display:inline;
+	padding: 5px;
+	
+}
+
+.embed-descrip {
+	float:right;
+	width: 250px;
+}
+
+/*---photo.html-------------------------------------------------------------------------------------------*/

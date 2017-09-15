@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Mac &#8211; Russell Heimlich</title>
+	<atom:link href="http://www.russellheimlich.com/blog/tags/mac/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.russellheimlich.com/blog</link>
+	<description>The Blog of Russell Heimlich</description>
+	<lastBuildDate>Fri, 02 Nov 2012 18:39:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.2</generator>
+	<item>
+		<title>Picasa For The Mac Finally Available</title>
+		<link>http://www.russellheimlich.com/blog/picasa-for-the-mac-finally-available/</link>
+		<comments>http://www.russellheimlich.com/blog/picasa-for-the-mac-finally-available/#comments</comments>
+		<pubDate>Tue, 06 Jan 2009 03:39:39 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Mac]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[application]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[organ]]></category>
+		<category><![CDATA[organize]]></category>
+		<category><![CDATA[OSX]]></category>
+		<category><![CDATA[Photo]]></category>
+		<category><![CDATA[photography]]></category>
+		<category><![CDATA[Picasa]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1340</guid>
+		<description><![CDATA[I just read over on Techcrunch that Picasa for the Mac is finally ready. You can get it at http://picasa.google.com/mac/. I wrote about the rumors of Picasa on the Mac 10 days short of a year ago. The Mac version is nearly identical to it&#8217;s PC counterpart, interface and all. Check out the overview video [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>I just read over on Techcrunch that <a href="http://www.techcrunch.com/2009/01/05/picasa-finally-hits-the-mac-squares-off-with-iphoto/">Picasa for the Mac is finally ready</a>. You can get it at <a href="http://picasa.google.com/mac/" class="broken_link">http://picasa.google.com/mac/</a>. I <a href="http://www.russellheimlich.com/blog/picasa-is-coming-for-the-mac/">wrote about</a> the rumors of Picasa on the Mac 10 days short of a year ago. The Mac version is nearly identical to it&#8217;s PC counterpart, interface and all. Check out the overview video embedded below.</p>
+<p><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/NDKFjc3_wrk&#038;color1=0xb1b1b1&#038;color2=0xcfcfcf&#038;hl=en&#038;feature=player_embedded&#038;fs=1"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/NDKFjc3_wrk&#038;color1=0xb1b1b1&#038;color2=0xcfcfcf&#038;hl=en&#038;feature=player_embedded&#038;fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object></p>
+<p>One of the main reasons I like Picasa over <a href="http://www.apple.com/ilife/iphoto/">iPhoto</a>, the free photo program that comes with every new Mac, is Picasa keeps your folders in tact not forcing you to keep your library in a specific hierarchy. Plus, I find Picasa more intuitive and easy to use.<br />
+<a href="http://picasa.google.com/mac/" class="broken_link"><br />
+<img src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/01/picasa-screenshot.jpg" alt="Picasa 3 for Mac Screenshot" title="Picasa 3 for Mac Screenshot" width="600" height="375" class="size-full wp-image-1341" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/01/picasa-screenshot-300x187.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/01/picasa-screenshot.jpg 600w" sizes="(max-width: 600px) 100vw, 600px" /></a></p>
+<p>Now I just need to figure out how to sync my photo library and information between my Mac and PC instances of Picasa. </p>
+<p>If you haven&#8217;t tried Picasa yet, give it a whirl .It really is a great way to organize and edit photos. </p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/picasa-for-the-mac-finally-available/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Play DOS Games On A Mac With Boxer</title>
+		<link>http://www.russellheimlich.com/blog/play-dos-games-on-a-mac-with-boxer/</link>
+		<comments>http://www.russellheimlich.com/blog/play-dos-games-on-a-mac-with-boxer/#comments</comments>
+		<pubDate>Wed, 10 Sep 2008 02:07:43 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[How To]]></category>
+		<category><![CDATA[Mac]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[abandonware]]></category>
+		<category><![CDATA[Boxer]]></category>
+		<category><![CDATA[classic]]></category>
+		<category><![CDATA[computer]]></category>
+		<category><![CDATA[DOS]]></category>
+		<category><![CDATA[dosbox]]></category>
+		<category><![CDATA[emulate]]></category>
+		<category><![CDATA[games]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1072</guid>
+		<description><![CDATA[Who needs fancy graphics and snazzy physics known in modern gaming? I prefer the creative, classic DOS games of yore to today&#8217;s hyper-real slaughter fests. Up until this weekend I had know idea how to play old DOS games on my Mac,and then I found Boxer. Boxer is a DOS game emulator for OS X [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Who needs fancy graphics and snazzy physics known in modern gaming? I prefer the creative, classic DOS games of yore to today&#8217;s hyper-real slaughter fests. Up until this weekend I had know idea how to play old DOS games on my Mac,and then I found <a href="http://boxer.washboardabs.net/">Boxer</a>.</p>
+<p><a href="http://boxer.washboardabs.net/"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2008/09/boxer-logo.png" alt="Boxer Logo" title="Boxer Logo" width="500" height="170" class="size-full wp-image-1094" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2008/09/boxer-logo-300x102.png 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2008/09/boxer-logo.png 600w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Boxer is a DOS game emulator for OS X and is based on the open source project <a href="http://www.dosbox.com/">DOSBox</a>. It packs a few little tricks to help you load and launch your games with ease. The problem is these tricks aren&#8217;t very obvious so I&#8217;ll give you a little walkthrough. </p>
+<p>After downloading and installing Boxer, the first time you run it it will ask you to choose a designated game folder. Which ever folder you choose will auto-mount as your C: drive every time you start Boxer.  From here you can navigate to the folder with your game in it and launch the .exe file. Wait, you don&#8217;t remember how to navigate around that black screen with a white blinking cursor? Yea neither did I. </p>
+<p><a href="http://boxer.washboardabs.net/"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2008/09/boxer-screenshot.png" alt="Boxer DOS Emulator Screenshot" title="Boxer DOS Emulator Screenshot" width="500" height="330" class="size-full wp-image-1093" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2008/09/boxer-screenshot-300x198.png 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2008/09/boxer-screenshot.png 600w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Luckily Boxer makes it a snap to run your games straight from the Finder. Just go to the game folder and add &#8216;.boxer&#8217; to the end of it&#8217;s name. Now you can double click the folder and it will automagically launch in Boxer. Some games require you to have a CD-ROM loaded but Boxer can handle that too! Just make a copy of the game folder inside the game folder and add a &#8216;.cdrom&#8217; to the end of it&#8217;s name. Boxer will automatically detect it and mount it as a virtual CD for you. Can&#8217;t get much easier than that!</p>
+<p><a href="http://boxerapp.com/releasenotes"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2008/09/game-folder-rename-example.gif" alt="Game Folder Rename Example" title="Game Folder Rename Example" width="363" height="141" class="size-full wp-image-1092" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2008/09/game-folder-rename-example-300x116.gif 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2008/09/game-folder-rename-example.gif 363w" sizes="(max-width: 363px) 100vw, 363px" /></a></p>
+<p>Other niceties include Mac friendly keyboard shortcuts like cmd+F for fullscreen view and cmd + up/cmd + down to increase/decrease the CPU speed. Other ones are <a href="http://boxerapp.com/releasenotes">listed</a> on the Boxer site.</p>
+<p>Now you can relive the gaming classics. If you need some ideas to get started take a look at the adventure game <a href="http://www.squakenet.com/computer_games/download.asp?game=2022&#038;title=Sam--Max-Hit-the-Road">Sam and Max: Hit the Road</a> or the first person that took the world by storm, <a href="http://www.squakenet.com/computer_games/download.asp?game=246&#038;title=Doom">Doom</a>. Try your hand at the original <a href="http://www.abandonia.com/en/games/422/Warcraft+-+Orcs+and+Humans.html">Warcraft</a> or one of my favorite turn-based strategy games <a href="http://www.squakenet.com/computer_games/download.asp?game=2272&#038;title=Heroes-of-Might-and-Magic-2">Heroes of Might and Magic 2</a>.  Remember those old education games from the Learning Company like <a href="http://www.abandonia.com/en/games/1010/Super+Solvers+-+Treasure+Mountain.html">Treasure Mountain</a>? There are a ton more games up for grabs at <a href="http://www.abandonia.com/">Abandonia</a>, which is dedicated to abandoned DOS games and <a href="http://www.squakenet.com">Squakenet</a>.</p>
+<p>Even thought these games might be old, they are still just as addictive. Be sure to give yourself some time to get sucked in.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/play-dos-games-on-a-mac-with-boxer/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>Steve Jobs Cannot Design A Mouse</title>
+		<link>http://www.russellheimlich.com/blog/steve-jobs-cannot-design-a-mouse/</link>
+		<comments>http://www.russellheimlich.com/blog/steve-jobs-cannot-design-a-mouse/#comments</comments>
+		<pubDate>Sun, 18 May 2008 21:43:06 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Gadgets]]></category>
+		<category><![CDATA[Mac]]></category>
+		<category><![CDATA[Rant]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[computer]]></category>
+		<category><![CDATA[device]]></category>
+		<category><![CDATA[hardware]]></category>
+		<category><![CDATA[iMac]]></category>
+		<category><![CDATA[mouse]]></category>
+		<category><![CDATA[Steve Jobs]]></category>
+		<category><![CDATA[user input]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=830</guid>
+		<description><![CDATA[Over the weekend I began reading Inside Steve&#8217;s Brain by Leander Kahney which has given me an insight into the control-freak that is Steve Jobs. Take the design of the mouse for the first Mac computer: &#8220;Jobs paid close attention to every detail. Even the mouse was designed to reflect the shape of the computer: [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Over the weekend I began reading <a href="http://www.amazon.com/gp/product/1591841984?ie=UTF8&#038;tag=thebloofrushe-20&#038;linkCode=as2&#038;camp=1789&#038;creative=9325&#038;creativeASIN=1591841984">Inside Steve&#8217;s Brain</a><img src="http://www.assoc-amazon.com/e/ir?t=thebloofrushe-20&#038;l=as2&#038;o=1&#038;a=1591841984" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> by Leander Kahney which has given me an insight into the control-freak that is Steve Jobs.  Take the design of the mouse for the first Mac computer:</p>
+<blockquote><p><em>&#8220;Jobs paid close attention to every detail. Even the mouse was designed to reflect the shape of the computer: it has the same dimensions, and its single square button corresponds to the shape and placement of the screen.&#8221;</em></p></blockquote>
+<p><a href="http://en.wikipedia.org/wiki/Apple_mouse"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2008/05/macse-and-mouse.jpg" alt="Macintosh SE and the ADB mouse were designed with the same proportions in mind." title="Macintosh SE and the ADB mouse" width="461" height="322" class="alignnone size-full wp-image-831" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2008/05/macse-and-mouse-300x209.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2008/05/macse-and-mouse.jpg 461w" sizes="(max-width: 461px) 100vw, 461px" /></a></p>
+<p>Fast forward 24 years and when I go to use the <a href="http://www.amazon.com/gp/product/B000V1IFR8?ie=UTF8&#038;tag=thebloofrushe-20&#038;linkCode=as2&#038;camp=1789&#038;creative=9325&#038;creativeASIN=B000V1IFR8">Mighty Mouse</a><img src="http://www.assoc-amazon.com/e/ir?t=thebloofrushe-20&#038;l=as2&#038;o=1&#038;a=B000V1IFR8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> connected to my fiance&#8217;s 24&#8243; iMac I find the scrollball unwilling to scroll down. The gray nipple-like scroll mechanism might have been good on paper but after just a year of normal, everyday use the thing becomes flaky and useless. About every other week I need to flip the mouse upside down and rub the scroll ball vigorously along the length of my finger to restore functionality (<a href="http://a248.e.akamai.net/7/248/51/3024171180545059/www.info.apple.com/images/kbase/302417/302417_1.mov">video demonstration</a>).  In extreme cases when that doesn&#8217;t work I apply a dab of rubbing alcohol on the ball and gently turn the ball around in all possible directions to scrub the runners clean. Some people have even <a href="http://www.veoh.com/videos/v378809PrA5a3pg">taken the Mighty Mouse apart</a> in order to clean it. Since Apple&#8217;s products have won numerous industrial design awards, it escapes me how the mouse has been so neglected considering it is one of the most frequently used input devices on a computer.  </p>
+<p>The Mighty Mouse wasn&#8217;t the first unsuccessful mouse released by the Cupertino company. In 1998 to coincide the <a href="http://www.russellheimlich.com/blog/steve-jobs-announces-new-imac/">release of the first iMac</a>, Apple created the USB Mouse which became known as the &#8220;hockey puck&#8221;. While considered stylish with it&#8217;s translucent colors and circular design the USB mouse was actually very uncomfortable to use. Third parties released USB to ADB converters so people could use the older, more comfortable <a href="http://vectronicsappleworld.com/macintosh/mouse.html" class="broken_link">Apple mouses</a> with their new iMac computers. There was even an adaptive shell called the <a href="http://www.welovemacs.com/icatch.html">iCatch</a> which elongated the circular mouse making it more comfortable to hold and similar looking to the old Desktop Mouse II.</p>
+<p><a href="http://vectronicsappleworld.com/macintosh/mouse.html" class="broken_link"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2008/05/apple-hockey-puck-mouse.jpg" alt="The Apple USB mouse that came with new iMacs looked and felt like a hockey puck." title="Apple Hockey Puck USB Mouse" width="400" height="400" class="alignnone size-full wp-image-832" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2008/05/apple-hockey-puck-mouse-150x150.jpg 150w, http://www.russellheimlich.com/blog/wp-content/uploads/2008/05/apple-hockey-puck-mouse-300x300.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2008/05/apple-hockey-puck-mouse.jpg 400w" sizes="(max-width: 400px) 100vw, 400px" /></a></p>
+<p>So while Apple dared to be different by making computers that were easy to use while being gorgeous to look at, their mice could never compare. But on the other hand the trackpads on Apple&#8217;s new MacBook and MacBook Pro laptops are marvelously responsive and <a href="http://reviews.cnet.com/4660-10621_7-6697176.html">a joy to use</a>. Apple is at the top of it&#8217;s game when it comes to user inputs on non-desktop products. Perhaps Steve Jobs should ditch the whole mouse concept and bundle his desktops with a USB powered trackpad. That would certainly be better than <a href="http://en.wikipedia.org/wiki/Apple_Mighty_Mouse">licensing the trademark</a> of a popular cartoon series to tack on to a crappy product.</p>
+<p><a href="http://support.apple.com/kb/HT1115"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2008/05/multi-finger-trackpad.jpg" alt="Finger gestures make using an Apple laptop easy." title="Multi-touch Trackpad from Apple" width="250" height="216" class="alignnone size-full wp-image-833" /></a></p>
+<p><em>P.S. I had to &#8220;clean&#8221; the trackball 3 times while writing this blog post.</em></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/steve-jobs-cannot-design-a-mouse/feed/</wfw:commentRss>
+		<slash:comments>18</slash:comments>
+<enclosure url="http://a248.e.akamai.net/7/248/51/3024171180545059/www.info.apple.com/images/kbase/302417/302417_1.mov" length="600145" type="video/quicktime" />
+		</item>
+		<item>
+		<title>Steve Jobs Announces New iMac</title>
+		<link>http://www.russellheimlich.com/blog/steve-jobs-announces-new-imac/</link>
+		<comments>http://www.russellheimlich.com/blog/steve-jobs-announces-new-imac/#comments</comments>
+		<pubDate>Thu, 08 May 2008 01:43:48 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Mac]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[iMac]]></category>
+		<category><![CDATA[Steve Jobs]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=812</guid>
+		<description><![CDATA[&#8230; 10 years ago today! That&#8217;s right today is the 10th anniversary of the introduction of the iMac. Check out Steve Jobs sporting a suit instead of his trademark jeans and a black turtleneck. This also marks the 10th anniversary of that god-awful hockey puck mouse which solidifies the fact that Apple can&#8217;t make a [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>&#8230; 10 years ago today! </p>
+<p><object width="425" height="355"><param name="movie" value="http://www.youtube.com/v/0BHPtoTctDY&#038;hl=en"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/0BHPtoTctDY&#038;hl=en" type="application/x-shockwave-flash" wmode="transparent" width="425" height="355"></embed></object></p>
+<p>That&#8217;s right today is the 10th anniversary of the introduction of the iMac. Check out Steve Jobs sporting a suit instead of his trademark jeans and a black turtleneck.  This also marks the 10th anniversary of that god-awful hockey puck mouse which solidifies the fact that Apple can&#8217;t make a good mouse. </p>
+<p>Take a look at that &#8220;screaming&#8221; 233mhz iMac that comes with a whopping 32MB of RAM.  Watching old keynote speeches sure is amusing as technology just keeps on progressing.</p>
+<p>(via <a href="http://www.crunchgear.com/2008/05/06/video-imac-turns-10-today/">Crunchgear</a>)</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/steve-jobs-announces-new-imac/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>And The Point Of Safari For Windows Is&#8230;</title>
+		<link>http://www.russellheimlich.com/blog/and-the-point-of-safari-for-windows-is/</link>
+		<comments>http://www.russellheimlich.com/blog/and-the-point-of-safari-for-windows-is/#comments</comments>
+		<pubDate>Tue, 11 Mar 2008 04:21:52 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Mac]]></category>
+		<category><![CDATA[Random Musings]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[computer]]></category>
+		<category><![CDATA[hardware]]></category>
+		<category><![CDATA[Safari]]></category>
+		<category><![CDATA[Steve Jobs]]></category>
+		<category><![CDATA[web browser]]></category>
+		<category><![CDATA[Windows]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/and-the-point-of-safari-for-windows-is/</guid>
+		<description><![CDATA[The special Apple event announcing the iPhone SDK has come and gone. While lots of exciting developments were announced we are still clueless about the purpose of Safari for Windows. On June 11th, 2007, Steve Jobs announced Safari will have the same features on Vista and XP as on Apple&#8217;s flagship OSX operating system. Apple&#8217;s [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The special Apple event announcing the <a href="http://developer.apple.com/iphone/">iPhone SDK</a> has come and gone. While lots of exciting developments were announced we are still clueless about the purpose of Safari for Windows.</p>
+<p>On June 11th, 2007, Steve Jobs <a href="http://www.macworld.com/article/58341/2007/06/safariwin.html">announced</a> Safari will have the same features on Vista and XP as on Apple&#8217;s flagship OSX operating system.  Apple&#8217;s official reason for the expansion was to increase the market share of the browser but the blogosphere hinted at something bigger up Steve&#8217;s sleeve.  </p>
+<p>Many thought the browser would become an integral component of developing applications for the iPhone. But as <a href="http://www.engadget.com/2008/03/06/live-from-apples-iphone-press-conference/">we saw last Thursday</a>, that proved not to be the case. So what is the real point of moving Safari to Windows? </p>
+<p>Now that Apple moved to the Intel platform porting applications to Windows requires a whole lot less work.  And if Apple has compatible code for the PC platform it would be foolish not to put it out there to test new water with it&#8217;s niche web browser. It&#8217;s hard to fathom why anyone would choose Safari over <a href="http://www.getfirefox.com">Firefox</a>, the massively popular open-source browser that includes a host of user created add-ons.  In fact it is those add-ons that keep me tied to the Firefox browser, helping me do my job as a web developer. And most web surfers who aren&#8217;t savvy to the other browsers out there will be contempt with the default <a href="http://www.microsoft.com/windows/products/winfamily/ie/default.mspx">Internet Explorer</a>.  After all, Safari is a pruned down, no frills browser that is a hard sell on features alone. The performance and speed of Safari are certainly ahead of the competition but most people would hardly notice.  Perhaps we should look at Apple&#8217;s core business as it relates to why they release the software that they do.</p>
+<p><img src='http://www.russellheimlich.com/blog/wp-content/uploads/2008/03/apple-hardware-software-rel.jpg' alt='The Relationship Between Apple’s Software and Hardware' /></p>
+<p>Everything that Apple does points back to their core business as a hardware company. Think about it, everything Apple does is to enhance the appeal of it&#8217;s hardware. They developed an operating system in order to sell more computers, the iTunes music store has sold billions of songs with only a slim profit in order to lure people to iPods, and the iPhone SDK will allow developers to make whatever applications they can imagine making the phone a more appealing device.  If we connect the dots from the past, Safari needs to be a part of some kind of hardware project. </p>
+<p>Now how does Safari for Windows fit into this type of plan?  It&#8217;s not obvious at this time. But maybe come this June the answer will become clear as Apple continues to direct our attention to more shiny new devices with a premium price tag. </p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/and-the-point-of-safari-for-windows-is/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>Spruce Up Your Old PowerBook</title>
+		<link>http://www.russellheimlich.com/blog/spruce-up-your-old-powerbook/</link>
+		<comments>http://www.russellheimlich.com/blog/spruce-up-your-old-powerbook/#respond</comments>
+		<pubDate>Fri, 22 Feb 2008 02:42:17 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Mac]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[hardware]]></category>
+		<category><![CDATA[OSX]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[PowerBook]]></category>
+		<category><![CDATA[speed]]></category>
+		<category><![CDATA[tweak]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/spruce-up-your-old-powerbook/</guid>
+		<description><![CDATA[Even though their are loads of more powerful laptops out there, the tried and true PowerBook can still be a nerds best friend. I&#8217;m running the slowest of the slow 867Mhz 12&#8243; PowerBook. This is the bottom rung of supported hardware for Apple&#8217;s latest operating system, Leopard. But I keep chugging away on it. In [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Even though their are loads of more powerful laptops out there, the tried and true PowerBook can still be a nerds best friend. I&#8217;m running the slowest of the slow 867Mhz 12&#8243; PowerBook. This is the bottom rung of supported hardware for Apple&#8217;s latest operating system, <a href="http://www.amazon.com/gp/product/B000FK88JK?ie=UTF8&#038;tag=thebloofrushe-20&#038;linkCode=as2&#038;camp=1789&#038;creative=9325&#038;creativeASIN=B000FK88JK">Leopard</a><img src="http://www.assoc-amazon.com/e/ir?t=thebloofrushe-20&#038;l=as2&#038;o=1&#038;a=B000FK88JK" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />. But I keep chugging away on it. In fact I write most of my blog posts on this machine while out in the living-room after work.  Below are a few things you can do to get the most out of your second hand machine.</p>
+<p><a href="http://www.amazon.com/gp/product/B0000V8XIK?ie=UTF8&#038;tag=thebloofrushe-20&#038;linkCode=as2&#038;camp=1789&#038;creative=9325&#038;creativeASIN=B0000V8XIK"><img src='http://www.russellheimlich.com/blog/wp-content/uploads/2008/02/ram-stick.jpg' alt='Computer RAM Stick' /></a><img src="http://www.assoc-amazon.com/e/ir?t=thebloofrushe-20&#038;l=as2&#038;o=1&#038;a=B0000V8XIK" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></p>
+<h5>Max out the RAM</h5>
+<p>RAM prices are always in a constant free fall until you reach the point where the particular type your machine takes is officially classified as an antique. But for the most part upgrading your RAM is the best bang for the buck.  Check out <a href="http://www.crucial.com">Crucial.com</a> which can help you figure out what type of RAM you need as well as how much it will take to max out your system.  </p>
+<p><a href="http://www.mozilla.com/en-US/firefox/all-beta.html"><img src='http://www.russellheimlich.com/blog/wp-content/uploads/2008/02/firefox-3-with-proto-theme.jpg' alt='Screenshot of Firefox 3 Beta 2 with Proto Theme' /></a></p>
+<h5>Upgrade Firefox to 3.0</h5>
+<p>Most of my computer use happens within a browser.  Firefox 2 has been a particularly frustrating release filled with memory leaks and sporadic crashes. I found it particularly unstable on Macs, both Intel and PowerPC systems. <a href="http://www.mozilla.com/en-US/firefox/all-beta.html">Firefox 3</a> is a completely different story with much quicker startups and a more responsive interface. Surfing sites on my pokey PowerBook is a joy once again and not a chore like it used to be. Note: As of this posting Firefox 3 is in beta (<a href="http://mozillalinks.org/wp/2008/02/a-deep-look-to-firefox-3-beta-3/">See the changes</a>). You have nothing to lose by trying it out and I have been running it for a couple of weeks without a hitch.</p>
+<p><a href="http://www.ragingmenace.com/software/sidetrack/"><img src='http://www.russellheimlich.com/blog/wp-content/uploads/2008/02/sidetrack-calibration.jpg' alt='SideTrack Calibration for your trackpad' /></a></p>
+<h5>Install SideTrack</h5>
+<p>Those newer <a href="http://www.amazon.com/gp/product/B000RG0RFA?ie=UTF8&#038;tag=thebloofrushe-20&#038;linkCode=as2&#038;camp=1789&#038;creative=9325&#038;creativeASIN=B000RG0RFA">MacBooks</a><img src="http://www.assoc-amazon.com/e/ir?t=thebloofrushe-20&#038;l=as2&#038;o=1&#038;a=B000RG0RFA" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> and the Air have such a snazzy trackpad that lets you use all sorts of finger gestures to manipulate your windows. PowerBook users can use <a href="http://www.ragingmenace.com/software/sidetrack/">SideTrack</a> to get at least some of that functionality. The biggest improvement is the ability to use the edges of the trackpad to scroll horizontally and vertically as well as assigning actions to corner taps. The software is fully functional and free with an occasional nag screen or you can purchase the full version for just $15.</p>
+<p><a href="http://www.bresink.de/osx/TinkerTool.html"><img src='http://www.russellheimlich.com/blog/wp-content/uploads/2008/02/tinkertool.png' alt='Tinker Tool Logo' /></a></p>
+<h5>Further Tweaking</h5>
+<p>If you really want to squeeze out every little drop of available performance then you will need to tweak some settings. First set your desktop background to a solid color instead of a picture. Head into your dock settings and uncheck the &#8216;Animate opening applications&#8217; option and turn off magnification.  If you don&#8217;t use Spotlight then consider unchecking all of the categories in the system preferences pane to stop the search program from scanning your hard drive for changes.  If you really want to get into the nitty gritty details check out <a href="http://www.bresink.com/osx/TinkerTool.html">TinkerTool</a> which uncovers hidden menus and options that let you do all sorts of things. </p>
+<p>Now with a little sacrificing and tweaking you can get some good use out of your old, trusty Mac. If you found these suggestions helpful or if you know a tip to further spruce up your PowerBook let me know in the comments.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/spruce-up-your-old-powerbook/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Picasa Is Coming For The Mac</title>
+		<link>http://www.russellheimlich.com/blog/picasa-is-coming-for-the-mac/</link>
+		<comments>http://www.russellheimlich.com/blog/picasa-is-coming-for-the-mac/#comments</comments>
+		<pubDate>Wed, 16 Jan 2008 02:34:06 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Mac]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[Organization]]></category>
+		<category><![CDATA[OSX]]></category>
+		<category><![CDATA[Photo]]></category>
+		<category><![CDATA[Picasa]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/picasa-is-coming-for-the-mac/</guid>
+		<description><![CDATA[Duncan Riley from Techcrunch talked to a Google employee at the annual Macworld conference who happened to slip up Picasa for Mac is in development. If anyone has used Picasa, which is currently only available for Windows and Linux, you know how easy it is to sort through your mounds of photos and do basic [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><img src='http://www.russellheimlich.com/blog/wp-content/uploads/2008/01/picasa-dock.jpg' alt='Picasa Dock Icon' /></p>
+<p>Duncan Riley from <a href="http://www.techcrunch.com/2008/01/15/exclusive-google-developing-mac-version-of-picasa-due-to-be-released-this-year/">Techcrunch</a> talked to a Google employee at the annual Macworld conference who happened to slip up <strong>Picasa for Mac is in development</strong>.  If anyone has used Picasa, which is currently only available for <a href="http://picasa.google.com/">Windows and Linux</a>, you know how easy it is to sort through your mounds of photos and do basic editing.  By contrast iPhoto, which comes bundled with every new Mac, is clumsy and hard to use. I certainly welcome a new photo organizing competitor to the Mac. Hopefully it will force Apple to improve the long forgotten app.  </p>
+<p>Duncan couldn&#8217;t get a specific launch date for Picasa Mac, but the Google employee did mention it will be released this year. All I can say is the sooner the better. Then I might consider switching to a Mac for good.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/picasa-is-coming-for-the-mac/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>The Apple iTop?</title>
+		<link>http://www.russellheimlich.com/blog/the-apple-itop/</link>
+		<comments>http://www.russellheimlich.com/blog/the-apple-itop/#respond</comments>
+		<pubDate>Fri, 17 Aug 2007 11:58:27 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Gadgets]]></category>
+		<category><![CDATA[Mac]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/the-apple-itop/</guid>
+		<description><![CDATA[This guy took his already busted iPod and did a little experimentation. Cutting the frame in half, leaving the screen, headphone, and lock module intact, he managed to create a new iPod form. Meet the iTop, a propped up iPod that would be perfect for watching videos on. Why didn&#8217;t Apple think of something like [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>This guy took his already busted iPod and did a little experimentation. Cutting the frame in half, leaving the screen, headphone, and lock module intact, he managed to create a new iPod form. Meet the iTop, a propped up iPod that would be perfect for watching videos on. Why didn&#8217;t Apple think of something like this?</p>
+<p>Wouldn&#8217;t it be cool if they came out with a flexible iPod?</p>
+<p><a href="http://web.mac.com/owenmcgarry/iWeb/Downloads/Downloads/10E5A5E6-7AE6-4BFD-B454-11CBC427A9A1.html" class="broken_link"><img src='http://www.russellheimlich.com/blog/wp-content/uploads/2007/08/itop1.jpg' alt='iTop 1' /></a></p>
+<p><a href="http://web.mac.com/owenmcgarry/iWeb/Downloads/Downloads/692A99F1-8901-4CCA-AD78-A4A415223A1A.html" class="broken_link"><img src='http://www.russellheimlich.com/blog/wp-content/uploads/2007/08/itop2.jpg' alt='iTop 2' /></a></p>
+<p>Ok maybe it isn&#8217;t <em>that</em> great&#8230;</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/the-apple-itop/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>ImageWell Is Perfect For Quick Photo Edits</title>
+		<link>http://www.russellheimlich.com/blog/imagewell-is-perfect-for-quick-photo-edits/</link>
+		<comments>http://www.russellheimlich.com/blog/imagewell-is-perfect-for-quick-photo-edits/#respond</comments>
+		<pubDate>Tue, 31 Jul 2007 02:49:29 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Mac]]></category>
+		<category><![CDATA[Reviews]]></category>
+		<category><![CDATA[Software]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/imagewell-is-perfect-for-quick-photo-edits/</guid>
+		<description><![CDATA[We bloggers always seem to be in a hurry. I always try to include a photo in all of my posts and when I am in a rush, waiting for the slow and bloated Photoshop to open is a real drag. That is why I rely on ImageWell whenever I am posting from my PowerBook. [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>We bloggers always seem to be in a hurry. I always try to include a photo in all of my posts and when I am in a rush, waiting for the slow and bloated Photoshop to open is a real drag.  That is why I rely on <a href="http://xtralean.com/IWOverview.html" class="broken_link">ImageWell</a> whenever I am posting from my PowerBook. ImageWell features&#8230;</p>
+<ul>
+<li>Resize, Rotate, Crop and Flip</li>
+<li>Layering and Transparency controls for images and draw objects</li>
+<li>Web Preview and Quality/Size adjustment tool before uploading to the web</li>
+<li>Screen Grab feature grabs full screen, a selection on your screen, or window grab and automatically imports it into the well for instant editing and sending</li>
+</ul>
+<p><a href="http://xtralean.com/IWOverview.html" class="broken_link"><img src='http://www.russellheimlich.com/blog/wp-content/uploads/2007/07/thumb900.jpg' alt='ImageWell Screenshot' /></a></p>
+<p>I mostly use it to resize and compress larger image to fit on my blog but it provides other features that I may use in the future. The best thing of all is ImageWell is completely free! So if you constantly find yourself waiting for Photoshop to boot up just to make a minor change, consider using ImageWell and get back to your web work.</p>
+<p><img src='http://www.russellheimlich.com/blog/wp-content/uploads/2007/07/52536c1c0c29326e.jpg' alt='ImageWell Logo' /></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/imagewell-is-perfect-for-quick-photo-edits/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

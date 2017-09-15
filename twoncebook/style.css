@@ -1,0 +1,45 @@
+#simplelife ul a {
+	text-decoration: none;
+	color: #000;
+}
+
+#simplelife ul, #simplelife li, #simplelife ol {
+	margin: 0;
+	padding: 0;
+    width: 95%
+}
+
+#simplelife ul {	
+	list-style-type: none;
+	list-style-position: outside;
+}
+
+/* Date Format */
+ul .date {
+  color: #444;
+  font-size: 1.5em;
+  text-align: left;
+  padding: 0 0 1px 0 ! important;
+  margin: 10px 0 0 0 !important;
+  border-top: 1px solid #fff;	
+  border-bottom: 1px solid #AAA3A1;
+  font-weight: bold;
+}
+
+/* Time Format */
+ul .time {
+padding: 0 0 0 5px !important;
+color: #555;
+font-weight: bold;
+}
+
+/* Classes for all links - define your extra classes below */
+
+.facebook {}
+
+.pownce {}
+
+.twitter {}
+
+/* Hover for all links */
+#simplelife li a:hover {}

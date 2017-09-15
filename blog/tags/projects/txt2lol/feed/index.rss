@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>TXT2LOL &#8211; Russell Heimlich</title>
+	<atom:link href="http://www.russellheimlich.com/blog/tags/projects/txt2lol/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.russellheimlich.com/blog</link>
+	<description>The Blog of Russell Heimlich</description>
+	<lastBuildDate>Fri, 02 Nov 2012 18:39:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.2</generator>
+	<item>
+		<title>New Word Updates</title>
+		<link>http://www.russellheimlich.com/blog/new-word-updates/</link>
+		<comments>http://www.russellheimlich.com/blog/new-word-updates/#comments</comments>
+		<pubDate>Fri, 24 Aug 2007 11:24:38 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[TXT2LOL]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/new-word-updates/</guid>
+		<description><![CDATA[Over the past couple of weeks since I launched my LOL translator TXT2LOL.com I have gotten several new translations submitted by anonymous users. Thanks people. Check out the latest words added to the dictionary: good = gud was = wuz comfy = cumfy for = 4 finally = finlee too = tew write = rite [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Over the past couple of weeks since I launched my LOL translator <a href="http://www.txt2lol.com">TXT2LOL</a>.com I have gotten several new translations submitted by anonymous users. Thanks people. Check out the latest words added to the dictionary:</p>
+<ul>
+<li>good = gud</li>
+<li>was = wuz</li>
+<li>comfy = cumfy</li>
+<li>for = 4</li>
+<li>finally = finlee</li>
+<li>too = tew</li>
+<li>write = rite</li>
+<li>so = sew</li>
+<li>about = bowt</li>
+<li>thank = fank</li>
+<li>this = dis</li>
+<li>prove = proov</li>
+<li>guys = guyz</li>
+<li>what is = whaz</li>
+<li>furry = frry</li>
+<li>just kidding = jk</li>
+<li>laugh out loud = lol </li>
+<li>gay = ghey</li>
+<li>yeah really = ya rly</li>
+<li>oh really = o rly</li>
+<li>need = needz</li>
+<li>pizza = za</li>
+<li>thanks = thx</li>
+<li>okay = kthxbai</li>
+<li>bye = bai</li>
+<li>translator = trahnslatah</li>
+</ul>
+<p>And if you see a word combination that is not included but should be, <a href="http://www.txt2lol.com/submitaword.htm">submit it!</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/new-word-updates/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>TXT2LOL.com is live!</title>
+		<link>http://www.russellheimlich.com/blog/txt2lolcom-is-live/</link>
+		<comments>http://www.russellheimlich.com/blog/txt2lolcom-is-live/#comments</comments>
+		<pubDate>Tue, 24 Jul 2007 02:52:15 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Internet]]></category>
+		<category><![CDATA[TXT2LOL]]></category>
+		<category><![CDATA[Web]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/txt2lolcom-is-live/</guid>
+		<description><![CDATA[What was meant to be a quick weekend project turned into a month-long undertaking. TXT2LOL.com, is my pet project for converting regular speak to the grammatically incorrect and misspelled LOL. LOL became popular thanks to cat macros, or LOL cats, and I wanted an easy way to create authentic-sounding LOL captions. Think I&#8217;m going a [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><a href="http://www.TXT2LOL.com"><img src='http://www.russellheimlich.com/blog/wp-content/uploads/2007/07/txt2lol.png' alt='TXT2LOL.com' /></a></p>
+<p>What was meant to be a quick weekend project turned into a month-long undertaking.  <a href="http://www.TXT2LOL.com">TXT2LOL.com</a>, is my pet project for converting regular speak to the grammatically incorrect and misspelled LOL.  LOL became popular thanks to <a href="http://en.wikipedia.org/wiki/Cat_macros">cat macros</a>, or <a href="http://icanhascheezburger.com/">LOL cats</a>, and I wanted an easy way to create authentic-sounding LOL captions.  Think I&#8217;m going a bit overboard? Anil Dash from SixApart.com did an in-depth <a href="http://www.dashes.com/anil/2007/04/cats-can-has-gr.html">analysis of the LOL grammar</a>.</p>
+<p>At any rate, I just made a tool that hopes to make peoples lives a little bit easier so they can make many others smile with their ridiculous LOL captions.</p>
+<p>Please take a look at the site and let me know of any translations I missed by using the &#145;<a href="http://www.txt2lol.com/submitaword.htm">Submit a Word</a>&#146; link.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/txt2lolcom-is-live/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

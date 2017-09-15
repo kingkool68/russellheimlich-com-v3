@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Russell Gets Haircut</title>
+	<atom:link href="http://www.russellheimlich.com/blog/russell-gets-haircut/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.russellheimlich.com/blog/russell-gets-haircut/</link>
+	<description>The Blog of Russell Heimlich</description>
+	<lastBuildDate>Thu, 26 Nov 2015 14:13:48 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.2</generator>
+	<item>
+		<title>By: theLOVEofurlife</title>
+		<link>http://www.russellheimlich.com/blog/russell-gets-haircut/comment-page-1/#comment-117</link>
+		<dc:creator><![CDATA[theLOVEofurlife]]></dc:creator>
+		<pubDate>Tue, 24 Jul 2007 03:52:31 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/russell-gets-haircut/#comment-117</guid>
+		<description><![CDATA[you still have that hangy flip of hair in front]]></description>
+		<content:encoded><![CDATA[<p>you still have that hangy flip of hair in front</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Mom</title>
+		<link>http://www.russellheimlich.com/blog/russell-gets-haircut/comment-page-1/#comment-116</link>
+		<dc:creator><![CDATA[Mom]]></dc:creator>
+		<pubDate>Tue, 24 Jul 2007 01:49:22 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/russell-gets-haircut/#comment-116</guid>
+		<description><![CDATA[I like it.  Hope it&#039;s worth it to you.]]></description>
+		<content:encoded><![CDATA[<p>I like it.  Hope it&#8217;s worth it to you.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

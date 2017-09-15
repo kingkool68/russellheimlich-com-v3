@@ -1,0 +1,50 @@
+<html>
+<head>
+
+</head>
+<body>
+      <form name="animForm"
+<img name="animImage" src= "http://chart.apis.google.com/chart?chd=s:aa&cht=bvs&chs=200x125&chco=224499&chxt=x,y&chxl=0:|Sep|Oct|Nov|Dec|1:||50|100&chm=B,76A4FB,0,0,0">
+        <input type="button" value="Start" name="animButton"
+        onclick="buttonCheck()"><input type="text" value="250"
+        name="animPace">milliseconds
+      </form>
+<script type="text/javascript" language="JavaScript1.2">
+anims = new Array(5);
+var frame = 0;
+var timeout_state = null;                      
+
+function animator() {
+        document.animImage.src = anims[frame].src;
+        frame = (frame + 1);
+        if(frame >= 5) {
+                frame = 0;
+        }
+        timeout_state = setTimeout("animator()", document.animForm.animPace.value);
+}
+function buttonCheck() {
+        if(document.animForm.animButton.value == "Start") {
+                document.animForm.animButton.value = "Stop";
+                animator();
+        } else {
+                document.animForm.animButton.value = "Start";
+                clearTimeout(timeout_state);
+                timeout_state = null;
+        }
+}
+anims[0] = new Image();
+anims[0].src = "http://chart.apis.google.com/chart?chd=s:aa&cht=bvs&chs=200x125&chco=224499&chxt=x,y&chxl=0:|Sep|Oct|Nov|Dec|1:||50|100&chm=B,76A4FB,0,0,0";
+anims[1] = new Image();
+anims[1].src = "http://chart.apis.google.com/chart?chd=s:dd&cht=bvs&chs=200x125&chco=224499&chxt=x,y&chxl=0:|Sep|Oct|Nov|Dec|1:||50|100&chm=B,76A4FB,0,0,0";
+anims[2] = new Image();
+anims[2].src = "http://chart.apis.google.com/chart?chd=s:dg&cht=bvs&chs=200x125&chco=224499&chxt=x,y&chxl=0:|Sep|Oct|Nov|Dec|1:||50|100&chm=B,76A4FB,0,0,0";
+anims[3] = new Image();
+anims[3].src = "http://chart.apis.google.com/chart?chd=s:dj&cht=bvs&chs=200x125&chco=224499&chxt=x,y&chxl=0:|Sep|Oct|Nov|Dec|1:||50|100&chm=B,76A4FB,0,0,0";
+anims[4] = new Image();
+anims[4].src = "http://chart.apis.google.com/chart?chd=s:dz&cht=bvs&chs=200x125&chco=224499&chxt=x,y&chxl=0:|Sep|Oct|Nov|Dec|1:||50|100&chm=B,76A4FB,0,0,0";
+
+document.animForm.animButton.value = "Start";
+document.animForm.animPace.value = 250;
+</script>
+</body>
+</html>

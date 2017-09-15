@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Firebug Gets A Little Buggy</title>
+	<atom:link href="http://www.russellheimlich.com/blog/firebug-gets-a-little-buggy/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.russellheimlich.com/blog/firebug-gets-a-little-buggy/</link>
+	<description>The Blog of Russell Heimlich</description>
+	<lastBuildDate>Thu, 26 Nov 2015 14:13:48 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.2</generator>
+	<item>
+		<title>By: Random</title>
+		<link>http://www.russellheimlich.com/blog/firebug-gets-a-little-buggy/comment-page-1/#comment-1192</link>
+		<dc:creator><![CDATA[Random]]></dc:creator>
+		<pubDate>Wed, 12 Aug 2009 23:01:41 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1750#comment-1192</guid>
+		<description><![CDATA[I&#039;m 100% in agreement with you on this. It&#039;s a very small loss of time and a minor irritation, BUT when you do it dozens of times every day, it gets quite aggravating.
+
+I&#039;ve also mentioned it in the firebug group. Hopefully, the developers are listening.]]></description>
+		<content:encoded><![CDATA[<p>I&#8217;m 100% in agreement with you on this. It&#8217;s a very small loss of time and a minor irritation, BUT when you do it dozens of times every day, it gets quite aggravating.</p>
+<p>I&#8217;ve also mentioned it in the firebug group. Hopefully, the developers are listening.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

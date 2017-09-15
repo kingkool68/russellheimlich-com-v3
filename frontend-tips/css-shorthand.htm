@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Good CSS Shorthand and Bad - Frontend Development Tips &amp; Tricks by Russell Heimlich</title>
+<link href="css/reset.css" rel="stylesheet" media="all">
+<link href="css/main.css" rel="stylesheet" media="all">
+<link href="css/print.css" rel="stylesheet" media="print">
+</head>
+<body>
+<h1>Good CSS Shorthand and Bad</h1>
+<h2>Good</h2>
+<p>Some CSS shorthand properties are good like <em class="code">padding</em> and <em class="code">margin</em> which can be simplified like so:</p>
+<pre class="code">
+/*top, right, bottom, left*/
+padding: 1em 2em 3.5em 4em;
+
+/*top, right &amp; left, bottom*/
+margin: 1.5em 5em 0.5em;
+
+/* top &amp; bottom, right &amp; left */
+padding: 2em 4em;
+</pre>
+<p>The values have a standard <storng>clockwise order</strong> (top, right, bottom, left) and are easy to edit in Firebug.</p>
+<h2>Bad</h2>
+<p><em class="code">font</em> and <em class="code">background</em> have a bad shorthand syntax because the order of values can vary requiring more thinking to decipher what it means.</p>
+<pre class="code">
+/*The following variations produce the same result*/
+background: red url(image.png) repeat top left scroll;
+background: url(image.png) repeat top red left scroll;
+background: scroll red repeat url(image.png) top left;
+
+font: bold 1em/1.2em georgia,"times new roman",serif;
+font: georgia,"times new roman",serif bold 1em/1.2em;
+font: 1em/1.2em georgia,"times new roman",serif bold ;
+</pre>
+<p>Hard to change one property or hide/show in Firebug so explicit syntax should be used:</p>
+<pre class="code">
+/*background: scroll red repeat url(image.png) top left;*/
+background-attachment: scroll;
+background-color: red;
+background-repeat: repeat;
+background-image: url(image.png);
+background-position: top left;
+
+/*font: bold 1em/1.2em georgia,"times new roman",serif;*/
+font-weight: bold;
+font-size: 1em;
+line-height: 1.2em;
+font-family: georgia,"times new roman",serif;
+</pre>
+
+<script type="text/javascript" src="js/jquery.js"/>
+</script>
+</body>
+</html>

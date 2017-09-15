@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+		<gallery name="Black and White">
+				<image source="SWF/photos/RepeatingPillars.jpg" thumb="SWF/photos/thumbs/RepeatingPillars.jpg" title="Repeating Pillars"/>
+				<image source="SWF/photos/MorningLight.jpg" thumb="SWF/photos/thumbs/MorningLight.jpg" title="Morning Light"/>
+				<image source="SWF/photos/DowntownInADream.jpg" thumb="SWF/photos/thumbs/DowntownInADream.jpg" title="Downtown In A Dream"/>
+				<image source="SWF/photos/3InThePark.jpg" thumb="SWF/photos/thumbs/3InThePark.jpg" title="3 In The Park"/>
+				<image source="SWF/photos/BlackAndWhiteStairCase.jpg" thumb="SWF/photos/thumbs/BlackAndWhiteStairCase.jpg" title="Black And White Stair Case"/>
+				<image source="SWF/photos/CurvedWallRide.jpg" thumb="SWF/photos/thumbs/CurvedWallRide.jpg" title="Curved Wall Ride"/>				
+		</gallery>
+		
+		<gallery name="Nature">
+				<image source="SWF/photos/BeeOnLeaf.jpg" thumb="SWF/photos/thumbs/BeeOnLeaf.jpg" title="Bee On Leaf"/>
+				<image source="SWF/photos/SlyFox.jpg" thumb="SWF/photos/thumbs/SlyFox.jpg" title="Sly Fox"/>
+                <image source="SWF/photos/LeafRipple.jpg" thumb="SWF/photos/thumbs/LeafRipple.jpg" title="Leaf Ripple"/>
+                <image source="SWF/photos/FeedingBee.jpg" thumb="SWF/photos/thumbs/FeedingBee.jpg" title="Feeding Bee"/>
+                <image source="SWF/photos/TrailsOfTwilight.jpg" thumb="SWF/photos/thumbs/TrailsOfTwilight.jpg" title="Trails Of Twilight"/>
+                <image source="SWF/photos/CaughtInTheBlur.jpg" thumb="SWF/photos/thumbs/CaughtInTheBlur.jpg" title="Caught In The Blur"/>
+				<image source="SWF/photos/PreciousRedPetal.jpg" thumb="SWF/photos/thumbs/PreciousRedPetal.jpg" title="Precious Red Petal"/>
+				<image source="SWF/photos/ExplodingFlower.jpg" thumb="SWF/photos/thumbs/ExplodingFlower.jpg" title="Exploding Flower"/>
+				<image source="SWF/photos/Crosswired.jpg" thumb="SWF/photos/thumbs/Crosswired.jpg" title="Crosswired"/>
+				<image source="SWF/photos/FurriousFlurry.jpg" thumb="SWF/photos/thumbs/FurriousFlurry.jpg" title="Furrious Flurry"/>
+				<image source="SWF/photos/Squirrel.jpg" thumb="SWF/photos/thumbs/Squirrel.jpg" title="Squirrel"/>
+				<image source="SWF/photos/3RedBerries.jpg" thumb="SWF/photos/thumbs/3RedBerries.jpg" title="3 Red Berries"/>
+		</gallery>
+		
+		<gallery name="People">
+				<image source="SWF/photos/MorningGlow.jpg" thumb="SWF/photos/thumbs/MorningGlow.jpg" title="Morning Glow"/>
+				<image source="SWF/photos/Trouble.jpg" thumb="SWF/photos/thumbs/Trouble.jpg" title="Trouble"/>
+				<image source="SWF/photos/MikeRomano.jpg" thumb="SWF/photos/thumbs/MikeRomano.jpg" title="Mike Romano"/>
+				<image source="SWF/photos/GettingAir.jpg" thumb="SWF/photos/thumbs/GettingAir.jpg" title="Getting Air"/>
+				<image source="SWF/photos/Lifeguardin.jpg" thumb="SWF/photos/thumbs/Lifeguardin.jpg" title="Lifeguardin"/>
+				<image source="SWF/photos/PassingBy.jpg" thumb="SWF/photos/thumbs/PassingBy.jpg" title="Passing By"/>
+		</gallery>
+		
+		<gallery name="Still Life">
+				<image source="SWF/photos/SteamRoom.jpg" thumb="SWF/photos/thumbs/SteamRoom.jpg" title="Steam Room"/>
+                <image source="SWF/photos/SpeedingPastTheYellow.jpg" thumb="SWF/photos/thumbs/SpeedingPastTheYellow.jpg" title="Speeding Past The Yellow"/>
+                <image source="SWF/photos/Resting.jpg" thumb="SWF/photos/thumbs/Resting.jpg" title="Resting"/>
+                <image source="SWF/photos/SnowInTheCity.jpg" thumb="SWF/photos/thumbs/SnowInTheCity.jpg" title="Snow In The City"/>
+				<image source="SWF/photos/BluePoint.jpg" thumb="SWF/photos/thumbs/BluePoint.jpg" title="Blue Point"/>
+				<image source="SWF/photos/BurningCourage.jpg" thumb="SWF/photos/thumbs/BurningCourage.jpg" title="Burning Courage"/>
+				<image source="SWF/photos/Chill.jpg" thumb="SWF/photos/thumbs/Chill.jpg" title="Chill"/>
+                <image source="SWF/photos/OldCityHall.jpg" thumb="SWF/photos/thumbs/OldCityHall.jpg" title="Old City Hall"/>
+                <image source="SWF/photos/PotatoSprouts.jpg" thumb="SWF/photos/thumbs/PotatoSprouts.jpg" title="Potato Sprouts"/>
+                <image source="SWF/photos/PeopleTree.jpg" thumb="SWF/photos/thumbs/PeopleTree.jpg" title="People Tree"/>
+				<image source="SWF/photos/Left.jpg" thumb="SWF/photos/thumbs/Left.jpg" title="Left"/>
+				<image source="SWF/photos/NightBench.jpg" thumb="SWF/photos/thumbs/NightBench.jpg" title="Night Bench"/>
+				<image source="SWF/photos/UrbanMinimalismIV.jpg" thumb="SWF/photos/thumbs/UrbanMinimalismIV.jpg" title="Urban Minimalism IV"/>
+                <image source="SWF/photos/3WindowWashers.jpg" thumb="SWF/photos/thumbs/3WindowWashers.jpg" title="3 Window Washers"/>
+                <image source="SWF/photos/SnowPole.jpg" thumb="SWF/photos/thumbs/SnowPole.jpg" title="Snow Pole"/>
+		</gallery>
+		
+		<gallery name="Landscape">
+				<image source="SWF/photos/CityHallatNight.jpg" thumb="SWF/photos/thumbs/CityHallatNight.jpg" title="City Hall at Night"/>
+				<image source="SWF/photos/FairyTaleGameLand.jpg" thumb="SWF/photos/thumbs/FairyTaleGameLand.jpg" title="Fairy Tale Game Land"/>
+                <image source="SWF/photos/SandyPoint.jpg" thumb="SWF/photos/thumbs/SandyPoint.jpg" title="Sandy Point"/>
+                <image source="SWF/photos/SkateparkGraffiti.jpg" thumb="SWF/photos/thumbs/SkateparkGraffiti.jpg" title="Skatepark Graffiti"/>
+                <image source="SWF/photos/CityHallatNight2.jpg" thumb="SWF/photos/thumbs/CityHallatNight2.jpg" title="City Hall at Night 2"/>
+                <image source="SWF/photos/PhillyXmas.jpg" thumb="SWF/photos/thumbs/PhillyXmas.jpg" title="Philly Xmas"/>
+		</gallery>
+		
+		<gallery name="Abstract">
+				<image source="SWF/photos/Streaks.jpg" thumb="SWF/photos/thumbs/Streaks.jpg" title="Streaks"/>
+				<image source="SWF/photos/ADashOfOrange.jpg" thumb="SWF/photos/thumbs/ADashOfOrange.jpg" title="A Dash Of Orange"/>
+                <image source="SWF/photos/UndertheRedRoof.jpg" thumb="SWF/photos/thumbs/UndertheRedRoof.jpg" title="Under the Red Roof"/>
+                <image source="SWF/photos/WebOfDreams.jpg" thumb="SWF/photos/thumbs/WebOfDreams.jpg" title="Web Of Dreams"/>
+                <image source="SWF/photos/RoadAbstract.jpg" thumb="SWF/photos/thumbs/RoadAbstract.jpg" title="Road Abstract"/>
+                <image source="SWF/photos/ExperimentalComposition.jpg" thumb="SWF/photos/thumbs/ExperimentalComposition.jpg" title="Experimental Composition"/>
+		</gallery>
+
+</menu>

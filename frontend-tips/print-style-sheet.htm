@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Build Up Your Print Stylesheet - Frontend Development Tips &amp; Tricks by Russell Heimlich</title>
+<link href="css/reset.css" rel="stylesheet" media="all">
+<link href="css/main.css" rel="stylesheet" media="all">
+<link href="css/print.css" rel="stylesheet" media="print">
+</head>
+<body>
+<h1>Build Up Your Print Stylesheet</h1>
+<p>Print stylesheets should be used to reset styles, hide elements, and boost the <em class="code">font-size</em>. It <strong>should not</strong> be a total re-write of your other stylesheets.</p>
+<h2>You have the right media types set, right?</h2>
+<p>All of your main stylesheets should have <em class="code">media="all"</em> as an attribute. The print stylesheet should have an attribute of <em class="code">media="print"</em> and should be the last stylesheet loaded.</p>
+<pre class="code">
+&lt;link href=&quot;css/reset.css&quot; rel=&quot;stylesheet&quot; <strong>media=&quot;all&quot;</strong>&gt;
+&lt;link href=&quot;css/main.css&quot; rel=&quot;stylesheet&quot; <strong>media=&quot;all&quot;</strong>&gt;
+&lt;link href=&quot;css/print.css&quot; rel=&quot;stylesheet&quot; <strong>media=&quot;print&quot;</strong>&gt;
+</pre>
+<p>The print stylesheet should be attached to every page, regardless if it is a print-specific page. File &raquo; Print will still trigger the print stylesheet.</p>
+<p>With the right media types inplace you can edit the print stylesheet using <a href="http://getfirebug.com/">Firebug</a> and the <a href="http://chrispederick.com/work/web-developer/">Web Developer Toolbar</a> (CSS &raquo; Display CSS by Media Type &raquo; Print)</p>
+<h2>Gotchas</h2>
+<ul>
+<li>Background images are ignored by default and their is no way you can control that. Important graphics like logos should be inline <em class="code">&lt;img&gt;</em>.</li>
+<li><abbr title="Microsoft's Internet Explorer">IE</abbr> chokes on <em class="code">overflow</em> CSS so be sure to reset any elements that need it with <em class="code">overflow:visible;</em></li>
+<li>Set container elements to a relative unit like percentages for a fluid layout that will print nicely on any sized paper.</li>
+<li>Reset any colored text to black for a better contrast.</li>
+</ul>
+<script type="text/javascript" src="js/jquery.js"/></script>
+</body>
+</html>

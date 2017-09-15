@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Clearing Floats - Frontend Development Tips &amp; Tricks by Russell Heimlich</title>
+<link href="css/reset.css" rel="stylesheet" media="all">
+<link href="css/main.css" rel="stylesheet" media="all">
+<link href="css/print.css" rel="stylesheet" media="print">
+</head>
+<body>
+<h1>Clearing Floats</h1>
+<p>There are way too many ways to clear floats</p>
+<div id="float-example" class="bad">
+  <h2>This is what a non-cleared float looks like</h2>
+  <p>The green background should cover the two boxes below.</p>
+  <div class="left">
+    <p>I'm floating to the left.<br>
+      My parent container doesn't clear the height of this box.<br>
+      How are we going to fix this?</p>
+  </div>
+  <div class="right">
+    <p>Stuff on the right side.<br>
+      This is just to take up space.<br>
+      Nothing to see here. Move along.<br>
+      :-)</p>
+  </div>
+</div>
+<h2>Lame</h2>
+<pre class="code">
+&lt;div id=&quot;float-example&quot;&gt;
+  &lt;h2&gt;This is what a non-cleared float looks like&lt;/h2&gt;
+  &lt;p&gt;The green background should cover the two boxes below.&lt;/p&gt;
+  &lt;div class=&quot;left&quot;&gt;
+  &lt;p&gt;I'm floating to the left.&lt;br&gt;
+    My parent container doesn't clear the height of this box.&lt;br&gt;
+    How are we going to fix this?&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;right&quot;&gt;
+    &lt;p&gt;Stuff on the right side.&lt;br&gt;
+    This is just to take up space.&lt;br&gt;
+    Nothing to see here. Move along.&lt;br&gt;
+    :-)&lt;/p&gt;
+  &lt;/div&gt;
+  <strong>&lt;br clear=&quot;all&quot; /&gt;</strong>
+&lt;/div&gt;
+</pre>
+<p>Adding a block element as the last element in the container will clear the float.</p>
+<p>Why is this lame?</p>
+<ul>
+  <li>Adds presentational markup to document</li>
+  <li>Can't control it from a stylesheet</li>
+</ul>
+<h2>Better</h2>
+<pre class="code">
+&lt;div id=&quot;float-example&quot; <strong>class=&quot;clearfix&quot;&gt;</strong>
+  &lt;h2&gt;This is what a non-cleared float looks like&lt;/h2&gt;
+  &lt;p&gt;The green background should cover the two boxes below.&lt;/p&gt;
+  &lt;div class=&quot;left&quot;&gt;
+  &lt;p&gt;I'm floating to the left.&lt;br&gt;
+    My parent container doesn't clear the height of this box.&lt;br&gt;
+    How are we going to fix this?&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;right&quot;&gt;
+    &lt;p&gt;Stuff on the right side.&lt;br&gt;
+    This is just to take up space.&lt;br&gt;
+    Nothing to see here. Move along.&lt;br&gt;
+    :-)&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;style type=&quot;text/css&quot;&gt;
+   .clearfix:after {
+    	content: &quot;.&quot;;
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+        zoom: 1;
+     }
+ &lt;/style&gt;&lt;</strong>
+</pre>
+<p>Adding a <em class="code">clearfix</em> class to the container element. Using the <em class="code">:after</em> pseudo-class to add an empty block element as the last child of the container.</p>
+<p>Why is this better?</p>
+<ul>
+  <li>Can control from afar</li>
+</ul>
+<p>but &hellip;</p>
+<ul>
+  <li>Still requires modifying HTML to work</li>
+  <li>Confusing</li>
+</ul>
+<h2>Best</h2>
+<pre class="code">
+&lt;div id=&quot;float-example&quot;
+  &lt;h2&gt;This is what a non-cleared float looks like&lt;/h2&gt;
+  &lt;p&gt;The green background should cover the two boxes below.&lt;/p&gt;
+  &lt;div class=&quot;left&quot;&gt;
+  &lt;p&gt;I'm floating to the left.&lt;br&gt;
+    My parent container doesn't clear the height of this box.&lt;br&gt;
+    How are we going to fix this?&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;right&quot;&gt;
+    &lt;p&gt;Stuff on the right side.&lt;br&gt;
+    This is just to take up space.&lt;br&gt;
+    Nothing to see here. Move along.&lt;br&gt;
+    :-)&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;style type=&quot;text/css&quot;&gt;
+   #float-example {
+    	overflow:auto;
+        height:100%;
+     }
+ &lt;/style&gt;&lt;</strong>
+</pre>
+<p>Setting the <em class="code">overflow</em> property of the containing element to <em class="code">auto</em> or <em class="code">hidden</em> will clear any floated child elements. IE need <em class="code">hasLayout</em> triggered to work which is done by setting the <em class="code">width</em> or <em class="code">height</em> to anything but <em class="code">auto</em>. Setting <em class="code">zoom</em> to <em class="code">1</em> will also trigger <em class="code">hasLayout</em>.</p>
+<p>Why is this the best?</p>
+<ul>
+  <li>No need to fiddle with extra markup</li>
+  <li>Can be applied to any element via a stylesheet</li>
+  <li>It's simple</li>
+</ul>
+
+<div id="float-example" class="good">
+  <h2>This is what a properly cleared float looks like</h2>
+  <div class="left">
+    <p>I'm floating to the left.<br>
+      My parent container doesn't clear the height of this box.<br>
+      How are we going to fix this?</p>
+  </div>
+  <div class="right">
+    <p>Stuff on the right side.<br>
+      This is just to take up space.<br>
+      Nothing to see here. Move along.<br>
+      :-)</p>
+  </div>
+</div>
+<p class="source">Source: <a href="http://reference.sitepoint.com/css/floatclear">Sitepoint Reference: Floating and Clearing</a></p>
+</div>
+<script type="text/javascript" src="js/jquery.js"/>
+</script>
+</body>
+</html>

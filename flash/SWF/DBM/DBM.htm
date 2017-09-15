@@ -1,0 +1,686 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Deviant Bordermaker</title>
+<script language="javascript">
+
+function selectText()
+{
+	document.form5.textData.focus()
+	document.form5.textData.select()
+}
+function formatData()
+{
+	var img = document.form1.file.value
+	var bColor = document.form3.bColor.value
+	var count = 0
+	var num = ""
+	for (a=1;a<=10;a++)
+		{
+		if (document.form2["ratio" + a].checked)
+			{
+			var name = document.form2["ratio" + a].value
+			var W = document.form4["W" + a].value
+			var H = document.form4["H" + a].value
+			num = num + name + "\n" + W + "\n" + H + "\n\n"
+			count++
+			}
+		}
+	var data = count + "\n" + img + "\n" + bColor + "\n\n" + num
+	document.form5.textData.value = data
+}
+function batchCookieEsc(name, value)
+{
+	var expire = new Date((new Date()).getTime() + 99 * 3600000); //Cookie expires 99 days after creation.
+		expire = "; expires=" + expire.toGMTString();
+	document.cookie = name + "=" + escape(value + ";") + expire;
+}
+
+function batchCookieUnEsc(name, value)
+{
+	var expire = new Date((new Date()).getTime() + 99 * 3600000); //Cookie expires 99 days after creation.
+		expire = "; expires=" + expire.toGMTString();
+	document.cookie = name + "=" + unescape(value + ";") + expire;
+	//alert(unescape(value + ";"))
+}
+function parseCookie(name) //Reads the cookie and extracts different values depending on what value you are looking for.  "name" is the name of the cookie that you wrote earlier.
+{
+	var firstChar, lastChar
+	var theBigCookie = document.cookie
+	if (theBigCookie == "")
+		{
+			return "NC"
+		}
+	firstChar = theBigCookie.indexOf(name) // find where "name" begins in the long cookie string.
+	if(firstChar != -1)
+		{
+			firstChar += name.length + 1 // skip "name" and "=" to begin extracting where the actual value of the cookie is.
+   			lastChar = theBigCookie.indexOf(';', firstChar) // Find the end of the value string (i.e. the next ';').
+			
+			if(lastChar == -1) lastChar = theBigCookie.length
+			return unescape(theBigCookie.substring(firstChar, lastChar)) // Returns the extracted value.
+		}
+	if(firstChar == -1)
+		{
+			return "NC"
+		} 
+}
+
+function PrefWriteCookie() //Write cookies to remember initial settings.
+{
+	var tot = ""
+	for(var i = 1; i < 11; i++)
+		{
+			if (document.form2["ratio"+i].checked == false)
+				{
+					test = "0"
+				}
+			if (document.form2["ratio"+i].checked == true)
+				{
+					test = "1"
+				}
+			tot = tot + test
+		}
+
+	var Val = document.form3.border.value //The width of the border.
+	var borderColor = document.form3.bColor.value //The border color.
+
+	batchCookieEsc("ratioCheck", tot)
+	batchCookieEsc("color",borderColor)
+	batchCookieUnEsc("Val",Val)
+		
+}
+
+function PrefReadCookie()
+{
+	var Val = parseCookie("Val")
+	var color = parseCookie("color")
+	var ratioCheck = parseCookie("ratioCheck")
+	if (Val == "NC")
+		{
+			Val = 0
+		}
+	if (color == "NC")
+		{
+			color = "FFFFFF"
+		}
+		document.form3.border.value = Val
+		document.form3.bColor.value = color
+	ratioCheck.split()
+	for(var i = 0; i < 10; i++)
+		{
+			if (ratioCheck[i] == 0)
+				{
+					document.form2["ratio" + (i+1)].checked = false
+				}
+			if (ratioCheck[i] == 1)
+				{
+					document.form2["ratio" + (i+1)].checked = true
+				}
+		}
+	calc()
+	BColorMenu()
+
+}
+
+function BColorMenu()
+{
+	var bColor = document.form3.bColor.value
+		if (bColor == "000000")
+			{
+				return document.form3.bColorList.value = "000000"
+			}
+		if (bColor == "FFFFFF" || bColor == "ffffff")
+			{
+				return document.form3.bColorList.value = "FFFFFF"
+			}
+		if (bColor == "CCCCCC" || bColor == "cccccc")
+			{
+				return document.form3.bColorList.value = "CCCCCC"
+			}
+	else 
+		{
+			return document.form3.bColorList.value = "Custom"
+		}
+}
+
+function VersionCheck()
+{
+	CV = document.hideme.cv.value
+		if (CV == "")
+			{
+				document.write("<br>Cannot find current version available, please manually check.")
+			}
+		if (CV>1.75)
+			{
+				document.write("<b>" + CV + "<br>Please update</b>")
+				alert("There is a newer version available.  Please Update!")
+			}
+	else
+		{
+			document.write(CV + "<br>Your version is up to date.")
+		}
+}
+
+function previewCookie(W,H)
+// Sets up the variables and rights the data to a cookie so preview.htm can read the values.
+{
+	var img = document.form1.file.value
+	var imgH = document.form1.height.value
+	var imgW = document.form1.width.value
+	var bColor = document.form3.bColor.value
+	var data = "imghStart" + imgH + "imghEnd imgwStart" + imgW + "imgwEnd W" + W +"H" + H + "Hend" + img + "IMGend" + bColor + "bColorEnd"
+	var expire = new Date((new Date()).getTime() + 99 * 3600000); //Cookie expires 99 days after creation.
+		expire = "; expires=" + expire.toGMTString();
+	
+	document.cookie = "ImagePath=" + escape(img + ";") + expire;
+	document.cookie = "imgHeight=" + escape(imgH + ";") + expire;
+	document.cookie = "imgWidth=" + escape(imgW + ";") + expire;
+	document.cookie = "borderColor=" + escape(bColor + ";") + expire;
+	document.cookie = "borderHeight=" + escape(H + ";") + expire;
+	document.cookie = "borderWidth=" + escape(W + ";") + expire;
+
+}
+
+function Preview(a)
+//opens Preview.htm a = the form number inorder to determine what values to write to the cookie.
+{
+	if (document.form1.file.value == "")
+		{
+		alert('Error! \n Load image and try again!')
+		return;
+		}
+	if (document.temp.width == "")
+		{
+		loadImage()
+		calc()
+		
+		}
+	var W = document.form4["W" + a].value
+	var H = document.form4["H" + a].value
+	previewCookie(W,H)
+	window.open("preview.htm","Preview","")
+}
+function CheckAll (a)
+{
+	for(var i = 0; i < 10; i++)
+		{
+			document.form2["ratio" + (i+1)].checked = a
+		}
+	calc()
+}
+
+function Process(x, y)
+//Processes the data and displays it in the appropriate text fields.
+//x is the ratio, y is the form number
+{
+	var bord = Number(document.form3.border.value)
+	var imgH = Number(document.temp.height)
+	var imgW = Number(document.temp.width)
+		if (imgH < imgW)
+			{
+				imgW = imgW + bord
+				document.form4["W" + y].value = imgW //+ " Px"
+				document.form4["H" + y].value = parseInt(imgW/x)// + " Px"
+				document.form4["BW" + y].value= bord// + " Px"
+				document.form4["BH" + y].value= parseInt(bord/x)// + " Px"
+			}
+	else
+		if (imgH > imgW)
+			{
+				imgH = imgH + bord
+				document.form4["H" + y].value = imgH// + " Px"
+				document.form4["W" + y].value = parseInt(imgH/x)// + " Px"
+				document.form4["BH" + y].value= bord// + " Px"
+				document.form4["BW" + y].value= parseInt(bord/x)// + " Px"
+			}
+	else 
+			{
+				imgH = imgH + bord
+				imgW = imgW + bord
+				document.form4["W" + y].value = imgH //+ " Px"
+				document.form4["H" + y].value = parseInt(imgH/x)// + " Px"
+				document.form4["BW" + y].value= bord //+ " Px"
+				document.form4["BH" + y].value= parseInt(bord/x)// + " Px"
+			}
+}
+
+function calc()
+//Determines which aspect ratios need to be calculated.
+{
+	document.form4.reset()
+
+	if (document.form2.ratio1.checked)
+		{
+			Process(1,1);
+			document.getElementById("1.00").style.visibility="visible"
+		}
+	else
+		{
+			document.getElementById("1.00").style.visibility="hidden"
+		}
+	if (document.form2.ratio2.checked)
+		{
+			Process(1.2,2);
+			document.getElementById("1.20").style.visibility="visible"
+		}
+	else
+		{
+			document.getElementById("1.20").style.visibility="hidden"
+		}
+	if (document.form2.ratio3.checked)
+		{
+			Process(1.25,3);
+			document.getElementById("1.25").style.visibility="visible"
+		}
+	else
+		{
+			document.getElementById("1.25").style.visibility="hidden"
+		}
+	if (document.form2.ratio4.checked)
+		{
+			Process(1.27,4);
+			document.getElementById("1.27").style.visibility="visible"
+		}
+	else
+		{
+			document.getElementById("1.27").style.visibility="hidden"
+		}
+	if (document.form2.ratio5.checked)
+		{
+			Process(1.29,5);
+			document.getElementById("1.29").style.visibility="visible"
+		}
+	else
+		{
+		document.getElementById("1.29").style.visibility="hidden"
+		}
+	if (document.form2.ratio6.checked)
+		{
+			Process(1.33,6);
+			document.getElementById("1.33").style.visibility="visible"
+		}
+	else
+		{
+			document.getElementById("1.33").style.visibility="hidden"
+		}
+	if (document.form2.ratio7.checked)
+		{
+			Process(1.4,7);
+			document.getElementById("1.40").style.visibility="visible"
+		}
+	else
+		{
+			document.getElementById("1.40").style.visibility="hidden"
+		}
+	if (document.form2.ratio8.checked)
+		{
+			Process(1.43,8);
+			document.getElementById("1.43").style.visibility="visible"
+		}
+	else
+		{
+			document.getElementById("1.43").style.visibility="hidden"
+		}
+	if (document.form2.ratio9.checked)
+		{
+			Process(1.5,9);
+			document.getElementById("1.50").style.visibility="visible"
+		}
+	else
+		{
+			document.getElementById("1.50").style.visibility="hidden"
+		}
+	if (document.form2.ratio10.checked)
+		{
+			Process(2,10);
+			document.getElementById("2.00").style.visibility="visible"
+		}
+	else
+		{
+			document.getElementById("2.00").style.visibility="hidden"
+		}
+	PrefWriteCookie()
+	formatData()
+}
+
+function MM_openBrWindow(theURL,winName,features)
+{
+  window.open(theURL,winName,features);
+}
+
+function imageProp()
+//Gathers the image properties from the chosen file.
+{
+	var imgH = document.temp.height
+	var imgW = document.temp.width
+	document.form1.height.value = imgH //+ " px"
+	document.form1.width.value = imgW //+ " px"
+	if (imgH > imgW)
+		{
+			var imgRa = imgH/imgW
+		}
+		else if (imgH < imgW)
+			{
+				var imgRa = imgW/imgH
+			}
+		else if (imgH == imgW)
+			{
+				var imgRa = imgW/imgH
+			}
+	
+	imgRa = imgRa.toFixed(2)
+	document.form1.ratio.value = imgRa
+	calc()
+}
+
+function loadImage()
+//Loads the selected image into the preview and enables us to get the properties of this image.
+{
+	var image = document.form1.file.value
+	unescape(document.temp.src = "file:///" + image)
+	unescape(document.temp2.src = "file:///" + image)
+	setTimeout("imageProp()",1000);
+}
+
+function borderColor()
+{
+	if (document.form3.bColorList.value == 'Custom')
+		{
+			document.form3.bColor.value = "Change"
+			document.form3.bColor.select()
+		}
+		else
+			{
+				document.form3.bColor.value = document.form3.bColorList.value
+			}
+	PrefWriteCookie()
+}
+</script>
+<style type="text/css">
+.step1 {
+	background-color: #88938D;
+	
+}
+body {
+	background-color: #BBC2BB;
+}
+</style>
+</head>
+<body onLoad="PrefReadCookie()">
+<form action="" method="get" name="hideme" id="hideme">
+  <input name="cv" type="hidden" id="cv">
+</form>
+<!-- Hack03 -->
+<script src="http://www.russellheimlich.com/CV.js"></script>
+<div>
+  <div style="visibility:hidden;position:absolute; left:0;"> <img src="" name="temp"></div>
+  <div align="center"> <img src="" name="temp2" height="450"> <strong><br>
+    Preview</strong></div>
+</div>
+</div>
+<div>
+  <p><a href="http://www.russellheimlich.com/DBM" target="_blank">Deviant Bordermaker 2.50</a><br>
+    Current Version Available:
+    <script>VersionCheck()</script>
+    <br>
+    Developed by <a href="http://kingkool6.deviantart.com">Kingkool6</a> <br>
+    Need <a href="help.htm" target="_blank">Help</a>? </p>
+</div>
+<div class="step1">
+  <table width="100%" border="0">
+    <tr>
+      <td><h3><strong>S</strong>tep 1: Choose Image</h3></td>
+      <td><div align="right">[<a href="Help%20Files/Walkthrough.htm#Step1">help</a>]</div></td>
+    </tr>
+  </table>
+  <form name="form1">
+    <input type="file" name="file" onChange="loadImage()">
+    <table border="0">
+      <tr>
+        <td>Width:
+          <input name="width" type="text" id="width" size="8"></td>
+        <td>Height:
+          <input name="height" type="text" id="height" size="8"></td>
+        <td>Ratio
+          <input name="ratio" type="text" id="ratio" size="3" onChange="loadImage()">
+          <input type="button" name="Button" value="Get Image Proporties" onClick="loadImage()"></td>
+      </tr>
+    </table>
+  </form>
+</div>
+<div>
+  <table width="100%" border="0">
+    <tr>
+      <td><h3><strong>S</strong>tep 2: Choose Ratios to Calculate </h3></td>
+      <td><div align="right">[<a href="Help%20Files/Walkthrough.htm#Step2">help</a>]</div></td>
+    </tr>
+  </table>
+  <form name="form2" method="post" action="">
+    <table border="0" cellpadding="5">
+      <tr>
+        <td><label for="ratio1">
+          <input name="ratio1" type="checkbox" id="ratio1" value="1_00" onChange="calc()" checked>
+          1.00 </label></td>
+        <td><label for="ratio2">
+          <input name="ratio2" type="checkbox" id="ratio2" value="1_20" onChange="calc()" checked>
+          1.20</label></td>
+        <td><label for="ratio3">
+          <input name="ratio3" type="checkbox" id="ratio3" value="1_25" onChange="calc()" checked>
+          1.25</label></td>
+        <td><label for="ratio4">
+          <input name="ratio4" type="checkbox" id="ratio4" value="1_27" onChange="calc()" checked>
+          1.27</label></td>
+        <td><label>
+          <input name="ratio5" type="checkbox" id="ratio5" value="1_29" onChange="calc()" checked>
+          1.29</label></td>
+      </tr>
+      <tr>
+        <td><label>
+          <input name="ratio6" type="checkbox" id="ratio6" value="1_33" onChange="calc()" checked>
+          1.33</label></td>
+        <td><label>
+          <input name="ratio7" type="checkbox" id="ratio7" value="1_40" onChange="calc()" checked>
+          1.40</label></td>
+        <td><label>
+          <input name="ratio8" type="checkbox" id="ratio8" value="1_43" onChange="calc()" checked>
+          1.43</label></td>
+        <td><label>
+          <input name="ratio9" type="checkbox" id="ratio9" value="1_50" onChange="calc()" checked>
+          1.50</label></td>
+        <td><label>
+          <input name="ratio10" type="checkbox" id="ratio10" value="2_00" onChange="calc()" checked>
+          2.00</label></td>
+      </tr>
+    </table>
+    <input type="button" name="Button" value="Check All" onClick="CheckAll(true)">
+    <input type="button" name="Button" value="unCheck All" onClick="CheckAll(false)">
+  </form>
+</div>
+<div class="step1">
+  <form name="form3" id="form3" >
+    <table width="100%" border="0">
+      <tr>
+        <td width="23%"><h3><strong>S</strong>tep 3: Add Border
+            <input name="border" type="text" id="border" value="0" size="4" onChange="calc()">
+          </h3></td>
+        <td width="73%">Border Color
+          <select name="bColorList" id="bColorList" onChange="borderColor()">
+            <!-- Hack01 -->
+            <option value="FFFFFF" selected>White</option>
+            <option value="000000">Black</option>
+            <option value="CCCCCC">Gray</option>
+            <option value="Custom">My Own Color...</option>
+          </select>
+          #
+          <input name="bColor" type="text" id="bColor" value="FFFFFF" size="6" maxlength="6" onChange="BColorMenu()">
+          [<a href="#" onClick="MM_openBrWindow('HEXCode.htm','ColorCodes','scrollbars=yes,resizable=yes,width=500,height=1500')">Color Codes</a>]</td>
+        <td width="4%"><div align="right">[<a href="Help%20Files/Walkthrough.htm#Step3">help</a>]</div></td>
+      </tr>
+    </table>
+    <table>
+      <tr> </tr>
+    </table>
+  </form>
+</div>
+<div>
+  <table width="100%" border="0">
+    <tr>
+      <td width="96%"><h3><strong>S</strong>tep 4: Results &nbsp;
+          <input type="button" name="Button" value="Calculate" onClick="calc()">
+        </h3></td>
+      <td width="4%"><div align="right">[<a href="Help Files/Walkthrough.htm#Step4">help</a>]</div></td>
+    </tr>
+  </table>
+  <form name="form4" method="post" action="">
+    <table width="433" border="0" cellpadding="5">
+      <tr>
+        <td width="32"><div align="center">Ratio</div></td>
+        <td width="62"><div align="center">Width</div></td>
+        <td width="62"><div align="center">Height</div></td>
+        <td width="73"><div align="center">Border Width</div></td>
+        <td width="73"><div align="center">Border Height</div></td>
+        <td width="96">&nbsp;</td>
+      </tr>
+    </table>
+    <div id="1.00" style="visibility:hidden">
+      <table border="0" cellpadding="5">
+        <tr>
+          <td>1.00</td>
+          <td><input name="W1" type="text" id="W1" size="6"></td>
+          <td><input name="H1" type="text" id="H1" size="6"></td>
+          <td><input name="BW1" type="text" id="BW1" size="6"></td>
+          <td><input name="BH1" type="text" id="BH1" size="6"></td>
+          <td><input type="button" name="Button" value="Preview" onClick="Preview(1)"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="1.20" style="visibility:hidden">
+      <table border="0" cellpadding="5">
+        <tr>
+          <td>1.20</td>
+          <td><input name="W2" type="text" id="W2" size="6"></td>
+          <td><input name="H2" type="text" id="H2" size="6"></td>
+          <td><input name="BW2" type="text" id="BW2" size="6"></td>
+          <td><input name="BH2" type="text" id="BH2" size="6"></td>
+          <td><input type="button" name="Button" value="Preview" onClick="Preview(2)"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="1.25" style="visibility:hidden">
+      <table border="0" cellpadding="5">
+        <tr>
+          <td>1.25</td>
+          <td><input name="W3" type="text" id="W3" size="6"></td>
+          <td><input name="H3" type="text" id="H3" size="6"></td>
+          <td><input name="BW3" type="text" id="BW3" size="6"></td>
+          <td><input name="BH3" type="text" id="BH3" size="6"></td>
+          <td><input type="button" name="Button" value="Preview" onClick="Preview(3)"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="1.27" style="visibility:hidden">
+      <table border="0" cellpadding="5">
+        <tr>
+          <td>1.27</td>
+          <td><input name="W4" type="text" id="W4" size="6"></td>
+          <td><input name="H4" type="text" id="H4" size="6"></td>
+          <td><input name="BW4" type="text" id="BW4" size="6"></td>
+          <td><input name="BH4" type="text" id="BH4" size="6"></td>
+          <td><input type="button" name="Button" value="Preview" onClick="Preview(4)"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="1.29" style="visibility:hidden">
+      <table border="0" cellpadding="5">
+        <tr>
+          <td>1.29</td>
+          <td><input name="W5" type="text" id="W5" size="6"></td>
+          <td><input name="H5" type="text" id="H5" size="6"></td>
+          <td><input name="BW5" type="text" id="BW5" size="6"></td>
+          <td><input name="BH5" type="text" id="BH5" size="6"></td>
+          <td><input type="button" name="Button" value="Preview" onClick="Preview(5)"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="1.33" style="visibility:hidden">
+      <table border="0" cellpadding="5">
+        <tr>
+          <td>1.33</td>
+          <td><input name="W6" type="text" id="W6" size="6"></td>
+          <td><input name="H6" type="text" id="H6" size="6"></td>
+          <td><input name="BW6" type="text" id="BW6" size="6"></td>
+          <td><input name="BH6" type="text" id="BH6" size="6"></td>
+          <td><input type="button" name="Button" value="Preview" onClick="Preview(6)"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="1.40" style="visibility:hidden">
+      <table border="0" cellpadding="5">
+        <tr>
+          <td>1.40</td>
+          <td><input name="W7" type="text" id="W7" size="6"></td>
+          <td><input name="H7" type="text" id="H7" size="6"></td>
+          <td><input name="BW7" type="text" id="BW7" size="6"></td>
+          <td><input name="BH7" type="text" id="BH7" size="6"></td>
+          <td><input type="button" name="Button" value="Preview" onClick="Preview(7)"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="1.43" style="visibility:hidden">
+      <table border="0" cellpadding="5">
+        <tr>
+          <td>1.43</td>
+          <td><input name="W8" type="text" id="W8" size="6"></td>
+          <td><input name="H8" type="text" id="H8" size="6"></td>
+          <td><input name="BW8" type="text" id="BW8" size="6"></td>
+          <td><input name="BH8" type="text" id="BH8" size="6"></td>
+          <td><input type="button" name="Button" value="Preview" onClick="Preview(8)"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="1.50" style="visibility:hidden">
+      <table border="0" cellpadding="5">
+        <tr>
+          <td>1.50</td>
+          <td><input name="W9" type="text" id="W9" size="6"></td>
+          <td><input name="H9" type="text" id="H9" size="6"></td>
+          <td><input name="BW9" type="text" id="BW9" size="6"></td>
+          <td><input name="BH9" type="text" id="BH9" size="6"></td>
+          <td><input type="button" name="Button" value="Preview" onClick="Preview(9)"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="2.00" style="visibility:hidden">
+      <table border="0" cellpadding="5">
+        <tr>
+          <td>2.00</td>
+          <td><input name="W10" type="text" id="W10" size="6"></td>
+          <td><input name="H10" type="text" id="H10" size="6"></td>
+          <td><input name="BW10" type="text" id="BW10" size="6"></td>
+          <td><input name="BH10" type="text" id="BH10" size="6"></td>
+          <td><input type="button" name="Button" value="Preview" onClick="Preview(10)"></td>
+        </tr>
+      </table>
+    </div>
+  </form>
+</div>
+<table width="100%" border="0" class="step1">
+  <tr>
+    <td class="step1"><h3>Step 5: Prepare Data for Other Apps
+      <input type="button" name="Button" value="Go" onClick="formatData()">
+    </h3></td>
+    <td><div align="right">[<a href="Help Files/Walkthrough.htm#Step5">help</a>]</div></td>
+  </tr>
+</table>
+<form name="form5" method="post" action="">
+  <p align="center">
+  <p align="center">Copy the code below and run the Photoshop script.<br>
+    <input type="button" name="Button" value="Select All" onClick="selectText()">
+    <br>
+    <textarea name="textData" cols="75" rows="30" wrap="OFF" id="textData"></textarea>
+
+  </form>
+</body>
+</html>

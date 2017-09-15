@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<!-- This site is SEO optimized by wpSEO (http://www.wpseo.org) -->
+<title>target=&quot;_blank&quot; vs. target=&quot;_new&quot; » CSS/HTML » Russell Heimlich</title>
+<meta name="description" content="The target attribute of a link forces the browser to open the destination page in a new browser window. Using" />
+<meta name="keywords" content="blank, new, target=new, target=booger, Yahoo, Google, Bing, Links, Rescources, Sitepoint" />
+
+<link rel="shortcut icon" href="../../favicon.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="generator" content="WordPress 4.4.2" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="../wp-content/themes/Photocast_Theme/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Russell Heimlich RSS Feed" href="../../../feeds.feedburner.com/RussellHeimlich.xml" />
+<link rel="pingback" href="../xmlrpc.php.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Russell Heimlich &raquo; target=&#8221;_blank&#8221; vs. target=&#8221;_new&#8221; Comments Feed" href="feed/index.rss" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.russellheimlich.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-syntax-css-css'  href='../wp-content/plugins/wp-syntax/css/wp-syntax-ver=1.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='../wp-content/plugins/jetpack/css/jetpack-ver=3.9.1.css' type='text/css' media='all' />
+<!-- This site uses the Google Analytics by Yoast plugin v5.4.6 - Universal disabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-50793-3']);
+	_gaq.push(['_gat._forceSSL']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+<!-- / Google Analytics by Yoast -->
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-ver=1.11.3.js'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min-ver=1.2.1.js'></script>
+<link rel='https://api.w.org/' href='../wp-json/index.json' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc.php-rsd.xml" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Move Over Pandora, Hello Grooveshark' href='../move-over-pandora-hello-grooveshark/index.html' />
+<link rel='next' title='Adding Your Own Tools To Google Search' href='../adding-your-own-tools-to-google-search/index.html' />
+<meta name="generator" content="WordPress 4.4.2" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='../index-p=1616.html' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed-url=http-%7C%7Cwww.russellheimlich.com%7Cblog%7Ctarget_blank-vs-target_new%7C.xml" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed-url=http-%7C%7Cwww.russellheimlich.com%7Cblog%7Ctarget_blank-vs-target_new%7C&amp;format=xml.xml" />
+<script type="text/javascript">
+	window._se_plugin_version = '8.1.4';
+</script>
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style>
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="target=&#8221;_blank&#8221; vs. target=&#8221;_new&#8221;" />
+<meta property="og:url" content="http://www.russellheimlich.com/blog/target_blank-vs-target_new/" />
+<meta property="og:description" content="The target attribute of a link forces the browser to open the destination page in a new browser window. Using _blank as a target value will spawn a new window every time while using _new will only …" />
+<meta property="article:published_time" content="2009-06-16T01:34:37+00:00" />
+<meta property="article:modified_time" content="2009-06-16T01:34:37+00:00" />
+<meta property="og:site_name" content="Russell Heimlich" />
+<meta property="og:image" content="../wp-content/uploads/2009/06/bullseye-target.jpg" />
+<meta property="og:image:width" content="500" />
+<meta property="og:image:height" content="281" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary" />
+<!-- wp thread comment 1.4.9.4.002 -->
+<style type="text/css" media="screen">.nothing{}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+	<div id="headerimg">
+		<!--h1><a href="http://www.russellheimlich.com/blog/">Russell Heimlich</a></h1>
+		<div class="description">The Blog of Russell Heimlich</div-->
+		<a href="../../../russellheimlich.com/blog/index.html"><img src="../../images/layout/header-title.gif" /></a>
+	</div>
+</div>
+<div id="header-ads" class="banner-ads"><script type="text/javascript"><!--
+google_ad_client = "pub-9571026409625337";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+//2007-08-02: RH-blog-headerbanner
+google_ad_channel = "2221790727";
+google_color_border = "EEEEEE";
+google_color_bg = "FFFFFF";
+google_color_link = "FFFFFF";
+google_color_text = "666666";
+google_color_url = "0099FF";
+google_ui_features = "rc:6";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+	<div id="content" class="widecolumn">
+				
+  	
+		<div class="post" id="post-1616">
+			<span class="post-date">June 15th, 2009 <!-- by Russell Heimlich --></span>
+			<h2><a href="index.html" rel="bookmark" title="Permanent Link: target=&#8221;_blank&#8221; vs. target=&#8221;_new&#8221;">target=&#8221;_blank&#8221; vs. target=&#8221;_new&#8221;</a></h2>
+	
+			<div class="entrytext">
+				<p><a href="http://www.flickr.com/photos/whartz/2912753427/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.flickr.com/photos/whartz/2912753427/', '']);" ><img src="../wp-content/uploads/2009/06/bullseye-target.jpg" alt="Bullseye Target for Archery Practice" title="Bullseye Target for Archery Practice" width="500" height="281" class="size-full wp-image-1622" /></a></p>
+<p>The target attribute of a link forces the browser to open the destination page in a new browser window. Using <em>_blank</em> as a target value will spawn a new window every time while using <em>_new</em> will only spawn one new window and every link clicked with a target value of <em>_new</em> will replace the page loaded in the previously spawned window. Try it out for yourself:</p>
+<h6>Links with target=&#8221;_blank&#8221;</h6>
+<p>
+<a href="http://www.google.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.google.com', 'Google']);" target="_blank">Google</a> | <a href="http://www.yahoo.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.yahoo.com', 'Yahoo']);" target="_blank">Yahoo</a> | <a href="http://www.bing.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.bing.com', 'Bing']);" target="_blank">Bing</a>
+</p>
+<h6>Links with target=&#8221;_new&#8221;</h6>
+<p>
+<a href="http://www.google.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.google.com', 'Google']);" target="_new">Google</a> | <a href="http://www.yahoo.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.yahoo.com', 'Yahoo']);" target="_new">Yahoo</a> | <a href="http://www.bing.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.bing.com', 'Bing']);" target="_new">Bing</a>
+</p>
+<p><em>target=&#8221;_new&#8221;</em> is not a standard target value. You could use any term you like and any link that has the same target value will open in a previously spawned window. See the <em>target=&#8221;booger&#8221;</em> example below.</p>
+<h6>Links with target=&#8221;booger&#8221;</h6>
+<p>
+<a href="http://www.google.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.google.com', 'Google']);" target="booger">Google</a> | <a href="http://www.yahoo.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.yahoo.com', 'Yahoo']);" target="booger">Yahoo</a> | <a href="http://www.bing.com" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.bing.com', 'Bing']);" target="booger">Bing</a>
+</p>
+<h4>How can I force a link to open in a new tab instead of a new window?</h4>
+<p>There is currently no way to force a window to open in a new tab for browsers with this feature. This functionality can only be set in the preferences of the browser (see other resources section below).</p>
+<h4>What if I want the new window to display at a certain size?</h4>
+<p>The only way to do this is by using JavaScript. I recommend the method outlined at <a href="http://www.quirksmode.org/js/popup.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.quirksmode.org/js/popup.html', 'Quirksmode.org']);" >Quirksmode.org</a>.</p>
+<h4>Other Rescources</h4>
+<ul>
+<li><a href="http://reference.sitepoint.com/html/a/target" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://reference.sitepoint.com/html/a/target', 'http://reference.sitepoint.com/html/a/target']);" >http://reference.sitepoint.com/html/a/target</a> &#8211; Sitepoint reference for the target attribute.</li>
+<li><a href="http://support.mozilla.com/en-US/kb/Options+window+-+Tabs+panel" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://support.mozilla.com/en-US/kb/Options+window+-+Tabs+panel', 'http://support.mozilla.com/en-US/kb/Options+window+-+Tabs+panel']);" >http://support.mozilla.com/en-US/kb/Options+window+-+Tabs+panel</a> &#8211; How to configure Firefox to open new windows in new tabs.</li>
+<li><a href="http://www.tech-recipes.com/rx/1164/internet-explorer-7-open-new-windows-in-tabs-in-ie7/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.tech-recipes.com/rx/1164/internet-explorer-7-open-new-windows-in-tabs-in-ie7/', 'http://www.tech-recipes.com/rx/1164/internet-explorer-7-open-new-windows-in-tabs-in-ie7/']);" >http://www.tech-recipes.com/rx/1164/internet-explorer-7-open-new-windows-in-tabs-in-ie7/</a> &#8211; How to configure IE7 to open new windows in new tabs instead.</li>
+</ul>
+<p>Of course all of this is moot since <a href="http://www.smashingmagazine.com/2008/07/01/should-links-open-in-new-windows/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.smashingmagazine.com/2008/07/01/should-links-open-in-new-windows/', 'opening pages in new windows is a usability annoyance']);" >opening pages in new windows is a usability annoyance</a>. </p>
+	
+							
+			</div>
+		<p class="postmetadata alt">
+					Posted at 9:34 pm in <a href="../tags/coding/csshtml/index.html" rel="category tag">CSS/HTML</a> 
+						
+						<br />				</p>
+		<div id="related-content">
+  
+			<div id="related-links">            
+        	<h5>Related Posts</h5>
+			<ul><li><a href="../../../russellheimlich.com/blog/death-to-the-div/index.html" rel="bookmark" title="01Sep09">Death To The Div</a></li>
+
+<li><a href="../../../russellheimlich.com/blog/does-the-img-tag-need-a-fullsize-attribute/index.html" rel="bookmark" title="02Apr09">Does The IMG Tag Need A Fullsize Attribute?</a></li>
+
+<li><a href="../../../russellheimlich.com/blog/no-browser-for-surfing-get-some-help/index.html" rel="bookmark" title="03Jan08">No Browser For Surfing? Get Some Help</a></li>
+
+<li><a href="../../../russellheimlich.com/blog/configuring-the-logitech-mx-revolution-mouse/index.html" rel="bookmark" title="16Mar08">Configuring The Logitech MX Revolution Mouse</a></li>
+
+<li><a href="../../../russellheimlich.com/blog/cnns-new-beta-look/index.html" rel="bookmark" title="06Jun07">CNN&#8217;s New Beta Look</a></li>
+</ul><!-- Similar Posts took 0.333 ms (cached) -->            <h5>Recent Posts</h5>
+			<ul><li><a href="../../../russellheimlich.com/blog/taking-notes-with-nvalt-and-epistle/index.html" rel="bookmark" title="29Jan12">Taking Notes With nvAlt And Epistle</a></li>
+
+<li><a href="../../../russellheimlich.com/blog/pinterest-vs-gimmiebar/index.html" rel="bookmark" title="05Jan12">Pinterest Vs. Gimmiebar</a></li>
+
+<li><a href="../../../russellheimlich.com/blog/my-stats-from-2011/index.html" rel="bookmark" title="02Jan12">My Stats From 2011</a></li>
+
+<li><a href="../../../russellheimlich.com/blog/replacement-pads-for-sonys-mdr-v6-headphones/index.html" rel="bookmark" title="09Dec11">Replacement Pads For Sony&#8217;s MDR-V6 Headphones</a></li>
+
+<li><a href="../../../russellheimlich.com/blog/unmatched-styles-css-off-was-slimey-fun/index.html" rel="bookmark" title="04Nov11">Unmatched Style&#8217;s CSS Off Was Slimey Fun</a></li>
+</ul><!-- Recent Posts took 0.263 ms (cached) -->        	</div>
+                  	<div id="ads">
+            <script type="text/javascript"><!--
+google_ad_client = "pub-9571026409625337";
+google_ad_width = 300;
+google_ad_height = 250;
+google_ad_format = "300x250_as";
+google_ad_type = "text_image";
+//2007-07-29: RH-blog-lrgSquare
+google_ad_channel = "7066055371";
+google_color_border = "EEEEEE";
+google_color_bg = "FFFFFF";
+google_color_link = "FFFFFF";
+google_color_text = "999999";
+google_color_url = "0099FF";
+//-->
+</script><script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+            </div>
+		</div>
+		</div>
+		
+	  <!-- You can start editing here. -->
+  <div class="comments">
+  <h4 id="comments">
+    13 Responses    to &#8220;
+    target=&#8221;_blank&#8221; vs. target=&#8221;_new&#8221;    &#8221;</h4>
+  <ol id="commentlist">
+        <li class="alt" id="comment-1522">
+            
+	<div class="commentMetadata">
+	  	<a rel="nofollow" href="http://www.searchenginejournal.com/when-not-to-use-target_blank-link-attribute/19924/"><img class="avatar" src="../../../www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e.jpg" /></a>
+	  	<a rel="nofollow" href="http://www.searchenginejournal.com/when-not-to-use-target_blank-link-attribute/19924/"><cite>When (Not) To Use Target=&#8221;_Blank&#8221; Link Attribute | Search Engine Journal</cite></a> 
+	  
+	  	<div class="commentTime">
+		<a  href="index.html#comment-1522" title="Comment posted at 9:50 am">9:50 am</a></div>
+        <span class="commentDate" title="Comment posted on April 13th, 2010">April 13th, 2010</span>
+	</div>
+      
+	  <!--div class="commentmetadata-time"></div-->
+	<div class="commentContent">
+	  <p>[&#8230;] Here&#8217;s an awesome explanation: Using _blank as a target value will spawn a new window every time while using _new will only spawn one new window and every link clicked with a target value of _new will replace the page loaded in the previously spawned window. Try it out for yourself: [&#8230;]</p>
+	</div>
+    </li>
+            <li class="" id="comment-1716">
+            
+	<div class="commentMetadata">
+	  	<a rel="nofollow" href="http://this1that1whatever.com"><img class="avatar" src="../../../www.gravatar.com/avatar/01056f3f7f6336e2837187ccad1bc6e7.jpg" /></a>
+	  	<a rel="nofollow" href="http://this1that1whatever.com"><cite>David</cite></a> 
+	  
+	  	<div class="commentTime">
+		<a  href="index.html#comment-1716" title="Comment posted at 1:02 am">1:02 am</a></div>
+        <span class="commentDate" title="Comment posted on October 28th, 2010">October 28th, 2010</span>
+	</div>
+      
+	  <!--div class="commentmetadata-time"></div-->
+	<div class="commentContent">
+	  <p>_new can be confusing to the user. If windows are deleted after use, then it is not confusing.<br />
+_blank can create a lot of opened windows. Closing the windows after use is the solution. But if windows are closed after use, then _new works just as nicely.<br />
+On balance, I prefer to launch new windows with _new.</p>
+<p class="thdrpy"><a href="javascript:void(0)" onclick="movecfm(event,1716,1,'David');">Reply</a></p><div class="comment-childs chl1 chalt" id="comment-1717">
+<a href="index.html#"><cite><a href='../../../russellheimlich.com/blog/index.html' rel='external nofollow' class='url'>Russell Heimlich</a></cite></a> responded on <em>October 28th, 2010</em>:
+<p>It doesn&#8217;t matter which one you use when you&#8217;re talking about opening one window. But things can get confusing if you need to open multiple windows on a page since browsers treat &#8220;_new&#8221; as a window name.</p>
+</div>	</div>
+    </li>
+            <li class="alt" id="comment-2656">
+            
+	<div class="commentMetadata">
+	  	<a rel="nofollow" href="http://www.blog.adambenjamin.com/2011/12/03/imag895-dreamweaver-week-2/"><img class="avatar" src="../../../www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e.jpg" /></a>
+	  	<a rel="nofollow" href="http://www.blog.adambenjamin.com/2011/12/03/imag895-dreamweaver-week-2/"><cite>&raquo; IMAG895 &#8211; Dreamweaver &#8211; Week 2 Solutions</cite></a> 
+	  
+	  	<div class="commentTime">
+		<a  href="index.html#comment-2656" title="Comment posted at 8:58 pm">8:58 pm</a></div>
+        <span class="commentDate" title="Comment posted on December 3rd, 2011">December 3rd, 2011</span>
+	</div>
+      
+	  <!--div class="commentmetadata-time"></div-->
+	<div class="commentContent">
+	  <p>[&#8230;] Codes &#8211; <a href="http://en.wikipedia.org/wiki/ISO_639" onclick="_gaq.push(['_trackEvent', 'outbound-comment', 'http://en.wikipedia.org/wiki/ISO_639', 'http://en.wikipedia.org/wiki/ISO_639']);" rel="nofollow">http://en.wikipedia.org/wiki/ISO_639</a> Link Targets &#8211; _blank vs. _new &#8211; <a href="index.html" rel="nofollow">http://www.russellheimlich.com.....arget_new/</a> Image Formats &#8211; <a href="http://www.webopedia.com/DidYouKnow/internet/2002/jpg_gif_png.asp" onclick="_gaq.push(['_trackEvent', 'outbound-comment', 'http://www.webopedia.com/DidYouKnow/internet/2002/jpg_gif_png.asp', 'http://www.webopedia.com/DidYo.....if_png.asp']);" rel="nofollow">http://www.webopedia.com/DidYo.....if_png.asp</a> Image Long [&#8230;]</p>
+	</div>
+    </li>
+            <li class="" id="comment-2664">
+            
+	<div class="commentMetadata">
+	  	<a rel="nofollow" href="http://www.blog.adambenjamin.com/2011/12/08/imag895-dreamweaver-week/"><img class="avatar" src="../../../www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e.jpg" /></a>
+	  	<a rel="nofollow" href="http://www.blog.adambenjamin.com/2011/12/08/imag895-dreamweaver-week/"><cite>&raquo; IMAG895 – Dreamweaver – Week 3 Solutions</cite></a> 
+	  
+	  	<div class="commentTime">
+		<a  href="index.html#comment-2664" title="Comment posted at 12:13 pm">12:13 pm</a></div>
+        <span class="commentDate" title="Comment posted on December 8th, 2011">December 8th, 2011</span>
+	</div>
+      
+	  <!--div class="commentmetadata-time"></div-->
+	<div class="commentContent">
+	  <p>[&#8230;] Codes &#8211; <a href="http://en.wikipedia.org/wiki/ISO_639" onclick="_gaq.push(['_trackEvent', 'outbound-comment', 'http://en.wikipedia.org/wiki/ISO_639', 'http://en.wikipedia.org/wiki/ISO_639']);" rel="nofollow">http://en.wikipedia.org/wiki/ISO_639</a> Link Targets &#8211; _blank vs. _new &#8211; <a href="index.html" rel="nofollow">http://www.russellheimlich.com.....arget_new/</a> Image Formats &#8211; <a href="http://www.webopedia.com/DidYouKnow/internet/2002/jpg_gif_png.asp" onclick="_gaq.push(['_trackEvent', 'outbound-comment', 'http://www.webopedia.com/DidYouKnow/internet/2002/jpg_gif_png.asp', 'http://www.webopedia.com/DidYo.....if_png.asp']);" rel="nofollow">http://www.webopedia.com/DidYo.....if_png.asp</a> Image Long [&#8230;]</p>
+	</div>
+    </li>
+            <li class="alt" id="comment-2690">
+            
+	<div class="commentMetadata">
+	  	<a rel="nofollow" href="http://www.rpgparadise.com"><img class="avatar" src="../../../www.gravatar.com/avatar/25b1ba5c8154fbd90229473f52592aaa.jpeg" /></a>
+	  	<a rel="nofollow" href="http://www.rpgparadise.com"><cite>Raptorak</cite></a> 
+	  
+	  	<div class="commentTime">
+		<a  href="index.html#comment-2690" title="Comment posted at 2:48 pm">2:48 pm</a></div>
+        <span class="commentDate" title="Comment posted on December 31st, 2011">December 31st, 2011</span>
+	</div>
+      
+	  <!--div class="commentmetadata-time"></div-->
+	<div class="commentContent">
+	  <p>Thanks for the explanation of the difference! I&#8217;ve been using &#8220;new&#8221; because I just assumed that meant &#8220;open a new window.&#8221; I had no idea what blank meant. So based on my understanding now, if we want to link to a few sites in a row (for people to read) it may be better to go with blank, whereas if it&#8217;s just one link we should go with new?</p>
+<p class="thdrpy"><a href="javascript:void(0)" onclick="movecfm(event,2690,1,'Raptorak');">Reply</a></p><div class="comment-childs chl1 chalt" id="comment-2691">
+<a href="index.html#"><cite><a href='../../../russellheimlich.com/blog/index.html' rel='external nofollow' class='url'>Russell Heimlich</a></cite></a> responded on <em>December 31st, 2011</em>:
+<p>Yup, you should use target=&#8221;_blank&#8221;, the underscore is important.</p>
+</div>	</div>
+    </li>
+            <li class="" id="comment-2973">
+            
+	<div class="commentMetadata">
+	  	<a rel="nofollow" href=""><img class="avatar" src="../../../www.gravatar.com/avatar/64c96a3d557f983c81eb177439c6cf9b.jpg" /></a>
+	  	<a rel="nofollow" href=""><cite>Paul</cite></a> 
+	  
+	  	<div class="commentTime">
+		<a  href="index.html#comment-2973" title="Comment posted at 10:52 am">10:52 am</a></div>
+        <span class="commentDate" title="Comment posted on October 17th, 2012">October 17th, 2012</span>
+	</div>
+      
+	  <!--div class="commentmetadata-time"></div-->
+	<div class="commentContent">
+	  <p>Thank you.</p>
+<p>Very useful.</p>
+<p class="thdrpy"><a href="javascript:void(0)" onclick="movecfm(event,2973,1,'Paul');">Reply</a></p><div class="comment-childs chl1 chalt" id="comment-2974">
+<a href="index.html#"><cite>Paul</cite></a> responded on <em>October 17th, 2012</em>:
+<p>UPDATE</p>
+<p>Whatever substitute name is used for _new, providing that name is used consistently, that window will be repeatedly reused.</p>
+<p>However, if we use target=&#8221;_one&#8221; and later target=&#8221;_two&#8221; separate, reusable, windows will be open for both.</p>
+<p>Paul.</p>
+</div><div class="comment-childs chl1 chalt" id="comment-2975">
+<a href="index.html#"><cite><a href='../index.html' rel='external nofollow' class='url'>Russell Heimlich</a></cite></a> responded on <em>October 17th, 2012</em>:
+<p>&#8220;target=”_new” is not a standard target value. You could use any term you like and any link that has the same target value will open in a previously spawned window.&#8221; </p>
+<p>See the target=”booger” example above.</p>
+</div>	</div>
+    </li>
+            <li class="alt" id="comment-3376">
+            
+	<div class="commentMetadata">
+	  	<a rel="nofollow" href="../../index.html"><img class="avatar" src="../../../www.gravatar.com/avatar/8620100c560de83ef62d12866b7596a2.jpg" /></a>
+	  	<a rel="nofollow" href="../../index.html"><cite>Russell Heimlich</cite></a> 
+	  
+	  	<div class="commentTime">
+		<a  href="index.html#comment-3376" title="Comment posted at 10:03 am">10:03 am</a></div>
+        <span class="commentDate" title="Comment posted on May 24th, 2013">May 24th, 2013</span>
+	</div>
+      
+	  <!--div class="commentmetadata-time"></div-->
+	<div class="commentContent">
+	  <p>I don&#8217;t know why you&#8217;re asking. You&#8217;ve clearly already done that just by leaving a comment here.</p>
+<p class="thdrpy"><a href="javascript:void(0)" onclick="movecfm(event,3376,1,'Russell Heimlich');">Reply</a></p>	</div>
+    </li>
+            <li class="" id="comment-3570">
+            
+	<div class="commentMetadata">
+	  	<a rel="nofollow" href="http://acordocoletivo.org/2015/05/12/html/"><img class="avatar" src="../../../www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e.jpg" /></a>
+	  	<a rel="nofollow" href="http://acordocoletivo.org/2015/05/12/html/"><cite>HTML | Acordo Coletivo (Petroleiros, Bancários, Prof de Saúde)</cite></a> 
+	  
+	  	<div class="commentTime">
+		<a  href="index.html#comment-3570" title="Comment posted at 9:18 pm">9:18 pm</a></div>
+        <span class="commentDate" title="Comment posted on May 12th, 2015">May 12th, 2015</span>
+	</div>
+      
+	  <!--div class="commentmetadata-time"></div-->
+	<div class="commentContent">
+	  <p>[&#8230;] para cima↑ target=”_blank” vs. target=”_new”(em [&#8230;]</p>
+	</div>
+    </li>
+            <li class="alt" id="comment-3575">
+            
+	<div class="commentMetadata">
+	  	<a rel="nofollow" href=""><img class="avatar" src="../../../www.gravatar.com/avatar/6899c863f7ae216150a1a5ac2d9dbb66.jpg" /></a>
+	  	<a rel="nofollow" href=""><cite>andy</cite></a> 
+	  
+	  	<div class="commentTime">
+		<a  href="index.html#comment-3575" title="Comment posted at 10:10 am">10:10 am</a></div>
+        <span class="commentDate" title="Comment posted on October 18th, 2015">October 18th, 2015</span>
+	</div>
+      
+	  <!--div class="commentmetadata-time"></div-->
+	<div class="commentContent">
+	  <p>Thanks &#8211; great resource</p>
+<p class="thdrpy"><a href="javascript:void(0)" onclick="movecfm(event,3575,1,'andy');">Reply</a></p>	</div>
+    </li>
+          </ol>
+      <h3 id="respond">Leave a Comment of Your Own</h3>
+    <form action="http://www.russellheimlich.com/blog/wp-comments-post.php" method="post" id="commentform">
+        <p>
+      <input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+      <label for="author"><small>Name
+      (required)      </small></label>
+    </p>
+    <p>
+      <input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+      <label for="email"><small>Mail (will not be published)
+      (required)      </small></label>
+    </p>
+    <p>
+      <input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+      <label for="url"><small>Website</small></label>
+    </p>
+        <!--<p><small><strong>XHTML:</strong> You can use these tags: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;s&gt; &lt;strike&gt; &lt;strong&gt; </small></p>-->
+    <textarea name="comment" id="comment" rows="10" tabindex="4"></textarea>
+    <input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+    <input type="hidden" name="comment_post_ID" value="1616" />
+    <p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="bd63b340b6" /></p>		<p class="antispam-group antispam-group-q" style="clear: both;">
+			<label>Current ye@r <span class="required">*</span></label>
+			<input type="hidden" name="antspm-a" class="antispam-control antispam-control-a" value="2016" />
+			<input type="text" name="antspm-q" class="antispam-control antispam-control-q" value="4.2" autocomplete="off" />
+		</p>
+		<p class="antispam-group antispam-group-e" style="display: none;">
+			<label>Leave this field empty</label>
+			<input type="text" name="antspm-e-email-url-website" class="antispam-control antispam-control-e" value="" autocomplete="off" />
+		</p>
+<p class="comment-subscription-form"><input type="checkbox" name="subscribe_comments" id="subscribe_comments" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-label" for="subscribe_comments">Notify me of follow-up comments by email.</label></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts by email.</label></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="59"/></p><p><input type="hidden" id="comment_reply_ID" name="comment_reply_ID" value="0" /><input type="hidden" id="comment_reply_dp" name="comment_reply_dp" value="0" /></p><div id="cancel_reply" style="display:none;"><a href="javascript:void(0)" onclick="movecfm(null,0,1,null);" style="color:red;">Click to cancel reply</a></div><script type="text/javascript">
+/* <![CDATA[ */
+var commentformid = "commentform";
+var USERINFO = false;
+var atreply = "no";
+/* ]]> */
+</script>
+<script type="text/javascript" src="../wp-content/plugins/wordpress-thread-comment/wp-thread-comment.js.php-jsver=common.html"></script>
+  </form>
+    </div>
+	
+		</div>
+
+<div class="footer"> <a title="www.russellheimlich.com/video.html" href="../../video.html">Video</a> | <a title="www.russellheimlich.com/photoo.html" href="../../photo.html">Photo</a> | <a title="www.russellheimlich.com/development.html" href="../../development.html">Development</a> | <a title="www.russellheimlich.com/distribute.html" href="../../distribute.html">Distribute</a><br/>  <a title="www.russellheimlich.com/resume.html" href="../../resume.html">Resume</a> | <a title="Contact Me!" href="../../contact.html">Contact</a> | <a title="Subscribe via RSS" href="../../../feeds.feedburner.com/RussellHeimlich.xml"><img src="../wp-content/themes/Photocast_Theme/images/feed-icon-16x16.png"/></a> |  <!-- AddThis Bookmark Button BEGIN -->  <a target="_blank" title="Bookmark using any bookmark manager!" onclick="window.open('http://www.addthis.com/bookmark.php?wt=nw&amp;pub=kingkool68&amp;url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title), 'addthis', 'scrollbars=yes,menubar=no,width=620,height=520,resizable=yes,toolbar=no,location=no,status=no,screenX=200,screenY=100,left=200,top=100'); return false;" href="http://www.addthis.com/bookmark.php"><img border="0" alt="AddThis Social Bookmark Button" src="../wp-content/themes/Photocast_Theme/images/add_bookmark.png"/></a>  <!-- AddThis Bookmark Button END --></div>	<div style="display:none">
+	</div>
+<script type='text/javascript' src='../wp-content/plugins/akismet/_inc/form-ver=3.1.7.js'></script>
+<script type='text/javascript' src='../wp-content/plugins/anti-spam/js/anti-spam-4.2.js'></script>
+<script type='text/javascript' src='../../../s0.wp.com/wp-content/js/devicepx-jetpack-ver=201605.js'></script>
+<script type='text/javascript' src='../../../s.gravatar.com/js/gprofiles-ver=2016Febaa.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/plugins/jetpack/modules/wpgroho-ver=4.4.2.js'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.min-ver=4.4.2.js'></script>
+<script type='text/javascript' src='http://stats.wp.com/e-201605.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:3.9.1',blog:'40332112',post:'1616',tz:'-5',srv:'www.russellheimlich.com'} ]);
+	_stq.push([ 'clickTrackerInit', '40332112', '1616' ]);
+</script>
+<script>function lc_get_cookie(name) {var c = document.cookie;if (c.indexOf(name) != -1) {var x = c.indexOf(name)+name.length+1;var y = c.indexOf(";",x);if (y < 0) y = c.length;return decodeURIComponent(c.substring(x,y));} else return "";}if ((d = document.getElementById("commentform")) != null) { e = d.elements;var z = lc_get_cookie("comment_author_email_ce3c7d8c5a080bad54c9fcdf0fd138c8");if (z != "") e["email"].value = z;z = lc_get_cookie("comment_author_ce3c7d8c5a080bad54c9fcdf0fd138c8");if (z != "") e["author"].value = z.replace(/\+/g, " ");z = lc_get_cookie("comment_author_url_ce3c7d8c5a080bad54c9fcdf0fd138c8");if (z != "") e["url"].value = z;}</script></body></html><!-- hyper cache 2016-02-07 11:01:49 -->

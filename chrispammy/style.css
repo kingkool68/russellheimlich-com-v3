@@ -1,0 +1,149 @@
+/* Clear default browser styles */
+html, body, form, fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, pre,
+blockquote, ul, ol, dl, address {
+	margin: 0;
+	padding: 0;
+}
+form label {
+	cursor: pointer;
+}
+fieldset {
+	border: none;
+}
+
+input, select, textarea {
+	font-size: 100%;
+}
+
+
+/* Global */
+html {
+	font-size:62.5%;	
+}
+body {
+	background-image: url(images/tile-bg.gif);
+	background-repeat:repeat;
+	font-size:1.4em;
+	color:#7E725B;
+}
+a {
+	color:#7e725b;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+h1 {
+	color:#007e82;
+	font-size:1.6em;
+}
+h2 {
+	color:#007e82;
+	font-size:1.4em;
+}
+/* Header */
+#header {
+	background-color:#b4e1e5;
+	text-align:center;
+}
+#header li.menu-top-level {
+	float:left;
+	list-style:none;
+	margin-left:1em;
+}
+#menu-container{
+	background-color:#d9d6c5;
+	border-top:5px solid #64C8D0;
+	border-bottom:5px solid #64C8D0;
+}
+ul#menu {	
+	overflow:hidden;
+	padding:10px 0px;
+	margin:auto;
+	width:550px;
+}
+ul#menu li.menu-top-level a {
+	padding-bottom:10px;
+}
+ul#menu li ul li {
+	padding:0px 10px;
+}
+ul#menu li ul {
+	display:none;
+	position:absolute;
+	background-color:#64C8D0;
+	margin-top:10px;
+	border:1px solid #64C8D0;
+}
+ul#menu li:hover ul, ul#menu li:hover ul li  {
+	display:block;
+	padding-bottom:0px;
+}
+ul#menu li:hover ul li:hover {
+	background-color:#FFF;
+}
+
+/* Content */
+#content {
+	overflow:auto;
+	width:1100px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:40px;
+}
+#wedding-update {
+	width:350px;
+	float:left;
+}
+#wedding-update p {
+	color:#007e82;
+}
+#wedding-update a {
+		color:#007e82;
+	}
+#wedding-blurb {
+	background-color:#b4e1e5;
+	border:2px solid #5aafb3;
+	overflow:auto;
+	height:250px;
+	padding:15px 10px 5px 10px;
+	margin-bottom:5px;
+}
+	#wedding-blurb ul {
+		border-bottom:#007e82 solid 2px;
+		padding-left:20px;
+		padding-bottom:5px;
+		margin-bottom:5px;
+	}
+#mid {
+	width:350px;
+	float:left;
+	text-align:center;
+	padding:25px 10px 10px 10px;
+}
+	#mid p {
+		padding:10px 0;
+	}
+#right-photo {
+	float:left;
+	width:350px;
+}
+#right-photo p {
+	color:#007e82;
+}
+#right-photo img {
+	border:15px solid #7e725b;
+	margin-bottom:5px;
+}
+#right-photo a {
+	color:#007e82;
+}
+/* Footer */
+#footer {
+	background-color:#d9d6c5;
+}

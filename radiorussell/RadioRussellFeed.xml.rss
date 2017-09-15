@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rss version="2.0">
+  <channel>
+    <title>Radio Russell</title>
+    <description>A collection of podcasts, interviews, and audio clips from Russell Heimlich.</description>
+    <link>http://www.russellheimlich.com/radiorussell/index.html</link>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <language>en</language>
+    <lastBuildDate>Mon, 12 Jun 2006 14:56:07 -0400</lastBuildDate>
+    <pubDate>Mon, 12 Jun 2006 14:53:14 -0400</pubDate>
+    <webMaster>Russell Heimlich</webMaster>
+    <generator>FeedForAll v1.0 (1.0.2.0)</generator>
+    <item>
+      <title>Email of the Week on the Coolness Roundup Podcast</title>
+      <description>My question was picked as the Email of the Week even though it was a Skype message.</description>
+      <link>http://www.russellheimlich.com/radiorussell/index.html</link>
+      <enclosure url="http://www.russellheimlich.com/radiorussell/MP3/CoolnessRoundup-05-13-05.mp3" length="" type=""></enclosure>
+      <pubDate>Sat, 13 May 2006 00:00:01 -0400</pubDate>
+    </item>
+    <item>
+      <title>Interview with Phil Leigh from InsideDigitalMedia.com</title>
+      <description>Phil Leigh wanted the perspective of a college student about the trends occuring in digital media.</description>
+      <link>http://www.russellheimlich.com/radiorussell/index.html</link>
+      <enclosure url="http://www.insidedigitalmedia.com/downloads/russell.mp3" length="" type=""></enclosure>
+      <pubDate>Wed, 15 Feb 2006 00:00:01 -0400</pubDate>
+    </item>
+    <item>
+      <title>Call in to The Profit Doctors Radio Show</title>
+      <description>The Profit Doctors was having a special show about Digg.com.  I called in and gave them my 2 cents.</description>
+      <link>http://www.russellheimlich.com/radiorussell/</link>
+      <enclosure url="http://www.russellheimlich.com/radiorussell/MP3/TheProfitDoctors-10-19-05.mp3" length="" type=""></enclosure>
+      <pubDate>Wed, 19 Oct 2005 00:00:01 -0400</pubDate>
+    </item>
+  </channel>
+</rss>

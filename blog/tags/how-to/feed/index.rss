@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>How To &#8211; Russell Heimlich</title>
+	<atom:link href="http://www.russellheimlich.com/blog/tags/how-to/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.russellheimlich.com/blog</link>
+	<description>The Blog of Russell Heimlich</description>
+	<lastBuildDate>Fri, 02 Nov 2012 18:39:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.2</generator>
+	<item>
+		<title>Making JavaScript And The Blip.tv Player Work</title>
+		<link>http://www.russellheimlich.com/blog/making-javascript-and-the-blip-tv-player-work/</link>
+		<comments>http://www.russellheimlich.com/blog/making-javascript-and-the-blip-tv-player-work/#comments</comments>
+		<pubDate>Wed, 17 Mar 2010 00:04:44 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[How To]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[blip.tv]]></category>
+		<category><![CDATA[code]]></category>
+		<category><![CDATA[jQuery]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2177</guid>
+		<description><![CDATA[It sure would be nice if the blip.tv player had an easy way to change which video is playing in a playlist using their JavaScript API. But they don&#8217;t, so I had to roll my own to make the two play together nicely. Here is the end result (Note there are some line breaks I [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><img class="alignnone size-full wp-image-2188" title="blip.tv JavaScript API needs work" src="http://www.russellheimlich.com/blog/wp-content/uploads/2010/03/blip.tv-javascript-api-needs-work.png" alt="" width="495" height="467" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2010/03/blip.tv-javascript-api-needs-work-300x283.png 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2010/03/blip.tv-javascript-api-needs-work.png 495w" sizes="(max-width: 495px) 100vw, 495px" /></p>
+<p>It sure would be nice if the blip.tv player had an easy way to change which video is playing in a playlist using their <a href="http://wiki.blip.tv/index.php/Showplayer" class="broken_link">JavaScript API</a>. But they don&#8217;t, so I had to roll my own to make the two play together nicely. Here is the end result (Note there are some line breaks I put in here for visual formatting, it might not work):</p>
+<pre>var player;
+var currentPlaylistItem;
+var currentState;
+function getUpdate(type, arg1, arg2) {
+	switch(type) {
+        case "state":
+			currentState = arg1;
+		break;
+		case "item":
+			currentPlaylistItem = arg1;
+			var episode = player.getCurrentItem();
+			document.title = episode.title;
+        break;
+    }
+}
+
+var flashvars = {
+	'file': 'http://blip.tv/play/ha0CjMVEh_8o',
+    'enablejs': 'true',
+    'javascriptid': 'blip_player',
+    'autostart': 'false'
+};
+
+var params = {
+	'allowscriptaccess': 'always',
+	'allowfullscreen': 'true',
+	'expressinstall': '/millennials/flash/expressInstall.swf'
+};
+
+var attributes = {
+	'id': 'blip_player',
+	'name': 'blip_player'
+};
+swfobject.embedSWF('http://blip.tv/play/ha0CjMVEh_8o',
+'blip_player', '770', '470', '8.0', false, flashvars,
+params, attributes, swfCallBack);
+
+function swfCallBack() {
+	player = document.getElementById('blip_player');
+	$('#agenda h3 a, #agenda a.blip_tv').click(function(){
+		var playlistItemNum =
+                    $(this).attr('href').split('#')[1];
+		changePlaylist(Number(playlistItemNum));
+		$.scrollTo('.video .player', 800);
+		return false;
+	});
+}
+
+function changePlaylist(num) {
+		var direction = 'prev';
+		var diff = currentPlaylistItem - num;
+		if (diff &lt; 0) {
+			direction = 'next';
+			diff = Math.abs(diff);
+		}
+		for(i=0; i &lt; diff; i++) {
+			player.sendEvent(direction);
+		}
+		if (currentState == 0) {
+			player.sendEvent('play');
+		}
+}</pre>
+<p>There are three requirements to getting started as outlined in the <a href="http://wiki.blip.tv/index.php/Showplayer#Javascript_Interaction" class="broken_link">blip.tv wiki</a>:</p>
+<ol>
+<li>The player must be embeded with the <em>enablejs=true</em> Flash variable set</li>
+<li>The player must be embeded with <em>allowScriptAccess=always</em> object/embed parameter set</li>
+<li>A JavaScript function must exist named <em>getUpdate()</em></li>
+</ol>
+<p>The first part of my script sets up three global variables that we&#8217;ll use.</p>
+<ul>
+<li><em>player</em> will reference the object/embed element by an ID. It is how we send commands to the show player.</li>
+<li><em>currentPlaylistItem</em> is the number of the video selected (or position) in the playlist.</li>
+<li><em>currentState </em>is either 2 (playing), 1 (loading), or 0 (stopped) depending on the current state of the player.</li>
+</ul>
+<p>The <em>getUpdate()</em> function listens to the blip.tv player for changes like when the player is stopped or a video is changed in the playlist. The type argument is a string which we can send through a switch statement to determine what we need to do.</p>
+<p>If the state of player has changed then we update our <em>currentState</em> variable with the value of arg1 (which will be a number between 0 and 2). If the event is an item change, we will update the currentPlaylistItem variable to reflect that. As an added bonus we get the title of the current playing video and change the title of the webpage to reflect this. This has zero SEO value and is really only a convenience to our audience.  Now that we know what is going on, lets get to the fun stuff.</p>
+<p>Three variables (which are really Objects) are created for <a href="http://code.google.com/p/swfobject/">swfobject</a> so we can easily embed the video player dynamically into the page. The &#8216;blip_player&#8217; paramter is the ID of the player that we&#8217;ll be referencing shortly. The <em>swfCallBack()</em> function is called once the blip.tv player has loaded. There we set our <em>player</em> variable to reference the element of the blip.tv player. I used a line of jQuery to set the <em>onClick()</em> events of a group of links that will change the playlist when they are clicked.</p>
+<p>In the HTML the links contain direct links to each blip.tv video and an anchor with a number after it. This number is the playlist position of the specific video. jQuery makes it a snap to extract just that number from the URL which we store in the <em>playlistItemNum</em> variable. The <em>playlistItemNum</em> variable is passed along to a function called <em>changePlaylist()</em> which does all of the heavy lifting.</p>
+<p>Since the blip.tv show player doesn&#8217;t have a direct way of going to a specific video in a playlist, we have to hit the next or previous button on the player programmatically. The direction is set to &#8216;prev&#8217; initially.  <em>diff</em> is calculated by subtracting the number passed to the function from the position of the currently playing video, <em> currentPlaylistItem</em>.</p>
+<p>If <em>diff</em> is a negative number than we need to switch the direction <em>variable</em> to &#8216;next&#8217; and get rid of the negative number by calling the <a href="http://www.w3schools.com/jsref/jsref_abs.asp">absolute value method</a> ( <em>Math.abs()</em> ). Now we simply send the player a command to go to the next or previous video as many times as we need to get to the desired video via a loop. Finally, if the player is stopped, we send the video player a command to start playing the video.</p>
+<p>As an added nicety, we gently scroll the viewer up the page to the top of the video player so they&#8217;re not left wondering why nothing happened. The<a href="http://flesler.blogspot.com/2007/10/jqueryscrollto.html"> jQuery scrollTo plugin</a> makes this a breeze to do.</p>
+<p>There is one caveat for the <em>changePlaylist()</em> function to work: the playlist needs to be visible on the blip.tv show player. This is simply an option you set on the player configuration screen on blip.tv. Without it showing, we can&#8217;t get which video is playing and the whole thing falls apart.</p>
+<p>That wraps up how to roll your own playlist changing function as well as shed some light on how you might control other things about the blip.tv show player using JavaScript. You can see this in action on the <a href="http://pewresearch.org/millennials/video/conference.php">Pew Research Center Millennial Conference video page</a>. If you have any questions leave them in the comments or <a href="http://www.russellheimlich.com/contact.html">get in contact</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/making-javascript-and-the-blip-tv-player-work/feed/</wfw:commentRss>
+		<slash:comments>10</slash:comments>
+		</item>
+		<item>
+		<title>Picasa People Tagging / Facial Detection Guide</title>
+		<link>http://www.russellheimlich.com/blog/picasa-people-tagging-facial-detection-guide/</link>
+		<comments>http://www.russellheimlich.com/blog/picasa-people-tagging-facial-detection-guide/#comments</comments>
+		<pubDate>Tue, 20 Oct 2009 02:37:48 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[How To]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[embedding]]></category>
+		<category><![CDATA[facial recognition]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[guide]]></category>
+		<category><![CDATA[hexadecimal]]></category>
+		<category><![CDATA[metadata]]></category>
+		<category><![CDATA[people]]></category>
+		<category><![CDATA[photo management]]></category>
+		<category><![CDATA[Picasa]]></category>
+		<category><![CDATA[tagging]]></category>
+		<category><![CDATA[XMP]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1882</guid>
+		<description><![CDATA[Picasa 3.5 brings a new feature that scans your photo library looking for faces so you can tag people in your photos. This walkthrough video embedded below from Google covers the basics of people tagging. There is also this written guide. First Impressions The face detection technology built into Picasa 3.5 works ok. The scanning [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><a href="http://picasa.google.com">Picasa 3.5</a> brings a new feature that scans your photo library looking for faces so you can tag people in your photos. This walkthrough video embedded below from Google covers the basics of people tagging. There is also this <a href="http://picasa.google.com/support/bin/answer.py?answer=156272">written guide</a>.</p>
+<p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="560" height="340" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="src" value="http://www.youtube.com/v/gYO2uhrIZJ4&amp;hl=en&amp;fs=1&amp;" /><param name="allowfullscreen" value="true" /><embed type="application/x-shockwave-flash" width="560" height="340" src="http://www.youtube.com/v/gYO2uhrIZJ4&amp;hl=en&amp;fs=1&amp;" allowscriptaccess="always" allowfullscreen="true"></embed></object></p>
+<h3>First Impressions</h3>
+<p>The face detection technology built into Picasa 3.5 works ok. The scanning processes is slow but Google is <a href="http://picasa.google.com/support/bin/static.py?page=known_issues.cs" class="broken_link">aware of this problem</a>. When it works, Picasa can group together common faces making tagging people a breeze. But when it doesn&#8217;t work you can get all kinds of wrong matches which are tedious to go through and correct. It&#8217;s certainly not something you can set and forget as you will need to spend some time double checking the suggested matches.</p>
+<p>With that said there are a few tips and tricks to make the process a little easier. Most of the following info was culled from <a href="http://www.google.com/support/forum/p/Picasa/thread?tid=0727103717c22cd7&amp;hl=en">a help forum post</a>.</p>
+<h3>Tips for better tagging</h3>
+<p>Set the suggestion and cluster threshold to 85. By default both of these values are set at 80. You can change this in the following locations:</p>
+<p>Windows: Tools-&gt;Options-&gt;Name Tags<br />
+Mac: Picasa-&gt;Preferences-&gt;Name Tags</p>
+<p>I found a noticeable decrease in false positives by bumping this setting up a notch, especially if your photo library is greater than about 10,000 photos.</p>
+<p><img class="alignnone size-full wp-image-1891" title="Picasa Suggestion and Cluster Threshold" src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/picasa-suggestion-and-cluster-threshold.png" alt="Picasa Suggestion and Cluster Threshold" width="600" height="220" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/picasa-suggestion-and-cluster-threshold-300x110.png 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/picasa-suggestion-and-cluster-threshold.png 600w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p>Be careful tagging blurry faced photos. When you have a bunch of blurry faces attributed to a person, the number of false positives goes way up as Picasa struggles to make a vague connection.</p>
+<p>To see the unknown faces for only one folder at a time just do a search for the name of the folder and select it from the auto suggest list that drops down from the search box. Now you can easily go through the unnamed people for that folder alone cutting out the noise of unnamed people from other photos.</p>
+<p><img class="alignnone size-full wp-image-1890" title="Picasa Filtering Unnamed People Using Search" src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/Picasa-filtering-unnamed-people-using-search.jpg" alt="Picasa Filtering Unnamed People Using Search" width="600" height="353" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/Picasa-filtering-unnamed-people-using-search-300x176.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/Picasa-filtering-unnamed-people-using-search.jpg 600w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p>When you&#8217;re combing through a bunch of faces, turn on the Faces filter at the top of the Picasa window. This will hide any photos that don&#8217;t have any faces in them saving you a bit of time when moving from picture to picture.</p>
+<p><img class="alignnone size-full wp-image-1889" title="Picasa Show Only Photos with Faces button" src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/picasa-show-only-photos-with-faces-button.png" alt="Picasa Show Only Photos with Faces button" width="251" height="73" /></p>
+<h3>How does Picasa&#8217;s facial recognition work?</h3>
+<p>Picasa scans the photo looking for facial patterns. When it finds a match, Picasa adds two pieces of information to  a picasa.ini file (hidden by default) in the folder holding the picture. The face data is stored like this:</p>
+<p>faces=rect64(907574589cc58a78),a30bebdb5c1a778d;</p>
+<p>The first part, enclosed in rect64(&#8230;), is the relative coordinates for the rectangle around the face. The second set of characters after the comma is a unique identifier linking the face with a name in Picasa&#8217;s contact database which is stored in the following locations on your computer:</p>
+<p>Windows: /Users/%USERNAME%/AppData/Local/Google/Picasa2/db3/<br />
+Mac: /Users/%USERNAME%/Library/Application Support/Google/Picasa3/db3/</p>
+<p>(Source: <a href="http://www.google.com/support/forum/p/Picasa/thread?tid=0727103717c22cd7&amp;hl=en#fid_0727103717c22cd700047462fad896c3">Mye</a>)</p>
+<p>The 16 characters enclosed in rect64(&#8230;) is a 64-bit hexadecimal number which can be broken up into four 16-bit numbers used to identify the position of the rectangle used to mark the face. If you divide each of the four 16-bit numbers by the maximum unsigned 16-bit number (65535), you&#8217;ll get four numbers between 0 and 1 which give the relative coordinates for the face rectangle in the order: left, top, right, bottom.  To calculate the absolute coordinates, multiply the left and right relative coordinates by the width of the image and multiply the top and bottom relative coordinates by the height of the image.  This way the faces will always be identified even when the image is re-sized.</p>
+<p>(Source: <a href="http://www.google.com/support/forum/p/Picasa/thread?tid=0727103717c22cd7&amp;hl=en#fid_0727103717c22cd7000474ab1b0c44f1">Oedious</a>)</p>
+<h3>Embedding tagged people data in picture files</h3>
+<p>The fact that Picasa stores the tagged people data in an external data is less than ideal for some. The .NET program <a href="http://www.anvo-it.de/wiki/avpicfacexmptagger:main">AvPicFaceXmpTagger</a> reads Picasa 3.5 face definitions for a given list of pictures and writes them as XMP metadata tags inside the picture files. It can also add the person&#8217;s name as XMP keywords and/or IPTC keywords which can be read by other photo programs.</p>
+<p>I haven&#8217;t tried it out myself but it is worth mentioning as a workaround until Google addresses this problem.</p>
+<p><img class="alignnone size-full wp-image-1895" title="avpicfacexmptagger Main Picture Display" src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/avpicfacexmptagger-main-picture-display.jpg" alt="avpicfacexmptagger Main Picture Display" width="600" height="370" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/avpicfacexmptagger-main-picture-display-300x185.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/avpicfacexmptagger-main-picture-display.jpg 600w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p>(Source: <a href="http://www.google.com/support/forum/p/Picasa/thread?tid=0727103717c22cd7&amp;hl=en#fid_0727103717c22cd7000475e626d26f79">Andreas Vogel</a>)</p>
+<h3>Conclusion</h3>
+<p>Overall the people tagging features introduced in Picasa 3.5 are a nice start but there is still a lot of work to be done. Hopefully the future improvements will be frequent and steady as this is an exciting new vector of information to make digging through photo collections a joy. Things will really get interesting when it will be able to talk to other photo services (like Facebook) to gather and sync and kinds of metadata.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/picasa-people-tagging-facial-detection-guide/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Play DOS Games On A Mac With Boxer</title>
+		<link>http://www.russellheimlich.com/blog/play-dos-games-on-a-mac-with-boxer/</link>
+		<comments>http://www.russellheimlich.com/blog/play-dos-games-on-a-mac-with-boxer/#comments</comments>
+		<pubDate>Wed, 10 Sep 2008 02:07:43 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[How To]]></category>
+		<category><![CDATA[Mac]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[abandonware]]></category>
+		<category><![CDATA[Boxer]]></category>
+		<category><![CDATA[classic]]></category>
+		<category><![CDATA[computer]]></category>
+		<category><![CDATA[DOS]]></category>
+		<category><![CDATA[dosbox]]></category>
+		<category><![CDATA[emulate]]></category>
+		<category><![CDATA[games]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1072</guid>
+		<description><![CDATA[Who needs fancy graphics and snazzy physics known in modern gaming? I prefer the creative, classic DOS games of yore to today&#8217;s hyper-real slaughter fests. Up until this weekend I had know idea how to play old DOS games on my Mac,and then I found Boxer. Boxer is a DOS game emulator for OS X [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Who needs fancy graphics and snazzy physics known in modern gaming? I prefer the creative, classic DOS games of yore to today&#8217;s hyper-real slaughter fests. Up until this weekend I had know idea how to play old DOS games on my Mac,and then I found <a href="http://boxer.washboardabs.net/">Boxer</a>.</p>
+<p><a href="http://boxer.washboardabs.net/"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2008/09/boxer-logo.png" alt="Boxer Logo" title="Boxer Logo" width="500" height="170" class="size-full wp-image-1094" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2008/09/boxer-logo-300x102.png 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2008/09/boxer-logo.png 600w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Boxer is a DOS game emulator for OS X and is based on the open source project <a href="http://www.dosbox.com/">DOSBox</a>. It packs a few little tricks to help you load and launch your games with ease. The problem is these tricks aren&#8217;t very obvious so I&#8217;ll give you a little walkthrough. </p>
+<p>After downloading and installing Boxer, the first time you run it it will ask you to choose a designated game folder. Which ever folder you choose will auto-mount as your C: drive every time you start Boxer.  From here you can navigate to the folder with your game in it and launch the .exe file. Wait, you don&#8217;t remember how to navigate around that black screen with a white blinking cursor? Yea neither did I. </p>
+<p><a href="http://boxer.washboardabs.net/"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2008/09/boxer-screenshot.png" alt="Boxer DOS Emulator Screenshot" title="Boxer DOS Emulator Screenshot" width="500" height="330" class="size-full wp-image-1093" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2008/09/boxer-screenshot-300x198.png 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2008/09/boxer-screenshot.png 600w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Luckily Boxer makes it a snap to run your games straight from the Finder. Just go to the game folder and add &#8216;.boxer&#8217; to the end of it&#8217;s name. Now you can double click the folder and it will automagically launch in Boxer. Some games require you to have a CD-ROM loaded but Boxer can handle that too! Just make a copy of the game folder inside the game folder and add a &#8216;.cdrom&#8217; to the end of it&#8217;s name. Boxer will automatically detect it and mount it as a virtual CD for you. Can&#8217;t get much easier than that!</p>
+<p><a href="http://boxerapp.com/releasenotes"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2008/09/game-folder-rename-example.gif" alt="Game Folder Rename Example" title="Game Folder Rename Example" width="363" height="141" class="size-full wp-image-1092" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2008/09/game-folder-rename-example-300x116.gif 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2008/09/game-folder-rename-example.gif 363w" sizes="(max-width: 363px) 100vw, 363px" /></a></p>
+<p>Other niceties include Mac friendly keyboard shortcuts like cmd+F for fullscreen view and cmd + up/cmd + down to increase/decrease the CPU speed. Other ones are <a href="http://boxerapp.com/releasenotes">listed</a> on the Boxer site.</p>
+<p>Now you can relive the gaming classics. If you need some ideas to get started take a look at the adventure game <a href="http://www.squakenet.com/computer_games/download.asp?game=2022&#038;title=Sam--Max-Hit-the-Road">Sam and Max: Hit the Road</a> or the first person that took the world by storm, <a href="http://www.squakenet.com/computer_games/download.asp?game=246&#038;title=Doom">Doom</a>. Try your hand at the original <a href="http://www.abandonia.com/en/games/422/Warcraft+-+Orcs+and+Humans.html">Warcraft</a> or one of my favorite turn-based strategy games <a href="http://www.squakenet.com/computer_games/download.asp?game=2272&#038;title=Heroes-of-Might-and-Magic-2">Heroes of Might and Magic 2</a>.  Remember those old education games from the Learning Company like <a href="http://www.abandonia.com/en/games/1010/Super+Solvers+-+Treasure+Mountain.html">Treasure Mountain</a>? There are a ton more games up for grabs at <a href="http://www.abandonia.com/">Abandonia</a>, which is dedicated to abandoned DOS games and <a href="http://www.squakenet.com">Squakenet</a>.</p>
+<p>Even thought these games might be old, they are still just as addictive. Be sure to give yourself some time to get sucked in.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/play-dos-games-on-a-mac-with-boxer/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>Combat Roach Gel Kills Cockroaches</title>
+		<link>http://www.russellheimlich.com/blog/combat-roach-gel-kills-cockroaches/</link>
+		<comments>http://www.russellheimlich.com/blog/combat-roach-gel-kills-cockroaches/#comments</comments>
+		<pubDate>Tue, 19 Aug 2008 03:32:23 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[How To]]></category>
+		<category><![CDATA[Reviews]]></category>
+		<category><![CDATA[bugs]]></category>
+		<category><![CDATA[cockroach]]></category>
+		<category><![CDATA[Combat]]></category>
+		<category><![CDATA[gel]]></category>
+		<category><![CDATA[pest]]></category>
+		<category><![CDATA[roach]]></category>
+		<category><![CDATA[Walgreens]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=990</guid>
+		<description><![CDATA[Like most apartment dwellers, I get the occasional visits from roaches. After a couple of weeks of trying ineffective do-it-yourself measures like keeping things extra clean and plugging up any possible entrances, I decided to invest in a tube of roach gel. After Googling around for the best way to kill roaches, I found NoMoreCockroaches.com [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Like most apartment dwellers, I get the occasional visits from roaches. After a couple of weeks of trying ineffective do-it-yourself measures like keeping things extra clean and plugging up any possible entrances, I decided to invest in a tube of roach gel.</p>
+<p>After Googling around for the best way to kill roaches, I found <a href="http://www.nomorecockroaches.com/">NoMoreCockroaches.com</a> explaining the Combat Roach Killing Gel that comes in a syringe is the best at dealing with the pests. How does the gel work? Roaches eat the gel and then retreat back to their nest where they die and other roaches eat the poisoned carcasses, thus eliminating the nest. </p>
+<p><a href="http://www.combatbugs.com/index.cfm?page_id=191&#038;pid=5"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2008/08/combat-roach-gel.png" alt="Combat Roach Killing Gel" title="Combat Roach Killing Gel" width="481" height="140" class="size-full wp-image-1009" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2008/08/combat-roach-gel-300x87.png 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2008/08/combat-roach-gel.png 481w" sizes="(max-width: 481px) 100vw, 481px" /></a></p>
+<p>The best place to get this stuff is at <a href="http://www.walgreens.com/store/product.jsp?CATID=100530&amp;id=prod3951" class="broken_link">Walgreens</a> but since there are no Walgreens within a reasonable distance from my apartment, I had to order it online and wait for the mailman to bring it to my door.</p>
+<p>I applied it to as many cracks and crevices in the kitchen before my week-long <a href="http://www.russellheimlich.com/blog/glacier-national-park/">Montana vacation</a>. Since I got back, I haven&#8217;t seen a single roach. They used to come out and scurry at night, but now they seem to be non-existent.  </p>
+<p><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2008/08/roach-gel-syringe.jpg" alt="Roach Gel Syringe" title="Roach Gel Syringe" width="303" height="550" class="size-full wp-image-1015" /></p>
+<p>The only cons of the gel is it is a dark brown color (which looks like poo) which can clash with your room and it can be a little messy when applying. But aside from that, this stuff is well worth the price of $5.99 per tube which should be enough for a three bedroom apartment. </p>
+<p>So forget the sprays, powders, and traps, Combat Roach Gel is all you need. </p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/combat-roach-gel-kills-cockroaches/feed/</wfw:commentRss>
+		<slash:comments>104</slash:comments>
+		</item>
+		<item>
+		<title>Tips For Buying An Engagement Ring</title>
+		<link>http://www.russellheimlich.com/blog/tips-for-buying-an-engagement-ring/</link>
+		<comments>http://www.russellheimlich.com/blog/tips-for-buying-an-engagement-ring/#comments</comments>
+		<pubDate>Tue, 08 Apr 2008 02:32:20 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Finance]]></category>
+		<category><![CDATA[How To]]></category>
+		<category><![CDATA[buying]]></category>
+		<category><![CDATA[Diamond]]></category>
+		<category><![CDATA[Engagement]]></category>
+		<category><![CDATA[guide]]></category>
+		<category><![CDATA[Love]]></category>
+		<category><![CDATA[Marriage]]></category>
+		<category><![CDATA[proposal]]></category>
+		<category><![CDATA[Ring]]></category>
+		<category><![CDATA[wedding]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=745</guid>
+		<description><![CDATA[Buying an engagement ring for your significant other can be both exciting and nerve-wrecking at the same time. Thankfully I survived the process and can now offer these tips I picked up along the way. Note: These tips are aimed at guys from the perspective of a guy. Unless you&#8217;re the ballsy type, don&#8217;t try [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Buying an engagement ring for your significant other can be both exciting and nerve-wrecking at the same time. Thankfully <a href="http://www.russellheimlich.com/blog/were-engaged/">I survived the process</a> and can now offer these tips I picked up along the way.</p>
+<p><em>Note: These tips are aimed at guys from the perspective of a guy.</em></p>
+<p><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2008/04/Inherited-engagement-ring.jpg" title="Inherited Engagement Ring" width="600" height="400" /></p>
+<ol>
+<li>
+<p><strong>Unless you&#8217;re the ballsy type, don&#8217;t try to pick out a ring on your own!</strong></p>
+<p>I thought picking out an engagement ring would be a straightforward task. But after seeing the thousands of different minute details to pick and choose from I quickly reconsidered. Just take a gander at <a href="http://www.bluenile.com">BlueNile.com</a>, a good starting point for ring shopping. Can you guess which diamond type your lover would like? White gold, yellow gold, or platinum? Solitaire, side-stone, or three-stone? Four-prong, six-prong, comfort fit, knife edge, intertwined, cathedral? These things matter.</p>
+</li>
+<li>
+<p><strong>Talk to your partner about the ring.</strong></p>
+<p>Keep in mind this ring will be with the two of you for the rest of your lives so the recipient better be happy with it. Besides, open communication is a good trait for marriage.</p>
+</li>
+<li>
+<p><strong>Set a budget before browsing</strong></p>
+<p>Engagement rings are the ultimate intersection between emotion and money.  You run the risk of setting yourself up for disappointment if you dive in without setting any ground rules. It is easy to raise expectations when shopping around but damn near impossible to lower them. Coming to an understanding about budget and quality between the two of you beforehand will make things sail smoothly.</p>
+<p>And it doesn&#8217;t make sense to go into debt before the wedding as there will be other things that require money after the two of you tie the knot (like a down payment on a house!).  In other words don&#8217;t get more ring than you can afford.</p>
+</li>
+<li>
+<p><strong>Talk to other family members about your plans.</strong></p>
+<p>Not only does this fall under the category of the more communication the better, but you could also save a lot of money. You never know if a close relative has a diamond ring sitting in a security deposit box just collecting dust.  Now you shouldn&#8217;t go around demanding old jewelry, but if your family doesn&#8217;t know that you are thinking about getting married they won&#8217;t know to offer their old gems.</p>
+<p>The diamonds in Kristina&#8217;s ring were from my grandmother&#8217;s ring passed down to my mother. They were certainly better diamonds then I could afford and the sentimental value of the family history made the engagement ring unique and extra special i.e. more romantic.</p>
+</li>
+<li>
+<p><strong>If possible, record the proposal on video.</strong></p>
+<p>This is one of the biggest moments of your life. Capture it on video so you can show it to future generations and re-live the day in your later years. With the rise of online video, <a href="http://video.google.com/videoplay?docid=-4450667809236217229&amp;q=Russell+proposes+to+kristina&amp;total=3&amp;start=0&amp;num=10&amp;so=0&amp;type=search&amp;plindex=0" class="broken_link">passing a video around</a> to friends via social networks will bring you in contact with people you haven&#8217;t heard from in ages. People love seeing exactly how your proposal went down.</p>
+</li>
+</ol>
+<p>It all might seem daunting at first but take everything one step at a time. Try not to let the stress get to you while seeking out the perfect ring to satisfy the needs of both you. Keep your eye on the prize which should be to show your companion how much you care about them and that you want to be with them forever.</p>
+<p><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2008/04/r-and-k-engagement-dinner.jpg" alt="" title="Russell and Kristina After Engagement Dinner" width="500" height="369" /></p>
+<p>
+For more engagement ring shopping tips check out the guides at <a href="http://www.mahalo.com/How_to_Buy_an_Engagement_Ring">Mahalo.com</a> and <a href="http://financialplan.about.com/cs/singlesandmoney/a/DiamondRings.htm">About.com</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/tips-for-buying-an-engagement-ring/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>No Browser For Surfing? Get Some Help</title>
+		<link>http://www.russellheimlich.com/blog/no-browser-for-surfing-get-some-help/</link>
+		<comments>http://www.russellheimlich.com/blog/no-browser-for-surfing-get-some-help/#comments</comments>
+		<pubDate>Fri, 04 Jan 2008 02:48:43 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[CSS/HTML]]></category>
+		<category><![CDATA[How To]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[browser]]></category>
+		<category><![CDATA[hack]]></category>
+		<category><![CDATA[Internet]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[surfing]]></category>
+		<category><![CDATA[tip]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/no-browser-for-surfing-get-some-help/</guid>
+		<description><![CDATA[It&#8217;s hard to imagine being somewhere that locks down the web browser so much that you have to resort this nifty trick I read on DownloadSquad.com, but desperate times call for desperate measures. If you can&#8217;t reach the web through Internet Explorer due settings beyond your control and forgot your portable Firefox thumbdrive then simply [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>It&#8217;s hard to imagine being somewhere that locks down the web browser so much that you have to resort this nifty trick I read on <a href="http://www.downloadsquad.com/2008/01/03/how-to-surf-the-web-even-if-internet-explorer-is-disabled/">DownloadSquad.com</a>, but desperate times call for desperate measures. If you can&#8217;t reach the web through Internet Explorer due settings beyond your control and forgot your <a href="http://portableapps.com/apps/internet/firefox_portable">portable Firefox</a> thumbdrive then simply open up the calculator or MS Paint and click &#8220;Help&#8221;. From there go to &#8220;Help Topics,&#8221; which will bring up a help window. Now all that is left is to right click on the title bar and select &#8220;Jump To URL.&#8221; Type in any web address you like, but make sure to include &#8220;http://&#8221; at the beginning and you should be good to go.</p>
+<p><a href="http://www.downloadsquad.com/2008/01/03/how-to-surf-the-web-even-if-internet-explorer-is-disabled/"><img src='http://www.russellheimlich.com/blog/wp-content/uploads/2008/01/calc-ie.jpg' alt='Browse The Web In The Help Menu' /></a></p>
+<p>What you are basically looking at is a stripped-down, basic version of Internet Explorer which is built into Windows and used to display <a href="http://en.wikipedia.org/wiki/Microsoft_Compiled_HTML_Help">CHM files</a>, or Microsoft Compiled HTML Help files. Sure there are no niceties like bookmarks or your comfy, cozy Firefox extensions, but if you need to check your e-mail or <a href="http://www.twitter.com/kingkool68">Twitter</a> account and this is your only resort, you will put up with a little cruft in order to get your stuff. Besides there are back and forward buttons, what else do you need in a browser?</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/no-browser-for-surfing-get-some-help/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>CoinCalc.com Guesstimates Spare Change</title>
+		<link>http://www.russellheimlich.com/blog/coincalccom-guesstimates-spare-change/</link>
+		<comments>http://www.russellheimlich.com/blog/coincalccom-guesstimates-spare-change/#comments</comments>
+		<pubDate>Wed, 02 Jan 2008 03:05:57 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[How To]]></category>
+		<category><![CDATA[Random Musings]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[calculate]]></category>
+		<category><![CDATA[change]]></category>
+		<category><![CDATA[coin]]></category>
+		<category><![CDATA[coincalc]]></category>
+		<category><![CDATA[counting]]></category>
+		<category><![CDATA[money]]></category>
+		<category><![CDATA[tool]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/coincalccom-guesstimates-spare-change/</guid>
+		<description><![CDATA[CoinCalc.com is a simple and straight forward site aiming to estimate how much moola you have stashed away in your change jar. All you need to do is weigh your jar of coins, grab a handful as a sample and enter the quantity of each coin you pulled out into the CoinCalc form. The site [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><a href="http://www.coincalc.com">CoinCalc.com</a> is a simple and straight forward site aiming to estimate how much moola you have stashed away in your change jar. All you need to do is weigh your jar of coins, grab a handful as a sample and enter the quantity of each coin you pulled out into the CoinCalc form. The site does a little math and guesses how much money is in the jar based on your sample.</p>
+<p><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2008/01/coin-cup2.jpg" alt="Coin Cup" /></p>
+<p>I just happened to have a jar full of coins that needed to be tallied and wrapped up so I though I would give CoinCalc.com a run for it’s money (pun intended). I took 5 samples of various sizes from the same cup of coins. After counting the number of coins I would put them all back in the cup and shake them around to keep it as fair of a test as possible. I happen to have a small postal scale at hand so calculating the weight of the coins was a snap. My first weighing included the weight of the cup which came to a total of 3.375 pounds. After running all of the numbers through CoinCalc.com, I realized the weight of the cup was inflating the estimate. I weighed the empty cup and subtracted that weight from the previous weight resulting in 2.8625 pounds of pure coinage. The results are summarized in the table below:</p>
+<table width="495">
+<thead>
+<tr>
+<th>Sample</th>
+<th>Pennies</th>
+<th>Nickels</th>
+<th>Dimes</th>
+<th>Quarters</th>
+<th>Estimated Total</th>
+<th>Estimated Total<br />
+w/o Cup</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>36</td>
+<td>0</td>
+<td>10</td>
+<td>20</td>
+<td>$43.07</td>
+<td>$36.53</td>
+</tr>
+<tr>
+<td>2</td>
+<td>23</td>
+<td>4</td>
+<td>3</td>
+<td>9</td>
+<td>$33.71</td>
+<td>$28.59</td>
+</tr>
+<tr>
+<td>3</td>
+<td>16</td>
+<td>3</td>
+<td>5</td>
+<td>7</td>
+<td>$36.96</td>
+<td>$31.35</td>
+</tr>
+<tr>
+<td>4</td>
+<td>31</td>
+<td>3</td>
+<td>14</td>
+<td>11</td>
+<td>$37.82</td>
+<td>$32.07</td>
+</tr>
+<tr>
+<td>5</td>
+<td>13</td>
+<td>2</td>
+<td>6</td>
+<td>11</td>
+<td>$46.26</td>
+<td>$39.23</td>
+</tr>
+</tbody>
+</table>
+<p>The total value of my coin-collection was $28.91 which came out to the following:</p>
+<table width="250">
+<thead>
+<tr>
+<th>Coin</th>
+<th>Quantity</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pennies</td>
+<td>211</td>
+<td>$2.11</td>
+</tr>
+<tr>
+<td>Nickels</td>
+<td>33</td>
+<td>$1.65</td>
+</tr>
+<tr>
+<td>Dimes</td>
+<td>59</td>
+<td>$5.90</td>
+</tr>
+<tr>
+<td>Quarters</td>
+<td>77</td>
+<td>$19.25</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>380</td>
+<td>$28.91</td>
+</tr>
+</tbody>
+</table>
+<p>CoinCalc.com came within $10 at most of the actual value after correcting for the weight of the cup. CoinCalc’s estimation was more accurate than I thought it would be. The site gives you a good ballpark range of the value of your coins without having to dump them all over the floor and count them out one by one or paying a fee to have Coinstar count them for you.</p>
+<p>Speaking of counting, I like to wrap my own coins and I use this little <a href="http://www.amazon.com/gp/product/B002EKXARO/ref=as_li_ss_tl?ie=UTF8&amp;tag=thebloofrushe-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B002EKXARO">device from MMF Industries</a> pictured below to tally them up before wrapping.</p>
+<p><a href="http://www.amazon.com/gp/product/B002EKXARO/ref=as_li_ss_tl?ie=UTF8&amp;tag=thebloofrushe-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B002EKXARO"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2008/01/coin-counter.jpg" alt="Plastic Coin Counter" /></a></p>
+<p>You simply dump your sorted coins into their respective slot and the plastic container will keep them stacked until they reach the top. At that point there is a slit where surplus coins fall out leaving you with the exact quantity for the roll. I think I got this from my parents a couple of Christmas’ ago.</p>
+<p>(via <a href="http://www.boingboing.net/2007/12/31/coin-jar-calculator.html">BoingBoing</a>)</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/coincalccom-guesstimates-spare-change/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Making A Tango-Style Icon Step By Step</title>
+		<link>http://www.russellheimlich.com/blog/making-a-tango-style-icon-step-by-step/</link>
+		<comments>http://www.russellheimlich.com/blog/making-a-tango-style-icon-step-by-step/#respond</comments>
+		<pubDate>Tue, 04 Dec 2007 03:21:30 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+		<category><![CDATA[How To]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/making-a-tango-style-icon-step-by-step/</guid>
+		<description><![CDATA[I have a heap of respect for the icon designers out there. These people start with a blank page and after several hours they end with a tiny graphic that communicates a heck of a lot of information. It takes a lot of talent and clever thinking to simplify an idea or concept into an [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><a href="http://www.illustrationclass.com/?p=82"><img src='http://www.russellheimlich.com/blog/wp-content/uploads/2007/12/tango.jpg' alt='Tango Icons' /></a></p>
+<p>I have a heap of respect for the icon designers out there. These people start with a blank page and after several hours they end with a tiny graphic that communicates a heck of a lot of information. It takes a lot of talent and clever thinking to simplify an idea or concept into an understandable graphic. </p>
+<p>Von. R. Glitschka created a <a href="http://www.illustrationclass.com/?p=82">step by step walk through</a> detailing the process he uses to design an icon.  The <a href="http://www.illustrationclass.com/mint/pepper/orderedlist/downloads/download.php?file=http%3A//www.illustrationclass.com/dl/Tango_Icons.zip" class="broken_link">zipped download</a> (1.8 Mb) has a set of images from each step with related notes in a separate text file. You can learn a lot about design by studying the processes of others.</p>
+<p>More about the Tango icon library can be found at <a href="http://tango.freedesktop.org/Tango_Desktop_Project">http://tango.freedesktop.org/Tango_Desktop_Project </a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/making-a-tango-style-icon-step-by-step/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Football Photography Tips</title>
+		<link>http://www.russellheimlich.com/blog/football-photography-tips/</link>
+		<comments>http://www.russellheimlich.com/blog/football-photography-tips/#comments</comments>
+		<pubDate>Thu, 11 Oct 2007 05:12:06 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[How To]]></category>
+		<category><![CDATA[Photo]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/football-photography-tips/</guid>
+		<description><![CDATA[It is officially fall and football games can be found taking place all over the country. Action photography can be a real challenge to capture in tack-sharp clarity due to the split-second timing and cat-like reactions necessary to freeze motion. Last year I photographed my girlfriends annual Turkey Bowl intramural flag football tournament. Coming home [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>It is officially fall and football games can be found taking place all over the country. Action photography can be a real challenge to capture in tack-sharp clarity due to the split-second timing and cat-like reactions necessary to freeze motion.  Last year I photographed my girlfriends annual <a href="http://picasaweb.google.com/kingkool68/TurkeyBowl2006">Turkey Bowl</a> intramural flag football tournament.  Coming home with a full gig and a half of photos was a thrill but there were quite a few technical problems I ran into.  </p>
+<p><a href="http://aii.facebook.com/album.php?aid=2075969&#038;l=dcf51&#038;id=60700127"><img src='http://www.russellheimlich.com/blog/wp-content/uploads/2007/10/img_3994.JPG' alt='Footballs in field' /></a></p>
+<p>For one, I only had one battery.  The tournament goes all day from morning to night and I need all of the juice I can get.  It also didn&#8217;t help that the battery was having trouble holding a charge on that cold, brisk day. I would constantly have to take the battery out and hold it in my pocket for a while before continuing to shoot. This year that problem will be solved since I <a href="http://www.russellheimlich.com/blog/generic-batteries-are-99-worth-it/">bought two batteries</a> in addition to the original battery which I keep in my bag for an absolute last resort, emergency type of shot.</p>
+<p>My second problem was my beginner telephoto lens. Don&#8217;t get me wrong it got me some good shots, but it is a very soft lens with a slow aperture of f/5.6. No surprise I got this lens at a great price of $120. For this year&#8217;s game I upgraded to a <a href="http://www.russellheimlich.com/blog/bitten-by-the-lens-bug/">Sigma 70-200mm f/2.8</a>.  The faster aperture will allow me to bump up the shutter speeds during the day and at night I will probably have to go with a 1600 ISO speed.  </p>
+<p>Finally, last year was the first time shooting team sports. I had no clue as to what I was doing and just went with my instincts.  Recently I have been digging through resources on the Internet about shooting football which is how I ran into this great thread on <a href="http://www.dpreview.com">DP Review.com</a>.  </p>
+<blockquote><p><em><a href="http://forums.dpreview.com/forums/read.asp?forum=1029&#038;message=24817122">How To Shoot Football 101</a></p>
+<p>Get low…. Not only does this go a long way in cleaning up the background but it makes the players (the younger the better) look bigger the life.</p>
+<p>No matter what lens you are using shoot tight. Tight action shots give the viewer a feeling of being in the game.<br />
+</em></p></blockquote>
+<p>Canon and the NFL have teamed up to produce a <a href="http://www.usa.canon.com/app/html/NFL/index.html?id=shootingtips">video series of football shooting tips</a> with Sports Illustrated photographer Peter Read Miller.  There is also a behind the scenes clip where Peter talks about the equipment he uses as well as events leading up to the game.</p>
+<p>The New York Institute of Photography has a <a href="http://www.nyip.com/ezine/sports/football.html">lengthy write up on football</a> tips with several visual examples to drive their points home.</p>
+<p>If you are in need of some inspiration there is a weekly sports thread in the DP Review.com Canon SLR Lens Forum full of all kinds of football shots. <a href="http://forums.dpreview.com/forums/read.asp?forum=1029&#038;message=25111191">This one</a> from BryanP particularly stand out. Bryan is the same guy who posted the excellent <a href="http://forums.dpreview.com/forums/read.asp?forum=1029&#038;message=24817122">How To Shoot Football 101</a> thread.  </p>
+<p>I hope with the new gear and the reading I have been doing will pay off come game day on November 17th. I still have plenty of time to get some practice shots in and read up about more techniques.</p>
+<p>Do you have any tips for shooting football?</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/football-photography-tips/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>How To Draw Thom Yorke In 7 Minutes</title>
+		<link>http://www.russellheimlich.com/blog/how-to-draw-thom-yorke-in-7-minutes/</link>
+		<comments>http://www.russellheimlich.com/blog/how-to-draw-thom-yorke-in-7-minutes/#respond</comments>
+		<pubDate>Sun, 19 Aug 2007 00:40:26 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[How To]]></category>
+		<category><![CDATA[Video]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/how-to-draw-thom-yorke-in-7-minutes/</guid>
+		<description><![CDATA[Ok so it is really a time lapse crunched down to 7 minutes but you still get the gist. Looks like this photo realistic sketch of the Radiohead front man is all done in Photoshop and some of the brush work is amazing. Hopefully it will inspire some of the artists who follow my blog. [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/QjcHhjt6bYo"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/QjcHhjt6bYo" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></embed></object></p>
+<p>Ok so it is really a time lapse crunched down to 7 minutes but you still get the gist.  Looks like this photo realistic sketch of the Radiohead front man is all done in Photoshop and some of the brush work is amazing. Hopefully it will inspire some of the artists who follow my blog.  </p>
+<p>See more speed paintings at <a href="http://www.youtube.com/macpulenta">Nexx&#8217;s YouTube profile</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/how-to-draw-thom-yorke-in-7-minutes/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

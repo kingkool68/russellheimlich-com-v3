@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Death To The Div</title>
+	<atom:link href="http://www.russellheimlich.com/blog/death-to-the-div/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.russellheimlich.com/blog/death-to-the-div/</link>
+	<description>The Blog of Russell Heimlich</description>
+	<lastBuildDate>Thu, 26 Nov 2015 14:13:48 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.2</generator>
+	<item>
+		<title>By: Inspirational Quotes</title>
+		<link>http://www.russellheimlich.com/blog/death-to-the-div/comment-page-1/#comment-2820</link>
+		<dc:creator><![CDATA[Inspirational Quotes]]></dc:creator>
+		<pubDate>Mon, 26 Mar 2012 12:48:46 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1802#comment-2820</guid>
+		<description><![CDATA[Death To The Div Â» Coding, CSS/HTML, Rant Â» Russell Heimlich I was recommended this web site by my cousin. I am not sure whether this post is written by him as no one else know such detailed about my trouble. You are amazing! Thanks! your article about Death To The Div Â» Coding, CSS/HTML, Rant Â» Russell HeimlichBest Regards Nick]]></description>
+		<content:encoded><![CDATA[<p>Death To The Div Â» Coding, CSS/HTML, Rant Â» Russell Heimlich I was recommended this web site by my cousin. I am not sure whether this post is written by him as no one else know such detailed about my trouble. You are amazing! Thanks! your article about Death To The Div Â» Coding, CSS/HTML, Rant Â» Russell HeimlichBest Regards Nick</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Russell Heimlich</title>
+		<link>http://www.russellheimlich.com/blog/death-to-the-div/comment-page-1/#comment-2775</link>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+		<pubDate>Thu, 16 Feb 2012 19:24:49 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1802#comment-2775</guid>
+		<description><![CDATA[A new browser would still recognize the  element and treat them the same way they have always treated them. All I&#039;m saying is that if there is an element the browser doesn&#039;t recognize, then treat it like a block-level plain old  element. 
+
+Other than that, there would be no problem what so ever with backward compatibility.]]></description>
+		<content:encoded><![CDATA[<p>A new browser would still recognize the  element and treat them the same way they have always treated them. All I&#8217;m saying is that if there is an element the browser doesn&#8217;t recognize, then treat it like a block-level plain old  element. </p>
+<p>Other than that, there would be no problem what so ever with backward compatibility.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Reinier</title>
+		<link>http://www.russellheimlich.com/blog/death-to-the-div/comment-page-1/#comment-2772</link>
+		<dc:creator><![CDATA[Reinier]]></dc:creator>
+		<pubDate>Tue, 14 Feb 2012 16:02:23 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1802#comment-2772</guid>
+		<description><![CDATA[Although I actually agree with what you&#039;re saying, we still have the &quot;problem&quot; that&#039;s called legacy. How (for example) would a &quot;new&quot; browser interpret badly formatted (like no doctype, or wrong doctype) HTML, which contains a font tag?
+
+Would the browser treat it as a &quot;fake div&quot;? And thus a block level item...
+
+The problem here is not that you&#039;re completely right (you are), it&#039;s just the fact that 99% of the code out there is so excruciatingly bad that it will cause problems.
+
+It probably boils down to: &quot;Are we willing to potentially sacrifice everything ever created, for a great future?&quot;, it&#039;s kind of a black/white statement, but you get what I&#039;m saying.]]></description>
+		<content:encoded><![CDATA[<p>Although I actually agree with what you&#8217;re saying, we still have the &#8220;problem&#8221; that&#8217;s called legacy. How (for example) would a &#8220;new&#8221; browser interpret badly formatted (like no doctype, or wrong doctype) HTML, which contains a font tag?</p>
+<p>Would the browser treat it as a &#8220;fake div&#8221;? And thus a block level item&#8230;</p>
+<p>The problem here is not that you&#8217;re completely right (you are), it&#8217;s just the fact that 99% of the code out there is so excruciatingly bad that it will cause problems.</p>
+<p>It probably boils down to: &#8220;Are we willing to potentially sacrifice everything ever created, for a great future?&#8221;, it&#8217;s kind of a black/white statement, but you get what I&#8217;m saying.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Thurman Roosevelt</title>
+		<link>http://www.russellheimlich.com/blog/death-to-the-div/comment-page-1/#comment-2659</link>
+		<dc:creator><![CDATA[Thurman Roosevelt]]></dc:creator>
+		<pubDate>Sun, 04 Dec 2011 12:18:56 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1802#comment-2659</guid>
+		<description><![CDATA[hi this is a very intresting website and collection of information and data on thoses sharing my sirname.]]></description>
+		<content:encoded><![CDATA[<p>hi this is a very intresting website and collection of information and data on thoses sharing my sirname.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Teresa Stusse</title>
+		<link>http://www.russellheimlich.com/blog/death-to-the-div/comment-page-1/#comment-2658</link>
+		<dc:creator><![CDATA[Teresa Stusse]]></dc:creator>
+		<pubDate>Sun, 04 Dec 2011 05:03:31 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1802#comment-2658</guid>
+		<description><![CDATA[You completed a few fine points there. I did a search on the issue and found nearly all folks will have the same opinion with your blog.]]></description>
+		<content:encoded><![CDATA[<p>You completed a few fine points there. I did a search on the issue and found nearly all folks will have the same opinion with your blog.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Does HTML5 Replace Divs?</title>
+		<link>http://www.russellheimlich.com/blog/death-to-the-div/comment-page-1/#comment-2526</link>
+		<dc:creator><![CDATA[Does HTML5 Replace Divs?]]></dc:creator>
+		<pubDate>Sat, 03 Sep 2011 05:52:00 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1802#comment-2526</guid>
+		<description><![CDATA[[...] HTML5 Replace Divs?      Here are some useful articles on this topic:  http://www.russellheimlich.com/blog/death-to-the-div/ http://www.w3.org/TR/html5-diff/#new-elements  It seems like the header, footer, nav, section, and [...]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] HTML5 Replace Divs?      Here are some useful articles on this topic:  <a href="http://www.russellheimlich.com/blog/death-to-the-div/" rel="nofollow">http://www.russellheimlich.com.....o-the-div/</a> <a href="http://www.w3.org/TR/html5-diff/#new-elements" rel="nofollow">http://www.w3.org/TR/html5-diff/#new-elements</a>  It seems like the header, footer, nav, section, and [&#8230;]</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Theo Millard</title>
+		<link>http://www.russellheimlich.com/blog/death-to-the-div/comment-page-1/#comment-2437</link>
+		<dc:creator><![CDATA[Theo Millard]]></dc:creator>
+		<pubDate>Wed, 29 Jun 2011 19:03:39 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1802#comment-2437</guid>
+		<description><![CDATA[Great post guys.]]></description>
+		<content:encoded><![CDATA[<p>Great post guys.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Donovan Crow</title>
+		<link>http://www.russellheimlich.com/blog/death-to-the-div/comment-page-1/#comment-2398</link>
+		<dc:creator><![CDATA[Donovan Crow]]></dc:creator>
+		<pubDate>Thu, 21 Apr 2011 09:31:45 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1802#comment-2398</guid>
+		<description><![CDATA[This was very helpful – I will surely recommend this to my friends.]]></description>
+		<content:encoded><![CDATA[<p>This was very helpful – I will surely recommend this to my friends.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Donovan Crow</title>
+		<link>http://www.russellheimlich.com/blog/death-to-the-div/comment-page-1/#comment-2397</link>
+		<dc:creator><![CDATA[Donovan Crow]]></dc:creator>
+		<pubDate>Thu, 21 Apr 2011 09:30:58 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1802#comment-2397</guid>
+		<description><![CDATA[http://www.russellheimlich.com/blog/death-to-the-div/]]></description>
+		<content:encoded><![CDATA[<p><a href="http://www.russellheimlich.com/blog/death-to-the-div/" rel="nofollow">http://www.russellheimlich.com.....o-the-div/</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Mike</title>
+		<link>http://www.russellheimlich.com/blog/death-to-the-div/comment-page-1/#comment-2356</link>
+		<dc:creator><![CDATA[Mike]]></dc:creator>
+		<pubDate>Sat, 19 Feb 2011 10:22:31 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1802#comment-2356</guid>
+		<description><![CDATA[Haha I love the knife over the div....
+
+I don&#039;t think its going away anytime soon...although these people do:
+
+http://deathofthediv.com/
+
+I think HTML5 has just changed the usefulness of the div, it&#039;s no longer necessary for many things and only useful for some now...like wrapping pages and such.]]></description>
+		<content:encoded><![CDATA[<p>Haha I love the knife over the div&#8230;.</p>
+<p>I don&#8217;t think its going away anytime soon&#8230;although these people do:</p>
+<p><a href="http://deathofthediv.com/" rel="nofollow">http://deathofthediv.com/</a></p>
+<p>I think HTML5 has just changed the usefulness of the div, it&#8217;s no longer necessary for many things and only useful for some now&#8230;like wrapping pages and such.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

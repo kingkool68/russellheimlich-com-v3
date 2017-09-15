@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>JavaScript &#8211; Russell Heimlich</title>
+	<atom:link href="http://www.russellheimlich.com/blog/tags/coding/javascript/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.russellheimlich.com/blog</link>
+	<description>The Blog of Russell Heimlich</description>
+	<lastBuildDate>Fri, 02 Nov 2012 18:39:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.2</generator>
+	<item>
+		<title>Making JavaScript And The Blip.tv Player Work</title>
+		<link>http://www.russellheimlich.com/blog/making-javascript-and-the-blip-tv-player-work/</link>
+		<comments>http://www.russellheimlich.com/blog/making-javascript-and-the-blip-tv-player-work/#comments</comments>
+		<pubDate>Wed, 17 Mar 2010 00:04:44 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[How To]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[blip.tv]]></category>
+		<category><![CDATA[code]]></category>
+		<category><![CDATA[jQuery]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2177</guid>
+		<description><![CDATA[It sure would be nice if the blip.tv player had an easy way to change which video is playing in a playlist using their JavaScript API. But they don&#8217;t, so I had to roll my own to make the two play together nicely. Here is the end result (Note there are some line breaks I [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><img class="alignnone size-full wp-image-2188" title="blip.tv JavaScript API needs work" src="http://www.russellheimlich.com/blog/wp-content/uploads/2010/03/blip.tv-javascript-api-needs-work.png" alt="" width="495" height="467" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2010/03/blip.tv-javascript-api-needs-work-300x283.png 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2010/03/blip.tv-javascript-api-needs-work.png 495w" sizes="(max-width: 495px) 100vw, 495px" /></p>
+<p>It sure would be nice if the blip.tv player had an easy way to change which video is playing in a playlist using their <a href="http://wiki.blip.tv/index.php/Showplayer" class="broken_link">JavaScript API</a>. But they don&#8217;t, so I had to roll my own to make the two play together nicely. Here is the end result (Note there are some line breaks I put in here for visual formatting, it might not work):</p>
+<pre>var player;
+var currentPlaylistItem;
+var currentState;
+function getUpdate(type, arg1, arg2) {
+	switch(type) {
+        case "state":
+			currentState = arg1;
+		break;
+		case "item":
+			currentPlaylistItem = arg1;
+			var episode = player.getCurrentItem();
+			document.title = episode.title;
+        break;
+    }
+}
+
+var flashvars = {
+	'file': 'http://blip.tv/play/ha0CjMVEh_8o',
+    'enablejs': 'true',
+    'javascriptid': 'blip_player',
+    'autostart': 'false'
+};
+
+var params = {
+	'allowscriptaccess': 'always',
+	'allowfullscreen': 'true',
+	'expressinstall': '/millennials/flash/expressInstall.swf'
+};
+
+var attributes = {
+	'id': 'blip_player',
+	'name': 'blip_player'
+};
+swfobject.embedSWF('http://blip.tv/play/ha0CjMVEh_8o',
+'blip_player', '770', '470', '8.0', false, flashvars,
+params, attributes, swfCallBack);
+
+function swfCallBack() {
+	player = document.getElementById('blip_player');
+	$('#agenda h3 a, #agenda a.blip_tv').click(function(){
+		var playlistItemNum =
+                    $(this).attr('href').split('#')[1];
+		changePlaylist(Number(playlistItemNum));
+		$.scrollTo('.video .player', 800);
+		return false;
+	});
+}
+
+function changePlaylist(num) {
+		var direction = 'prev';
+		var diff = currentPlaylistItem - num;
+		if (diff &lt; 0) {
+			direction = 'next';
+			diff = Math.abs(diff);
+		}
+		for(i=0; i &lt; diff; i++) {
+			player.sendEvent(direction);
+		}
+		if (currentState == 0) {
+			player.sendEvent('play');
+		}
+}</pre>
+<p>There are three requirements to getting started as outlined in the <a href="http://wiki.blip.tv/index.php/Showplayer#Javascript_Interaction" class="broken_link">blip.tv wiki</a>:</p>
+<ol>
+<li>The player must be embeded with the <em>enablejs=true</em> Flash variable set</li>
+<li>The player must be embeded with <em>allowScriptAccess=always</em> object/embed parameter set</li>
+<li>A JavaScript function must exist named <em>getUpdate()</em></li>
+</ol>
+<p>The first part of my script sets up three global variables that we&#8217;ll use.</p>
+<ul>
+<li><em>player</em> will reference the object/embed element by an ID. It is how we send commands to the show player.</li>
+<li><em>currentPlaylistItem</em> is the number of the video selected (or position) in the playlist.</li>
+<li><em>currentState </em>is either 2 (playing), 1 (loading), or 0 (stopped) depending on the current state of the player.</li>
+</ul>
+<p>The <em>getUpdate()</em> function listens to the blip.tv player for changes like when the player is stopped or a video is changed in the playlist. The type argument is a string which we can send through a switch statement to determine what we need to do.</p>
+<p>If the state of player has changed then we update our <em>currentState</em> variable with the value of arg1 (which will be a number between 0 and 2). If the event is an item change, we will update the currentPlaylistItem variable to reflect that. As an added bonus we get the title of the current playing video and change the title of the webpage to reflect this. This has zero SEO value and is really only a convenience to our audience.  Now that we know what is going on, lets get to the fun stuff.</p>
+<p>Three variables (which are really Objects) are created for <a href="http://code.google.com/p/swfobject/">swfobject</a> so we can easily embed the video player dynamically into the page. The &#8216;blip_player&#8217; paramter is the ID of the player that we&#8217;ll be referencing shortly. The <em>swfCallBack()</em> function is called once the blip.tv player has loaded. There we set our <em>player</em> variable to reference the element of the blip.tv player. I used a line of jQuery to set the <em>onClick()</em> events of a group of links that will change the playlist when they are clicked.</p>
+<p>In the HTML the links contain direct links to each blip.tv video and an anchor with a number after it. This number is the playlist position of the specific video. jQuery makes it a snap to extract just that number from the URL which we store in the <em>playlistItemNum</em> variable. The <em>playlistItemNum</em> variable is passed along to a function called <em>changePlaylist()</em> which does all of the heavy lifting.</p>
+<p>Since the blip.tv show player doesn&#8217;t have a direct way of going to a specific video in a playlist, we have to hit the next or previous button on the player programmatically. The direction is set to &#8216;prev&#8217; initially.  <em>diff</em> is calculated by subtracting the number passed to the function from the position of the currently playing video, <em> currentPlaylistItem</em>.</p>
+<p>If <em>diff</em> is a negative number than we need to switch the direction <em>variable</em> to &#8216;next&#8217; and get rid of the negative number by calling the <a href="http://www.w3schools.com/jsref/jsref_abs.asp">absolute value method</a> ( <em>Math.abs()</em> ). Now we simply send the player a command to go to the next or previous video as many times as we need to get to the desired video via a loop. Finally, if the player is stopped, we send the video player a command to start playing the video.</p>
+<p>As an added nicety, we gently scroll the viewer up the page to the top of the video player so they&#8217;re not left wondering why nothing happened. The<a href="http://flesler.blogspot.com/2007/10/jqueryscrollto.html"> jQuery scrollTo plugin</a> makes this a breeze to do.</p>
+<p>There is one caveat for the <em>changePlaylist()</em> function to work: the playlist needs to be visible on the blip.tv show player. This is simply an option you set on the player configuration screen on blip.tv. Without it showing, we can&#8217;t get which video is playing and the whole thing falls apart.</p>
+<p>That wraps up how to roll your own playlist changing function as well as shed some light on how you might control other things about the blip.tv show player using JavaScript. You can see this in action on the <a href="http://pewresearch.org/millennials/video/conference.php">Pew Research Center Millennial Conference video page</a>. If you have any questions leave them in the comments or <a href="http://www.russellheimlich.com/contact.html">get in contact</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/making-javascript-and-the-blip-tv-player-work/feed/</wfw:commentRss>
+		<slash:comments>10</slash:comments>
+		</item>
+	</channel>
+</rss>

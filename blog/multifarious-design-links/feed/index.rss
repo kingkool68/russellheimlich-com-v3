@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Multifarious Design Links</title>
+	<atom:link href="http://www.russellheimlich.com/blog/multifarious-design-links/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.russellheimlich.com/blog/multifarious-design-links/</link>
+	<description>The Blog of Russell Heimlich</description>
+	<lastBuildDate>Thu, 26 Nov 2015 14:13:48 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.2</generator>
+	<item>
+		<title>By: Andro</title>
+		<link>http://www.russellheimlich.com/blog/multifarious-design-links/comment-page-1/#comment-937</link>
+		<dc:creator><![CDATA[Andro]]></dc:creator>
+		<pubDate>Wed, 17 Dec 2008 21:02:58 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1314#comment-937</guid>
+		<description><![CDATA[cool post russell. This is me just getting away from studying.]]></description>
+		<content:encoded><![CDATA[<p>cool post russell. This is me just getting away from studying.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Conference &#8211; Russell Heimlich</title>
+	<atom:link href="http://www.russellheimlich.com/blog/tags/conference/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.russellheimlich.com/blog</link>
+	<description>The Blog of Russell Heimlich</description>
+	<lastBuildDate>Fri, 02 Nov 2012 18:39:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.2</generator>
+	<item>
+		<title>2nd Annual Accessibility Camp DC</title>
+		<link>http://www.russellheimlich.com/blog/2nd-annual-accessibility-camp-dc/</link>
+		<comments>http://www.russellheimlich.com/blog/2nd-annual-accessibility-camp-dc/#respond</comments>
+		<pubDate>Thu, 14 Oct 2010 02:35:18 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Conference]]></category>
+		<category><![CDATA[a11ydc]]></category>
+		<category><![CDATA[Aaron Jorbin]]></category>
+		<category><![CDATA[Able Gamers]]></category>
+		<category><![CDATA[accessibility]]></category>
+		<category><![CDATA[Andrew Nacin]]></category>
+		<category><![CDATA[ARIA]]></category>
+		<category><![CDATA[Cliff Tyllick]]></category>
+		<category><![CDATA[Elle Waters]]></category>
+		<category><![CDATA[Greg Linch]]></category>
+		<category><![CDATA[Jennison Asuncion]]></category>
+		<category><![CDATA[Mark Barlet]]></category>
+		<category><![CDATA[Pratik Patel]]></category>
+		<category><![CDATA[presentation]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2392</guid>
+		<description><![CDATA[Last October was the first ever Accessibility Camp DC. I learned a lot from the talks last year and had my eyes opened by how the blind navigate the web. This year, on October 9th, I took what I learned and gave a presentation of my own. Titled &#8220;Building An Accessible Site from the Ground [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p id="site-title"><img class="alignnone size-full wp-image-2397" title="Accessibility Camp DC Audience" src="http://www.russellheimlich.com/blog/wp-content/uploads/2010/10/accessibility-camp-dc-audience.jpg" alt="" width="450" height="600" /></p>
+<p>Last October was the first ever <a href="http://www.russellheimlich.com/blog/accessibility-camp-dc-recap/">Accessibility Camp DC</a>. I learned a lot from the talks last year and had my eyes opened by how the blind navigate the web. This year, on October 9th, I took what I learned and gave a presentation of my own.</p>
+<p><img class="alignnone size-full wp-image-2398" title="Building the schedule at Accessibility Camp DC" src="http://www.russellheimlich.com/blog/wp-content/uploads/2010/10/building-the-schedule-at-accessibility-camp-dc.jpg" alt="" width="600" height="450" /></p>
+<p>Titled &#8220;<a href="http://www.slideshare.net/kingkool68/building-an-accessible-site-from-the-ground-up">Building An Accessible Site from   the Ground Up</a>&#8221; my talk was about making a website accessible from a developers point of view. The audience&#8217;s reaction was positive and there were many good questions raised.</p>
+<p><object id="__sse5418987" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="600" height="500" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="src" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=accessibility-slides-101011211913-phpapp02&amp;stripped_title=building-an-accessible-site-from-the-ground-up&amp;userName=kingkool68" /><param name="name" value="__sse5418987" /><param name="allowfullscreen" value="true" /><embed id="__sse5418987" type="application/x-shockwave-flash" width="600" height="500" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=accessibility-slides-101011211913-phpapp02&amp;stripped_title=building-an-accessible-site-from-the-ground-up&amp;userName=kingkool68" name="__sse5418987" allowscriptaccess="always" allowfullscreen="true"></embed></object></p>
+<p>Local PHP developers <a href="http://andrewnacin.com/">Andrew Nacin</a> (core contributor to WordPress.org) and <a href="http://aaron.jorb.in/">Aaron Jorbin</a> (Clearspring Technologies) sat in on my talk. The two were adding <a href="http://core.trac.wordpress.org/ticket/15080">accessibility-related patches to WordPress</a> while I was presenting. This is why I love the WordPress community! Afterwards I got to talk with them about WordPress geekiness even though I saw them a couple of weeks ago at <a href="http://www.russellheimlich.com/blog/wordcamp-mid-atlantic/">WordPress Mid-Atlantic</a>. They even introduced me to another DC-area hacker, <a href="http://www.greglinch.com/">Greg Linch</a>, who is passionate about journalism and education.</p>
+<p><img class="alignnone size-full wp-image-2399" title="Jennison Asuncion demonstrating JAWS screenreading software" src="http://www.russellheimlich.com/blog/wp-content/uploads/2010/10/jennison-demonstrating-jaws.jpg" alt="" width="450" height="600" /></p>
+<p>Lunch was sponsored by Adobe and delicious. While people were munching on sandwiches, <a href="http://www.jennison.ca/">Jennison Asuncion</a> demonstrated screen-reading software <a href="http://www.freedomscientific.com/products/fs/jaws-product-page.asp">JAWS</a> and how it works with websites. Like last year, there were many people who were just flabbergasted by what they saw. It&#8217;s one thing to read about accessibility issues online, it&#8217;s another to see it live, in-person.</p>
+<p>After lunch I saw a demonstration of <a href="http://www.deque.com/products/worldspace-fireeyes/download-worldspace-fireeyes">FireEyes</a>, a <a href="http://getfirebug.com">Firebug</a> plugin, to uncover accessibility issues from Karl Groves.  The neat thing about the free plugin is, it will detect problems on AJAX events that load new data onto the page without refreshing page.</p>
+<p><a href="http://www.deque.com/products/worldspace-fireeyes"><img class="alignnone size-full wp-image-2393" title="FireEyes Accessibility Plugin" src="http://www.russellheimlich.com/blog/wp-content/uploads/2010/10/FireEyes-accessibility-plugin.png" alt="" width="600" height="452" /></a></p>
+<p>I also sat in on a talk about adding <a href="https://developer.mozilla.org/en/AJAX/WAI_ARIA_Live_Regions" class="broken_link">ARIA live regions</a> to help screenreaders announce dynamic changes on the page such as using AJAX. These techniques are simple to implement and seeing someone demonstrate their advantages really motivates me to incorporate them into my projects.</p>
+<p>Mark Barlet from <a href="http://www.ablegamers.com">AbleGamers.com</a> was there all day showing off videos games that are accessible. These games run on modern hardware like the Xbox 360 but have special modifications so people with disabilities could be competitive. One game was an audio only game where you&#8217;re a monster trying to eat victims that fall into your pit. There are no graphics, mainly because the game designer isn&#8217;t a graphic designers. Instead you listen to audible clues about where your next victim is and when you are close enough you press a button to eat them. The game works really well with stereo headphones to help you orient yourself. Other things on display were a racing game that you can control with your face and a sip and puff tube attached to a controller to control a character on-screen.  If you&#8217;re into accessible gaming controllers, check out episode 1 of the <a href="http://revision3.com/tbhs/xbox360remote" class="broken_link">Ben Heck Show</a> on Revision 3.</p>
+<p>After the conference a bunch of us headed to <a href="http://www.capcitybrew.com/">Capital City Brewing Company</a> for some food and continued geeky conversation. There were a lot of people from out-of-town and it was good to get to know them. I met <a href="http://twitter.com/#!/Nethermind">Elle Waters</a> from Louisville, Kentucky; <a href="http://twitter.com/#!/ppatel">Pratik Patel</a> from New York; and <a href="http://twitter.com/#!/clifftyll">Cliff Tyllick</a> from Austin, Texas. It was a great end to a great day of accessibility.</p>
+<p><strong>Other Coverage of Accessibility Camp DC 2010<br />
+</strong></p>
+<ul>
+<li><a href="http://aaron.jorb.in/blog/2010/10/accessibility-camp-dc-2010/">Aaron Jorbin</a></li>
+<li><a href="http://www.nextgenweb.org/news-and-blog-clips/web-accessibility-for-today-and-tomorrow" class="broken_link">NextGenWeb.org</a></li>
+<li>Official Twitter  hashtag: <a href="http://search.twitter.com/search?q=&amp;ands=&amp;phrase=&amp;ors=&amp;nots=&amp;tag=a11ydc&amp;lang=all&amp;from=&amp;to=&amp;ref=&amp;near=&amp;within=15&amp;units=mi&amp;since=2010-10-09&amp;until=2010-10-09&amp;rpp=50" class="broken_link">#a11ydc</a></li>
+<li><a href="http://accesscampdc10.eventbrite.com/#sort_container">List of Attendees</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/2nd-annual-accessibility-camp-dc/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Summary Of An Event Apart DC Day 1</title>
+		<link>http://www.russellheimlich.com/blog/summary-of-an-event-apart-dc-day-1/</link>
+		<comments>http://www.russellheimlich.com/blog/summary-of-an-event-apart-dc-day-1/#respond</comments>
+		<pubDate>Mon, 27 Sep 2010 13:15:34 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Conference]]></category>
+		<category><![CDATA[An Event Apart]]></category>
+		<category><![CDATA[content strategy]]></category>
+		<category><![CDATA[css3]]></category>
+		<category><![CDATA[Dan Cederholm]]></category>
+		<category><![CDATA[Design]]></category>
+		<category><![CDATA[history]]></category>
+		<category><![CDATA[Internet]]></category>
+		<category><![CDATA[Jared Spool]]></category>
+		<category><![CDATA[Jeffery Zeldman]]></category>
+		<category><![CDATA[Kristina Halvorson]]></category>
+		<category><![CDATA[Luke Wroblewski]]></category>
+		<category><![CDATA[mobile design]]></category>
+		<category><![CDATA[Nicole Sullivan]]></category>
+		<category><![CDATA[notes]]></category>
+		<category><![CDATA[tweets]]></category>
+		<category><![CDATA[Washington DC]]></category>
+		<category><![CDATA[Web]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2305</guid>
+		<description><![CDATA[The Event Apart conference series is the top-notch gathering for people who make websites. Making its way across various cities in the U.S., the Event Apart tour stopped in Washington, D.C., which I was fortunate enough to attend. The speakers themselves were amazing but interacting with the attendees in real-time during the talks opened a [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><a href="http://www.flickr.com/photos/kingkool68/4999271594/"><img class="alignnone size-full wp-image-2337" title="The crowd at An Event Apart DC" src="http://www.russellheimlich.com/blog/wp-content/uploads/2010/09/the-crowd-at-An-Event-Apart-DC.jpg" alt="" width="480" height="640" /></a></p>
+<p>The Event Apart conference series is the top-notch gathering for people who make websites. Making its way across various cities in the U.S., the Event Apart tour stopped in <a href="http://aneventapart.com/2010/dc/">Washington, D.C.</a>, which I was fortunate enough to attend. The speakers themselves were amazing but interacting with the attendees in real-time during the talks opened a whole new level to the experience. Below are some of the best tweets I curated from each of the sessions. All of which came from <a href="http://afeedapart.com">afeedapart.com</a>, the official feed aggregator for An Event Apart<a href="http://aneventapart.com/">.</a></p>
+<h3><a href="http://afeedapart.com/2010/washington/35/web-21-the-medium-comes-of-age/">Web 2.1: The Medium Comes of Age</a> by <a href="http://aneventapart.com/speakers/jeffreyzeldman/">Jeffery Zeldman</a></h3>
+<p><a href="http://www.flickr.com/photos/justinprather/4997095347/" class="broken_link"><img class="alignnone size-full wp-image-2344" title="Jeffery Zeldman presenting at An Event Apart DC" src="http://www.russellheimlich.com/blog/wp-content/uploads/2010/09/Jeffery-Zeldman-presenting-at-An-Event-Apart-DC.jpg" alt="" width="600" height="400" /></a></p>
+<p>Zeldman started things off with a presentation covering the history of communication from the printing press to HTML5, and everything in between. In 2010, standards based design is no longer fringe, HTML5/CSS3 are viable technologies, and the mobile web is taking shape.</p>
+<ul>
+<li>The death of the web is greatly exaggerated. <a href="http://twitter.com/tomkruk/status/24663207945">@tomkruk</a></li>
+<li>If the web is dead, then print must be mummified. <a href="http://twitter.com/Merlaak/status/24663118519">@Merlaak</a></li>
+<li>&#8220;There are 241 newsgroups on 1986. 240 are porn&#8230;&#8221; <a href="http://twitter.com/grum_dot_com/status/24663477302">@grum_dot_com</a></li>
+<li>Zeldman calls the telegraph The Victorian Internet <a href="http://twitter.com/eduiconf/status/24663478648">@eduiconf</a></li>
+<li>R. Cailliau &#8211; leading man&#8217;s best friend. Worked with Tim Berners-Lee to invent the web. <a href="http://twitter.com/mad_sunshine/status/24663801335">@mad_sunshine</a></li>
+<li>1991 AOL&#8230; remember 9600 baud modem? = yuck <a href="http://twitter.com/lavinia/status/24663909846">@lavinia</a></li>
+<li>&#8220;there&#8217;s a history of the internet being ugly and being designed by people who can&#8217;t design their way out of a paper bag&#8221; <a href="http://twitter.com/ashleyjoost/status/24663917080">@ashleyjoost</a></li>
+<li>1993. Mosaic. We&#8217;ve come a long way. #aea <a href="http://yfrog.com/jcem8mj">http://yfrog.com/jcem8mj</a> <a href="http://twitter.com/eTapWeb/status/24664014605" class="broken_link">@eTapWeb</a></li>
+<li>I remember using MOSAIC on my Amiga 500, wondering why &#8220;forms&#8221; are not showing&#8230; <a href="http://twitter.com/tomkruk/status/24664114155">@tomkruk</a></li>
+<li>And you had to PAY for Netscape <a href="http://twitter.com/cityrider49/status/24664149992">@cityrider49</a></li>
+<li>Netscape Gold FTW! <a href="http://twitter.com/tomkruk/status/24664195954">@tomkruk</a></li>
+<li>Zeldman breaking down landmark moments in web history: &#8220;1995 brings us the tiled background&#8221; <a href="http://twitter.com/mattmediadc/status/24664283559">@mattmediadc</a></li>
+<li>&#8220;IE no longer sucks, IE is awesome&#8221; &#8211; Zeldman, #aea &#8230; hear it from the man! <a href="http://twitter.com/franksedivy/status/24664481907">@franksedivy</a></li>
+<li>1998 &#8212; internet traffic doubles every 100 days <a href="http://twitter.com/ashleyjoost/status/24664584042">@ashleyjoost</a></li>
+<li>the phrase &#8220;best viewed&#8230;&#8221; should be left to history <a href="http://twitter.com/cityrider49/status/24664817872">@cityrider49</a></li>
+<li>dot com bust = coming off a coke bender <a href="http://twitter.com/tonyvia/status/24664852965">@tonyvia</a></li>
+<li>2000 dot com bubble burst brought us benefits: people were forced to  learn standards, improve their skills to make a difference. <a href="http://twitter.com/mihswat/status/24665098443">@mihswat</a></li>
+<li>The CSS Zen Garden changed my professional career&#8230; Design for the web became a whole different concept <a href="http://twitter.com/mattmediadc/status/24665457739">@mattmediadc</a></li>
+<li>&#8220;you can&#8217;t burn every house down because we have this new idea for architecture&#8221; <a href="http://twitter.com/TheTroz/status/24665780132">@TheTroz</a></li>
+<li>XHTML 2.0 was burning every house in the world just to propose a new architecture. <a href="http://twitter.com/mihswat/status/24665786089">@mihswat</a></li>
+<li>&#8220;HTML5. You keep using that word. I do not think it means what you think it means.&#8221; <a href="http://twitter.com/eTapWeb/status/24666030244" class="broken_link">@eTapWeb</a></li>
+</ul>
+<h3><a href="http://afeedapart.com/2010/washington/36/object-oriented-css/">Object Oriented CSS</a> by <a href="http://aneventapart.com/speakers/nicolesullivan/">Nicole Sullivan</a></h3>
+<p>Nicole developed a technique for managing CSS called Object Oriented CSS. The basic premise is to recognize visual patterns and mark them up consistently. Consistent markup results in more compact and efficient CSS code to style which in turn results in more manageable code and faster performing websites.</p>
+<ul>
+<li>If you write CSS for any site of significant size or traffic you MUST hear <a href="http://twitter.com/stubbornella">@stubbornella</a> talk on OOCSS. This is my second time listen. <a href="http://twitter.com/aebsr/status/24667613663">@aebsr</a></li>
+<li>Reason for CSS optimization, CSS Blocks progressive rendering <a href="http://twitter.com/eduiconf/status/24667834483">@eduiconf</a></li>
+<li>42% of Alexa&#8217;s Top 1000 don&#8217;t gzip CSS. 44% have more than 2 files. 56%  serve with cookies. 62% don&#8217;t minify. 21% have &gt; 100k of CSS. <a href="http://twitter.com/mihswat/status/24668146382">@mihswat</a></li>
+<li>&#8220;Our sites are choking on the amount of CSS we&#8217;re throwing over the wire.&#8221; <a href="http://twitter.com/eTapWeb/status/24668374327" class="broken_link">@eTapWeb</a></li>
+<li>OOCSS makes me intellectually erect <a href="http://twitter.com/grum_dot_com/status/24668390530">@grum_dot_com</a></li>
+<li>Object oriented CSS sound a lot more complicated than it really is. <a href="http://twitter.com/kingkool68/status/24668397855">@kingkool68</a></li>
+<li>wow around May 2009 FaceBook had over 700 CSS files that totaled more than 1.9Mb <a href="http://twitter.com/160mph/status/24668410063" class="broken_link">@160mph</a></li>
+<li>&#8220;If you fighting your CSS, your architecture failed&#8221; <a href="http://twitter.com/franksedivy/status/24668892982">@franksedivy</a></li>
+<li>Facebook has all of their headings bold. Non-bolded headings looked weird to users. <a href="http://twitter.com/kingkool68/status/24669147129">@kingkool68</a></li>
+<li>People aren&#8217;t viewing your home page or reading your about section  anymore. It&#8217;s all Google hit-and-runs, and it&#8217;s changing our design. <a href="http://twitter.com/brian_klaas/status/24669332674">@brian_klaas</a></li>
+<li>Css objects were better for humungo sites like Facebook. Seems overkill for smaller, simple sites. <a href="http://twitter.com/kingkool68/status/24669451268">@kingkool68</a></li>
+<li>Dust-me Selectors to find unused css. <a href="http://www.sitepoint.com/dustmeselectors/">http://www.sitepoint.com/dustmeselectors/</a> <a href="http://twitter.com/chrismjones/status/24669844709">@chrismjones</a></li>
+<li>A &#8216;giant pink heading&#8217; should not become a &#8216;small blue heading&#8217; when placed in another part of the site. <a href="http://twitter.com/phej/status/24669888857">@phej</a></li>
+<li>Elements should be styled globally, avoiding area-dependent declarations  in CSS. Rules should be predictable, avoid overwriting them. <a href="http://twitter.com/mihswat/status/24669954832">@mihswat</a></li>
+<li>Love how <a href="http://twitter.com/stubbornella">@stubbornella</a> uses the story of the lady who swallowed a fly in relation to CSS <a href="http://twitter.com/candiRSX/status/24669994208">@candiRSX</a></li>
+<li>Writing CSS to correct previous bad CSS is the legacy of the old woman who swallowed a fly. It makes sense when <a href="http://twitter.com/stubbornella">@stubbornella</a> says it. <a href="http://twitter.com/achellios/status/24670010612">@achellios</a></li>
+<li>Nicole Sullivan&#8217;s Grids on github &#8211; <a href="http://wiki.github.com/stubbornella/oocss/grids">http://wiki.github.com/stubbornella/oocss/grids</a> <a href="http://twitter.com/Merlaak/status/24670176543">@Merlaak</a></li>
+<li>Classing elements with element names (&#8220;.h1&#8221;) is one step removed from or similar. <a href="http://twitter.com/jgarber/status/24670179484">@jgarber</a></li>
+<li>hmmmm&#8230;not sure about <a href="http://twitter.com/stubbornella">@stubbornella</a> rec. on eg h3.h6 Isn&#8217;t that sort of hacky? Shouldn&#8217;t we re-examine design first? <a href="http://twitter.com/ryanhoonlaverty/status/24670283901" class="broken_link">@ryanhoonlaverty</a></li>
+<li>Among Alexa&#8217;s Top 1000, there&#8217;s a site with 511 declarations setting styles for h1-h6. Facebook used to have 958. <a href="http://twitter.com/mihswat/status/24670425735">@mihswat</a></li>
+<li>After a CSS rewrite, there were only 25 declarations. <a href="http://twitter.com/mihswat/status/24670477263">@mihswat</a></li>
+<li>Amen to the underscore hack. I use it all the time. <a href="http://twitter.com/kingkool68/status/24670620414">@kingkool68</a></li>
+<li>Avoid styling IDs. IDs are for JavaScript. <a href="http://twitter.com/mihswat/status/24670720483">@mihswat</a></li>
+<li>styling IDs messes up specificity <a href="http://twitter.com/eduiconf/status/24670770200">@eduiconf</a></li>
+<li>&#8220;You should definitely suffer if you use hacks&#8221; <a href="http://twitter.com/chrismjones/status/24670789754">@chrismjones</a></li>
+<li>Not sure about this &#8216;not styling IDs&#8217; and have class driven styles .that  on top of the things aren&#8217;t semantic (.h1, .h2 etc&#8230;) &#8230; :/ <a href="http://twitter.com/franksedivy/status/24670889053">@franksedivy</a></li>
+<li>&#8220;AVOID !IMPORTANT &#8211; except on leaf nodes&#8221; Good advice!! <a href="http://twitter.com/JudyBad/status/24670907518">@JudyBad</a></li>
+<li>&#8220;I try to get specificity out-of-the-way so my cascade can really shine.&#8221; <a href="http://twitter.com/andysherry/status/24670925189">@andysherry</a></li>
+<li>agree with not using !important, disagree with not styling IDs. style IDs if they&#8217;re used sparingly or if &#8220;lead nodes&#8221;. <a href="http://twitter.com/courcelan/status/24671021322">@courcelan</a></li>
+<li>Styling using IDs, !importants, and too many nested elements is like fighting whose CSS rules are going to win. <a href="http://twitter.com/mihswat/status/24671055969">@mihswat</a></li>
+<li>who knew? the way I wrote CSS as a n00b was on the right path &#8211; lots of class selectors and few element/ID selectors! <a href="http://twitter.com/raelehman/status/24671076723">@raelehman</a></li>
+<li>I think OO CSS takes the art and craft away from CSS and gets it ready for consumers world! <img src="http://www.russellheimlich.com/blog/wp-includes/images/smilies/frownie.png" alt=":(" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <a href="http://twitter.com/franksedivy/status/24671202403">@franksedivy</a></li>
+<li>The blinking cursor says, &#8220;You don&#8217;t remember anything.&#8221; (Referring to the command line) <a href="http://twitter.com/Merlaak/status/24671203525">@Merlaak</a></li>
+<li>Find and replace is really why I use Dreamweaver  as my coding tool of choice. No need to figure out grep. <a href="http://twitter.com/kingkool68/status/24671297606">@kingkool68</a></li>
+<li>See how many times a declaration if when your css from command line. grep -r font-size . | wc -l <a href="http://twitter.com/chrismjones/status/24671345179">@chrismjones</a></li>
+<li>Hmm, <a href="http://twitter.com/stubbornella">@stubbornella</a>&#8216;s OO approach to CSS preso has some good QA tricks, but her philosophy has too much scaffolding for general use <a href="http://twitter.com/talbs/status/24671499961">@talbs</a></li>
+<li>Feeling a little weird about <a href="http://twitter.com/stubbornella">@stubbornella</a>&#8216;s approach to object-oriented CSS, but liking some ideas about finding duplication. <a href="http://twitter.com/graphicsgirl/status/24671603682">@graphicsgirl</a></li>
+<li>OOCSS sounds like the best approach for Facebook, but not most sites we design and build. <a href="http://twitter.com/graphicsgirl/status/24671717543">@graphicsgirl</a></li>
+<li>afraid newbs will get the wrong idea with <a href="http://twitter.com/stubbornella">@stubbornella</a>&#8216;s methodology and not consider scale/context/semantics <a href="http://twitter.com/talbs/status/24671737975">@talbs</a></li>
+<li>I found taking the general idea from this presentation and building a  custom framework for our approach to build sites worked great <a href="http://twitter.com/aeaattendee/status/24671798393">@aeaattendee</a></li>
+<li>Looking at CSS in a way I never have thanks to <a href="http://twitter.com/stubbornella">@stubbornella</a> <a href="http://twitter.com/TheTroz/status/24671980866">@TheTroz</a></li>
+<li>Facebook reduced CSS size by 19% and HTML size by 44% after optimizations <a href="http://twitter.com/mihswat/status/24672119087">@mihswat</a></li>
+<li>* and _ hacks &gt; conditional statements <a href="http://twitter.com/160mph/status/24672255924" class="broken_link">@160mph</a></li>
+<li>Been using OOCSS for the past year and a half. Have never found a site that did not benefit. <a href="http://twitter.com/chrismjones/status/24672273861">@chrismjones</a></li>
+</ul>
+<h3><a href="http://afeedapart.com/2010/washington/37/the-css3-experience/">The CSS3 Experience</a> by <a href="http://aneventapart.com/speakers/dancederholm/">Dan Cederholm</a></h3>
+<p>Dan emphasizes that sites don&#8217;t need to look and behave exactly the same in every browser. Case in point, he owns  <a href="http://dowebsitesneedtolookexactlythesameineverybrowser.com/">http://dowebsitesneedtolookexactlythesameineverybrowser.com/</a> and <a href="http://dowebsitesneedtobeexperiencedexactlythesameineverybrowser.com/">http://dowebsitesneedtobeexperiencedexactlythesameineverybrowser.com/</a>. CSS3 is available in modern browsers today and suitable for non-critical elements of a design. His presentation consisted of several demos showcasing how CSS3 could be used to sweeten interfaces.</p>
+<ul>
+<li>Things We Left On The Moon: <a href="http://css3exp.com/moon/">http://css3exp.com/moon/</a> (CSS3 demo site.) <a href="http://twitter.com/zeldman/status/24674025582">@zeldman</a></li>
+<li>Designers &#8220;pimping out&#8221; the message in a bottle &#8211; Dan Cederholm at &#8216;An Even Apart&#8217; <a href="http://twitter.com/sgstevens08/status/24674385275">@sgstevens08</a></li>
+<li>Cederholm discussing progressive enhancement re: delivering info &amp; determining UX based on capabilities of new devices <a href="http://twitter.com/dinalew/status/24674513630">@dinalew</a></li>
+<li>Websites don&#8217;t need to look the same and don&#8217;t need to be experienced the same in every browser. <a href="http://twitter.com/mihswat/status/24674677992">@mihswat</a></li>
+<li>Will have to download IE9 beta. Just got a round of applause here. <a href="http://twitter.com/mad_sunshine/status/24675031551">@mad_sunshine</a></li>
+<li>CSS3 rules you may use right now: border-radius, text-shadow,  box-shadow, opacity, RGBA, multiple backgrounds. (IE version &gt;=  9) <a href="http://twitter.com/mihswat/status/24675111702">@mihswat</a></li>
+<li>haha, I&#8217;m seeing a bit too much excitement about IE9 from speakers, and an equal amount of hate from attendees. <a href="http://twitter.com/aebsr/status/24675123534">@aebsr</a></li>
+<li>Critical vs. Non-critical elements. It currently makes the most sense to apply CSS3 to the latter. <a href="http://twitter.com/eTapWeb/status/24675381084" class="broken_link">@eTapWeb</a></li>
+<li>-moz and -webkit, IE9 is now using border-radius. What do you think of that? <a href="http://twitter.com/MattTurnure/status/24675530526">@MattTurnure</a></li>
+<li>Check out the background as you resize the browser window. Fun! <a href="http://silverbackapp.com/">http://silverbackapp.com/</a> <a href="http://twitter.com/sgstevens08/status/24676174476">@sgstevens08</a></li>
+<li>parallax effect IS pimping out the bottle. <a href="http://twitter.com/ryanhoonlaverty/status/24676184818" class="broken_link">@ryanhoonlaverty</a></li>
+<li>Multiple background images in CSS3. Check out <a href="http://silverbackapp.com/">http://silverbackapp.com</a> or <a href="http://css3exp.com/moon/">http://css3exp.com/moon/</a> and resize your browser window. <a href="http://twitter.com/eTapWeb/status/24676449427" class="broken_link">@eTapWeb</a></li>
+<li>CSS3 gradient generator: <a href="http://www.westciv.com/tools/gradients/index.html">http://www.westciv.com/tools/gradients/index.html</a> <a href="http://twitter.com/shiota/status/24676643529">@shiota</a></li>
+<li>Impressed <a href="http://twitter.com/stubbornella">@stubbornella</a> isn&#8217;t heckling <a href="http://twitter.com/simplebits">@simplebits</a> for using ID selectors in all his CSS examples. <a href="http://twitter.com/lincolnwebs/status/24677018483">@lincolnwebs</a></li>
+</ul>
+<h3><a href="http://afeedapart.com/2010/washington/39/mobile-first/">Mobile First!</a> by <a href="http://aneventapart.com/speakers/lukewroblewski/">Luke Wroblewski</a></h3>
+<p><a href="http://www.flickr.com/photos/justinprather/4997719158/" class="broken_link"><img class="alignnone size-full wp-image-2343" title="Luke Wroblewski presenting at An Event Apart DC" src="http://www.russellheimlich.com/blog/wp-content/uploads/2010/09/Luke-Wroblewski-presenting-at-An-Event-Apart-DC.jpg" alt="" width="566" height="527" /></a></p>
+<p>Luke covered designing Web applications for mobile platforms first before the desktop. This helps you focus a website down to its bare essentials and functionality. The mobile web is exploding, and in some cases, is the only access someone has to the Internet.</p>
+<ul>
+<li>&#8220;Web products should be designed for mobile first, even if no mobile version is planned.&#8221; <a href="http://twitter.com/eTapWeb/status/24685526504" class="broken_link">@eTapWeb</a></li>
+<li>desktop internet devices: 1 billion, mobile devices: 10 billion <a href="http://twitter.com/tonyvia/status/24685704323">@tonyvia</a></li>
+<li>&#8220;50% of people who were new to the web last year were on mobile devices.&#8221; <a href="http://twitter.com/eTapWeb/status/24685722943" class="broken_link">@eTapWeb</a></li>
+<li>Why build mobile first? More growth and future users. <a href="http://twitter.com/tyrale/status/24685725395" class="broken_link">@tyrale</a></li>
+<li>Mobile Web growth has outpaced desktop Web growth 8x. Smartphone sales will pass PC sales in 2011. <a href="http://twitter.com/mihswat/status/24685839290">@mihswat</a></li>
+<li>Mobile is the new black <a href="http://twitter.com/JudyBad/status/24686008970">@JudyBad</a></li>
+<li>Great mobile products are created never ported. <a href="http://twitter.com/kingkool68/status/24686025603">@kingkool68</a></li>
+<li>mobile stats from #lukew <a href="http://lukew.com/ff/">http://lukew.com/ff/</a> <a href="http://twitter.com/eduiconf/status/24686058874">@eduiconf</a></li>
+<li>&#8220;27% of searches on Yelp! come from 4% of users (i.e. the users who access Yelp! via iPhone.)&#8221; <a href="http://twitter.com/zeldman/status/24686085981">@zeldman</a></li>
+<li>&#8220;Designing for mobile forces you to focus and prioritize.&#8221; <a href="http://twitter.com/eTapWeb/status/24686162444" class="broken_link">@eTapWeb</a></li>
+<li>Moving from desktop to mobile&#8230; First remove 80% of the crap <a href="http://twitter.com/tyrale/status/24686378517" class="broken_link">@tyrale</a></li>
+<li>Design for mobile first and you will get down to the things that matter. <a href="http://twitter.com/mad_sunshine/status/24686406659">@mad_sunshine</a></li>
+<li>&#8220;everything else on this page needs to pixelate and die.&#8221; <a href="http://twitter.com/courcelan/status/24686463287">@courcelan</a></li>
+<li>Mobile devices&#8217; limited screen size makes you focus on what&#8217;s important &#8211; main features, straight communication. <a href="http://twitter.com/mihswat/status/24686498641">@mihswat</a></li>
+<li>Use vector to design for the web, build with css3 it will scale automagically! <a href="http://twitter.com/tyrale/status/24686721153" class="broken_link">@tyrale</a></li>
+<li>Mobile design is all about adaption <a href="http://twitter.com/kingkool68/status/24686769278">@kingkool68</a></li>
+<li>for mobile, make the content the UI <a href="http://twitter.com/rkunboxed/status/24687005102">@rkunboxed</a></li>
+<li>100ms delay results in 1% sales loss for Amazon ($191 Million) <a href="http://twitter.com/eduiconf/status/24687258019">@eduiconf</a></li>
+<li>Google says 500ms delay drops search traffic by 20%. Wonder what our 8,000ms server hangs do. Cough. <a href="http://twitter.com/itmaybejj/status/24687319175">@itmaybejj</a></li>
+<li>optimize for mobile:speed eg, eliminate redirects &amp; use app cache for local content storage <a href="http://twitter.com/dinalew/status/24687331023">@dinalew</a></li>
+<li>Mobile is quick bursts, and mostly at home on usage. <a href="http://twitter.com/tyrale/status/24687415859" class="broken_link">@tyrale</a></li>
+<li>Your mobile is with you all the time, so designing for mobile means designing something that can be used all the time. <a href="http://twitter.com/zeldman/status/24687423796">@zeldman</a></li>
+<li>Only make content and web apps that are useful to people *all the time <a href="http://twitter.com/halvorson/status/24687499407">@halvorson</a></li>
+<li>People spend only about 2 to 4 seconds on a webpage using a mobile device. Optimize your site for this behavior. <a href="http://twitter.com/mihswat/status/24687571049">@mihswat</a></li>
+<li>design = constraining until an elegant solution presents itself <a href="http://twitter.com/lavinia/status/24687677962">@lavinia</a></li>
+<li>Many users will interact with mobile devices using one hand and one thumb (one-handed touch), so the UI has to be simple. <a href="http://twitter.com/jessicaivins/status/24687693906">@jessicaivins</a></li>
+<li>1 million per day = touch based phone purchase <a href="http://twitter.com/lavinia/status/24687799849">@lavinia</a></li>
+<li>mobile: must accommodate &#8220;french fry fingers&#8221; <a href="http://twitter.com/JudyBad/status/24687843294">@JudyBad</a></li>
+<li>wow. &#8216;1.1 billion consumers with Nokia devices in 2009&#8217; <a href="http://twitter.com/westerndave/status/24687943260" class="broken_link">@westerndave</a></li>
+<li>8-10mm = average human finger pad , so design for 9mm touch area <a href="http://twitter.com/lavinia/status/24687979234">@lavinia</a></li>
+<li>touch me = Touch Gesture Reference Guide <a href="http://www.lukew.com/ff/entry.asp?1071">http://www.lukew.com/ff/entry.asp?1071</a> <a href="http://twitter.com/westerndave/status/24688291805" class="broken_link">@westerndave</a></li>
+<li>Hovers are not intentional, clicks are <a href="http://twitter.com/eduiconf/status/24688492178">@eduiconf</a></li>
+<li>great stat: People spend only about 2 to 4 seconds on a webpage using a mobile device. Optimize your site for this behavior. <a href="http://twitter.com/lavinia/status/24688493426">@lavinia</a></li>
+<li>Hovers are not intentional. Just because a user&#8217;s mouse has paused somewhere doesn&#8217;t mean they expect to see a menu. <a href="http://twitter.com/zeldman/status/24688510143">@zeldman</a></li>
+<li>most devices use wifi for location (gps is narly indoors) <a href="http://twitter.com/lavinia/status/24688646105">@lavinia</a></li>
+<li>Yes! Hover cannot be considered an intentional interaction on a mobile device. I activate them accidentally on my *desktop*. <a href="http://twitter.com/kissane/status/24688651141">@kissane</a></li>
+<li>Yelp&#8217;s augmented reality feature boosted their sustained traffic by 40 to 50 percent <a href="http://twitter.com/mihswat/status/24688983526">@mihswat</a></li>
+<li>Wonderful presentation from Luke Wroblewski. This really jives with a lot of stuff that get talked about in IxD these days. <a href="http://twitter.com/iwilsonjr/status/24690098986">@iwilsonjr</a></li>
+</ul>
+<h3><a href="http://afeedapart.com/2010/washington/40/message-and-medium-better-content-by-design/">Message and Medium: Better Content by Design</a> by <a href="http://aneventapart.com/speakers/kristinahalvorson/">Kristina Halvorson</a></h3>
+<p>Kristina sure knows how to develop a killer content strategy. A website&#8217;s message carries through to other places on the web than just the main website. Customer support, social media, and meta data should all echo the tone of the main message. And there is a lot more to a good content strategy than determining what text goes on the front page. How will this content be produced? Who will update it? How often will we add new content?</p>
+<ul>
+<li>Kristina Halvorson (<a href="http://twitter.com/halvorson">@halvorson</a>) asked us to sing Happy Birthday to her son. How sweet&#8230; <a href="http://twitter.com/shiota/status/24690347206">@shiota</a></li>
+<li><a href="http://twitter.com/halvorson">@halvorson</a> on two of my favorite topics:  teeth &amp; content strategy! <a href="http://twitter.com/dinalew/status/24690494681">@dinalew</a></li>
+<li>haha. User-scented content. &#8220;Smells like user.&#8221; <a href="http://twitter.com/ryanhoonlaverty/status/24690773328" class="broken_link">@ryanhoonlaverty</a></li>
+<li>Content strategy plans for the creation, delivery, and governance of content that people care about. <a href="http://twitter.com/eTapWeb/status/24690796474" class="broken_link">@eTapWeb</a></li>
+<li>website content: stop talking about what you do and talk about what your users want. hello user-centered content <a href="http://twitter.com/dinalew/status/24690821180">@dinalew</a></li>
+<li>content requirements ≠ content strategy <a href="http://twitter.com/tonyvia/status/24691053098">@tonyvia</a></li>
+<li>content strategy = content (substance + structure) &amp; people (workflow + governance) <a href="http://twitter.com/tonyvia/status/24691141496">@tonyvia</a></li>
+<li>messaging is not a mission statement, brand promise or tagline <a href="http://twitter.com/eduiconf/status/24691292306">@eduiconf</a></li>
+<li>nobody cares about your mission statement [so true!] <a href="http://twitter.com/tonyvia/status/24691337829">@tonyvia</a></li>
+<li>First second visiting a website is an emotional response <a href="http://twitter.com/kingkool68/status/24691493230">@kingkool68</a></li>
+<li>user forms an impression of your site in ONE SECOND (load time + design) &amp; decides to trust you or not within 10 seconds <a href="http://twitter.com/tonyvia/status/24691609151">@tonyvia</a></li>
+<li>In 1 second user should have an emotional response. 10 seconds, understand your primary message. 2 minutes, secondary msg. <a href="http://twitter.com/eTapWeb/status/24691700437" class="broken_link">@eTapWeb</a></li>
+<li>Reminded of how some of the traditional #ux roles/deliverables can suffocate copywriters&#8217; creativity/skills. Preach on, <a href="http://twitter.com/havlorson" class="broken_link">@havlorson</a>. <a href="http://twitter.com/talbs/status/24692217128">@talbs</a></li>
+<li>Include maintenance requirements for key pages &#8211; great content strategy idea <a href="http://twitter.com/graphicsgirl/status/24692319180">@graphicsgirl</a></li>
+<li>Consistency inspires trust in your readers. <a href="http://twitter.com/JudyBad/status/24692738625">@JudyBad</a></li>
+<li>consistency inspires trust in your readers <a href="http://twitter.com/lavinia/status/24692779827">@lavinia</a></li>
+<li>Visiting every page of your site with its main message in mind helps to  see if you&#8217;re communicating it the right way with consistency <a href="http://twitter.com/mihswat/status/24692836529">@mihswat</a></li>
+<li>#aea is really driving home the importance to collaboration across  roles/disciplines to tackle those important grey areas of an experience! <a href="http://twitter.com/talbs/status/24692857783">@talbs</a></li>
+<li>And your FAQ page is inconsistent. Where&#8217;s the fun, Ben &amp; Jerry? <a href="http://twitter.com/mad_sunshine/status/24692958496">@mad_sunshine</a></li>
+<li>pet peeve: &#8220;contact us&#8221; page hiding phone/address 10 layers deep. after  all, that&#8217;s all we want from &#8220;contact us&#8221; page 99% of the time <a href="http://twitter.com/sarahdippity/status/24693055155">@sarahdippity</a></li>
+<li>Workflow and governance are crucial for good content strategy. <a href="http://twitter.com/kingkool68/status/24693187152">@kingkool68</a></li>
+<li>&#8220;whats our facebook strategy?&#8221; &#8220;that depends&#8230; what are you trying to do, who&#8217;s going to do [keep up with it]?&#8221; hear, hear. <a href="http://twitter.com/courcelan/status/24693275561">@courcelan</a></li>
+<li>What is your social media strategy? Is it successfully delivering your  message? Or do you have a Twitter just for the sake of it? <a href="http://twitter.com/mihswat/status/24693327017">@mihswat</a></li>
+<li>Page descriptions. Tweets. Facebook posts. Google results. Your message should be consistently delivered everywhere. <a href="http://twitter.com/mihswat/status/24693642282">@mihswat</a></li>
+<li><a href="http://twitter.com/halvorson">@halvorson</a>&#8216;s talks on content strategy are ALWAYS timely and poignant. Maybe because content strategy is a never-ending struggle&#8230; <a href="http://twitter.com/ryanhoonlaverty/status/24693885732" class="broken_link">@ryanhoonlaverty</a></li>
+</ul>
+<h3><a href="http://afeedapart.com/2010/washington/41/anatomy-of-a-design-decision/">Anatomy of a Design Decision</a> by <a href="http://aneventapart.com/speakers/jaredspool/">Jared Spool</a></h3>
+<p>Jared pointed out that every site on the web came to be from a series of decisions. He has identified 5 styles to design decisions and when each style might be appropriate for a given project. Oh and university homepages feature images of girls under trees way too much.</p>
+<ul>
+<li>Seen it before, but it&#8217;s easy to forget just how awesome  <a href="http://havenworks.com/" class="broken_link">http://havenworks.com/</a> is&#8230; <a href="http://twitter.com/davidocoulter/status/24695359549">@davidocoulter</a></li>
+<li>&#8220;it validates&#8221; &#8211; Jared Spool (sarcastically referring to havenworks.com) <a href="http://twitter.com/SethBlanchard/status/24695371529">@SethBlanchard</a></li>
+<li>&#8220;Someone actually designed this on purpose. This way.&#8221; &#8211; <a href="http://twitter.com/jmspool">@jmspool</a> on a particularly egregious web design specimen. <a href="http://twitter.com/alykat/status/24695439474">@alykat</a></li>
+<li>Sites like havenworks.com or arngren.net went over design decisions. Now that&#8217;s something to think about. <a href="http://twitter.com/shiota/status/24695484583">@shiota</a></li>
+<li>Jared is talking about the famous 37signals vs. Donald Norman &#8220;celebrity deathmatch&#8221;. <a href="http://twitter.com/shiota/status/24695610191">@shiota</a></li>
+<li>&#8220;Self design works great when you&#8217;re designing something for your own use, or for use by people just like you.&#8221; <a href="http://twitter.com/eTapWeb/status/24695698267" class="broken_link">@eTapWeb</a></li>
+<li>Crappy and unhelpful error messages are the perfect way to frustrate your user. <a href="http://twitter.com/shiota/status/24696008266">@shiota</a></li>
+<li>Unintentional design happens on its own. Works great if user will put up with whatever or we don&#8217;t care about support costs. <a href="http://twitter.com/eTapWeb/status/24696153257" class="broken_link">@eTapWeb</a></li>
+<li>Airline websites: helping AEA speakers make their point since 2005 <a href="http://twitter.com/ryanhoonlaverty/status/24696218434" class="broken_link">@ryanhoonlaverty</a></li>
+<li>&#8220;Genius design: when we&#8217;ve previously learned what users need. We&#8217;re solving the same problems repeatedly.&#8221; <a href="http://twitter.com/eTapWeb/status/24696306895" class="broken_link">@eTapWeb</a></li>
+<li>&#8220;Activity Focused Design: designing for new activities unfamiliar to us.&#8221; <a href="http://twitter.com/eTapWeb/status/24696526343" class="broken_link">@eTapWeb</a></li>
+<li>Well <a href="http://twitter.com/jmspool">@jmspool</a>&#8216;s talk includes a reference to <a href="http://twitter.com/lingscars">@lingscars</a>&#8216; website www.lingscars.com… and well, just check it out. <a href="http://twitter.com/hellogeri/status/24696639831">@hellogeri</a></li>
+<li>Jared is comparing Six Flags map to Disney World&#8217;s map. Both amusement  parks, yet totally different maps. Each with its own focus. <a href="http://twitter.com/mihswat/status/24696679505">@mihswat</a></li>
+<li>Disney. Someone has thought about what happens between the rides. Thinking about the experience. <a href="http://twitter.com/mad_sunshine/status/24696803659">@mad_sunshine</a></li>
+<li>experience is the stuff that happens around usage. <a href="http://twitter.com/lavinia/status/24697050905">@lavinia</a></li>
+<li>&#8220;User experience is what happens in between activities&#8221; <a href="http://twitter.com/simplebits/status/24697119322">@simplebits</a></li>
+<li>University website traps &#8212; girl under trees. WOW!  So many of them&#8230; <a href="http://twitter.com/mad_sunshine/status/24697401537">@mad_sunshine</a></li>
+<li>OMG I can&#8217;t search &#8211; the search box is on the left [side]! <a href="http://twitter.com/raelehman/status/24697643537">@raelehman</a></li>
+<li>Rule #17: Always put the search box in the upper right <a href="http://twitter.com/grum_dot_com/status/24697682890">@grum_dot_com</a></li>
+<li>Hmm. design style guides and guidelines never work. <a href="http://twitter.com/mad_sunshine/status/24697715010">@mad_sunshine</a></li>
+<li>Informed Decisions &gt; Rule-based Decisions <a href="http://twitter.com/160mph/status/24697765646" class="broken_link">@160mph</a></li>
+<li>Rule-based decisions prevent thinking. Informed decisions require thinking. <a href="http://twitter.com/sarahdippity/status/24697826901">@sarahdippity</a></li>
+<li>Design is about the exception cases. If everything was always the same, we would not be interested in this work. <a href="http://twitter.com/beep/status/24697886738">@beep</a></li>
+<li>Instead of spreading dogmas/methodologies, try spreading  tricks/techniques. People will learn, think, and won&#8217;t struggle with  rules <a href="http://twitter.com/mihswat/status/24698809415">@mihswat</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/summary-of-an-event-apart-dc-day-1/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>WordCamp Mid-Atlantic</title>
+		<link>http://www.russellheimlich.com/blog/wordcamp-mid-atlantic/</link>
+		<comments>http://www.russellheimlich.com/blog/wordcamp-mid-atlantic/#comments</comments>
+		<pubDate>Thu, 16 Sep 2010 01:36:39 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Conference]]></category>
+		<category><![CDATA[Aaron Brazell]]></category>
+		<category><![CDATA[Andrew Nacin]]></category>
+		<category><![CDATA[Brad Williams]]></category>
+		<category><![CDATA[CMS]]></category>
+		<category><![CDATA[code]]></category>
+		<category><![CDATA[Jacob Goldman]]></category>
+		<category><![CDATA[Jane Wells]]></category>
+		<category><![CDATA[Lokesh Dhakar]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[Scott Kingsley Clark]]></category>
+		<category><![CDATA[wcma]]></category>
+		<category><![CDATA[WordCamp]]></category>
+		<category><![CDATA[WordPress]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2278</guid>
+		<description><![CDATA[This past weekend I got to attend WordCamp Mid-Atlantic, my first WordCamp ever. This years conference took place at Johns Hopkins University in Baltimore City. The venue was a little tricky to get to and the parking situation was a bit limited, but once I got there I had a great time. The place was [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>This past weekend I got to attend <a href="http://wordcampmidatlantic.com/">WordCamp Mid-Atlantic</a>, my first <a href="http://central.wordcamp.org/">WordCamp</a> ever. This years conference took place at Johns Hopkins University in Baltimore City. The venue was a little tricky to get to and the parking situation was a bit limited, but once I got there I had a great time. The place was packed with all kinds of different people who shared one common interest &#8212; they all love WordPress.</p>
+<p>The camp was divided into two tracks; beginner and pro. I spent the whole day in the pro track and my summary of the talks are below.</p>
+<p><strong>Scott Kingsley Clark &#8211; WordPress as a <abbr title="Content Management System">CMS</abbr></strong></p>
+<p><strong><img class="alignnone size-full wp-image-2298" title="Scott Kingsley Clark" src="http://www.russellheimlich.com/blog/wp-content/uploads/2010/09/scott-kingsley-clark.jpg" alt="" width="300" height="300" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2010/09/scott-kingsley-clark-150x150.jpg 150w, http://www.russellheimlich.com/blog/wp-content/uploads/2010/09/scott-kingsley-clark.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" /><br />
+</strong></p>
+<p><a href="http://scottkclark.com/">Scott Kingsley Clark</a> led off the first session of the pro track with WordPress as a <abbr title="Content Management System">CMS</abbr>. His talk covered how to add more fields to the edit screen besides the usual title, post, tags, and categories we&#8217;re all used to seeing. He walked through using a plugin called <a href="http://wordpress.org/extend/plugins/pods/">Pods CMS</a>, which he is a co-author of. To me, it seems a little over complicated. I like to use custom meta fields to extend the data contained in posts or pages. For a non-technical user who isn&#8217;t comfortable writing PHP, Pods CMS seems like an acceptable solution to get them up and running.</p>
+<p><strong>Brad Williams &#8211; WordPress Security</strong></p>
+<p><strong><img class="size-full wp-image-2297 alignnone" title="NowThat's What I Call WordPress Security 2010" src="http://www.russellheimlich.com/blog/wp-content/uploads/2010/09/Screen-shot-2010-09-15-at-8.37.29-PM.png" alt="" width="450" height="444" /><br />
+</strong></p>
+<p>I&#8217;ve listened to Brad many times as a regular on the <a href="http://www.sitepoint.com/podcast/">SitePoint podcast</a> so it was good to actually meet him in person. His talk (<a href="http://www.slideshare.net/williamsba/now-thats-what-i-call-wordpress-security-2010">slides available</a>) on WordPress security was well attended as securing a WordPress install is applicable to every blogger. The tips Brad dished out would help anyone lock down their blog with such methods as checking your file permissions, deleting the admin user, changing the prefix on your database tables, and (most importantly) staying up to date with plugins and core updates.</p>
+<p>At the end of his talk he mentioned a list of plugins to help with WordPress security.</p>
+<ul>
+<li><a href="http://wordpress.org/extend/plugins/wp-security-scan/">WP Security Scan</a> &#8211; Scans your WordPress installation for security vulnerabilities and suggests corrective actions.</li>
+<li><a href="http://wordpress.org/extend/plugins/wp-malwatch/" class="broken_link">WP-MalWatch</a> &#8211; performs a security scan of your WordPress installation nightly looking  for evidence of foul play and if WP-MalWatch finds it, a dashboard  widget will tell you were you should take a closer look.</li>
+<li><a href="http://pluginbuddy.com/serverbuddy-check-hosting-quality-security-issues-more/">ServerBuddy</a> &#8211; a plugin that tests server configuration to analyze the quality of your  hosting &amp; server configuration, and seek out problems with  compatibility with various WordPress themes and plugins.</li>
+<li><a href="http://wordpress.org/extend/plugins/exploit-scanner/">Exploit Scanner</a> &#8211; searches the files on your website, and the posts and comments tables of your database for anything suspicious.</li>
+<li><a href="http://wordpress.org/extend/plugins/wordpress-file-monitor/">WordPress File Monitor</a> &#8211; Monitor files under your WordPress installation for changes.  When a change occurs, be notified via email.</li>
+<li><a href="http://wordpress.org/extend/plugins/login-lockdown/">Login Lockdown</a> &#8211; records the IP address and timestamp of every failed login attempt. If more than a  certain number of attempts are detected within a short period of time from the same IP range, then the login function is disabled for all requests from that range.</li>
+</ul>
+<p>For lunch a group of us went across the street to <a href="http://www.tambersrestaurant.com/">Tambers</a>, an indian burger place. Their burgers are perfectly normal but the last page of the menu had indian dishes. Weird. I also got a chance to meet Lokesh Dhakar, the author of the original <a href="http://www.lokeshdhakar.com/">lightbox script</a>. He&#8217;s a smart guy.</p>
+<p><strong>Andrew Nacin &#8211; Undiscovered APIs</strong></p>
+<div id="attachment_2290" style="width: 610px" class="wp-caption alignnone"><a href="http://www.flickr.com/photos/nickwhitmoyer/4987153142/"><img class="size-medium wp-image-2290" title="Andrew Nacin uncovers undiscovered WordPress APIs" src="http://www.russellheimlich.com/blog/wp-content/uploads/2010/09/Andrew-Nacin-uncovers-undiscovered-WordPress-APIs-600x398.jpg" alt="" width="600" height="398" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2010/09/Andrew-Nacin-uncovers-undiscovered-WordPress-APIs-600x398.jpg 600w, http://www.russellheimlich.com/blog/wp-content/uploads/2010/09/Andrew-Nacin-uncovers-undiscovered-WordPress-APIs.jpg 640w" sizes="(max-width: 600px) 100vw, 600px" /></a><p class="wp-caption-text">Photo by Nick Whitmoyer</p></div>
+<p>After lunch, Andrew Nacin gave a talk (<a href="http://www.andrewnacin.com/2010/09/11/wcma-resources/">slides available</a>) about functions and APIs that aren&#8217;t as well known about among developers. Since they aren&#8217;t well documented, the only way to learn about them is reading the source. I really got a kick out of his talk because I had been looking at some of these functions for a project of mine. Some neat functions include</p>
+<ul>
+<li><a href="http://xref.yoast.com/trunk/nav.html?wp-includes/http.php.source.html#l31" class="broken_link">wp_remote_request</a> &#8211; to download files to your server from the web. WordPress uses this internally to download updates, themes, and plugins from within the admin screen.</li>
+<li><a href="http://xref.yoast.com/trunk/nav.html?wp-admin/includes/file.php.source.html#l354" class="broken_link">wp_handle_sideload</a> &#8211; lets you add a file to the media library that is already located somewhere else on your server.</li>
+<li><a href="http://codex.wordpress.org/Embeds#oEmbed">oEmbed</a> &#8211; allows the embedding of media by simply including the URL in a post. WordPress makes it easy to add your own oEmbed providers.</li>
+<li><a href="http://xref.yoast.com/trunk/nav.html?wp-includes/rewrite.php.source.html#l62" class="broken_link">add_feed</a> &#8211; lets you make your own feed. Andrew demonstrated how to make a <abbr title="JavaScript Object Notation">JSON</abbr> feed of your blog posts with just a few lines of code.</li>
+</ul>
+<p>It is no wonder Andrew knows all of this stuff, he&#8217;s one of the seven core contributors for the WordPress project.</p>
+<p>I liked in-depth technical talks like this. I was probably one of the few people who this didn&#8217;t go over their head.</p>
+<p><strong>Jacob Goldman &#8211; Customizing WordPress Admin</strong></p>
+<div id="attachment_2289" style="width: 610px" class="wp-caption alignnone"><a href="http://www.flickr.com/photos/nickwhitmoyer/4986556401/"><img class="size-medium wp-image-2289" title="Jacob Goldman explains how to customize the WordPress admin" src="http://www.russellheimlich.com/blog/wp-content/uploads/2010/09/Jacob-Goldman-explains-how-to-customize-WordPress-admin-600x398.jpg" alt="" width="600" height="398" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2010/09/Jacob-Goldman-explains-how-to-customize-WordPress-admin-600x398.jpg 600w, http://www.russellheimlich.com/blog/wp-content/uploads/2010/09/Jacob-Goldman-explains-how-to-customize-WordPress-admin.jpg 640w" sizes="(max-width: 600px) 100vw, 600px" /></a><p class="wp-caption-text">Photo by Nick Whitmoyer</p></div>
+<p>Customizing the back-end admin screen of WordPress is a big selling-point for Jacob&#8217;s consulting business. He feels the admin screen should be as simplified and tailored to the clients need as possible. And contrary to what others might say, WordPress makes it simple to tweak the admin screens.</p>
+<p>Much of what Jacob talked about was removing sections like menu items that aren&#8217;t used and the default widgets on the dashboard. He added his own custom widgets to the dashboard to point to a contact form if the clients need more help. Speaking of help, you can also customize the contextual help menu tab that appears on practically every page. Adding your own help text is a great way to avoid people asking you the same questions over and over. At the least, you can tell them to check the help tab on the page you have a question with. WordPress also lets you customize the look and feel by adding your own stylesheet and overriding the default styles.</p>
+<p>Jacob&#8217;s talk was inspiring for cleaning up the backend. He put <a href="http://www.cmurrayconsulting.com/wordpress-tips/customizing-wordpress-admin/">a sample theme file</a> that you can copy and paste from into your own theme.</p>
+<p><strong>Jane Wells &#8211; Closing Keynote</strong></p>
+<div id="attachment_2288" style="width: 610px" class="wp-caption alignnone"><a href="http://www.flickr.com/photos/nickwhitmoyer/4986557093/"><img class="size-medium wp-image-2288" title="Aaron Brazell interviews Jane Wells over Skype" src="http://www.russellheimlich.com/blog/wp-content/uploads/2010/09/Aaron-Brazell-interviews-Jane-Wells-over-skype-600x903.jpg" alt="" width="600" height="903" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2010/09/Aaron-Brazell-interviews-Jane-Wells-over-skype-600x903.jpg 600w, http://www.russellheimlich.com/blog/wp-content/uploads/2010/09/Aaron-Brazell-interviews-Jane-Wells-over-skype.jpg 680w" sizes="(max-width: 600px) 100vw, 600px" /></a><p class="wp-caption-text">Photo by Nick Whitmoyer</p></div>
+<p>To wrap up WordCamp Mid-Atlantic, we had the opportunity to hear from the head user experience leader for WordPress, <a href="http://jane.wordpress.com/">Jane Wells</a>. The keynote was delivered over Skype&#8230; from within a moving car! The video was a little blocky, but given the circumstances it was easily forgiven. Some of Jane&#8217;s keynote was about the upcoming improvements to WordPress. But most of the talk was gossipy Gnu Public License cruft. It wasn&#8217;t that interesting to re-hash the same stuff every other blog was blabbering about a month ago.</p>
+<p>So that was WordCamp Mid-Atlantic. A huge thanks goes out to Aaron Brazell for organizing the whole thing and all of the sponsors for making the event possible. I look forward to attending other WordCamps in the future and maybe even hosting a talk of my own.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/wordcamp-mid-atlantic/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>BarCampDC 3 Recap</title>
+		<link>http://www.russellheimlich.com/blog/barcampdc-3-recap/</link>
+		<comments>http://www.russellheimlich.com/blog/barcampdc-3-recap/#comments</comments>
+		<pubDate>Tue, 17 Nov 2009 05:19:00 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Conference]]></category>
+		<category><![CDATA[Local]]></category>
+		<category><![CDATA[barcamp]]></category>
+		<category><![CDATA[DC]]></category>
+		<category><![CDATA[event]]></category>
+		<category><![CDATA[frontend tips]]></category>
+		<category><![CDATA[gathering]]></category>
+		<category><![CDATA[Martin Luther King Library]]></category>
+		<category><![CDATA[presentation]]></category>
+		<category><![CDATA[talk]]></category>
+		<category><![CDATA[tech]]></category>
+		<category><![CDATA[Washington DC]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1972</guid>
+		<description><![CDATA[This past Saturday, November 14th, a hundred DC tech enthusiasts gathered at the Martin Luther King Library to create their own conference. Topics were suggested by participants and the group at large determined the schedule. It was a BarCamp at it&#8217;s best! This year&#8217;s BarCamp had a few twists. The word &#8216;Twitter&#8217; was banned and [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>This past Saturday, November 14th, a hundred DC tech enthusiasts gathered at the <a href="http://www.dclibrary.org/mlk">Martin Luther King Library</a> to create their own conference. Topics were suggested by participants and the group at large determined the schedule. It was a <a href="http://en.wikipedia.org/wiki/BarCamp">BarCamp</a> at it&#8217;s best!</p>
+<p><a href="http://www.flickr.com/photos/vincentgallegos/4111378474/in/set-72157622820283690/"><img class="alignnone size-full wp-image-1982" title="The final schedule as picked by the particpants at BarCamp DC" src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/11/the-final-schedule-as-picked-by-the-particpants-at-barcampdc.jpg" alt="The final schedule as picked by the particpants at BarCamp DC" width="500" height="332" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/11/the-final-schedule-as-picked-by-the-particpants-at-barcampdc-300x199.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/11/the-final-schedule-as-picked-by-the-particpants-at-barcampdc.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p><a href="http://www.flickr.com/photos/vincentgallegos/4110611075/"><img class="alignnone size-full wp-image-1980" title="Large crowd at BarCamp DC 3" src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/11/Large-crowd-atBarCamp-DC-3.jpg" alt="Large crowd at BarCamp DC 3" width="500" height="332" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/11/Large-crowd-atBarCamp-DC-3-300x199.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/11/Large-crowd-atBarCamp-DC-3.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>This year&#8217;s BarCamp had a few twists. The word &#8216;Twitter&#8217; was banned and anyone violating that rule had to pay a dollar to the Twitter swear jar which was donated to charity. The other rule was no PowerPoint slides which was an effort to promote group discussions and participation over lectures.</p>
+<p>I got to catch up with former co-workers from <a href="http://www.usnews.com">USNews</a> as well as other DC tech-heads I met at other local events. The entire event including lunch was free of charge thanks to the <a href="http://barcampdc3.eventbrite.com/">generous sponsors</a> who helped make BarCampDC possible. The pizza was quite good.</p>
+<p><a href="http://www.flickr.com/photos/vincentgallegos/4111380408/in/set-72157622820283690/"><img class="alignnone size-full wp-image-1981" title="Typical techie BarCamp food: PIZZA!" src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/11/typical-tech-geek-food-pizza-at-barcampdc.jpg" alt="Typical techie BarCamp food: PIZZA!" width="500" height="332" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/11/typical-tech-geek-food-pizza-at-barcampdc-300x199.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/11/typical-tech-geek-food-pizza-at-barcampdc.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Some of the talks I went to included:</p>
+<p><a href="http://www.flickr.com/photos/jjgardner3/4103483543/in/pool-barcampdc"><img class="alignnone size-full wp-image-1978" title="Russell Heimlich and John Chen during the How To Play Tetris talk at BarCamp DC 3." src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/11/russell-heimlich-john-chen-tetris-talk-barcampdc.jpg" alt="Russell Heimlich and John Chen during the How To Play Tetris talk at BarCamp DC 3." width="500" height="333" /></a></p>
+<p><strong>How To Play Tetris</strong> led by John Chen. John didn&#8217;t actually think anyone was interested in his talk but we had a good-size group talking about video game politics, strategies for Tetris, and the fact that there are Tetris pros making US$100k per year in Korea. The key takeaway was being good at Tetris takes practice, practice, and more practice. And after you&#8217;ve practiced some more, you wake up one day and realize you&#8217;re good at Tetris.</p>
+<p><strong>An Introduction to the Android Platform</strong> <a title="Gyuri Grell" href="http://gyurigrell.com/">Gyuri Grell</a> and <a href="http://zviband.com/">Zvi Band</a> led an introduction to the Android mobile OS platform. The talk was a little over my head as it was mostly about Java, which I know nothing about. The source code for Meetro DC, the DC Metro app demoed, can be found on <a href="http://github.com/skeevis/MeetroDC">GitHub</a> for anyone to poke around and play with. I did enjoy seeing from a high level how Android apps work and shedding some light on the magic running behind the scenes. I&#8217;m really excited to see where Android goes in the future.</p>
+<p>The most thought-provoking talk I sat in was <strong>Generalist vs. Specialist</strong> led by <a href="http://twitter.com/kgiff/">Kelly Gifford</a>. It was such an open-ended topic that spurred a healthy debate. From my point of view you are both a generalist and specialist depending on what level you are comparing to. For example, in your company you might be the only &#8220;web person&#8221;, making you a specialist but with so many different hats to wear in a sole-developer position, you have to do many different things making you a generalist. Like most anything in life, nothing is cut and dry black and white but a lot of gray areas.</p>
+<p><a href="http://twitter.com/ryanmcgrath">Ryan McGrath</a> is in a unique situation at his job at <a href="http://www.webs.com">Webs.com</a>.  He is in charge of <strong>Improving the Performance of the Frontend</strong> for millions of sites hosted there.  Crufty code, too much JavaScript, and a less-than-ideal backend issue are some of the problems plaguing his pursuit for excellence. An engineer from <a href="http://www.clearspring.com" class="broken_link">Clearspring</a>, which distributes billions of page views of widgets all across the web,  was in the room and provided some great insight into tuning performance for large-scale sites. They talked about some geeky stuff like serving images as <a href="http://en.wikipedia.org/wiki/Base64">base64 strings</a> instead of binary data which can yield some performance gains. I was pretty much lost after that.</p>
+<p>The final talk of the day was about <strong><a href="http://code.google.com/p/templarphp/">TemlarPHP</a></strong>, a cascading template framework built with PHP. It separates presentation from content to create websites that are easy to maintain and standards complaint with the need for a database. It was created by <a href="http://twitter.com/03sjbrown">Shawn Brown</a> and looked like a lighter alternative compared to the other feature-packed, and somewhat bloated, web frameworks out there.</p>
+<p><a href="http://www.flickr.com/photos/vincentgallegos/4111461502/"><img class="alignnone size-full wp-image-1979" title="Russell Heimlich discussing frontend tips at BarCamp DC" src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/11/Russell-Heimlich-discussing-frontend-tips-at-BarCamp-DC.jpg" alt="Russell Heimlich discussing frontend tips at BarCamp DC" width="500" height="332" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/11/Russell-Heimlich-discussing-frontend-tips-at-BarCamp-DC-300x199.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/11/Russell-Heimlich-discussing-frontend-tips-at-BarCamp-DC.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Like the past two DC <a href="http://www.russellheimlich.com/blog/tag/barcamp/">BarCamps</a>, I gave a talk. The topic was <a href="http://www.russellheimlich.com/frontend-tips/">HTML/CSS/JavaScript Tips &amp; Tricks</a> which I have picked up over the past few years and thought were worth sharing. I felt it was one of my best presentations as my talking points came to me naturally with code details to back up what I was saying. I was stoked to see so many people show up to hear what I had to say as well as contribute a few points of their own. <a href="http://twitter.com/Farrelley">Shaun Farrell</a> managed to capture video from a part of my talk.</p>
+<p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="600" height="337" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="flashvars" value="intl_lang=en-us&amp;photo_secret=f8d1b6d52c&amp;photo_id=4105152703&amp;hd_default=false" /><param name="bgcolor" value="#000000" /><param name="allowFullScreen" value="true" /><param name="src" value="http://www.flickr.com/apps/video/stewart.swf?v=71377" /><param name="allowfullscreen" value="true" /><embed type="application/x-shockwave-flash" width="600" height="337" src="http://www.flickr.com/apps/video/stewart.swf?v=71377" allowfullscreen="true" bgcolor="#000000" flashvars="intl_lang=en-us&amp;photo_secret=f8d1b6d52c&amp;photo_id=4105152703&amp;hd_default=false"></embed></object></p>
+<p>So as you can see there was a lot going on. There were so many other presentations I wanted to see and people I wanted to meet and chat with but there just wasn&#8217;t enough time. A big thanks goes out to the organizers (@<a href="http://twitter.com/jfc3">jfc3</a> , @<a href="http://twitter.com/thorpus">thorpus</a>, @<a href="http://twitter.com/corbett3000">corbett3000</a>, @<a href="http://twitter.com/farrelley">farrelley</a>, <a href="http://www.twitter.com/patricktimony">@patricktimony</a> &amp;  all the others) that helped put on another great DC tech event.<a rel="bookmark" href="http://twitter.com/kingkool68/status/5730083433"></a></p>
+<p>Other BarCamp DC Resources</p>
+<ul>
+<li><a href="http://search.twitter.com/search?q=+barcampdc+since%3A2009-11-12+until%3A2009-11-15" class="broken_link">#barcampdc</a> on Twitter</li>
+<li><a href="http://www.flickr.com/search/?q=barcampdc&amp;ss=2&amp;s=rec">BarCamp DC photos</a> on Flickr</li>
+<li><a href="http://techcocktail.com/home/2009/11/16/barcamp-dc-3-recap/">Recap by Jimmy Gardner</a> (who took a lot of <a href="http://www.flickr.com/photos/jjgardner3/sets/72157622803380094/">really good photos</a> too)</li>
+<li><a href="http://lifestream.vincentgallegos.com/photos-snapshots-of-barcampdc-2009" class="broken_link">Vincent Gallegos: Photos and Notes</a> (props to Vincent as most of the photos in my post are from him)</li>
+<li><a href="http://blog.buttonall.com/?p=184" class="broken_link">Highlights from the ButtonAll Blog</a></li>
+<li><a href="http://twitter.com/nikolasco/barcamp-dc-3">List of BarCamp DC attendees on Twitter</a></li>
+<li><a href="http://spreadsheets.google.com/ccc?key=0Am8ToCBidIxddFNBT3lVUXJWNmFiNXUzVmlRUlo0YXc&amp;hl=en">The finalized schedule</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/barcampdc-3-recap/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Top 5 Talks At TEDxMidAtlantic</title>
+		<link>http://www.russellheimlich.com/blog/top-5-talks-at-tedxmidatlantic/</link>
+		<comments>http://www.russellheimlich.com/blog/top-5-talks-at-tedxmidatlantic/#respond</comments>
+		<pubDate>Fri, 06 Nov 2009 04:05:27 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Conference]]></category>
+		<category><![CDATA[Local]]></category>
+		<category><![CDATA[intellectual]]></category>
+		<category><![CDATA[Marcus Ranum]]></category>
+		<category><![CDATA[Peter Agre]]></category>
+		<category><![CDATA[Scott Simon]]></category>
+		<category><![CDATA[smart]]></category>
+		<category><![CDATA[speeches]]></category>
+		<category><![CDATA[talk]]></category>
+		<category><![CDATA[TED]]></category>
+		<category><![CDATA[TEDx]]></category>
+		<category><![CDATA[TEDxMidAtlantic]]></category>
+		<category><![CDATA[Tony Geraci]]></category>
+		<category><![CDATA[volunteer]]></category>
+		<category><![CDATA[Will Noel]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1953</guid>
+		<description><![CDATA[Today was a long but enjoyable day at TEDxMidAtlantic. It&#8217;s refreshing seeing so many different perspectives and open minds converge on a single stage at the Maryland Institute College of Art. Perhaps even more mind blowing is videos from every talk are already online for anyone to view. Here are 5 of my favorite, must-see [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><img class="alignnone size-full wp-image-1954" title="TEDxMidAtlantic Badge And Program" src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/11/TEDxMidAtlantic-badge-and-program.jpg" alt="TEDxMidAtlantic Badge And Program" width="640" height="480" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/11/TEDxMidAtlantic-badge-and-program-300x225.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/11/TEDxMidAtlantic-badge-and-program.jpg 640w" sizes="(max-width: 640px) 100vw, 640px" /></p>
+<p>Today was a long but enjoyable day at <a href="http://tedxmidatlantic.com/">TEDxMidAtlantic</a>. It&#8217;s refreshing seeing so many different perspectives and open minds converge on a single stage at the <a href="http://www.mica.edu/">Maryland Institute College of Art</a>. Perhaps even more mind blowing is <a href="http://tedxmidatlantic.com/live/">videos from every talk</a> are already online for anyone to view. Here are 5 of my favorite, must-see TEDxMidAtlantic talks from today (sorry no direct links yet, you&#8217;ll have to scroll through and find their names):</p>
+<ol>
+<li>Will Noel &#8211; Talked about restoring a book from Archimedes and sharing it with the world under a Creative Commons license.</li>
+<li>Scott Simon &#8211; Talked about his most memorable story that he covered in Sarajevo in the 1990s.</li>
+<li>Peter Agre &#8211; Story about his career in science and winning the Nobel Prize in 2003. Very funny guy.</li>
+<li>Tony Geraci &#8211; Talked about how he transformed school lunches in Baltimore City Public Schools.</li>
+<li>Marcus Ranum &#8211; Talked about how everyone on the Internet is using TCP/IP and how upgrading the whole planet earth would be hard to do.</li>
+</ol>
+<p>A big thanks goes out to the hundreds of volunteers who made this event even possible. Here&#8217;s a picture from <a href="http://twitter.com/sengseng/status/5463499862">@sengseng</a> of their standing ovation.</p>
+<p><a href="http://twitpic.com/oewv0"><img class="alignnone size-full wp-image-1956" title="TEDxMidAtlantic Volunteers Standing Ovation" src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/11/TEDxMidAtlantic-volunteers.jpg" alt="TEDxMidAtlantic Volunteers Standing Ovation" width="600" height="450" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/11/TEDxMidAtlantic-volunteers-300x225.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/11/TEDxMidAtlantic-volunteers.jpg 600w" sizes="(max-width: 600px) 100vw, 600px" /></a></p>
+<p>Other coverage of TEDxMidAtlantic:</p>
+<ul>
+<li><a href="http://insidecharmcity.com/tag/tedxmidatlantic/">Liveblogging from InsideCharmCity.com</a></li>
+<li><a href="http://baltimore.bizjournals.com/baltimore/stories/2009/11/02/daily41.html">Writeup in Baltimore Business Journal</a></li>
+<li><a href="http://twitter.com/TEDxMidAtlantic/attendees-2009">List of attendees on Twitter</a></li>
+<li><a href="http://twitter.com/search?q=%23tedxmid">#tedxmid hashtag on Twitter</a></li>
+<li><a href="http://www.flickr.com/groups/tedxmidatlantic/pool/" class="broken_link">TEDxMidAtlantic photos on Flickr</a></li>
+<li><a href="http://www.russellheimlich.com/blog/tedxmidatlantic/">The Stage at TEDxMidAtlantic </a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/top-5-talks-at-tedxmidatlantic/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Accessibility Camp DC Recap</title>
+		<link>http://www.russellheimlich.com/blog/accessibility-camp-dc-recap/</link>
+		<comments>http://www.russellheimlich.com/blog/accessibility-camp-dc-recap/#comments</comments>
+		<pubDate>Wed, 14 Oct 2009 02:14:34 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Conference]]></category>
+		<category><![CDATA[Local]]></category>
+		<category><![CDATA[508]]></category>
+		<category><![CDATA[accesscampdc]]></category>
+		<category><![CDATA[accessibility]]></category>
+		<category><![CDATA[adaptive services]]></category>
+		<category><![CDATA[bar camp]]></category>
+		<category><![CDATA[camp]]></category>
+		<category><![CDATA[Carolyn Kelley Klinger]]></category>
+		<category><![CDATA[disability]]></category>
+		<category><![CDATA[event]]></category>
+		<category><![CDATA[handicapped]]></category>
+		<category><![CDATA[Jamal Mazrui]]></category>
+		<category><![CDATA[JAWS]]></category>
+		<category><![CDATA[Jennison Asuncion]]></category>
+		<category><![CDATA[John Croston]]></category>
+		<category><![CDATA[Patrick Timony]]></category>
+		<category><![CDATA[unconference]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1855</guid>
+		<description><![CDATA[Accessibility Camp really opened my eyes to how people with disabilities experience the web. The Martin Luther King Library in downtown DC was the perfect venue for this barcamp style event. The adaptive services department has all sorts of assistive technology that anyone can use and learn more about. I met a lot of diverse [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><img class="alignnone size-full wp-image-1869" title="The schedule as determined by participants of Accessibility Camp DC." src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4880.JPG" alt="The schedule as determined by participants of Accessibility Camp DC." width="600" height="400" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4880-300x200.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4880.JPG 600w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><a href="http://www.accessibilitycampdc.org/">Accessibility Camp</a> really opened my eyes to how people with disabilities experience the web. The <a href="http://www.dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=565330" class="broken_link">Martin Luther King Library</a> in downtown DC was the perfect venue for this <a href="http://en.wikipedia.org/wiki/BarCamp">barcamp</a> style event. The <a href="http://www.dclibrary.org/services/adaptiveservices" class="broken_link">adaptive services department</a> has all sorts of assistive technology that anyone can use and learn more about.</p>
+<p><img class="alignnone size-full wp-image-1868" title="A braile printout using a special printer at the Martin Luther King Library in Washington, DC." src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4891.JPG" alt="A braile printout using a special printer at the Martin Luther King Library in Washington, DC." width="600" height="400" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4891-300x200.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4891.JPG 600w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p>I met a lot of diverse people like <a href="http://twitter.com/patricktimony">Patrick Timony</a> (Adaptive Technology Librarian at MLK library), <a href="http://twitter.com/Jennison">Jennison Asuncion</a> (IT Accessibility Consultant from Toronto), <a href="http://twitter.com/JamalMazrui">Jamal Mazrui</a> (a visually impaired software developer) and about 100 others who were passionate about sharing what they know to make the web a better, and more accessible, place. Here are some of my take aways.</p>
+<p><img class="alignnone size-full wp-image-1862" title="Carolyn Klinger reviews tips for making PDFs more accessible at Accessibility Camp DC" src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4882.JPG" alt="Carolyn Klinger reviews tips for making PDFs more accessible at Accessibility Camp DC" width="600" height="586" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4882-300x293.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4882.JPG 600w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p>Carolyn Kelley Klinger talked about making <a href="http://www.accessibilitycampdc.org/slides/Developing_Accessible_PDFs_dt20091010.pdf">PDFs more accessible</a> (PDF) by structuring documents with headers (using Headline 1, Headline 2 etc. styles instead of making the text bold and bumping up the font), adding column/row headers for data tables, supplying alternative text to describe images, and making sure anyone links are within context (no &#8220;Click Here&#8221; or &#8220;Read More&#8221; links). I was surprised at how similar preparing an accessible PDF is to preparing an accessible website.</p>
+<p><img class="alignnone size-full wp-image-1864" title="Jamal Mazrui is a blind software developer who wants to make sure accessibility isn't forgotten in emerging technology." src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4887.JPG" alt="Jamal Mazrui is a blind software developer who wants to make sure accessibility isn't forgotten in emerging technology." width="390" height="600" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4887-195x300.jpg 195w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4887.JPG 390w" sizes="(max-width: 390px) 100vw, 390px" /></p>
+<p><a href="http://twitter.com/JamalMazrui">Jamal Mazrui</a> wants to build web apps to benefit disabled netizens. He&#8217;s afraid that as broadband speeds increase over the next few years we will see an influx of visually oriented interfaces with no accessibility in mind. The same thing happened in the mid 90&#8217;s with the move from an entirely text based DOS operating system, to a graphical interface driven <abbr title="Operating System">OS</abbr> like Windows. Today, emerging technologies like Adobe Air, Adobe Flash, Microsoft Silverlight, Google Wave, Google Android, Second Life, and the Amazon Kindle have little to help handicapped users. <a href="http://www.apple.com/iphone/iphone-3gs/accessibility.html#video" class="broken_link">Apple&#8217;s iPhone</a> is fairly good when it comes to accessibility as evident by all the people who had one at Accessibility Camp. Hopefully the tech industry will learn from its prior mistake of ignoring the needs of handicapped users.</p>
+<p><img class="alignnone size-full wp-image-1865" title="All of the Accessibility Camp DC participants got a hearty lunch free of charge." src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4888.JPG" alt="All of the Accessibility Camp DC participants got a hearty lunch free of charge." width="600" height="400" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4888-300x200.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4888.JPG 600w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p>For lunch everyone got as many <a href="http://www.potbelly.com/Home/Default.aspx">Potbelly</a> sandwiches as they could fit in their bellies. Thanks to the generous sponsors who made the event not only possible, but free for everyone we were able to enjoy a scrumptious meal.</p>
+<p><img class="alignnone size-full wp-image-1866" title="Jennison Asuncion demonstrates surfing the web with JAWS." src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4895.JPG" alt="Jennison Asuncion demonstrates surfing the web with JAWS." width="600" height="400" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4895-300x200.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4895.JPG 600w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p>After lunch I got to see a live demonstration of Jennison using the screen reading application, <a href="http://www.freedomscientific.com/">JAWS</a>, to navigate the web. Holy Cow! I can&#8217;t believe how different the web is when you can&#8217;t see where you&#8217;re browsing. It takes a while for a visually impaired user to get acquainted with a new website since every site has a different set of pitfalls. The source-order of your website, that is the order of your content with no styles applied, makes a huge difference to the experience of a blind user. If you&#8217;re fortunate enough to be able to user test your project, make sure to get feedback from a visually impaired person using a screen reader too.</p>
+<p>Other events that were going on throughout the day included Practical Ways to make Your Site More Accessible, Making Mapping More Accessible, eLearning Tools, and Online Gaming for Persons with Disabilities. It seems like everyone there had something to share.</p>
+<p><img class="alignnone size-full wp-image-1867" title="Accessibility Camp DC was the brainchild of John F. Croston, a web developer for the US Army." src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4903.JPG" alt="Accessibility Camp DC was the brainchild of John F. Croston, a web developer for the US Army." width="600" height="400" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4903-300x200.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/IMG_4903.JPG 600w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p>A big thank you goes out to <a href="http://twitter.com/jfc3">John Croston</a> and Patrick Timony for organizing, the staff at the MLK library for providing an awesome venue, all of the sponsors who made the event even possible, and everyone who attended with something to share. This event really opened my eyes to accessibility and the web.</p>
+<p>Other Accessibility Camp DC links:</p>
+<ul>
+<li>List of <a href="http://www.accessibilitycampdc.org/slides.shtml">slides/blog</a> write ups</li>
+<li><a href="http://search.twitter.com/search?q=%23accesscampdc" class="broken_link">#AccessCampDC</a> on Twitter</li>
+</ul>
+<p>Next up is <a href="http://barcampdc3.eventbrite.com/">Bar Camp DC 3</a> on November 14th.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/accessibility-camp-dc-recap/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>DC Tech Events For Fall</title>
+		<link>http://www.russellheimlich.com/blog/dc-tech-events-for-fall/</link>
+		<comments>http://www.russellheimlich.com/blog/dc-tech-events-for-fall/#respond</comments>
+		<pubDate>Fri, 02 Oct 2009 21:21:34 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Conference]]></category>
+		<category><![CDATA[Local]]></category>
+		<category><![CDATA[accessibility]]></category>
+		<category><![CDATA[barcamp]]></category>
+		<category><![CDATA[camp]]></category>
+		<category><![CDATA[community]]></category>
+		<category><![CDATA[event]]></category>
+		<category><![CDATA[media]]></category>
+		<category><![CDATA[tech]]></category>
+		<category><![CDATA[TED]]></category>
+		<category><![CDATA[un-conference]]></category>
+		<category><![CDATA[Washington DC]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1838</guid>
+		<description><![CDATA[The DC tech scene is just bursting at the seams with interesting (and free) tech events and un-conferences coming up this fall. I don&#8217;t know If I will be able to attend them all but here are a few that made it on to my radar. Accessibility Camp DC is taking place at Martin Luther [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>The DC tech scene is just bursting at the seams with interesting (and free) tech events and un-conferences coming up this fall. I don&#8217;t know If I will be able to attend them all but here are a few that made it on to my radar.</p>
+<p><img class="alignnone size-full wp-image-1845" title="Accessibility Camp DC Logo" src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/AccessCampDC-logo.gif" alt="Accessibility Camp DC Logo" width="300" height="300" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/AccessCampDC-logo-150x150.gif 150w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/AccessCampDC-logo.gif 300w" sizes="(max-width: 300px) 100vw, 300px" /><br />
+<a href="http://www.accessibilitycampdc.org/default.shtml">Accessibility Camp DC</a> is taking place at Martin Luther King Library on <strong>October 10, 2009</strong>. The event will cover topics and discussions about making the web more accessible.</p>
+<ul>
+<li>E-mail &#8211; <a href="mailto:info@accessibilitycampdc.org?subject=Accessibility%20Camp%20DC%20request%20for%20Imformation" target="_blank">info@AccessibilityCampDC.org</a></li>
+<li>Twitter &#8211; <a href="http://www.twitter.com/AccessCampDC">@AccessCampDC</a></li>
+<li>Cell &#8211; 703-587-2458</li>
+<li>Wiki &#8211; <a href="http://barcamp.org/AccessibilityCampDC">http://barcamp.org/AccessibilityCampDC</a></li>
+</ul>
+<p><img class="alignnone size-full wp-image-1844" title="Public Media Camp Logo" src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/PublicMediaCamp-logo.gif" alt="Public Media Camp Logo" width="484" height="63" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/PublicMediaCamp-logo-300x39.gif 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/PublicMediaCamp-logo.gif 484w" sizes="(max-width: 484px) 100vw, 484px" /><br />
+<a href="http://publicmediacamp.org">PublicMediaCamp</a> will be at American University on <strong>October 17 and 18, 2009</strong>. The event aims to put 100 developers, 100 public media supporters, and 100 people who work for public broadcasting companies in a room and see what comes of it.</p>
+<ul>
+<li>RSS Feed &#8211; <a href="http://publicmediacamp.org/feed/" class="broken_link">http://publicmediacamp.org/feed/</a></li>
+<li>Wiki &#8211; <a href="http://wiki.publicmediacamp.org/" class="broken_link">http://wiki.publicmediacamp.org/</a></li>
+<li>Twitter &#8211; <a href="http://twitter.com/publicmediacamp">@PublicMediaCamp</a></li>
+<li>Hashtag &#8211; <a href="http://wiki.publicmediacamp.org/PubCampSMS" class="broken_link">#pubcamp</a></li>
+</ul>
+<p><img class="alignnone size-full wp-image-1843" title="TedX MidAtlantic Logo" src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/tedxmidatlantic-logo.png" alt="TedX MidAtlantic Logo" width="242" height="83" /><br />
+<a href="http://tedxmidatlantic.com/">TED<sup>x</sup> Midatlantic</a> will be held on <strong>November 5, 2009</strong>, at the Maryland Institute College of Art in Baltimore, MD.  The event will feature presentations by many of the leading thinkers and doers in the MidAtlantic Region.</p>
+<ul>
+<li>E-mail &#8211; <a href="mailto:tedxmidcontact@gmail.com">tedxmidcontact@gmail.com</a></li>
+<li>Twitter &#8211; <a href="http://twitter.com/tedxmidatlantic">@TedXMidatlantic</a></li>
+<li>Facebook &#8211; <a href="http://www.facebook.com/event.php?eid=112275396087&amp;ref=nf">http://www.facebook.com/event.php?eid=112275396087&amp;ref=nf</a></li>
+</ul>
+<p><img class="alignnone size-full wp-image-1842" title="BarCampDC Logo" src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/10/barcampDC-logo.gif" alt="BarCampDC Logo" width="323" height="87" /><br />
+<a href="http://barcampdc3.eventbrite.com/">BarCamp3</a> is the grand daddy of all DC tech events. It will be at the Martin Luther King Library on <strong>November 14, 2009</strong>. This is always my favorite event of the year.</p>
+<ul>
+<li>Twitter &#8211; <a href="http://www.twitter.com/barcampdc">@barcampdc</a></li>
+<li>Highlights from <a href="http://www.russellheimlich.com/blog/barcamp-dc-wrap-up/">BarCamp</a> &amp; <a href="http://www.russellheimlich.com/blog/barcampdc2-bigger-geekier-and-more-food/">BarCamp2</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/dc-tech-events-for-fall/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Bootstrap Maryland: A Conference For Entrepreneurs</title>
+		<link>http://www.russellheimlich.com/blog/bootstrap-maryland-a-conference-for-entrepreneurs/</link>
+		<comments>http://www.russellheimlich.com/blog/bootstrap-maryland-a-conference-for-entrepreneurs/#comments</comments>
+		<pubDate>Mon, 04 May 2009 04:22:47 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Conference]]></category>
+		<category><![CDATA[Local]]></category>
+		<category><![CDATA[Boot Strap]]></category>
+		<category><![CDATA[bootstrapmd]]></category>
+		<category><![CDATA[Business]]></category>
+		<category><![CDATA[discussion]]></category>
+		<category><![CDATA[entrepreneur]]></category>
+		<category><![CDATA[Jared Goralnick]]></category>
+		<category><![CDATA[panel]]></category>
+		<category><![CDATA[University of Maryland]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1524</guid>
+		<description><![CDATA[A group of technopreneurs made it out to the University of Maryland campus for Bootstrap Maryland.The aim of the conference is to teach budding entrepreneurs “the necessary tools for running a lean and successful technology business.” The event had 4 main panels covering a variety of topics from marketing and public relations to picking the [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><a href="http://www.bootstrapmaryland.com/"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/05/bootstrapmd-logo.jpg" alt="Bootstrap Maryland" title="Bootstrap Maryland Logo" width="300" height="284" class="size-full wp-image-1532" /></a></p>
+<p>A group of <abbr title="Technology focused entrepreneurs">technopreneurs</abbr> made it out to the University of Maryland campus for <a href="http://www.bootstrapmaryland.com">Bootstrap Maryland</a>.The aim of the conference is to teach budding entrepreneurs “the necessary tools for running a lean and successful technology business.” The event had 4 main panels covering a variety of topics from marketing and public relations to picking the right technology. I learned a lot from the anecdotes of the local entrepreneur panelists. While I &#8216;m more <abbr title="Hyper Text Markup Language">HTML</abbr> than <abr title="Master of Business Administration">MBA</abbr>, the event inspired me to keep thinking about the business angle on the projects I take on. </p>
+<div id="attachment_1534" style="width: 610px" class="wp-caption alignnone"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/05/third-session-at-bootstrapmd.jpg" alt="Panelists of the third session at Bootstrap Maryland" title="Panelists of the third session at Bootstrap Maryland" width="600" height="400" class="size-full wp-image-1534" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/05/third-session-at-bootstrapmd-300x200.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/05/third-session-at-bootstrapmd.jpg 600w" sizes="(max-width: 600px) 100vw, 600px" /><p class="wp-caption-text">Panelists of the third session at Bootstrap Maryland</p></div>
+<p>Since every seat in the business school lecture hall had a power plug and the WiFi was strong throughout the entire event, I managed to take a copious amount of <a href="http://kingkool68.com/wiki/index.php?title=Bootstrap_MD_Notes">notes on my wiki</a>. Here are some of the highlights:</p>
+<ul>
+<li>When it comes to a business plan, do you need one? Whole panel answers &#8220;Meehh&#8230; not really.&#8221; </li>
+<li>Recessions are a great time to start a business because everything is cheaper and there is a ton of talent available.</li>
+<li>Businesses don&#8217;t fail because of the technology, businesses fail because they don&#8217;t understand their market. </li>
+<li>How to better understand your market: Experiment, Evaluate, adapt.</li>
+<li>MYTH: Experience in the corporate world translates to the start-up world.  The start up world is a totally different beast.</li>
+<li>Want to get rich quickly? Rob a bank. Sell crack. Don&#8217;t start a company.</li>
+<li>Best brand right now is &#8220;swine flu&#8221;, &#8220;susan boyle&#8221; </li>
+<li>If considering outsourcing, go with a brand name firm.</li>
+<li>Don&#8217;t under-estimate the value of play.</li>
+<li>The MD/DC/VA area has tons of <a href="http://kingkool68.com/wiki/index.php?title=Bootstrap_MD_Notes#Introductions_to_local_groups_and_events">groups and events</a></li>
+</ul>
+<p>That last point is big. If you are looking for a local group of people who are interested in media/technology/business, the DC metropolitan area has something for you. After all, where else would 200 people get together to share ideas and stories about starting businesses on the cheap on a Saturday. <a href="http://www.linkedin.com/in/goralnick">Jared Goralnick</a> did a great job organizing everything and I would expect the attendance to double for the next one.</p>
+<div id="attachment_1533" style="width: 610px" class="wp-caption alignnone"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/05/jared-polls-audience.jpg" alt="Jared Goralnick polls the audience of Bootstrap MD" title="Jared Goralnick polls the audience of Bootstrap MD" width="600" height="400" class="size-full wp-image-1533" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/05/jared-polls-audience-300x200.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/05/jared-polls-audience.jpg 600w" sizes="(max-width: 600px) 100vw, 600px" /><p class="wp-caption-text">Jared Goralnick polls the audience of Bootstrap MD</p></div>
+<div id="attachment_1535" style="width: 610px" class="wp-caption alignnone"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/05/lunch-time-at-bootstrapmd.jpg" alt="Drinking a Diet Coke with pizza and salad for lunch." title="Drinking a Diet Coke with pizza and salad for lunch." width="600" height="400" class="size-full wp-image-1535" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/05/lunch-time-at-bootstrapmd-300x200.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/05/lunch-time-at-bootstrapmd.jpg 600w" sizes="(max-width: 600px) 100vw, 600px" /><p class="wp-caption-text">Drinking a Diet Coke with pizza and salad for lunch.</p></div>
+<div id="attachment_1536" style="width: 610px" class="wp-caption alignnone"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/05/fliers-in-chairs.jpg" alt="Genius Rocket (lunch sponsor) distributes fliers while everyone is out in the hallway eating pizza." title="Genius Rocket (lunch sponsor) distributes fliers while everyone is out in the hallway eating pizza." width="600" height="400" class="size-full wp-image-1536" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/05/fliers-in-chairs-300x200.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/05/fliers-in-chairs.jpg 600w" sizes="(max-width: 600px) 100vw, 600px" /><p class="wp-caption-text">Genius Rocket (lunch sponsor) distributes fliers while everyone is out in the hallway eating pizza.</p></div>
+<div id="attachment_1537" style="width: 610px" class="wp-caption alignnone"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2009/05/bootsrapmd-crowd.jpg" alt="Panelists mingle with the audience after the 2nd session at Bootstrap MD" title="Panelists mingle with the audience after the 2nd session at Bootstrap MD" width="600" height="400" class="size-full wp-image-1537" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2009/05/bootsrapmd-crowd-300x200.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2009/05/bootsrapmd-crowd.jpg 600w" sizes="(max-width: 600px) 100vw, 600px" /><p class="wp-caption-text">Panelists mingle with the audience after the 2nd session at Bootstrap MD</p></div>
+<p>More of my photos from Bootstrap MD: <a href="http://picasaweb.google.com/kingkool68/BootstrapMaryland">Picasa</a> / <a href="http://www.flickr.com/photos/kingkool68/tags/bootstrapmd/">Flickr</a> / <a href="http://www.facebook.com/album.php?aid=2157293&#038;id=60700127">Facebook</a></p>
+<p>Other coverage of Bootstrap MD:</p>
+<ul>
+<li><a href="http://justinabrown.com/2009/05/02/20-take-aways-from-bootstrap-md/" class="broken_link">20 Take-aways From Bootstrap MD</a></li>
+<li><a href="http://search.twitter.com/search?q=bootstrapmd" class="broken_link">#bootstrapmd Tag on Twitter</a></li>
+<li><a href="http://www.flickr.com/photos/tags/bootstrapmd/">Photos Tagged bootstrapmd on Flickr</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/bootstrap-maryland-a-conference-for-entrepreneurs/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>BarCampDC2: Bigger, Geekier, And More Food</title>
+		<link>http://www.russellheimlich.com/blog/barcampdc2-bigger-geekier-and-more-food/</link>
+		<comments>http://www.russellheimlich.com/blog/barcampdc2-bigger-geekier-and-more-food/#comments</comments>
+		<pubDate>Tue, 21 Oct 2008 02:08:38 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Conference]]></category>
+		<category><![CDATA[Local]]></category>
+		<category><![CDATA[barcamp]]></category>
+		<category><![CDATA[barcamp dc 2]]></category>
+		<category><![CDATA[barcampdc2]]></category>
+		<category><![CDATA[CDIA]]></category>
+		<category><![CDATA[Charlie Park]]></category>
+		<category><![CDATA[Jeff Brown]]></category>
+		<category><![CDATA[McFadden]]></category>
+		<category><![CDATA[unconference]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1171</guid>
+		<description><![CDATA[This past weekend the second DC area BarCamp took place. Like last year&#8217;s event, a horde of local techies came out to teach one another and collaborate on new ideas. My favorite presentation was from Jeff Brown, a high school teacher who considers himself a webucator. His talk was about how he is teaching proper, [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>This past weekend the second DC area BarCamp took place. Like <a href="http://www.russellheimlich.com/blog/barcamp-dc-wrap-up/">last year&#8217;s event</a>, a horde of local techies came out to teach one another and collaborate on new ideas.</p>
+<p>My favorite presentation was from <a href="http://teachmetheweb.org/">Jeff Brown</a>, a high school teacher who considers himself a webucator.  His talk was about how he is teaching proper, standards-compliant web development techniques at <a href="http://www.montgomeryschoolsmd.org/schools/damascushs/">Damascus High School</a> in Montgomery County. Here&#8217;s a picture of the back of my head (I&#8217;m in the blue shirt) taken by <a href="http://www.flickr.com/photos/kenya/">kenyaoa</a> during the session.</p>
+<p><a href="http://www.flickr.com/photos/kenya/2959111214/"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2008/10/jim-brown-is-a-webucator.jpg" alt="Jeff Brown is a Webucator" title="Jeff Brown is a Webucator" width="500" height="375" class="size-full wp-image-1173" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2008/10/jim-brown-is-a-webucator-300x225.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2008/10/jim-brown-is-a-webucator.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Another memorable event was an impromptu session about <a href="http://www.expressionengine.com">Expression Engine</a>, a flexible CMS. I was so inspired from the small group that the next day I tried the free version out myself.</p>
+<p>The Washington Post was there covering the event and there was <a href="http://www.washingtonpost.com/wp-dyn/content/article/2008/10/19/AR2008101901400.html">a small write up</a> in the business section this morning. They interviewed Charlie Park, a friend of mine I met at the first BarCamp, who started an <a href="https://www.pearbudget.com/">online budgeting app</a>. The reporter called the space where we were meeting a &#8220;Georgetown basement&#8221; but it was actually generously donated by the <a href="http://www.cdiabu.com/overview/washington-campus.php">Center for Digital Imaging Arts</a>, which is a part of Boston University.</p>
+<p>When you get over a hundred developers together all day, they&#8217;re going to get hungry. Thankfully this Barcamp was loaded with food. A full breakfast was provided including an assortment of bagels, muffins, and coffee. Candy, nutrigrain bars, and granola bars were available for snacking on throughout the day. And for lunch, the organizers ordered 100 pizzas for everyone! I think that ended up to be half a pizza for every attendee. As you might guess there was some extra food leftover at the end of the day so the Barcamp organizers donated 40 pizzas, 60 bagels, and a heap of muffins to a local homeless shelter. </p>
+<p><a href="http://www.flickr.com/photos/farrelley/2958185562/"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2008/10/donating-pizza.jpg" alt="Donating Extra Pizza" title="Donating Extra Pizza" width="500" height="375" class="size-full wp-image-1175" srcset="http://www.russellheimlich.com/blog/wp-content/uploads/2008/10/donating-pizza-300x225.jpg 300w, http://www.russellheimlich.com/blog/wp-content/uploads/2008/10/donating-pizza.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>The after party took place at McFadden&#8217;s and since there was extra money left over in the budget we got to blow it on free drinks and food. Our waitress did a great job of keeping the group&#8217;s glasses and bellies full.</p>
+<p>Overall it was another great DC tech event. A big thanks to all the people who helped organize the event and deal with the logistics. Another big thanks goes to <a href="http://barcampdc.org/#sponsors">all the sponsors</a> who made BarCamp possible. Their donations went a long way so everyone could have a great time. </p>
+<p>Other posts from around the interwebs:</p>
+<ul>
+<li>Diditz &#8211; <a href="http://www.diditz.com/blog/2008/10/20/event-wrapup-barcamp-dc2/" class="broken_link">BarCamp DC 2 Wrap up</a></li>
+<li>Taylor Davidson &#8211; <a href="http://www.unstructuredventures.com/uv/2008/10/20/barcampdc2-exploring-ideas/" class="broken_link">BarCampDC2: Exploring Ideas</a></li>
+<li>Zvi Band &#8211; <a href="http://zviband.com/2008/10/20/barcampdc2-was-awesome/" class="broken_link">BarcampDC2 Was Awesome</a></li>
+<li>Tony Primerano &#8211; <a href="http://www.tonycode.com/blog/archives/80" class="broken_link">Good Times at BarCampDC2</a></li>
+<li>Photos tagged <a href="http://www.flickr.com/photos/tags/barcampdc2/">&#8216;barcampdc2&#8217; on Flickr</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/barcampdc2-bigger-geekier-and-more-food/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>BarCamp DC 2 Is Coming</title>
+		<link>http://www.russellheimlich.com/blog/barcamp-dc-2-is-coming/</link>
+		<comments>http://www.russellheimlich.com/blog/barcamp-dc-2-is-coming/#comments</comments>
+		<pubDate>Tue, 16 Sep 2008 00:17:31 +0000</pubDate>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+				<category><![CDATA[Conference]]></category>
+		<category><![CDATA[Local]]></category>
+		<category><![CDATA[barcamp]]></category>
+		<category><![CDATA[DC]]></category>
+		<category><![CDATA[unconference]]></category>
+		<category><![CDATA[Washington]]></category>
+
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1102</guid>
+		<description><![CDATA[It seems like just yesterday I was telling you guys about SocialDevCamp East. But the other day I got word that the 2nd DC area BarCamp is happening on Saturday, October 18th. This time it will be at the Center for Digital Imaging Arts at Boston University in Georgetown. Why there is a Boston University [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><a href="http://barcampdc.org/"><img src="http://www.russellheimlich.com/blog/wp-content/uploads/2007/08/barcampdc-logo.gif" alt="" title="BarCamp DC Logo" width="323" height="87" class="alignnone size-full wp-image-250" /></a><br />
+It seems like just yesterday I was telling you guys about <a href="http://www.russellheimlich.com/blog/socaildevcamp-east-fall-edition-is-coming/">SocialDevCamp East</a>.  But the other day I got word that the 2nd DC area BarCamp is happening on Saturday, October 18th. This time it will be at the Center for Digital Imaging Arts at Boston University in Georgetown. Why there is a Boston University in DC is beyond me. But lucky for me, the conference is right across the street from my work so I&#8217;ll be familiar with the area. </p>
+<p><a href="http://www.russellheimlich.com/blog/barcamp-dc-wrap-up/">Last year&#8217;s BarCamp</a> was the first technology conference I had ever been to and I had a great time meeting other like-minded web folks like myself. I gave a <a href="http://www.russellheimlich.com/barcamp/firebug.html">presentation about Firebug</a> which was pretty much by the seat of my pants. This time I hope to present again except this time around I will come better prepared.</p>
+<p>I hope to see you there on October 18th for BarCamp DC 2! More details can be found at the <a href="http://barcampdc.org/">official website</a> and <a href="http://barcampdc.org/wiki/Main_Page" class="broken_link">wiki</a>.</p>
+<h4>Location:</h4>
+<p><a href="http://www.cdiabu.com/overview/washington-campus.php">Center for Digital Imaging Arts at Boston University</a><br />
+1055 Thomas Jefferson Street NW<br />
+Washington, DC 20007</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.russellheimlich.com/blog/barcamp-dc-2-is-coming/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss><!-- hyper cache 2016-02-09 03:28:24 -->

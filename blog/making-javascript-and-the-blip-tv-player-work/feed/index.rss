@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Making JavaScript And The Blip.tv Player Work</title>
+	<atom:link href="http://www.russellheimlich.com/blog/making-javascript-and-the-blip-tv-player-work/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.russellheimlich.com/blog/making-javascript-and-the-blip-tv-player-work/</link>
+	<description>The Blog of Russell Heimlich</description>
+	<lastBuildDate>Thu, 26 Nov 2015 14:13:48 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.2</generator>
+	<item>
+		<title>By: click here to see video</title>
+		<link>http://www.russellheimlich.com/blog/making-javascript-and-the-blip-tv-player-work/comment-page-1/#comment-3268</link>
+		<dc:creator><![CDATA[click here to see video]]></dc:creator>
+		<pubDate>Tue, 07 May 2013 16:34:40 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2177#comment-3268</guid>
+		<description><![CDATA[I&#039;ve been browsing online more than 3 hours today, yet I never found any interesting article like yours. It&#039;s 
+pretty worth enough for me. Personally, if all website owners and 
+bloggers made good content as you did, the net will be a lot more useful than 
+ever before.]]></description>
+		<content:encoded><![CDATA[<p>I&#8217;ve been browsing online more than 3 hours today, yet I never found any interesting article like yours. It&#8217;s<br />
+pretty worth enough for me. Personally, if all website owners and<br />
+bloggers made good content as you did, the net will be a lot more useful than<br />
+ever before.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Jinesh</title>
+		<link>http://www.russellheimlich.com/blog/making-javascript-and-the-blip-tv-player-work/comment-page-1/#comment-1723</link>
+		<dc:creator><![CDATA[Jinesh]]></dc:creator>
+		<pubDate>Fri, 05 Nov 2010 13:21:10 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2177#comment-1723</guid>
+		<description><![CDATA[Hello Russell,
+
+We are using Showplayer for showing videos from blip on our site and we generate dynamic embed for the required videos using Showplayer&#039;s swf....same thing we want to do with Stratos ..we tried Stratos to show .m4v file on our site ..but we got following error 
+
+tv.blip.io::Fetcher Unknown Mode: section = file and cmd = get for &quot;http://blip.tv/file/get/Niruma-DD_Mahatma_Imp278.m4v&quot;
+
+following is the embed code which generates error ...
+
+
+
+	
+	
+	
+	
+	
+	
+
+what can be done to make stratos work with Direct Media(.m4v) file URL.
+
+waiting for reply.
+
+Regards,
+Jinesh]]></description>
+		<content:encoded><![CDATA[<p>Hello Russell,</p>
+<p>We are using Showplayer for showing videos from blip on our site and we generate dynamic embed for the required videos using Showplayer&#8217;s swf&#8230;.same thing we want to do with Stratos ..we tried Stratos to show .m4v file on our site ..but we got following error </p>
+<p>tv.blip.io::Fetcher Unknown Mode: section = file and cmd = get for &#8220;http://blip.tv/file/get/Niruma-DD_Mahatma_Imp278.m4v&#8221;</p>
+<p>following is the embed code which generates error &#8230;</p>
+<p>what can be done to make stratos work with Direct Media(.m4v) file URL.</p>
+<p>waiting for reply.</p>
+<p>Regards,<br />
+Jinesh</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Russell Heimlich</title>
+		<link>http://www.russellheimlich.com/blog/making-javascript-and-the-blip-tv-player-work/comment-page-1/#comment-1615</link>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+		<pubDate>Fri, 27 Aug 2010 20:16:54 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2177#comment-1615</guid>
+		<description><![CDATA[JSON won&#039;t really help you here. It&#039;s for getting data off of pages on Blip.tv. Example:
+If you go here you see a page of videos: http://blip.tv/posts/
+Adding the JSON parameter returns a bunch of info about those videos so you can programatically do something with it. http://blip.tv/posts/?skin=json&amp;version=3&amp;callback=myobj.method
+
+At any rate I couldn&#039;t really figure out what was going wrong with the new player but it looks like you&#039;re not the only one. http://support.blip.tv/entries/212708-stratos-player#view-post-326201]]></description>
+		<content:encoded><![CDATA[<p>JSON won&#8217;t really help you here. It&#8217;s for getting data off of pages on Blip.tv. Example:<br />
+If you go here you see a page of videos: <a href="http://blip.tv/posts/" rel="nofollow">http://blip.tv/posts/</a><br />
+Adding the JSON parameter returns a bunch of info about those videos so you can programatically do something with it. <a href="http://blip.tv/posts/?skin=json&#038;version=3&#038;callback=myobj.method" rel="nofollow">http://blip.tv/posts/?skin=jso.....obj.method</a></p>
+<p>At any rate I couldn&#8217;t really figure out what was going wrong with the new player but it looks like you&#8217;re not the only one. <a href="http://support.blip.tv/entries/212708-stratos-player#view-post-326201" rel="nofollow">http://support.blip.tv/entries.....ost-326201</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ryan Ray</title>
+		<link>http://www.russellheimlich.com/blog/making-javascript-and-the-blip-tv-player-work/comment-page-1/#comment-1614</link>
+		<dc:creator><![CDATA[Ryan Ray]]></dc:creator>
+		<pubDate>Fri, 27 Aug 2010 19:47:17 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2177#comment-1614</guid>
+		<description><![CDATA[Hey Russell,
+
+That would be totally awesome, man. The Stratos player from blip.tv is hosted here: http://a.blip.tv/scripts/flash/stratos.swf. The Blip.TV wiki for Statos player is here: http://wiki.blip.tv/index.php/Showplayer (user:blip pass:teevee).
+
+I&#039;ve been working on the code all morning, taking hints from other forums and blogs all over the web and so far I&#039;ve modified the code I posted above to what you see below. The result is currently live at wakeuptv.com/wake-up-tv-sandbox. The only problem is that the JSON functionality of blip.TV doesn&#039;t seem to be passing any information to the browser and hence my thumbnail, description and show thumbnail on the page isn&#039;t loading any info. In case you havent&#039; seen it blip.tv has put together a wiki with some info on JSON&#039;s functionality (http://wiki.blip.tv/index.php/JSON_Output_Format  user:blip pass:teevee )  but, I have to be honest, I know so little about code, I&#039;m basically feeling around in a dark room for something that I&#039;ve never seen before :-).
+
+HEADER:
+&lt;!-- Blip.TV Video Player Insert --&gt;
+  
+
+    google.load(&#039;swfobject&#039;, &#039;2.2&#039;);
+
+    
+      function gid(name)
+      {
+        return document.getElementById(name);
+      };
+
+
+      var flashvars =
+      {
+        &#039;file&#039;:             &#039;http://blip.tv/play/hadWjZJZl6lA?skin=json&#039;,
+        &#039;enablejs&#039;:         &#039;true&#039;,
+        &#039;javascriptid&#039;:     &#039;player&#039;,
+        &#039;autostart&#039;:        &#039;true&#039;,
+        &#039;showplayerpath&#039;:   &#039;http://a.blip.tv/scripts/flash/stratos.swf&#039;,
+        &#039;skin&#039;:             &#039;api&#039;,
+        &#039;feedurl&#039;:          &#039;http://wakeuptv.blip.tv/rss/flash&#039;,
+        &#039;version&#039;:          &#039;2&#039;,
+        &#039;callback&#039;:         &#039;player&#039;
+      };
+
+      var params =
+      {
+        &#039;allowscriptaccess&#039;:           &#039;always&#039;,
+        &#039;allowfullscreen&#039;:             &#039;true&#039;
+      };
+
+      var attributes =
+      {
+        &#039;id&#039;:                          &#039;player&#039;,
+        &#039;name&#039;:                        &#039;player&#039;
+      };
+
+      swfobject.embedSWF(&#039;http://a.blip.tv/scripts/flash/stratos.swf&#039;, &#039;player&#039;, &#039;483&#039;, &#039;396&#039;, &#039;9.0.124&#039;, false, flashvars, params, attributes);
+    
+
+JAVASCRIPT:
+function getUpdate(type, arg1, arg2) {
+	var showtitlebox = document.getElementById(&#039;showtitlebox&#039;);
+	var epdescription = document.getElementById(&#039;epdescription&#039;);
+	var eptitle = document.getElementById(&#039;eptitle&#039;);
+	var player = document.getElementById(&#039;player&#039;);
+	var episode = player.getCurrentItem();
+	var epthumb = document.getElementById(&#039;epthumb&#039;);
+	var trimmedtitle = removeHTMLTags(episode.title);
+	var trimmeddescription = removeHTMLTags(episode.description);
+
+
+	
+        switch(type) {
+		case &quot;state&quot;:
+			currentState = arg1;
+		break;
+		
+		case &quot;item&quot;:
+			currentPlaylistItem = arg1;
+			epdescription.innerHTML = trimmeddescription;
+			eptitle.innerHTML = trimmedtitle;
+			epthumb.src = episode.image;
+			document.title = &#039;Wake UP! TV - &#039;+trimmedtitle;
+
+
+
+			var str = episode.title;
+			firstword = str.split(/\b/)[0];
+		
+			if (firstword == &quot;Radio&quot;)
+				{
+				showtitlebox.src = &quot;http://www.ryanray.com/images/promo_box_yourewatching_Radio.jpg&quot;;
+				showlink.href = &quot;http://www.ryanray.com/radio/&quot;;
+				showlink.title = &quot;Watch more episodes of Wake UP! Radio&quot;;
+		
+				}
+			else if (firstword == &quot;Explore&quot;)
+				{
+				showtitlebox.src = &quot;http://www.ryanray.com/images/promo_box_yourewatching_Explore.jpg&quot;;
+				showlink.href = &quot;http://wakeuptv.com/explore-your-passion&quot;;
+				showlink.title = &quot;Watch more episodes of Wake UP! Explore your Passion&quot;;
+				}
+			else
+				{
+				showtitlebox.src = &quot;http://www.ryanray.com/images/promo_box_yourewatching_Generic.jpg&quot;;
+				showlink.href = &quot;#&quot;;
+				}
+		
+				break;
+			}
+}
+
+If you can help that would be sooo awesome, Russell!
+
+Ryan]]></description>
+		<content:encoded><![CDATA[<p>Hey Russell,</p>
+<p>That would be totally awesome, man. The Stratos player from blip.tv is hosted here: <a href="http://a.blip.tv/scripts/flash/stratos.swf" rel="nofollow">http://a.blip.tv/scripts/flash/stratos.swf</a>. The Blip.TV wiki for Statos player is here: <a href="http://wiki.blip.tv/index.php/Showplayer" rel="nofollow">http://wiki.blip.tv/index.php/Showplayer</a> (user:blip pass:teevee).</p>
+<p>I&#8217;ve been working on the code all morning, taking hints from other forums and blogs all over the web and so far I&#8217;ve modified the code I posted above to what you see below. The result is currently live at wakeuptv.com/wake-up-tv-sandbox. The only problem is that the JSON functionality of blip.TV doesn&#8217;t seem to be passing any information to the browser and hence my thumbnail, description and show thumbnail on the page isn&#8217;t loading any info. In case you havent&#8217; seen it blip.tv has put together a wiki with some info on JSON&#8217;s functionality (<a href="http://wiki.blip.tv/index.php/JSON_Output_Format" rel="nofollow">http://wiki.blip.tv/index.php/JSON_Output_Format</a>  user:blip pass:teevee )  but, I have to be honest, I know so little about code, I&#8217;m basically feeling around in a dark room for something that I&#8217;ve never seen before :-).</p>
+<p>HEADER:<br />
+<!-- Blip.TV Video Player Insert --></p>
+<p>    google.load(&#8216;swfobject&#8217;, &#8216;2.2&#8217;);</p>
+<p>      function gid(name)<br />
+      {<br />
+        return document.getElementById(name);<br />
+      };</p>
+<p>      var flashvars =<br />
+      {<br />
+        &#8216;file&#8217;:             &#8216;http://blip.tv/play/hadWjZJZl6lA?skin=json&#8217;,<br />
+        &#8216;enablejs&#8217;:         &#8216;true&#8217;,<br />
+        &#8216;javascriptid&#8217;:     &#8216;player&#8217;,<br />
+        &#8216;autostart&#8217;:        &#8216;true&#8217;,<br />
+        &#8216;showplayerpath&#8217;:   &#8216;http://a.blip.tv/scripts/flash/stratos.swf&#8217;,<br />
+        &#8216;skin&#8217;:             &#8216;api&#8217;,<br />
+        &#8216;feedurl&#8217;:          &#8216;http://wakeuptv.blip.tv/rss/flash&#8217;,<br />
+        &#8216;version&#8217;:          &#8216;2&#8217;,<br />
+        &#8216;callback&#8217;:         &#8216;player&#8217;<br />
+      };</p>
+<p>      var params =<br />
+      {<br />
+        &#8216;allowscriptaccess&#8217;:           &#8216;always&#8217;,<br />
+        &#8216;allowfullscreen&#8217;:             &#8216;true&#8217;<br />
+      };</p>
+<p>      var attributes =<br />
+      {<br />
+        &#8216;id&#8217;:                          &#8216;player&#8217;,<br />
+        &#8216;name&#8217;:                        &#8216;player&#8217;<br />
+      };</p>
+<p>      swfobject.embedSWF(&#8216;http://a.blip.tv/scripts/flash/stratos.swf&#8217;, &#8216;player&#8217;, &#8216;483&#8217;, &#8216;396&#8217;, &#8216;9.0.124&#8217;, false, flashvars, params, attributes);</p>
+<p>JAVASCRIPT:<br />
+function getUpdate(type, arg1, arg2) {<br />
+	var showtitlebox = document.getElementById(&#8216;showtitlebox&#8217;);<br />
+	var epdescription = document.getElementById(&#8216;epdescription&#8217;);<br />
+	var eptitle = document.getElementById(&#8216;eptitle&#8217;);<br />
+	var player = document.getElementById(&#8216;player&#8217;);<br />
+	var episode = player.getCurrentItem();<br />
+	var epthumb = document.getElementById(&#8216;epthumb&#8217;);<br />
+	var trimmedtitle = removeHTMLTags(episode.title);<br />
+	var trimmeddescription = removeHTMLTags(episode.description);</p>
+<p>        switch(type) {<br />
+		case &#8220;state&#8221;:<br />
+			currentState = arg1;<br />
+		break;</p>
+<p>		case &#8220;item&#8221;:<br />
+			currentPlaylistItem = arg1;<br />
+			epdescription.innerHTML = trimmeddescription;<br />
+			eptitle.innerHTML = trimmedtitle;<br />
+			epthumb.src = episode.image;<br />
+			document.title = &#8216;Wake UP! TV &#8211; &#8216;+trimmedtitle;</p>
+<p>			var str = episode.title;<br />
+			firstword = str.split(/\b/)[0];</p>
+<p>			if (firstword == &#8220;Radio&#8221;)<br />
+				{<br />
+				showtitlebox.src = &#8220;http://www.ryanray.com/images/promo_box_yourewatching_Radio.jpg&#8221;;<br />
+				showlink.href = &#8220;http://www.ryanray.com/radio/&#8221;;<br />
+				showlink.title = &#8220;Watch more episodes of Wake UP! Radio&#8221;;</p>
+<p>				}<br />
+			else if (firstword == &#8220;Explore&#8221;)<br />
+				{<br />
+				showtitlebox.src = &#8220;http://www.ryanray.com/images/promo_box_yourewatching_Explore.jpg&#8221;;<br />
+				showlink.href = &#8220;http://wakeuptv.com/explore-your-passion&#8221;;<br />
+				showlink.title = &#8220;Watch more episodes of Wake UP! Explore your Passion&#8221;;<br />
+				}<br />
+			else<br />
+				{<br />
+				showtitlebox.src = &#8220;http://www.ryanray.com/images/promo_box_yourewatching_Generic.jpg&#8221;;<br />
+				showlink.href = &#8220;#&#8221;;<br />
+				}</p>
+<p>				break;<br />
+			}<br />
+}</p>
+<p>If you can help that would be sooo awesome, Russell!</p>
+<p>Ryan</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Russell Heimlich</title>
+		<link>http://www.russellheimlich.com/blog/making-javascript-and-the-blip-tv-player-work/comment-page-1/#comment-1613</link>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+		<pubDate>Fri, 27 Aug 2010 19:20:26 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2177#comment-1613</guid>
+		<description><![CDATA[Do you have a sample Stratos player hosted somewhere that I can play around with in Firebug somewhere?]]></description>
+		<content:encoded><![CDATA[<p>Do you have a sample Stratos player hosted somewhere that I can play around with in Firebug somewhere?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ryan Ray</title>
+		<link>http://www.russellheimlich.com/blog/making-javascript-and-the-blip-tv-player-work/comment-page-1/#comment-1612</link>
+		<dc:creator><![CDATA[Ryan Ray]]></dc:creator>
+		<pubDate>Fri, 27 Aug 2010 19:07:08 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2177#comment-1612</guid>
+		<description><![CDATA[Hey Russell,
+
+I&#039;m not sure if you know, but blip.tv updated their player. The new &quot;stratos&quot; version is pretty awesome but for some reason my code below (which was based on yours, but might have some errors..) doesn&#039;t seem to work with the new player. Thankfully there is an option to revert to the old player but I&#039;d really love to upgrade.. Is there any chance you might be able to suggest what is missing/wrong in my code below causing the error?
+
+ERROR:
+
+Whoops!
+
+tv.blip.io::Fetcher Unknown mode: section= play and cmd=hadWjZJZl6lA for &quot;http://blip.tv/play/hadWjZJZl6lA?skin=json&quot;
+
+CODE:
+
+&lt;!-- Blip.TV Video Player Insert --&gt;
+  
+
+    google.load(&#039;swfobject&#039;, &#039;2.2&#039;);
+
+    
+      function gid(name)
+      {
+        return document.getElementById(name);
+      };
+
+
+      var flashvars =
+      {
+        &#039;file&#039;:                        &#039;http://blip.tv/play/hadWjZJZl6lA?skin=json&#039;,
+        &#039;enablejs&#039;:                    &#039;true&#039;,
+        &#039;javascriptid&#039;:                &#039;player&#039;,
+        &#039;autostart&#039;:                   &#039;false&#039;
+      };
+
+      var params =
+      {
+        &#039;allowscriptaccess&#039;:           &#039;always&#039;,
+        &#039;allowfullscreen&#039;:             &#039;true&#039;
+      };
+
+      var attributes =
+      {
+        &#039;id&#039;:                          &#039;player&#039;,
+        &#039;name&#039;:                        &#039;player&#039;
+      };
+
+      swfobject.embedSWF(&#039;http://blip.tv/play/hadWjZJZl6lA&#039;, &#039;player&#039;, &#039;483&#039;, &#039;396&#039;, &#039;9.0.124&#039;, false, flashvars, params, attributes);
+    ]]></description>
+		<content:encoded><![CDATA[<p>Hey Russell,</p>
+<p>I&#8217;m not sure if you know, but blip.tv updated their player. The new &#8220;stratos&#8221; version is pretty awesome but for some reason my code below (which was based on yours, but might have some errors..) doesn&#8217;t seem to work with the new player. Thankfully there is an option to revert to the old player but I&#8217;d really love to upgrade.. Is there any chance you might be able to suggest what is missing/wrong in my code below causing the error?</p>
+<p>ERROR:</p>
+<p>Whoops!</p>
+<p>tv.blip.io::Fetcher Unknown mode: section= play and cmd=hadWjZJZl6lA for &#8220;http://blip.tv/play/hadWjZJZl6lA?skin=json&#8221;</p>
+<p>CODE:</p>
+<p><!-- Blip.TV Video Player Insert --></p>
+<p>    google.load(&#8216;swfobject&#8217;, &#8216;2.2&#8217;);</p>
+<p>      function gid(name)<br />
+      {<br />
+        return document.getElementById(name);<br />
+      };</p>
+<p>      var flashvars =<br />
+      {<br />
+        &#8216;file&#8217;:                        &#8216;http://blip.tv/play/hadWjZJZl6lA?skin=json&#8217;,<br />
+        &#8216;enablejs&#8217;:                    &#8216;true&#8217;,<br />
+        &#8216;javascriptid&#8217;:                &#8216;player&#8217;,<br />
+        &#8216;autostart&#8217;:                   &#8216;false&#8217;<br />
+      };</p>
+<p>      var params =<br />
+      {<br />
+        &#8216;allowscriptaccess&#8217;:           &#8216;always&#8217;,<br />
+        &#8216;allowfullscreen&#8217;:             &#8216;true&#8217;<br />
+      };</p>
+<p>      var attributes =<br />
+      {<br />
+        &#8216;id&#8217;:                          &#8216;player&#8217;,<br />
+        &#8216;name&#8217;:                        &#8216;player&#8217;<br />
+      };</p>
+<p>      swfobject.embedSWF(&#8216;http://blip.tv/play/hadWjZJZl6lA&#8217;, &#8216;player&#8217;, &#8216;483&#8217;, &#8216;396&#8217;, &#8216;9.0.124&#8217;, false, flashvars, params, attributes);</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Russell Heimlich</title>
+		<link>http://www.russellheimlich.com/blog/making-javascript-and-the-blip-tv-player-work/comment-page-1/#comment-1608</link>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+		<pubDate>Fri, 20 Aug 2010 01:00:57 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2177#comment-1608</guid>
+		<description><![CDATA[No problem. I&#039;m glad you found it helpful.]]></description>
+		<content:encoded><![CDATA[<p>No problem. I&#8217;m glad you found it helpful.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ryan Ray</title>
+		<link>http://www.russellheimlich.com/blog/making-javascript-and-the-blip-tv-player-work/comment-page-1/#comment-1607</link>
+		<dc:creator><![CDATA[Ryan Ray]]></dc:creator>
+		<pubDate>Fri, 20 Aug 2010 00:56:44 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2177#comment-1607</guid>
+		<description><![CDATA[You&#039;re a genius! Thank you so much for posting this. After 1 week of searching you solved my problems!! Thank you!]]></description>
+		<content:encoded><![CDATA[<p>You&#8217;re a genius! Thank you so much for posting this. After 1 week of searching you solved my problems!! Thank you!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Things I Found Interesting Around March 30th &#124; Chris Coyier</title>
+		<link>http://www.russellheimlich.com/blog/making-javascript-and-the-blip-tv-player-work/comment-page-1/#comment-1516</link>
+		<dc:creator><![CDATA[Things I Found Interesting Around March 30th &#124; Chris Coyier]]></dc:creator>
+		<pubDate>Wed, 31 Mar 2010 11:47:29 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2177#comment-1516</guid>
+		<description><![CDATA[[...] Making JavaScript And The Blip.tv Player Work [...]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] Making JavaScript And The Blip.tv Player Work [&#8230;]</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Best Free Video Editing Software</title>
+		<link>http://www.russellheimlich.com/blog/making-javascript-and-the-blip-tv-player-work/comment-page-1/#comment-1514</link>
+		<dc:creator><![CDATA[Best Free Video Editing Software]]></dc:creator>
+		<pubDate>Wed, 24 Mar 2010 21:07:47 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=2177#comment-1514</guid>
+		<description><![CDATA[[...] Making JavaScript And The Blip.tv Player Work » Coding, How To &#8230; [...]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] Making JavaScript And The Blip.tv Player Work » Coding, How To &#8230; [&#8230;]</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

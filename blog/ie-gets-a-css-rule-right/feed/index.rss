@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: IE Gets A CSS Rule Right</title>
+	<atom:link href="http://www.russellheimlich.com/blog/ie-gets-a-css-rule-right/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.russellheimlich.com/blog/ie-gets-a-css-rule-right/</link>
+	<description>The Blog of Russell Heimlich</description>
+	<lastBuildDate>Thu, 26 Nov 2015 14:13:48 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.2</generator>
+	<item>
+		<title>By: Russell Heimlich</title>
+		<link>http://www.russellheimlich.com/blog/ie-gets-a-css-rule-right/comment-page-1/#comment-3405</link>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+		<pubDate>Thu, 30 May 2013 13:26:06 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1136#comment-3405</guid>
+		<description><![CDATA[Well, it doesn&#039;t work in Firefox or Opera before they switched to WebKit (aka Opera using the Presto rendering engine). Everywhere else you&#039;re good. You can see this pull request for adding a test for this feature in Modernizer https://github.com/Modernizr/Modernizr/pull/608 
+
+If you&#039;re worried about this you should probably stick to just using plain old background-position as painful as it might be.]]></description>
+		<content:encoded><![CDATA[<p>Well, it doesn&#8217;t work in Firefox or Opera before they switched to WebKit (aka Opera using the Presto rendering engine). Everywhere else you&#8217;re good. You can see this pull request for adding a test for this feature in Modernizer <a href="https://github.com/Modernizr/Modernizr/pull/608" rel="nofollow">https://github.com/Modernizr/Modernizr/pull/608</a> </p>
+<p>If you&#8217;re worried about this you should probably stick to just using plain old background-position as painful as it might be.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: tiski</title>
+		<link>http://www.russellheimlich.com/blog/ie-gets-a-css-rule-right/comment-page-1/#comment-3403</link>
+		<dc:creator><![CDATA[tiski]]></dc:creator>
+		<pubDate>Thu, 30 May 2013 07:54:58 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1136#comment-3403</guid>
+		<description><![CDATA[I read your post almost 5 years later and was wondering if this technique is more supported nowadays by major browsers. I would use it if this worked cross browser / platform. Any tips?]]></description>
+		<content:encoded><![CDATA[<p>I read your post almost 5 years later and was wondering if this technique is more supported nowadays by major browsers. I would use it if this worked cross browser / platform. Any tips?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: mttstrategy</title>
+		<link>http://www.russellheimlich.com/blog/ie-gets-a-css-rule-right/comment-page-1/#comment-2858</link>
+		<dc:creator><![CDATA[mttstrategy]]></dc:creator>
+		<pubDate>Sun, 10 Jun 2012 15:40:05 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1136#comment-2858</guid>
+		<description><![CDATA[I would like to buy 191319 suns please for 258421]]></description>
+		<content:encoded><![CDATA[<p>I would like to buy 191319 suns please for 258421</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Russell Heimlich</title>
+		<link>http://www.russellheimlich.com/blog/ie-gets-a-css-rule-right/comment-page-1/#comment-885</link>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+		<pubDate>Wed, 15 Oct 2008 00:20:30 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1136#comment-885</guid>
+		<description><![CDATA[Displaying cards would be part of the presentation layer where it would be appropriate to use CSS. The functionality would be manipulating the class name which would be done with JavaScript.]]></description>
+		<content:encoded><![CDATA[<p>Displaying cards would be part of the presentation layer where it would be appropriate to use CSS. The functionality would be manipulating the class name which would be done with JavaScript.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: bit</title>
+		<link>http://www.russellheimlich.com/blog/ie-gets-a-css-rule-right/comment-page-1/#comment-884</link>
+		<dc:creator><![CDATA[bit]]></dc:creator>
+		<pubDate>Wed, 15 Oct 2008 00:13:33 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1136#comment-884</guid>
+		<description><![CDATA[hey guess what? when you want to place an image, use . and when you want funcationallity, use Javascript.
+NOT CSS, and backgrounds.]]></description>
+		<content:encoded><![CDATA[<p>hey guess what? when you want to place an image, use . and when you want funcationallity, use Javascript.<br />
+NOT CSS, and backgrounds.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss><!-- hyper cache 2016-02-09 10:23:49 -->

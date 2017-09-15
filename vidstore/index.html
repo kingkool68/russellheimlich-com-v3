@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Video Storage Calculator</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+<h1>Video Storage Calculator</h1>
+<form id="form1" name="form1" method="post" action="">
+  <label>Length of footage(hrs:min:sec;frames) <br />
+  <input name="hrs" type="text" id="hrs" size="3" maxlength="3" />
+  </label> 
+  :
+  <label>
+  <input name="mins" type="text" id="mins" size="2" maxlength="2" />
+  </label>
+  :
+  <label>
+  <input name="secs" type="text" id="secs" size="2" maxlength="2" />
+  </label> 
+  ;
+  <label>
+  <input name="frames" type="text" id="frames" size="2" maxlength="2" />
+  </label>
+  <label>
+  <select name="frameRate" id="frameRate">
+    <option>Frame Rate</option>
+    <option value="15">15 fps</option>
+    <option value="24">24 fps</option>
+    <option value="25">25 fps</option>
+    <option value="30">30 fps</option>
+    <option value="60">60 fps</option>
+  </select>
+  </label>
+  <label> 
+  <input type="button" name="Button" value="Calculate" onclick="calc()" />
+  <br />
+  <input name="totFrames" type="text" id="totFrames" size="8" />
+  </label>Total Frames 
+</form>
+<h2>by Format</h2>
+<table width="100%" border="0">
+  <tr>
+    <th width="30%" scope="col">Name</th>
+    <th width="14%" scope="col">Compression</th>
+    <th width="8%" scope="col">Data Rate (Mbps) </th>
+    <th width="5%" scope="col">Bits per Sample </th>
+    <th width="7%" scope="col">Sampling Ratio </th>
+    <th width="36%" scope="col">Total (GB) </th>
+  </tr>
+  <tr>
+    <td>D1-SD (Sony) </td>
+    <td>Not Compressed </td>
+    <td>270</td>
+    <td>8</td>
+    <td>4:2:2</td>
+    <td id="a1">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>D2-SD (Sony/Ampex) </td>
+    <td>Not Compressed </td>
+    <td>143</td>
+    <td>8</td>
+    <td>4:2:2:4</td>
+    <td id="a2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>D3-SD (Panasonic) </td>
+    <td>Not Compressed </td>
+    <td>143</td>
+    <td>8</td>
+    <td>4:0:0</td>
+    <td id="a3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>D5-HD (Panasonic) </td>
+    <td>Compressed: 5:1</td>
+    <td>270</td>
+    <td>10</td>
+    <td>4:2:2</td>
+    <td id="a4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>D6-HD (Thomson) </td>
+    <td>Not Compressed </td>
+    <td>1500</td>
+    <td>8*</td>
+    <td>4:2:2</td>
+    <td id="a5">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>D7-SD (DVC Pro -- Panasonic, Philips, Ikegami) </td>
+    <td>Intraframe: 5:1</td>
+    <td>25</td>
+    <td>8</td>
+    <td>4:1:1</td>
+    <td id="a6">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>D9-SD (Digital S JVC) </td>
+    <td>Intraframe: 3.3:1</td>
+    <td>50</td>
+    <td>8</td>
+    <td>4:2:2</td>
+    <td id="a7">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>D9-HD (Digital S JVC) </td>
+    <td>Intraframe: 6.6:1</td>
+    <td>100</td>
+    <td>8</td>
+    <td>4:2:2</td>
+    <td id="a8">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>D10-SD</td>
+    <td>Intraframe: 3.3:1</td>
+    <td>50</td>
+    <td>8</td>
+    <td>4:2:2</td>
+    <td id="a9">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>HDCAM SR (Sony) </td>
+    <td>Compressed: 2.7:1; 4:1</td>
+    <td>440</td>
+    <td>10</td>
+    <td>4:2:2; 4:4:4 </td>
+    <td id="a10">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>HDCAM (Sony) </td>
+    <td>Compressed: 4:4:1</td>
+    <td>135</td>
+    <td>8</td>
+    <td>4:2:2</td>
+    <td id="a11">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>DVC PRO HD </td>
+    <td>Intraframe: 6.7:1</td>
+    <td>100</td>
+    <td>8</td>
+    <td>4:2:2</td>
+    <td id="a12">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Digital Betacam - SD (Sony) </td>
+    <td>Compressed: 2:1 </td>
+    <td>90</td>
+    <td>10</td>
+    <td>4:2:2</td>
+    <td id="a13">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>MPEG IMX-SD (Sony) </td>
+    <td>Intraframe: 3.3:1</td>
+    <td>50</td>
+    <td>8</td>
+    <td>4:2:2</td>
+    <td id="a14">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>DVC Pro 50 (Panasonic) </td>
+    <td>Intraframe: 3.3:1</td>
+    <td>50</td>
+    <td>8</td>
+    <td>4:2:2</td>
+    <td id="a15">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Betacam SX (Sony) </td>
+    <td>Intraframe: 5:1</td>
+    <td>18</td>
+    <td>8</td>
+    <td>4:2:2</td>
+    <td id="a16">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>DV/HDV</td>
+    <td>Intraframe: 5:1</td>
+    <td>25</td>
+    <td>8</td>
+    <td>4:1:1 NTSC, 4:2:0 PAL </td>
+    <td id="a17">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Digital 8 (Sony,Hitachi) </td>
+    <td>Intraframe: 5:1</td>
+    <td>25</td>
+    <td>8</td>
+    <td>4:1:1 NTSC, 4:2:0 PAL</td>
+    <td id="a18">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>DVCAM (Sony)</td>
+    <td>Intraframe: 5:1 </td>
+    <td>25</td>
+    <td>8</td>
+    <td>4:1:1 NTSC, 4:2:0 PAL</td>
+    <td id="a19">&nbsp;</td>
+  </tr>
+</table>
+<p>*10 for Y channel</p>
+<h2>by Resolution</h2>
+<table width="100%" border="0">
+  <tr>
+    <th width="22%" scope="col">Resolution</th>
+    <th width="7%" scope="col">Bits Per Sample </th>
+    <th width="6%" scope="col">Sample Rate </th>
+    <th width="65%" scope="col">Storage (GB) </th>
+  </tr>
+  <tr>
+    <td>4K (4096x3112) Film </td>
+    <td>10</td>
+    <td>4:4:4</td>
+    <td><label></label></td>
+  </tr>
+  <tr>
+    <td>2K (2048x1536) Film </td>
+    <td>10</td>
+    <td>4:4:4</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>1920x1080i HD </td>
+    <td>10</td>
+    <td>4:4:4</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>1920x1080i HD </td>
+    <td>10</td>
+    <td>4:2:2</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>1280x720p HD </td>
+    <td>10</td>
+    <td>4:2:2</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>1920x1080p HD </td>
+    <td>10</td>
+    <td>4:2:2</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>1920x1080i HD </td>
+    <td>8</td>
+    <td>4:2:2</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>1280x720p HD </td>
+    <td>8</td>
+    <td>4:2:2</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>1920x1080i DNxHD 220 (Avid) </td>
+    <td>10 or 8 </td>
+    <td>4:2:2</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>1280x720p DNxHD 220 (Avid) </td>
+    <td>10 or 8 </td>
+    <td>4:2:2</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>1920x1080p DNxHD 220 (Avid) </td>
+    <td>10 or 8 </td>
+    <td>4:2:2</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>1920x1080i DNxHD 145 (Avid) </td>
+    <td>8</td>
+    <td>4:2:2</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>720x486 SD 1:1 </td>
+    <td>10</td>
+    <td>4:2:2</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>720x486 SD 1:1 </td>
+    <td>8</td>
+    <td>4:2:2</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Sony IMX MPEG2 </td>
+    <td>8</td>
+    <td>4:2:0</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>HDV</td>
+    <td>8</td>
+    <td>4:1:1</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>DV 50 </td>
+    <td>8</td>
+    <td>4:2:2</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>DV 25 </td>
+    <td>8</td>
+    <td>4:1:1</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>48.1 Khz Audio </td>
+    <td>16</td>
+    <td>48.1 Khz</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>96 Khz Audio </td>
+    <td>24</td>
+    <td>96 Khz </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

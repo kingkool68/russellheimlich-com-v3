@@ -1,0 +1,15 @@
+// Default Pick Schema
+
+'' => array(
+	'title' => '',
+	'tagline' => '',
+	'link' => '',
+	'tease' => ''
+),
+
+// Default content schemea
+
+array(
+	'title' => '',
+	'content' => "",
+),

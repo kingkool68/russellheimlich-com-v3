@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Firebug: Web Development Inside the Browser</title>
+<!-- metadata -->
+<meta name="generator" content="S5" />
+<meta name="version" content="S5 1.1" />
+<meta name="presdate" content="20050728" />
+<meta name="author" content="Eric A. Meyer" />
+<meta name="company" content="Complex Spiral Consulting" />
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<link rel="stylesheet" href="ui/default/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/default/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/default/opera.css" type="text/css" media="projection" id="operaFix" />
+<!-- S5 JS -->
+<script src="ui/default/slides.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="layout">
+  <div id="controls">
+    <!-- DO NOT EDIT -->
+  </div>
+  <div id="currentSlide">
+    <!-- DO NOT EDIT -->
+  </div>
+  <div id="header"></div>
+  <div id="footer">
+    <h1>BarCamp DC / Saturday, August 11th 2007</h1>
+    <h2>Firebug: Web Development Inside the Browser</h2>
+  </div>
+</div>
+<div class="presentation">
+  <div class="slide">
+    <h1>Hello World!</h1>
+    <h3>Russell Heimlich (like the maneuver)</h3>
+    <h4>http://www.russellheimlich.com/blog</h4>
+  </div>
+  <div class="slide">
+    <h1>The Old Way of Development</h1>
+    <ul>
+      <li>Open Webpage in Editor</li>
+      <li>Open Webpage in Browser</li>
+      <li>Make Change in Editor</li>
+      <li>Refresh Page in Browser</li>
+      <li>Scratch your head?</li>
+      <li>Repeat for every teeny, weeny change</li>
+    </ul>
+  </div>
+  <div class="slide">
+    <h1>What is wrong with this?</h1>
+    <ul>
+      <li>Slow</li>
+      <li>Repetitive</li>
+      <li>Tedious</li>
+      <li>Hit or Miss</li>
+      <li>Lack of control</li>
+    </ul>
+    <h5>There has got to be a better way...</h5>
+  </div>
+  <div class="slide">
+    <h1>Welcome to Firebug</h1>
+    <h2>Web Development Evolved</h2>
+    <p><img src="Firebug.png" /></p>
+    <ul>
+      <li>Firebug is a Firefox extension</li>
+      <li>Developed by Joe Hewitt</li>
+      <li>Provides a wealth of web tools at your fingertips.</li>
+      <li>Get it at www.GetFirebug.com</li>
+    </ul>
+  </div>
+  <div class="slide">
+    <h1>Installation</h1>
+    <ul>
+      <li>Note you will need to have the DOM Inspector enabled</li>
+      <li>This was one of those check marks you saw when first installing Firefox</li>
+      <li>If Firebug doesn't work, try reinstalling Firefox.</li>
+    </ul>
+  </div>
+  <div class="slide">
+    <h1>Getting Started</h1>
+    <ul>
+      <li>After Installing it you will notice a green checkmark in your status bar.</li>
+      <li><img src="checkmark.png" /></li>
+      <li>This green check box turns red when you come across  errors.</li>
+      <li><img src="error.png" /></li>
+      <li>Clicking on it will bring up the Firebug console window.</li>
+    </ul>
+    <p><img src="consolewindow.png" /></p>
+  </div>
+  <div class="slide">
+    <h1>The Console Window</h1>
+    <ul>
+      <li>This will show you JavaScript, XML, or CSS errors.</li>
+      <li>Only the errors for the page you are looking at will be displayed.</li>
+      <li>Jump right to the problem in the debugger</li>
+      <li>Filter errors by:
+        <ul>
+          <li>JavaScript Errors</li>
+          <li>JavaScript Warnings</li>
+          <li>CSS Errors</li>
+          <li>XML Errors</li>
+          <li>XML HttpRequests</li>
+        </ul>
+      </li>
+    </ul>
+    <p><img src="errorfilter.png" /></p>
+  </div>
+  <div class="slide">
+    <h1>HTML Inspection</h1>
+    <ul>
+      <li>Dig through the nested source code.</li>
+      <li>The source code is live and will even highlight changes as they happen.</li>
+      <li>Edit HTML live
+        <ul>
+          <li>You can edit any HTML attributes or text by clicking on it.</li>
+          <li>Test out how much text can fit in an element</li>
+          <li>Double clicking lets you edit the element with real time previews</li>
+          <li>Made a goof? Don't worry everything will reset itself when you refresh the page</li>
+        </ul>
+      </li>
+      <li>Highlight an element by hovering over it.</li>
+    </ul>
+    <p><img src="nestedhtml.png" /></p>
+  </div>
+  <div class="slide">
+    <h1>More HTML Goodness</h1>
+    <ul>
+      <li>Inspect any element using your mouse.</li>
+      <li>Go right to what you were looking for with the search field.</li>
+      <li>Copying is made easy by right clicking on an element.</li>
+      <li>You can copy:
+        <ul>
+          <li>The HTML</li>
+          <li>Just the innerHTML</li>
+          <li>An XPath expression that identifies an element uniquely.</li>
+        </ul>
+      </li>
+      <li>Climb up the DOM Tree via the hirarchy navigation.</li>
+    </ul>
+  </div>
+  <div class="slide">
+    <h1>CSS Zen</h1>
+    <ul>
+      <li>Hide and Show CSS styles for any element</li>
+      <li>Add or remove properties to CSS Rules or just a single element.</li>
+      <li>Visualize the cascade via properties that are struck out.</li>
+      <li>Preview colors and images by simply hovering over them.</li>
+      <li>Identify which CSS file and line number the code is coming from.</li>
+      <li>Clicking on it will take you straight there.</li>
+    </ul>
+  </div>
+  <div class="slide">
+    <h1>Visualize the Box Model</h1>
+    <ul>
+      <li>See padding, margins, and borders highlighted</li>
+      <li>Padding is purple, margins are yellow.</li>
+      <li>Identify the size of an element by seperating it's dimensions from padding, borders, and margins.</li>
+      <li>See rulers and guides by hovering over the different parts of the box model.</li>
+      <li>Change widths incrementally by holding down the up or down arrow.</li>
+    </ul>
+  </div>
+  <div class="slide">
+  <h1>Other Features</h1>
+  <ul>
+  <li>See performance of your page using the 'Net' tab.</li>
+  <li>See everything in the 'DOM' tab.</li>
+  <li>Step through Script code using breakpoints.</li>
+  <li>Log JavaScript Errors</li>
+  </ul>
+  </div>
+  <div class="slide">
+  <h1>Plugins</h1>
+  <ul>
+  <li>YSlow (developer.yahoo.com/yslow/) - Performance report card giving tips on making your page more effiecient. Based on Yahoo's Rules for High Performance.</li>
+  <li>FirePHP (FirePHP.org) - Bring the backend logic to Firebug so you can debug right from the browser.</li>
+  </ul>
+  </div>
+  <div class="slide">
+  <h1>Notes</h1>
+  <p>This presentation can be downloaded at http://www.russellheimlich.com/barcamp/</p>
+  <ul>
+  <li>Firebug - http://www.GetFirebug.com</li>
+  <li>Joe Hewitt http://www.JoeHewitt.com/</li>
+  <li>Yslow - http://developer.yahoo.com/yslow/</li>
+  <li>FirePHP - http://www.FirePHP.org</li>
+  <li>Sample page - http://www.russellheimlich.com/barcamp/sample.html</li>
+  </ul>
+  </div>
+</div>
+</body>
+</html>

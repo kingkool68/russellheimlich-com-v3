@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Walkthrough: Setup Multiple IE Virtual Machines On A Mac</title>
+	<atom:link href="http://www.russellheimlich.com/blog/walkthrough-setup-multiple-ie-virtual-machines-on-a-mac/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.russellheimlich.com/blog/walkthrough-setup-multiple-ie-virtual-machines-on-a-mac/</link>
+	<description>The Blog of Russell Heimlich</description>
+	<lastBuildDate>Thu, 26 Nov 2015 14:13:48 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.2</generator>
+	<item>
+		<title>By: Mua Chung</title>
+		<link>http://www.russellheimlich.com/blog/walkthrough-setup-multiple-ie-virtual-machines-on-a-mac/comment-page-1/#comment-2616</link>
+		<dc:creator><![CDATA[Mua Chung]]></dc:creator>
+		<pubDate>Sat, 05 Nov 2011 07:21:52 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=891#comment-2616</guid>
+		<description><![CDATA[Hmm it seems like your blog ate my first comment (it was super long) so I guess I&#039;ll just sum it up what I submitted and say, I&#039;m thoroughly enjoying your blog. I too am an aspiring blog blogger but I&#039;m still new to everything. Do you have any points for first-time blog writers? I&#039;d definitely appreciate it.]]></description>
+		<content:encoded><![CDATA[<p>Hmm it seems like your blog ate my first comment (it was super long) so I guess I&#8217;ll just sum it up what I submitted and say, I&#8217;m thoroughly enjoying your blog. I too am an aspiring blog blogger but I&#8217;m still new to everything. Do you have any points for first-time blog writers? I&#8217;d definitely appreciate it.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Not giving money to Microsoft &#171; High Altitude Hacking</title>
+		<link>http://www.russellheimlich.com/blog/walkthrough-setup-multiple-ie-virtual-machines-on-a-mac/comment-page-1/#comment-1446</link>
+		<dc:creator><![CDATA[Not giving money to Microsoft &#171; High Altitude Hacking]]></dc:creator>
+		<pubDate>Fri, 22 Jan 2010 17:39:14 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=891#comment-1446</guid>
+		<description><![CDATA[[...] out the idea of using some images Microsoft makes available with different versions of IE on each (http://www.russellheimlich.com/blog/walkthrough-setup-multiple-ie-virtual-machines-on-a-mac/) HAH Results: If you read the last couple of comments on the referenced blog, you&#8217;ll see that [...]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] out the idea of using some images Microsoft makes available with different versions of IE on each (<a href="http://www.russellheimlich.com/blog/walkthrough-setup-multiple-ie-virtual-machines-on-a-mac/" rel="nofollow">http://www.russellheimlich.com.....-on-a-mac/</a>) HAH Results: If you read the last couple of comments on the referenced blog, you&#8217;ll see that [&#8230;]</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: revive</title>
+		<link>http://www.russellheimlich.com/blog/walkthrough-setup-multiple-ie-virtual-machines-on-a-mac/comment-page-1/#comment-1403</link>
+		<dc:creator><![CDATA[revive]]></dc:creator>
+		<pubDate>Wed, 16 Dec 2009 09:57:16 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=891#comment-1403</guid>
+		<description><![CDATA[The Activation issue is one presented anytime the VPCs are converted to run in another Virtual Machine instead of M$&#039;s ! Thanks M$ ! Anyways, there are one of two ways to make this work:
+1) Find someone with the older, non-expiring, non-license-requiring VPC images for IE6, IE7 and IE8
+2) Wait to see if M$ releases updated VPC images (since they expire Jan 01, 2010 it should be soon).. and hopefully they will fix this oversight.. 
+
+If anyone has the aforementioned &#039;older, non-expiring, non-license-requiring VPC images&#039; - PLEASE let me know ! :D]]></description>
+		<content:encoded><![CDATA[<p>The Activation issue is one presented anytime the VPCs are converted to run in another Virtual Machine instead of M$&#8217;s ! Thanks M$ ! Anyways, there are one of two ways to make this work:<br />
+1) Find someone with the older, non-expiring, non-license-requiring VPC images for IE6, IE7 and IE8<br />
+2) Wait to see if M$ releases updated VPC images (since they expire Jan 01, 2010 it should be soon).. and hopefully they will fix this oversight.. </p>
+<p>If anyone has the aforementioned &#8216;older, non-expiring, non-license-requiring VPC images&#8217; &#8211; PLEASE let me know ! 😀</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Justine</title>
+		<link>http://www.russellheimlich.com/blog/walkthrough-setup-multiple-ie-virtual-machines-on-a-mac/comment-page-1/#comment-1336</link>
+		<dc:creator><![CDATA[Justine]]></dc:creator>
+		<pubDate>Fri, 30 Oct 2009 16:57:59 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=891#comment-1336</guid>
+		<description><![CDATA[Great walkthrough, thanks a lot.
+
+However, I have the same problem as Joel - followed the steps by screwlewse and it&#039;s asking for activation and serial number. It was okay first time it started, but after restart (required after installing VMTools) it won&#039;t let me login at all.]]></description>
+		<content:encoded><![CDATA[<p>Great walkthrough, thanks a lot.</p>
+<p>However, I have the same problem as Joel &#8211; followed the steps by screwlewse and it&#8217;s asking for activation and serial number. It was okay first time it started, but after restart (required after installing VMTools) it won&#8217;t let me login at all.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Russell Heimlich</title>
+		<link>http://www.russellheimlich.com/blog/walkthrough-setup-multiple-ie-virtual-machines-on-a-mac/comment-page-1/#comment-1327</link>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+		<pubDate>Thu, 22 Oct 2009 14:19:54 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=891#comment-1327</guid>
+		<description><![CDATA[Weird. I never experienced that.]]></description>
+		<content:encoded><![CDATA[<p>Weird. I never experienced that.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Joel</title>
+		<link>http://www.russellheimlich.com/blog/walkthrough-setup-multiple-ie-virtual-machines-on-a-mac/comment-page-1/#comment-1326</link>
+		<dc:creator><![CDATA[Joel]]></dc:creator>
+		<pubDate>Thu, 22 Oct 2009 14:03:32 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=891#comment-1326</guid>
+		<description><![CDATA[Yep - it&#039;s asking for a serial #]]></description>
+		<content:encoded><![CDATA[<p>Yep &#8211; it&#8217;s asking for a serial #</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Russell Heimlich</title>
+		<link>http://www.russellheimlich.com/blog/walkthrough-setup-multiple-ie-virtual-machines-on-a-mac/comment-page-1/#comment-1325</link>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+		<pubDate>Thu, 22 Oct 2009 14:01:45 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=891#comment-1325</guid>
+		<description><![CDATA[Is it asking you for a serial number or something? If I remember to activate Windows you just click on a button and it does its thing over the Internet.]]></description>
+		<content:encoded><![CDATA[<p>Is it asking you for a serial number or something? If I remember to activate Windows you just click on a button and it does its thing over the Internet.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Joel</title>
+		<link>http://www.russellheimlich.com/blog/walkthrough-setup-multiple-ie-virtual-machines-on-a-mac/comment-page-1/#comment-1324</link>
+		<dc:creator><![CDATA[Joel]]></dc:creator>
+		<pubDate>Thu, 22 Oct 2009 13:50:02 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=891#comment-1324</guid>
+		<description><![CDATA[Hmm, ok, so I followed the directions by screwlewse and when I run my VM - it&#039;s asking me to Activate my Windows version!? What the heck! What do I do now?]]></description>
+		<content:encoded><![CDATA[<p>Hmm, ok, so I followed the directions by screwlewse and when I run my VM &#8211; it&#8217;s asking me to Activate my Windows version!? What the heck! What do I do now?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Russell Heimlich</title>
+		<link>http://www.russellheimlich.com/blog/walkthrough-setup-multiple-ie-virtual-machines-on-a-mac/comment-page-1/#comment-1095</link>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+		<pubDate>Mon, 25 May 2009 22:53:17 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=891#comment-1095</guid>
+		<description><![CDATA[It should. Give it a whirl and let me know.]]></description>
+		<content:encoded><![CDATA[<p>It should. Give it a whirl and let me know.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: shawn</title>
+		<link>http://www.russellheimlich.com/blog/walkthrough-setup-multiple-ie-virtual-machines-on-a-mac/comment-page-1/#comment-1094</link>
+		<dc:creator><![CDATA[shawn]]></dc:creator>
+		<pubDate>Mon, 25 May 2009 00:36:13 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=891#comment-1094</guid>
+		<description><![CDATA[I&#039;d like to run Windows 7 beta on my MBP w/ VMWare Fusion 2. Will this method fly with Windows 7?]]></description>
+		<content:encoded><![CDATA[<p>I&#8217;d like to run Windows 7 beta on my MBP w/ VMWare Fusion 2. Will this method fly with Windows 7?</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss><!-- hyper cache 2016-02-09 08:07:18 -->

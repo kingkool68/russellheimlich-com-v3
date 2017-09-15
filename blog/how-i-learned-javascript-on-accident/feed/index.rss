@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: How I Learned JavaScript On Accident</title>
+	<atom:link href="http://www.russellheimlich.com/blog/how-i-learned-javascript-on-accident/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.russellheimlich.com/blog/how-i-learned-javascript-on-accident/</link>
+	<description>The Blog of Russell Heimlich</description>
+	<lastBuildDate>Thu, 26 Nov 2015 14:13:48 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.2</generator>
+	<item>
+		<title>By: Russell Heimlich</title>
+		<link>http://www.russellheimlich.com/blog/how-i-learned-javascript-on-accident/comment-page-1/#comment-1357</link>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+		<pubDate>Fri, 06 Nov 2009 01:32:40 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1936#comment-1357</guid>
+		<description><![CDATA[Your spot on! It&#039;s also worth mentioning that concatenating strings you use a . in PHP and a + in JavaScript. The hardest part about PHP for me was wading through all of the different methods and properties since there is a whole sloth of similiar-sounding functions.]]></description>
+		<content:encoded><![CDATA[<p>Your spot on! It&#8217;s also worth mentioning that concatenating strings you use a . in PHP and a + in JavaScript. The hardest part about PHP for me was wading through all of the different methods and properties since there is a whole sloth of similiar-sounding functions.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Phil Rae (NetInspired)</title>
+		<link>http://www.russellheimlich.com/blog/how-i-learned-javascript-on-accident/comment-page-1/#comment-1355</link>
+		<dc:creator><![CDATA[Phil Rae (NetInspired)]]></dc:creator>
+		<pubDate>Thu, 05 Nov 2009 23:03:48 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/?p=1936#comment-1355</guid>
+		<description><![CDATA[PHP is surprisingly similar-looking to Javascript.  I learned Javascript off the back of learning Java at university, then going onto learn PHP as I began making interactive websites for clients in my spare time.  The only major different I can think of between PHP and Javascipt (aside from the fact it&#039;s backend rather than frontend), is that every variable in PHP starts with a $-sign whereas in Javascript, they don&#039;t.]]></description>
+		<content:encoded><![CDATA[<p>PHP is surprisingly similar-looking to Javascript.  I learned Javascript off the back of learning Java at university, then going onto learn PHP as I began making interactive websites for clients in my spare time.  The only major different I can think of between PHP and Javascipt (aside from the fact it&#8217;s backend rather than frontend), is that every variable in PHP starts with a $-sign whereas in Javascript, they don&#8217;t.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

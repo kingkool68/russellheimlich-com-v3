@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CSS Should Read Like Phrases - Frontend Development Tips &amp; Tricks by Russell Heimlich</title>
+<link href="css/reset.css" rel="stylesheet" media="all">
+<link href="css/main.css" rel="stylesheet" media="all">
+<link href="css/print.css" rel="stylesheet" media="print">
+</head>
+<body>
+<h1>CSS Should Read Like Phrases</h1>
+<p>Take the cascade into consideration when naming elements. CSS nirvana is when selectors are written the way you would talk about them.</p>
+<pre class="code">
+&lt;body id=&quot;<strong>science</strong>&quot;&gt;
+  &lt;div class=&quot;<strong>article</strong>&quot;&gt;
+     &lt;h1&gt;Headline&lt;/h1&gt;
+     &lt;p class=&quot;<strong>intro</strong>&quot;&gt;Lorem ipsum dolor sit amet&hellip;&lt;/p&gt;
+     &lt;img src=&quot;http://dummyimage.com/120x60&quot;&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+
+#science .article {&hellip;}
+#science .article .intro {&hellip;}
+#science .article img {&hellip;}
+</pre>
+<p>Repetitive naming conventions add bloat and require more thinking when making changes.</p>
+<pre class="code">
+&lt;body id=&quot;<strong>science</strong>&quot;&gt;
+  &lt;div class=&quot;<strong>science-article</strong>&quot;&gt;
+     &lt;h1&gt;Headline&lt;/h1&gt;
+     &lt;p class=&quot;<strong>science-article-intro</strong>&quot;&gt;Lorem ipsum dolor sit amet&hellip;&lt;/p&gt;
+     &lt;img src=&quot;http://dummyimage.com/120x60&quot;&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+
+#science .science-article {&hellip;}
+#science .science-article .science-article-intro {&hellip;}
+#science .science-article img {&hellip;}
+</pre>
+<script type="text/javascript" src="js/jquery.js"/></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Configuring The Logitech MX Revolution Mouse</title>
+	<atom:link href="http://www.russellheimlich.com/blog/configuring-the-logitech-mx-revolution-mouse/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.russellheimlich.com/blog/configuring-the-logitech-mx-revolution-mouse/</link>
+	<description>The Blog of Russell Heimlich</description>
+	<lastBuildDate>Thu, 26 Nov 2015 14:13:48 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.2</generator>
+	<item>
+		<title>By: Russell Heimlich</title>
+		<link>http://www.russellheimlich.com/blog/configuring-the-logitech-mx-revolution-mouse/comment-page-1/#comment-2462</link>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+		<pubDate>Tue, 12 Jul 2011 12:14:03 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/configuring-the-logitech-mx-revolution-mouse/#comment-2462</guid>
+		<description><![CDATA[Oh memories. I wish I used this mouse more often but at work I use an iMac with the battery-sucking Magic Mouse now. One day I&#039;ll upgrade my PC desktop at home and use it a bit more where my mouse sits idly waiting for my return.]]></description>
+		<content:encoded><![CDATA[<p>Oh memories. I wish I used this mouse more often but at work I use an iMac with the battery-sucking Magic Mouse now. One day I&#8217;ll upgrade my PC desktop at home and use it a bit more where my mouse sits idly waiting for my return.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Greg</title>
+		<link>http://www.russellheimlich.com/blog/configuring-the-logitech-mx-revolution-mouse/comment-page-1/#comment-2461</link>
+		<dc:creator><![CDATA[Greg]]></dc:creator>
+		<pubDate>Tue, 12 Jul 2011 03:48:45 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/configuring-the-logitech-mx-revolution-mouse/#comment-2461</guid>
+		<description><![CDATA[Logitech SetPoint Control Center 6.30.41 allowed me to set my middle click as a standard middle click (Other &#062; Middle Button) instead of a scroll-mode change. I don&#039;t like the feel either, but it works. 
+You can also set the scroll wheel to automatically switch to free spin when it&#039;s scrolled fast enough.
+Thanks for the idea for switching tabs for the side scroll-er. I was using it as a volume control. Volume Up, Down and Mute.]]></description>
+		<content:encoded><![CDATA[<p>Logitech SetPoint Control Center 6.30.41 allowed me to set my middle click as a standard middle click (Other &gt; Middle Button) instead of a scroll-mode change. I don&#8217;t like the feel either, but it works.<br />
+You can also set the scroll wheel to automatically switch to free spin when it&#8217;s scrolled fast enough.<br />
+Thanks for the idea for switching tabs for the side scroll-er. I was using it as a volume control. Volume Up, Down and Mute.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

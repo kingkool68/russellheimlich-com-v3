@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Less-fussy IE Conditionals - Frontend Development Tips &amp; Tricks by Russell Heimlich</title>
+<link href="css/reset.css" rel="stylesheet" media="all">
+<link href="css/main.css" rel="stylesheet" media="all">
+<link href="css/print.css" rel="stylesheet" media="print">
+</head>
+<body>
+<h1>Less-fussy IE Conditionals</h1>
+<p>Before: A seperate stylesheet for each version of IE.</p>
+<pre class="code">
+&lt;link href=&quot;main.css&quot; media=&quot;all&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+
+&lt;!--[if lte IE 6]&gt;
+   &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;ie5-6.css&quot; /&gt;
+&lt;![endif]--&gt;
+
+&lt;!--[if IE 7]&gt;
+   &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;ie7.css&quot; /&gt;
+&lt;![endif]--&gt;</pre>
+<ul>
+  <li>Inflexible</li>
+  <li>Harder to manage</li>
+  <li>A pain in the tookus!</li>
+</ul>
+<p>Simplify things with special containing elements</p>
+<pre class="code">
+&lt;!--[if IE 6]&gt;&lt;div class=&quot;ie ie6&quot;&gt;&lt;![endif]--&gt;
+&lt;!--[if IE 7]&gt;&lt;div class=&quot;ie ie7&quot;&gt;&lt;![endif]--&gt;
+&lt;!--[if IE 8]&gt;&lt;div class=&quot;ie ie8&quot;&gt;&lt;![endif]--&gt;
+
+...the rest of your content...
+			
+&lt;!--[if IE 6]&lt;/div&gt;&lt;![endif]--&gt;
+&lt;!--[if IE 7]&lt;/div&gt;&lt;![endif]--&gt;
+&lt;!--[if IE 8]&lt;/div&gt;&lt;![endif]--&gt;
+</pre>
+
+<p>Override IE styles by using specific class in one stylesheet.</p>
+<pre class="code">
+#footer { width: 200px; }
+.ie6 #footer { width: 190px; }
+</pre>
+<p>Or target all versions of IE in one fell swoop</p>
+<pre class="code">
+.ie p { color: pink; }
+</pre>
+<p class="source">Source: <a href="http://www.newsweek.com">Newsweek source code</a></p>
+<script type="text/javascript" src="js/jquery.js"/>
+</script>
+</body>
+</html>

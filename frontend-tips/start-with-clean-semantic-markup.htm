@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Start with Clean, Semantic Markup - Frontend Development Tips &amp; Tricks by Russell Heimlich</title>
+<link href="css/reset.css" rel="stylesheet" media="all">
+<link href="css/main.css" rel="stylesheet" media="all">
+<link href="css/print.css" rel="stylesheet" media="print">
+</head>
+<body>
+<h1>Start with Clean, Semantic Markup</h1>
+<h2>Clean CSS starts with clean HTML!</h2>
+<p>Use the right element for the job (<em class="code">h1-6</em>, <em class="code">p</em>, <em class="code">ol</em>, <em class="code">ul</em> &hellip;)</p>
+<h2>Less-known Elements</h2>
+<table>
+  <thead>
+    <tr>
+      <td>&nbsp;</td>
+      <th>Semantic meaning</th>
+      <th>Usability & Accessibility</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>&lt;blockquote&gt;</th>
+      <td>Longer quote</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th>&lt;q&gt;</th>
+      <td>Short quote</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th>&lt;cite&gt;</th>
+      <td>Who is cited</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th>&lt;samp&gt;</th>
+      <td>Output from computer</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th>&lt;dl&gt;</th>
+      <td>Definition list</td>
+      <td rowspan="3">W3C says use for dialogue and other not obvious purposes, others disagree.</td>
+    </tr>
+    <tr>
+      <th>&lt;dt&gt;</th>
+      <td>Definition term</td>
+    </tr>
+    <tr>
+      <th>&lt;dd&gt;</th>
+      <td>Definition data</td>
+    </tr>
+  </tbody>
+</table>
+<p>Definition lists (&lt;dl&gt;) are like other list elements except you can tie together items that have a direct relationship with each other (name/value sets).</p>
+<pre class="code">
+&lt;dl&gt;
+   &lt;dt&gt;Event&lt;/dt&gt;
+   &lt;dd&gt;Date&lt;/dd&gt;
+   &lt;dd&gt;Description&lt;/dd&gt;
+   &lt;dd&gt;Venue&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+<p class="source">Source: <a href="http://keryx.se/resources/html-elements/">Keryx (X)HTML Elements Best Practice Sheet</a></p>
+<script type="text/javascript" src="js/jquery.js"/>
+</script>
+</body>
+</html>

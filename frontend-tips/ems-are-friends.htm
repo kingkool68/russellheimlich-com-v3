@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Ems are Friends - Frontend Development Tips &amp; Tricks by Russell Heimlich</title>
+<link href="css/reset.css" rel="stylesheet" media="all">
+<link href="css/main.css" rel="stylesheet" media="all">
+<link href="css/print.css" rel="stylesheet" media="print">
+</head>
+<body>
+<h1>Ems are Friends</h1>
+<p> <q>&ldquo;Quite often using ems for any of that kind of layout stuff is actually preferable to using pixels because an em is related to your type so that there’s an inherent relationship between the layout and the typeface that you’re using.&rdquo;</q> <cite id="boulton">&mdash; Mark Boulton, <a href="http://www.sitepoint.com/blogs/2009/11/09/podcast-35-typographic-design-mark-boulton" target="_blank">SitePoint Podcast Interview</a></cite></p>
+
+<p>1 em is the height of a capital M and varies relative to the font size.</p>
+<p>Working with ems requires a lot of brain-straining calculations.</p>
+<pre class="code">
+so calculating 13px approximation =
+1/16*13 = 0.8125 - and I believe most people use 0.8em
+
+(and 1px border calculation was made the same way
+1/16*1 = 0.0625)
+
+but remember that after that, once the font size is set on the parent
+element the calculation becomes relative:
+so it wouldn't be : 1/16*10 = 0.625em
+or your font will turn out @ 0.8em * 0.625em = 0.5em (approx. 8px)
+
+Your base font setting (whatever it is - in this case 0.8em) is always
+equal to 1
+and as 1 in this case = 13px (approx)
+
+calulating the relative approximation for 10px becomes
+1/13*10 = 0.77
+
+which equates to 0.77em (this theory works with percentages too) 
+</pre>
+<p><cite>&mdash; <a href="http://www.webmasterworld.com/forum83/1082.htm">SuzyUK tries to explain pixel to em conversion</a></cite></p>
+<p>Resetting the &lt;body&gt; font-size to 62.5% makes life easier! (just divide by 10)</p>
+<pre class="code">
+body {
+font-size:62.5%;
+}
+
+1em = 10px
+
+0.4em = 4px
+
+96em = 960px
+</pre>
+<p>Using relative units for layouts makes page zooming work in older browsers</p>
+<p>Avoid declaring a <em class="code">font-size</em> on containers</p>
+<p class="source">Source: <a href="http://www.maratz.com/blog/archives/2005/10/21/typetesters-base-font-size/">Typetester&rsquo;s base font size</a></p>
+<script type="text/javascript" src="js/jquery.js"/>
+</script>
+</body>
+</html>

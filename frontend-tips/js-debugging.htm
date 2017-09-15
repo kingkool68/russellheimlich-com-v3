@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Cross-browser JavaScript Debugging - Frontend Development Tips &amp; Tricks by Russell Heimlich</title>
+<link href="css/reset.css" rel="stylesheet" media="all">
+<link href="css/main.css" rel="stylesheet" media="all">
+<link href="css/print.css" rel="stylesheet" media="print">
+</head>
+<body>
+<h1>Cross-browser JavaScript Debugging</h1>
+<p>Using <em class="code">alert()</em> is annoying!</p>
+<p><em class="code">console.log()</em> rocks!</p>
+<pre class="code">
+var thing = 0;
+   &hellip;complicated JavaScript happens here&hellip;
+console.log(thing);
+</pre>
+<p>...unless you need to debug in IE which doesn't understand <em class="code">console.log()</em></p>
+<p>Use <em class="code">document.title</em> instead! (especially when debugging events)</p>
+<pre class="code">
+var thing = 0;
+   &hellip;complicated JavaScript happens here&hellip;
+document.title = thing;
+</pre>
+<p>Move your mouse around and look at the top of your browser.</p>
+<script type="text/javascript" src="js/jquery.js" /></script>
+<script type="text/javascript" />
+$(document).ready(function(){
+   $().mousemove(function(e){
+      document.title = 'Your mouse position is ' + e.pageX +', '+ e.pageY;
+   }); 
+})
+</script>
+</body>
+</html>

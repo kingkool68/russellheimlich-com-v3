@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Booger Test</title>
+<style type="text/css">
+booger {
+border:2px solid yellow;
+color:#00FF00;
+display:block;
+margin-bottom:1em;
+width:125px;
+}
+booger h3 {
+color:#360;
+}
+booger p {
+color:#CF0;
+}
+</style>
+<script type="text/javascript">
+function scriptTest() {
+var boogers = document.getElementsByTagName('booger');
+if (boogers.length == 2) {
+	var result = 'passed';
+}
+else {
+	var result = 'failed';
+}
+alert('This browser found ' + boogers.length + '/2 <booger> tags. It ' + result + ' the test!');
+}
+</script>
+</head>
+
+<body>
+<h1>The Booger Test</h1>
+<p>Like the <a href="http://www.acidtests.org/">Acid Tests</a> for CSS compatibility in browsers, the Booger test aims to evaluate a browsers support for free-form elements. These are elements that aren't officially defined in the HTML spec but are still treated like they were in regards to CSS and JavaScript support. You can read more about this idea in my post <a href="http://www.russellheimlich.com/blog/death-to-the-div/">Death To The Div</a>.</p>
+<booger>This text should be green!</booger>
+<booger><h3>This is an h3 inside of a &lt;booger&gt; element.</h3><p>The &lt;h3&gt; should be dark green while this text in a &lt;p&gt; should be a yellowish green.</p></booger>
+<input type="button" value="Test JavaScript Support" onclick="scriptTest()">
+
+<h2>Browsers that passed the Booger Test</h2>
+<ul>
+<li>Mozilla Firefox 3.5 Mac</li>
+<li>Apple Safari 4 Mac</li>
+<li>Google Chrome Mac/Win</li>
+<li>Mozilla Firefox 3 Win</li>
+</ul>
+
+<h2>Browsers that failed the Booger Test</h2>
+<ul>
+<li>Microsoft IE6+ - Failed CSS, Passed JavaScript portion</li>
+<li>Mozilla Firefox 2 Win - Failed CSS, Passed JavaScript portion</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>&lt;HTML&gt; is the new &lt;BODY&gt; - Frontend Development Tips &amp; Tricks by Russell Heimlich</title>
+<link href="css/reset.css" rel="stylesheet" media="all">
+<link href="css/main.css" rel="stylesheet" media="all">
+<link href="css/print.css" rel="stylesheet" media="print">
+</head>
+<body>
+<h1>&lt;HTML&gt; is the new &lt;BODY&gt;</h1>
+<p>No need to create a wrapper div. You've already got one!</p>
+<h2>Lame!</h2>
+<pre class="code">
+body {
+	background-color: #f00;
+}
+
+#stupid-unnecessary-wrapper {
+	background-color:#fff;
+	width:96em;
+	margin:0 auto;
+}
+</pre>
+<h2>Jawesome!</h2>
+<pre class="code">
+html {
+	background-color: #f00;
+}
+
+body {
+	background-color:#fff;
+	width:96em;
+	margin:0 auto;
+}
+</pre>
+<script type="text/javascript" src="js/jquery.js"/>
+</script>
+</body>
+</html>

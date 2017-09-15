@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<!-- This site is SEO optimized by wpSEO (http://www.wpseo.org) -->
+<title>Developers: Stop Whining About IE6 » CSS/HTML, Rant » Russell Heimlich</title>
+<meta name="description" content="I&#039;m sick of the developer community whining and moaning about IE6. It&#039;s amazing how many different campaigns have been created" />
+<meta name="keywords" content="Start with a reset stylesheet, Use a strict HTML doctype, Don&#039;t be afraid of CSS conditional hacks, Learn to love the AlphaImageLoader filter for transparent PNGs, Learn to clear floats the simple way, Caught, Digg, HTML, Learn, This" />
+
+<link rel="shortcut icon" href="../../favicon.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="generator" content="WordPress 4.4.2" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="../wp-content/themes/Photocast_Theme/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Russell Heimlich RSS Feed" href="../../../feeds.feedburner.com/RussellHeimlich.xml" />
+<link rel="pingback" href="../xmlrpc.php.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Russell Heimlich &raquo; Developers: Stop Whining About IE6 Comments Feed" href="feed/index.rss" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.russellheimlich.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-syntax-css-css'  href='../wp-content/plugins/wp-syntax/css/wp-syntax-ver=1.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='../wp-content/plugins/jetpack/css/jetpack-ver=3.9.1.css' type='text/css' media='all' />
+<!-- This site uses the Google Analytics by Yoast plugin v5.4.6 - Universal disabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-50793-3']);
+	_gaq.push(['_gat._forceSSL']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+<!-- / Google Analytics by Yoast -->
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-ver=1.11.3.js'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min-ver=1.2.1.js'></script>
+<link rel='https://api.w.org/' href='../wp-json/index.json' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc.php-rsd.xml" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Firebug Gets A Little Buggy' href='../firebug-gets-a-little-buggy/index.html' />
+<link rel='next' title='Busy Day, Messy Desk' href='../busy-day-messy-desk/index.html' />
+<meta name="generator" content="WordPress 4.4.2" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='../index-p=1763.html' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed-url=http-%7C%7Cwww.russellheimlich.com%7Cblog%7Cdevelopers-stop-whining-about-ie6%7C.xml" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed-url=http-%7C%7Cwww.russellheimlich.com%7Cblog%7Cdevelopers-stop-whining-about-ie6%7C&amp;format=xml.xml" />
+<script type="text/javascript">
+	window._se_plugin_version = '8.1.4';
+</script>
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style>
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Developers: Stop Whining About IE6" />
+<meta property="og:url" content="http://www.russellheimlich.com/blog/developers-stop-whining-about-ie6/" />
+<meta property="og:description" content="I&#8217;m sick of the developer community whining and moaning about IE6. It&#8217;s amazing how many different campaigns have been created in an attempt to get people to upgrade. From the simple br…" />
+<meta property="article:published_time" content="2009-08-13T03:43:03+00:00" />
+<meta property="article:modified_time" content="2009-08-13T03:43:03+00:00" />
+<meta property="og:site_name" content="Russell Heimlich" />
+<meta property="og:image" content="http://www.russellheimlich.com/blog/wp-content/uploads/2009/08/i-want-you-to-stop-whining.jpg" />
+<meta property="og:image:width" content="374" />
+<meta property="og:image:height" content="500" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary" />
+<!-- wp thread comment 1.4.9.4.002 -->
+<style type="text/css" media="screen">.nothing{}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+	<div id="headerimg">
+		<!--h1><a href="http://www.russellheimlich.com/blog/">Russell Heimlich</a></h1>
+		<div class="description">The Blog of Russell Heimlich</div-->
+		<a href="../../../russellheimlich.com/blog/index.html"><img src="../../images/layout/header-title.gif" /></a>
+	</div>
+</div>
+<div id="header-ads" class="banner-ads"><script type="text/javascript"><!--
+google_ad_client = "pub-9571026409625337";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+//2007-08-02: RH-blog-headerbanner
+google_ad_channel = "2221790727";
+google_color_border = "EEEEEE";
+google_color_bg = "FFFFFF";
+google_color_link = "FFFFFF";
+google_color_text = "666666";
+google_color_url = "0099FF";
+google_ui_features = "rc:6";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+	<div id="content" class="widecolumn">
+				
+  	
+		<div class="post" id="post-1763">
+			<span class="post-date">August 12th, 2009 <!-- by Russell Heimlich --></span>
+			<h2><a href="index.html" rel="bookmark" title="Permanent Link: Developers: Stop Whining About IE6">Developers: Stop Whining About IE6</a></h2>
+	
+			<div class="entrytext">
+				<p><img src="../wp-content/uploads/2009/08/i-want-you-to-stop-whining.jpg" alt="I WANT YOU TO STOP WHINING" title="I WANT YOU TO STOP WHINING" width="374" height="500" class="alignnone size-full wp-image-1772" /></p>
+<p>I&#8217;m sick of the developer community whining and moaning about IE6. It&#8217;s amazing how many different campaigns have been created in an attempt to get people to upgrade. From the simple brochure sites like <a href="http://www.stopie6.com/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.stopie6.com/', 'stopie6.com']);" >stopie6.com</a> to the unethical <a href="http://ie6update.com/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://ie6update.com/', 'IE6 update script']);" >IE6 update script</a> which tricks a user into thinking an IE upgrade is a critical update. There was even a <a href="http://www.cnn.com/2009/TECH/08/06/internet.explorer.six/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.cnn.com/2009/TECH/08/06/internet.explorer.six/', 'CNN story about the anti-IE campaign']);" >CNN story about the anti-IE campaign</a> on the front page (which I think they ran mostly because they stood to benefit from people upgrading). And lets not forget the jovial tweets when news broke that <a href="http://www.techcrunch.com/2009/07/14/youtube-will-be-next-to-kiss-ie6-support-goodbye/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.techcrunch.com/2009/07/14/youtube-will-be-next-to-kiss-ie6-support-goodbye/', 'YouTube would be dropping support for IE6']);" >YouTube would be dropping support for IE6</a>.</p>
+<p>The only major site that has a valid plan for leaving IE6 behind is Digg.com which was <a href="http://blog.digg.com/?p=878" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.digg.com/?p=878', 'a business decision']);" >a business decision</a>. According to their stats, IE6 accounts for 10% of visits and 5% of all pageviews. The biggest IE6 headaches for Digg is supporting the functionality to digg a story, bury a story, or leave a comment. IE6 only accounts for a mere 1% of these actions which Digg can&#8217;t justify the extra development time needed to support them for such a small group of users. They even conducted a survey to find out why people don&#8217;t upgrade their browsers with a majority of the respondents stating they aren&#8217;t allowed or they don&#8217;t have the proper rights to install new software on their computers. </p>
+<p><a href="http://blog.digg.com/?p=878" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.digg.com/?p=878', '']);" ><img src="../wp-content/uploads/2009/08/digg-ie6-survey.jpg" alt="Digg IE6 Survey chart" title="Digg IE6 Survey chart" width="512" height="175" class="alignnone size-full wp-image-1771" srcset="../wp-content/uploads/2009/08/digg-ie6-survey-300x102.jpg 300w, ../wp-content/uploads/2009/08/digg-ie6-survey.jpg 512w" sizes="(max-width: 512px) 100vw, 512px" /></a></p>
+<p>All of this hoopla so the lives of developers are easier. After all it is the job of developers to build a site and make sure it works across a variety of operating systems, browsers, and devices in order to serve its audience. Martin Ringlein put it best in his post <a href="http://marylandmedia.com/2008/11/stop-being-a-dick-support-ie6/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://marylandmedia.com/2008/11/stop-being-a-dick-support-ie6/', 'Stop being a dick, support IE6']);" >Stop being a dick, support IE6</a>, &#8220;We are in the business of creating usable, accessible and intuitive experiences for our users; we are not in the business of changing users, user agents and user behavior all in a pursuit for what we’ve deemed a &#8216;better&#8217; web.&#8221; </p>
+<p>I became a developer because I enjoyed solving problems. Internet Explorer is just another obstacle to get over when solving a problem. Rather than wasting energy on things I couldn&#8217;t control like trying to persuade the public to upgrade, I dove into learning how to get past the quirks of IE. Here are my 5 tips:</p>
+<ol>
+<li><strong>Start with a reset stylesheet</strong> &#8211; This removes any default styles set by the browser so you can start styling on a consistent base. I prefer <a href="http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/', 'Eric Myer&#8217;s CSS Reset Reloaded']);" >Eric Myer&#8217;s CSS Reset Reloaded</a> , but there are <a href="http://perishablepress.com/press/2007/10/23/a-killer-collection-of-global-css-reset-styles/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://perishablepress.com/press/2007/10/23/a-killer-collection-of-global-css-reset-styles/', 'many to choose from']);" >many to choose from</a>.</li>
+<li><strong>Use a strict HTML doctype</strong> &#8211; <a href="http://www.alistapart.com/articles/doctype/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.alistapart.com/articles/doctype/', 'Doctypes']);" >Doctypes</a> tell the browser how to interpret the HTML and transitional and loose doctypes introduce rendering quirks known as triggering &#8220;<a href="http://www.quirksmode.org/css/quirksmode.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.quirksmode.org/css/quirksmode.html', 'quirksmode']);" >quirksmode</a>&#8220;. Any <a href="http://www.456bereastreet.com/archive/200904/using_an_xml_declaration_triggers_quirks_mode_in_ie_6/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.456bereastreet.com/archive/200904/using_an_xml_declaration_triggers_quirks_mode_in_ie_6/', 'XML doctype']);" >XML doctype</a> (including XHTML flavors) triggers quirks mode in IE as well. </li>
+<li><strong>Don&#8217;t be afraid of <a href="http://www.456bereastreet.com/archive/200411/the_underscore_hack/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.456bereastreet.com/archive/200411/the_underscore_hack/', 'CSS conditional hacks']);" >CSS conditional hacks</a></strong> &#8211; Did you know you can send IE a different property by putting an underscore in front of it? It works like this:
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #6666ff;">.style</span> <span style="color: #00AA00;">&#123;</span>
+<span style="color: #000000; font-weight: bold;">margin-left</span><span style="color: #00AA00;">:</span><span style="color: #933;">15px</span><span style="color: #00AA00;">;</span> //Caught by every browser
+_margin-left<span style="color: #00AA00;">:</span><span style="color: #933;">10px</span><span style="color: #00AA00;">;</span> //Caught by IE <span style="color: #cc66cc;">6</span> &amp; <span style="color: #cc66cc;">7</span>
+<span style="color: #6666ff;">.margin-left</span><span style="color: #00AA00;">:</span><span style="color: #933;">8px</span><span style="color: #00AA00;">;</span> //Only caught by IE6
+<span style="color: #00AA00;">&#125;</span></pre></td></tr></table></div>
+
+<p>You can also use <a href="http://www.quirksmode.org/css/condcom.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.quirksmode.org/css/condcom.html', 'conditional stylesheets']);" >conditional stylesheets</a> to serve different stylesheets but that becomes difficult to maintain.
+</li>
+<li><strong>Learn to love the <a href="http://www.belafontecode.com/create-transparent-pngs-in-ie6-using-alphaimageloader-no-hacks/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.belafontecode.com/create-transparent-pngs-in-ie6-using-alphaimageloader-no-hacks/', 'AlphaImageLoader filter']);" >AlphaImageLoader filter</a> for transparent PNGs</strong> &#8211; There is no way around it.</li>
+<li><strong>Learn to clear floats the simple way</strong> &#8211; Just set the <a href="http://www.quirksmode.org/css/clearing.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.quirksmode.org/css/clearing.html', '&#8220;overflow&#8221; property of the container to auto or hidden']);" >&#8220;overflow&#8221; property of the container to auto or hidden</a> and set the width or height to something other than auto. This applies to all browsers not just IE. I hate seeing the overly complicated <a href="http://www.positioniseverything.net/easyclearing.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.positioniseverything.net/easyclearing.html', 'clearfix solution']);" >clearfix solution</a>.</li>
+</ol>
+<p>Other tips for taming IE quirks:</p>
+<ul>
+<li><a href="http://sixrevisions.com/web-development/definitive-guide-to-taming-the-ie6-beast/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://sixrevisions.com/web-development/definitive-guide-to-taming-the-ie6-beast/', 'Definitive Guide to Taming the IE6 Beast']);" >Definitive Guide to Taming the IE6 Beast</a> &#8211; SixRevisions.com</li>
+<li><a href="http://www.sitepoint.com/blogs/2009/03/06/10-fixes-for-ie6-problems/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.sitepoint.com/blogs/2009/03/06/10-fixes-for-ie6-problems/', '10 Fixes for IE6 Problems']);" >10 Fixes for IE6 Problems</a> &#8211; Sitepoint.com</li>
+</ul>
+<p>So if studying up on these workarounds and techniques sound like too much work, then maybe you shouldn&#8217;t be a developer. Perhaps a professional lobbyist is right up your alley. They&#8217;re pretty good at ignoring the details of reality. </p>
+<p>Here&#8217;s a list of some of the more prominent anti-IE6 sites:</p>
+<ul>
+<li><a href="http://www.stopie6.com/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.stopie6.com/', 'StopIE6.com']);" >StopIE6.com</a></li>
+<li><a href="http://ie6update.com/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://ie6update.com/', 'IE6Update.com']);" >IE6Update.com</a></li>
+<li><a href="http://www.stoplivinginthepast.com/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.stoplivinginthepast.com/', 'StopLivingInThePast.com']);" >StopLivingInThePast.com</a></li>
+<li><a href="http://www.saveie6.com/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.saveie6.com/', 'SaveIE6.com']);" >SaveIE6.com</a> (April Fools Joke)</li>
+<li><a href="http://iedeathmarch.org/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://iedeathmarch.org/', 'IEDeathMarch.org']);" >IEDeathMarch.org</a></li>
+<li><a href="http://www.dearie6.com/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.dearie6.com/', 'DearIE6.com']);" >DearIE6.com</a></li>
+<li><a href="http://idroppedie6.com/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://idroppedie6.com/', 'IDroppedIE6.com']);" >IDroppedIE6.com</a></li>
+</ul>
+<p>And David DeSandro <a href="http://desandro.com/articles/i-like-ie6-because" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://desandro.com/articles/i-like-ie6-because', 'agrees with my attitude towards IE6']);" class="broken_link">agrees with my attitude towards IE6</a>.</p>
+	
+							
+			</div>
+		<p class="postmetadata alt">
+					Posted at 11:43 pm in <a href="../tags/coding/csshtml/index.html" rel="category tag">CSS/HTML</a>, <a href="../tags/rant/index.html" rel="category tag">Rant</a> 
+						
+						<br />				</p>
+		<div id="related-content">
+  
+			<div id="related-links">            
+        	<h5>Related Posts</h5>
+			<ul><li><a href="../../../russellheimlich.com/blog/pure-css-shapes-triangles-delicious-logo-and-hearts/index.html" rel="bookmark" title="20Jul09">Pure CSS Shapes: Triangles, Delicious Logo, and Hearts</a></li>
+
+<li><a href="../../../russellheimlich.com/blog/yaml-builder-is-great-for-quick-css-layouts/index.html" rel="bookmark" title="26Sep07">YAML Builder Is Great For Quick CSS Layouts</a></li>
+
+<li><a href="../../../russellheimlich.com/blog/death-to-the-div/index.html" rel="bookmark" title="01Sep09">Death To The Div</a></li>
+
+<li><a href="../../../russellheimlich.com/blog/twitter-hackings-make-mainstream-news/index.html" rel="bookmark" title="06Jan09">Twitter Hackings Make Mainstream News</a></li>
+
+<li><a href="../../../russellheimlich.com/blog/hot-or-not-for-xhtml-code/index.html" rel="bookmark" title="19Feb08">Hot Or Not For XHTML Code</a></li>
+</ul><!-- Similar Posts took 0.350 ms (cached) -->            <h5>Recent Posts</h5>
+			<ul><li><a href="../../../russellheimlich.com/blog/taking-notes-with-nvalt-and-epistle/index.html" rel="bookmark" title="29Jan12">Taking Notes With nvAlt And Epistle</a></li>
+
+<li><a href="../../../russellheimlich.com/blog/pinterest-vs-gimmiebar/index.html" rel="bookmark" title="05Jan12">Pinterest Vs. Gimmiebar</a></li>
+
+<li><a href="../../../russellheimlich.com/blog/my-stats-from-2011/index.html" rel="bookmark" title="02Jan12">My Stats From 2011</a></li>
+
+<li><a href="../../../russellheimlich.com/blog/replacement-pads-for-sonys-mdr-v6-headphones/index.html" rel="bookmark" title="09Dec11">Replacement Pads For Sony&#8217;s MDR-V6 Headphones</a></li>
+
+<li><a href="../../../russellheimlich.com/blog/unmatched-styles-css-off-was-slimey-fun/index.html" rel="bookmark" title="04Nov11">Unmatched Style&#8217;s CSS Off Was Slimey Fun</a></li>
+</ul><!-- Recent Posts took 0.276 ms (cached) -->        	</div>
+                  	<div id="ads">
+            <script type="text/javascript"><!--
+google_ad_client = "pub-9571026409625337";
+google_ad_width = 300;
+google_ad_height = 250;
+google_ad_format = "300x250_as";
+google_ad_type = "text_image";
+//2007-07-29: RH-blog-lrgSquare
+google_ad_channel = "7066055371";
+google_color_border = "EEEEEE";
+google_color_bg = "FFFFFF";
+google_color_link = "FFFFFF";
+google_color_text = "999999";
+google_color_url = "0099FF";
+//-->
+</script><script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+            </div>
+		</div>
+		</div>
+		
+	  <!-- You can start editing here. -->
+      <!-- If comments are open, but there are no comments. -->
+        <h3 id="respond">Leave a Comment of Your Own</h3>
+    <form action="http://www.russellheimlich.com/blog/wp-comments-post.php" method="post" id="commentform">
+        <p>
+      <input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+      <label for="author"><small>Name
+      (required)      </small></label>
+    </p>
+    <p>
+      <input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+      <label for="email"><small>Mail (will not be published)
+      (required)      </small></label>
+    </p>
+    <p>
+      <input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+      <label for="url"><small>Website</small></label>
+    </p>
+        <!--<p><small><strong>XHTML:</strong> You can use these tags: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;s&gt; &lt;strike&gt; &lt;strong&gt; </small></p>-->
+    <textarea name="comment" id="comment" rows="10" tabindex="4"></textarea>
+    <input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+    <input type="hidden" name="comment_post_ID" value="1763" />
+    <p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="9f5f242bda" /></p>		<p class="antispam-group antispam-group-q" style="clear: both;">
+			<label>Current ye@r <span class="required">*</span></label>
+			<input type="hidden" name="antspm-a" class="antispam-control antispam-control-a" value="2016" />
+			<input type="text" name="antspm-q" class="antispam-control antispam-control-q" value="4.2" autocomplete="off" />
+		</p>
+		<p class="antispam-group antispam-group-e" style="display: none;">
+			<label>Leave this field empty</label>
+			<input type="text" name="antspm-e-email-url-website" class="antispam-control antispam-control-e" value="" autocomplete="off" />
+		</p>
+<p class="comment-subscription-form"><input type="checkbox" name="subscribe_comments" id="subscribe_comments" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-label" for="subscribe_comments">Notify me of follow-up comments by email.</label></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts by email.</label></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="185"/></p><p><input type="hidden" id="comment_reply_ID" name="comment_reply_ID" value="0" /><input type="hidden" id="comment_reply_dp" name="comment_reply_dp" value="0" /></p><div id="cancel_reply" style="display:none;"><a href="javascript:void(0)" onclick="movecfm(null,0,1,null);" style="color:red;">Click to cancel reply</a></div><script type="text/javascript">
+/* <![CDATA[ */
+var commentformid = "commentform";
+var USERINFO = false;
+var atreply = "no";
+/* ]]> */
+</script>
+<script type="text/javascript" src="../wp-content/plugins/wordpress-thread-comment/wp-thread-comment.js.php-jsver=common.html"></script>
+  </form>
+    </div>
+	
+		</div>
+
+<div class="footer"> <a title="www.russellheimlich.com/video.html" href="../../video.html">Video</a> | <a title="www.russellheimlich.com/photoo.html" href="../../photo.html">Photo</a> | <a title="www.russellheimlich.com/development.html" href="../../development.html">Development</a> | <a title="www.russellheimlich.com/distribute.html" href="../../distribute.html">Distribute</a><br/>  <a title="www.russellheimlich.com/resume.html" href="../../resume.html">Resume</a> | <a title="Contact Me!" href="../../contact.html">Contact</a> | <a title="Subscribe via RSS" href="../../../feeds.feedburner.com/RussellHeimlich.xml"><img src="../wp-content/themes/Photocast_Theme/images/feed-icon-16x16.png"/></a> |  <!-- AddThis Bookmark Button BEGIN -->  <a target="_blank" title="Bookmark using any bookmark manager!" onclick="window.open('http://www.addthis.com/bookmark.php?wt=nw&amp;pub=kingkool68&amp;url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title), 'addthis', 'scrollbars=yes,menubar=no,width=620,height=520,resizable=yes,toolbar=no,location=no,status=no,screenX=200,screenY=100,left=200,top=100'); return false;" href="http://www.addthis.com/bookmark.php"><img border="0" alt="AddThis Social Bookmark Button" src="../wp-content/themes/Photocast_Theme/images/add_bookmark.png"/></a>  <!-- AddThis Bookmark Button END --></div>	<div style="display:none">
+	</div>
+<script type='text/javascript' src='../wp-content/plugins/akismet/_inc/form-ver=3.1.7.js'></script>
+<script type='text/javascript' src='../wp-content/plugins/anti-spam/js/anti-spam-4.2.js'></script>
+<script type='text/javascript' src='../../../s0.wp.com/wp-content/js/devicepx-jetpack-ver=201605.js'></script>
+<script type='text/javascript' src='../../../s.gravatar.com/js/gprofiles-ver=2016Febaa.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/plugins/jetpack/modules/wpgroho-ver=4.4.2.js'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.min-ver=4.4.2.js'></script>
+<script type='text/javascript' src='http://stats.wp.com/e-201605.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:3.9.1',blog:'40332112',post:'1763',tz:'-5',srv:'www.russellheimlich.com'} ]);
+	_stq.push([ 'clickTrackerInit', '40332112', '1763' ]);
+</script>
+<script>function lc_get_cookie(name) {var c = document.cookie;if (c.indexOf(name) != -1) {var x = c.indexOf(name)+name.length+1;var y = c.indexOf(";",x);if (y < 0) y = c.length;return decodeURIComponent(c.substring(x,y));} else return "";}if ((d = document.getElementById("commentform")) != null) { e = d.elements;var z = lc_get_cookie("comment_author_email_ce3c7d8c5a080bad54c9fcdf0fd138c8");if (z != "") e["email"].value = z;z = lc_get_cookie("comment_author_ce3c7d8c5a080bad54c9fcdf0fd138c8");if (z != "") e["author"].value = z.replace(/\+/g, " ");z = lc_get_cookie("comment_author_url_ce3c7d8c5a080bad54c9fcdf0fd138c8");if (z != "") e["url"].value = z;}</script></body></html><!-- hyper cache 2016-02-07 11:29:41 -->

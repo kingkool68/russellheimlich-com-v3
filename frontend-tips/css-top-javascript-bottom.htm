@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CSS Up Top, JavaScript at the Bottom - Frontend Development Tips &amp; Tricks by Russell Heimlich</title>
+<link href="css/reset.css" rel="stylesheet" media="all">
+<link href="css/main.css" rel="stylesheet" media="all">
+<link href="css/print.css" rel="stylesheet" media="print">
+</head>
+<body>
+<h1>CSS Up Top, JavaScript at the Bottom</h1>
+<h2>CSS Goes In The &lt;head&gt;</h2>
+<p>Styles need to be loaded first before the page is displayed. Otherwise there will be a flash and elements on the page will shift creating a bad experience.</p>
+<h2>JavaScript Belongs At The End of the Document</h2>
+<p>JavaScript can't do anything until the page loads anyway and <em class="code">&lt;script&gt;</em> tags block parallel downloading, resulting in longer page load times.</p>
+<pre class="code">
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
+&quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
+&lt;html&gt;<br>&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+&lt;title&gt;CSS Up Top, JavaScript at the Bottom - Frontend Development
+Tips &amp; Tricks by Russell Heimlich&lt;/title&gt;
+<strong>&lt;link href=&quot;css/reset.css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot;&gt;
+&lt;link href=&quot;css/main.css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot;&gt;</strong>
+&lt;/head&gt;
+&lt;body&gt;
+&hellip;
+<strong>&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.js&quot;&gt;&lt;/script&gt;</strong>
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>Source: <a href="http://developer.yahoo.com/performance/rules.html">Best Practices for Speeding Up Your Web Site - Yahoo!</a></p>
+<script type="text/javascript" src="js/jquery.js"/></script>
+</body>
+</html>

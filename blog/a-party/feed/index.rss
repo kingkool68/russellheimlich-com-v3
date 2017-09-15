@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: All Night Chick-fil-a Party</title>
+	<atom:link href="http://www.russellheimlich.com/blog/a-party/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.russellheimlich.com/blog/a-party/</link>
+	<description>The Blog of Russell Heimlich</description>
+	<lastBuildDate>Thu, 26 Nov 2015 14:13:48 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.2</generator>
+	<item>
+		<title>By: Russell Heimlich</title>
+		<link>http://www.russellheimlich.com/blog/a-party/comment-page-1/#comment-926</link>
+		<dc:creator><![CDATA[Russell Heimlich]]></dc:creator>
+		<pubDate>Fri, 05 Dec 2008 21:19:40 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/a-party/#comment-926</guid>
+		<description><![CDATA[Oh right, you guys didn&#039;t get there until about 11am. My B.]]></description>
+		<content:encoded><![CDATA[<p>Oh right, you guys didn&#8217;t get there until about 11am. My B.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Pammy</title>
+		<link>http://www.russellheimlich.com/blog/a-party/comment-page-1/#comment-923</link>
+		<dc:creator><![CDATA[Pammy]]></dc:creator>
+		<pubDate>Fri, 05 Dec 2008 17:35:26 +0000</pubDate>
+		<guid isPermaLink="false">http://www.russellheimlich.com/blog/a-party/#comment-923</guid>
+		<description><![CDATA[wrong! 6am on Wednesday, not 11am :) and one lady was there on wednesday morning at 12am!!]]></description>
+		<content:encoded><![CDATA[<p>wrong! 6am on Wednesday, not 11am <img src="http://www.russellheimlich.com/blog/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /> and one lady was there on wednesday morning at 12am!!</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

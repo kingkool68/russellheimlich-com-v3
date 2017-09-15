@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Untitled Document</title>
+<style type="text/css">
+p {
+margin:0
+}
+.wrap {
+float:left;/* no width allowed*/
+clear:left;
+border:1px solid #ccc;
+padding:10px;
+margin:0 0 10px;
+background:#f2f2f2;
+position:relative;
+}
+.image {
+height:150px;
+border:1px solid #000;
+background:red;
+line-height:150px;
+text-align:center;
+}
+.i1 {
+width:300px
+}/* cater for any width automatically*/
+.i2 {
+width:400px
+}
+.i3 {
+width:200px
+}
+.f {
+width:75px;
+height:75px;
+border:5px solid red;
+text-align:center;
+margin:1px 0 0;
+background:#ffc;
+}
+.fl {
+float:left
+}
+.fr {
+position:absolute;
+right:10px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="image i1">Image</p>
+  <p class="f fl">Text Left<br>
+    Text Left</p>
+  <p class="f fr">Text Right<br>
+    Text Right</p>
+</div>
+<div class="wrap">
+  <p class="image i2">Image</p>
+  <p class="f fl">Text Left<br>
+    Text Left</p>
+  <p class="f fr">Text Right<br>
+    Text Right</p>
+</div>
+<div class="wrap">
+  <p class="image i3">Image</p>
+  <p class="f fl">Text Left<br>
+    Text Left</p>
+  <p class="f fr">Text Right<br>
+    Text Right</p>
+</div>
+</body>
+</html>

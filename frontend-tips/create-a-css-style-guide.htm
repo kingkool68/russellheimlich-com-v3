@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Create A CSS Style Guide - Frontend Development Tips &amp; Tricks by Russell Heimlich</title>
+<link href="css/reset.css" rel="stylesheet" media="all">
+<link href="css/main.css" rel="stylesheet" media="all">
+<link href="css/print.css" rel="stylesheet" media="print">
+</head>
+<body>
+<h1>Create A CSS Style Guide</h1>
+<p>Especially if you're writing CSS with other people, keep things consistent so everyone is on the same page.</p>
+<p>Create formal guidelines to improve development productivity with CSS by organizing code and making it readable, and exchangeable among developers without a loss of productivity while &ldquo;diving-in&rdquo;.</p>
+<pre class="code">
+<strong>Naming convention</strong>
+Compose names using hyphen &ldquo;-&rdquo; separator. It is the same separator
+than the CSS language.
+For example, use composed names like:
+	/* CORRECT */
+	sales-order
+
+and not composed names like:
+	/* FORBIDDEN !!! */
+    	salesOrder,
+    	SalesOrder,
+        sales_order
+
+Use full English descriptions for names. Avoid using abbreviations.
+For example, use names like:
+	/* CORRECT */
+	.first-name,
+    	.last-name,
+    	.middle-initial
+
+rather than the shorter versions:
+	/* FORBIDDEN !!! */
+    	.f-name,
+    	.last-n,
+    	.m-i
+</pre>
+<p class="source">Source:<a href="http://www.nodewave.com/cms/content/view/css-coding-style-conventions--standards-guidelines-rules/coding-style-convention--standard-guideline-rule/">Our CSS Coding Style Conventions - nodewave.com</a></p>
+<script type="text/javascript" src="js/jquery.js"/>
+</script>
+</body>
+</html>

@@ -1,0 +1,846 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html xmlns="undefined">
+<head>
+<title>Interactive Price List</title>
+<script language="JavaScript" type="text/javascript">
+
+function batchCookieEsc(name, value) //Batch cookie function.  Takes the name of the cookie and the value of the cookie.
+{
+	var expire = new Date((new Date()).getTime() + 99 * 3600000); //Cookie expires 99 days after creation.
+		expire = "; expires=" + expire.toGMTString();
+	document.cookie = name + "=" + escape(value + ";") + expire;
+}
+
+function CheatSheet() //Creates Easy to read cheat sheet for prices.
+{
+var data = "MyCheatSheet;"
+var i = 1
+for (i = 1; i <= 23; i++)
+	{
+	data = data + document.form1[i+"a"].value + ";"
+	}
+	alert(data)
+batchCookieEsc(cheatSheet,data)
+window.open("cheatsheet.html","Cheet Sheet","")
+}
+
+function roundPrices() //Rounds prices
+{
+	var WholeHalf = document.form1.select2.value
+	if (WholeHalf == 0) //Rounds to nearest .50
+		{
+			var i = 1
+			for (i = 1; i <= 23; i++) //Repeats this code for all of the necessary "My Price"input (boxes 23 in this case).
+				{
+					var price = document.form1[i+"a"].value // Location of "My Price" input field.
+					var numSplit = price.split(".") // Splits the price at the decimal
+					var x = Number(numSplit[0]) //Value to the left of the decimal (dollar Value)
+					var y = Number(numSplit[1]) //Value to the right of the decimal (cent value)
+					
+					if (y<50 && y>0)
+						{
+							y = 50
+						}
+						
+					if (y>50)
+						{
+							y = 0
+							x = Number(x+1) //Rounds up the dollar value.
+						}
+					
+					var newNum = x + "." + y //Reconstructs the new rounded price.
+					newNum = Number(newNum)
+					document.form1[i + "a"].value = newNum.toFixed(2) //inserts the price into the correct field with two decimal places.
+					Calc(i) //Calculates new Profit value.
+					}
+				}
+	if (WholeHalf == 1) //Rounds to nearest .00
+		{
+			var i = 1
+			for (i = 1; i <= 23; i++) //Repeats this code for all of the necessary "My Price"input (boxes 23 in this case).
+				{
+					var price = document.form1[i+"a"].value // Location of "My Price" input field.
+					var numSplit = price.split(".") // Splits the price at the decimal
+					var x = Number(numSplit[0]) //Value to the left of the decimal (dollar Value)
+					var y = Number(numSplit[1]) //Value to the right of the decimal (cent value)
+										
+					if (y>0)
+						{
+							y = 0
+							x = Number(x+1) //Rounds up the dollar value.
+						}
+				
+					var newNum = x + "." + y //Reconstructs the new rounded price.
+					newNum = Number(newNum)
+					document.form1[i + "a"].value = newNum.toFixed(2) //inserts the price into the correct field with two decimal places.
+					Calc(i) //Calculates new Profit value.
+				}
+		}
+}
+
+function profCalc(col)
+{
+	var base = Math.round(document.form1[col + "c"].value*100)/100
+	var profit = Math.round(document.form1[col + "b"].value*100)/100 
+	var  price = Math.round((profit * 2 + base)*100)/100
+
+	if (profit == "0.00")
+		{
+			var price = base
+		}
+
+	document.form1[col + "b"].value = profit.toFixed(2)
+	document.form1[col + "a"].value = price.toFixed(2)
+	quant(col)
+}
+
+function dflt()//Sets all prices to default prices.
+{
+	var i = 1 //If you take this out the loop doesn't work right.
+	for (i = 1; i <= 23; i++)
+	{
+		document.form1[i + "a"].value = document.form1[i + "d"].value //d = default prices column.
+		Math.round(document.form1[i + "a"].value*100)/100
+		Calc(i)
+	}
+}
+
+function base() // Sets all of the "My Price" fields to the Base Price value. 
+{
+	var i = 1 //If you take this out, the loop doesn't work right.  
+	for (i = 1; i <= 23; i++) //Repeats this code for all of the necessary "My Price"input (boxes 23 in this case).
+	{
+		document.form1[i + "a"].value = document.form1[i + "c"].value //a refers to the position of the "My Price" field. ac refers to the position of the "Base" price field
+		//Math.round(document.form1[i + "a"].value*100)/100
+		Calc(i)
+	}
+}
+
+function total() //Adds up all of the sub totals.
+{
+	document.form1.total.value = 0
+	for (i = 1; i <= 23; i++)
+	{
+		var tot = Number(document.form1[i + "s"].value) + Number(document.form1.total.value)
+		document.form1.total.value = tot.toFixed(2) //shows value to 2 decimal places.
+	}
+}
+
+function quant(x) //Calculates Sub-Total based on Profit and Quantity. x = postion of row.
+{
+	var q = document.form1[x + "q"].value //Quantity column
+	var p = Math.round(document.form1[x + "b"].value*100)/100 //Profit column
+	var tot = p*q //Profit x Quantity = total
+	document.form1[x + "s"].value = tot.toFixed(2) //Sub-total Column. 
+	
+	total() //Calculates the total for all of the Sub Totals.
+}
+
+function discnt() //Macro command for adding/subtrcting percentages or dollar amounts to all of the prices at once.
+{
+	var disc = document.form1.discount.value
+	if (document.form1.selct.value == 1)//Running the dollar loop
+	{
+		if (document.form1.operator.value == 1) //Add discount value
+			{
+				var num = disc
+			}
+		if (document.form1.operator.value == 0) //Subtract discount value
+			{
+				var num = -Number(disc)
+			}
+		
+		var i = 1 //If this isn't there the loop doesn't work.
+		for (i = 1; i <= 23; i++) //Loop changes all of the "My Price values to reflect discount"
+			{
+				if (document.form1[i + "a"].value == "") //If no value, do nothing.
+					{
+					} 
+				else
+					{
+						document.form1[i + "a"].value = Number(document.form1[i + "a"].value) + Number(num)
+						Calc(i) //Calculates changes.
+					}
+			}
+		return(0)
+	}
+	if (document.form1.selct.value == 0)//Running the percent loop
+		{
+			if (document.form1.operator.value == 1) //Add Disccount value.
+				{
+					var num = (disc/100)
+				}
+			if (document.form1.operator.value == 0) //Subtract discount value
+				{
+					var num = -Number(disc/100)
+				}
+		}
+		var i=1	
+		for (i = 1; i <= 23; i++) //Loop changes all of the "My Price values to reflect discount"
+			{
+				if (document.form1[i + "a"].value == "")
+					{
+					}
+				else 
+					{
+						document.form1[i + "a"].value = Number(document.form1[i + "a"].value) * Number(num) + Number(document.form1[i + "a"].value)
+						Calc(i)
+					}
+			}
+}
+
+function Calc(col) //Rounds the number being called.  Col = the position of the field to be calculated.
+{
+	var base = Math.round(document.form1[col + "c"].value*100)/100
+	var price = Math.round(document.form1[col + "a"].value*100)/100 
+	var profit = Math.round((price - base)/2*100)/100 //Calculates the profit by subtracting the base price from the "My Price" then divides by 2 for Deviant Art's cut.  
+
+	if (price == "") 
+		{
+			var profit = ""
+		}
+	if (profit < 0)//Alerts user that they entered a number too low to calculate properly.
+		{
+			alert("Please enter a number higher than $" + base.toFixed(2)) 
+		}
+	document.form1[col + "b"].value = profit.toFixed(2) //b = Profit Column
+	document.form1[col + "a"].value = price.toFixed(2) //a = My Price Column.
+	quant(col) //Updates quantity field total to reflect change in price.
+}
+</script>
+<style type="text/css"> 
+body{padding:125px 0 0 0;
+  background-color: #BBC2BB;}
+ div#header{position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100px;}
+}
+ * html body{overflow:hidden;}
+ * html div#content{height:100%;
+  overflow:auto;}
+ .step1 {background-color: #88938D;}
+</style>
+</head>
+
+<body>
+<div id="header" class="step1">
+<form name="form1" id="form1" action="">
+<table width="85%" border="0" align="center" cellpadding="0">
+  <tr>
+    <td><div align="center">
+        <p>Round prices <strong>up</strong> to nearest
+          <select name="select2">
+            <option value="0">0.50</option>
+            <option value="1">1.00</option>
+          </select>
+          <input name="Go2" type="button" id="Go2" onclick="roundPrices()" value="Go" />
+        </p>
+        <p>
+          <select name="operator" id="operator">
+            <option value="1" selected="selected">Add</option>
+            <option value="0">Subtract</option>
+          </select>
+          <input name="discount" type="text" id="discount" size="6" maxlength="6" />
+          <select name="selct" id="selct">
+            <option value="1">dollars</option>
+            <option value="0" selected="selected">percent</option>
+          </select>
+          to/from all prices
+          <input name="Go" type="button" id="Go" onclick="discnt()" value="Go"/>
+          </p>
+        <p>
+          <input type="button" name="Button2" value="Create Cheat Sheet" onclick="CheatSheet()" />
+        </p>
+    </div>
+      <label></label>
+      <label></label>    </td>
+    <td><div align="center">
+        <p>Total = 
+          $
+          <input name="total" type="text" id="total" value="0.00" size="6" maxlength="6" />
+        </p>
+        <p>Set all prices to
+          <input name="default" type="button" id="default" value="Base Price" onclick="base()" />
+          <input type="button" name="Button" value="Default Price" onclick="dflt()" />
+          <input name="Reset" type="reset" value="Clear All" />
+        </p>
+        <p>
+          <label></label>
+        </p>
+    </div></td>
+  </tr>
+</table>
+</div>
+</div>
+<div id="content">
+  <div align="center"><em>Gallery/Matte  </em>
+  </div>
+  <p align="center"><strong>1.00</strong> </p>
+  <div align="center">
+    <table border="0">
+      <tr>
+        <td>Frames</td>
+        <td>Dimensions (in.)</td>
+        <td><div align="center">Default Price</div></td>
+        <td><div align="center">Base Price </div></td>
+        <td><div align="center">My Price </div></td>
+        <td><div align="center">My Profit </div></td>
+        <td><div align="center">Quantity &nbsp;</div></td>
+        <td><div align="center">Subtotal</div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>5x5</td>
+        <td>$
+          <input name="1d" type="text" id="1d" value="1.95" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="1c" type="text" id="1c" value="0.55" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="1a" type="text" id="1a" onchange="Calc(1)" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="1b" type="text" id="1b" size="6" maxlength="6" onchange="profCalc(1)" /></td>
+        <td><div align="center">
+            <input name="1q" type="text" id="1q" size="4"  value="0" onchange="quant(1)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="1s" type="text" id="1s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>8x8</td>
+        <td>$
+          <input name="2d" type="text" id="2d" value="11.95" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="2c" type="text" id="2c" value="1.45" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="2a" type="text" id="2a" size="6" maxlength="6" onchange="Calc(2)" /></td>
+        <td>$
+          <input name="2b" type="text" id="2b" size="6" maxlength="6" onchange="profCalc(2)" /></td>
+        <td><div align="center">
+            <input name="2q" type="text" id="2q" size="4" value="0" onchange="quant(2)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="2s" type="text" id="2s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>10x10</td>
+        <td>$
+          <input name="3d" type="text" id="3d" value="13.49" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="3c" type="text" id="3c" value="2.00" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="3a" type="text" id="3a" size="6" maxlength="6"onchange="Calc(3)" /></td>
+        <td>$
+          <input name="3b" onchange="profCalc(3)" type="text" id="3b" size="6" maxlength="6" /></td>
+        <td><div align="center">
+            <input name="3q" type="text" id="3q" size="4" value="0" onchange="quant(3)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="3s" type="text" id="3s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>20x20 </td>
+        <td>$
+          <input name="4d" type="text" id="4d" value="47.95" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="4c" type="text" id="4c" value="9.95" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="4a" type="text" id="4a" size="6" onchange="Calc(4)" /></td>
+        <td>$
+          <input name="4b" type="text" id="4b" size="6" maxlength="6" onchange="profCalc(4)" /></td>
+        <td><div align="center">
+            <input name="4q" type="text" id="4q" size="4" value="0" onchange="quant(4)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="4s" type="text" id="4s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+    </table>
+  </div>
+  <p align="center"><strong>1.20</strong></p>
+  <div align="center">
+    <table border="0">
+      <tr>
+        <td><div align="center">Frames</div></td>
+        <td><div align="center">Dimensions (In.) </div></td>
+        <td><div align="center">Default Price</div></td>
+        <td><div align="center">Base Price </div></td>
+        <td><div align="center">My Price </div></td>
+        <td><div align="center">My Profit </div></td>
+        <td><div align="center">Quantity &nbsp;</div></td>
+        <td><div align="center">Subtotal</div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>10x12 </td>
+        <td>$
+          <input name="5d" type="text" id="5d" value="13.79" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="5c" type="text" id="5c" value="2.60" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="5a" type="text" id="5a" size="6" onchange="Calc(5)" /></td>
+        <td>$
+          <input name="5b" type="text" id="5b" size="6"onchange="profCalc(5)" /></td>
+        <td><div align="center">
+            <input name="5q" type="text" id="5q" size="4"  value="0" onchange="quant(5)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="5s" type="text" id="5s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+    </table>
+  </div>
+  <p align="center"><strong>1.25</strong></p>
+  <div align="center">
+    <table border="0">
+      <tr>
+        <td><div align="center">Frames</div></td>
+        <td><div align="center">Dimensions (In.) </div></td>
+        <td><div align="center">Default Price</div></td>
+        <td><div align="center">Base Price </div></td>
+        <td><div align="center">My Price </div></td>
+        <td><div align="center">My Profit </div></td>
+        <td><div align="center">Quantity &nbsp;</div></td>
+        <td><div align="center">Subtotal</div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>4x5</td>
+        <td>$
+          <input name="6d" type="text" id="6d" value="1.95" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="6c" type="text" id="6c" value="0.28" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="6a" type="text" id="6a" size="6" onchange="Calc(6)" /></td>
+        <td>$
+          <input name="6b" type="text" id="6b" size="6" onchange="profCalc(6)" /></td>
+        <td><div align="center">
+            <input name="6q" type="text" id="6q" size="4"  value="0" onchange="quant(6)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="6s" type="text" id="6s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>8x10</td>
+        <td>$
+          <input name="7d" type="text" id="7d" value="12.95" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="7c" type="text" id="7c" value="2.31" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="7a" type="text" id="7a" size="6" onchange="Calc(7)" /></td>
+        <td>$
+          <input name="7b" type="text" id="7b" size="6" onchange="profCalc(7)" /></td>
+        <td><div align="center">
+            <input name="7q" type="text" id="7q" size="4" value="0" onchange="quant(7)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="7s" type="text" id="7s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+      <tr>
+        <td>yes</td>
+        <td>16x20</td>
+        <td>$
+          <input name="8d" type="text" id="8d" value="41.95" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="8c" type="text" id="8c" value="10.48" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="8a" type="text" id="8a" size="6" onchange="Calc(8)" /></td>
+        <td>$
+          <input name="8b" type="text" id="8b" size="6" onchange="profCalc(8)" /></td>
+        <td><div align="center">
+            <input name="8q" type="text" id="8q" size="4" value="0" onchange="quant(8)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="8s" type="text" id="8s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+    </table>
+  </div>
+  <p align="center"><strong>1.27 </strong></p>
+  <div align="center">
+    <table border="0">
+      <tr>
+        <td><div align="center">Frames</div></td>
+        <td><div align="center">Dimensions (In.) </div></td>
+        <td><div align="center">Default Price</div></td>
+        <td><div align="center">Base Price </div></td>
+        <td><div align="center">My Price </div></td>
+        <td><div align="center">My Profit </div></td>
+        <td><div align="center">Quantity &nbsp;</div></td>
+        <td><div align="center">Subtotal</div></td>
+      </tr>
+      <tr>
+        <td>yes</td>
+        <td>11x14 </td>
+        <td>$
+          <input name="9d" type="text" id="9d" value="14.95" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="9c" type="text" id="9c" value="3.19" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="9a" type="text" id="9a" size="6" onchange="Calc(9)" /></td>
+        <td>$
+          <input name="9b" type="text" id="9b" size="6" onchange="profCalc(9)" /></td>
+        <td><div align="center">
+            <input name="9q" type="text" id="9q" size="4"  value="0" onchange="quant(9)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="9s" type="text" id="9s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+    </table>
+  </div>
+  <p align="center"><strong>1.29</strong></p>
+  <div align="center">
+    <table border="0">
+      <tr>
+        <td><div align="center">Frames</div></td>
+        <td><div align="center">Dimensions (In.) </div></td>
+        <td><div align="center">Default Price</div></td>
+        <td><div align="center">Base Price </div></td>
+        <td><div align="center">My Price </div></td>
+        <td><div align="center">My Profit </div></td>
+        <td><div align="center">Quantity &nbsp;</div></td>
+        <td><div align="center">Subtotal</div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>8.5x11</td>
+        <td>$
+          <input name="10d" type="text" id="10d" value="13.49" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="10c" type="text" id="10c" value="2.00" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="10a" type="text" id="10a" size="6" onchange="Calc(10)" /></td>
+        <td>$
+          <input name="10b" type="text" id="10b" size="6" onchange="profCalc(10)" /></td>
+        <td><div align="center">
+            <input name="10q" type="text" id="10q" size="4"  value="0" onchange="quant(10)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="10s" type="text" id="10s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+    </table>
+  </div>
+  <p align="center"><strong>1.33</strong></p>
+  <div align="center">
+    <table border="0">
+      <tr>
+        <td><div align="center">Frames</div></td>
+        <td><div align="center">Dimensions (In.) </div></td>
+        <td><div align="center">Default Price</div></td>
+        <td><div align="center">Base Price </div></td>
+        <td><div align="center">My Price </div></td>
+        <td><div align="center">My Profit </div></td>
+        <td><div align="center">Quantity &nbsp;</div></td>
+        <td><div align="center">Subtotal</div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>9x12</td>
+        <td>$
+          <input name="11d" type="text" id="11d" value="13.49" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="11c" type="text" id="11c" value="2.60" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="11a" type="text" id="11a" size="6" onchange="Calc(11)" /></td>
+        <td>$
+          <input name="11b" type="text" id="11b" size="6" onchange="profCalc(11)" /></td>
+        <td><div align="center">
+            <input name="11q" type="text" id="11q" size="4"  value="0" onchange="quant(11)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="11s" type="text" id="11s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+      <tr>
+        <td>yes</td>
+        <td>18x24</td>
+        <td>$
+          <input name="12d" type="text" id="12d" value="45.95" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="12c" type="text" id="12c" value="13.23" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="12a" type="text" id="12a" size="6" onchange="Calc(12)" /></td>
+        <td>$
+          <input name="12b" type="text" id="12b" size="6" onchange="profCalc(12)" /></td>
+        <td><div align="center">
+            <input name="12q" type="text" id="12q" size="4" value="0" onchange="quant(12)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="12s" type="text" id="12s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+    </table>
+  </div>
+  <p align="center"><strong>1.40</strong></p>
+  <div align="center">
+    <table border="0">
+      <tr>
+        <td><div align="center">Frames</div></td>
+        <td><div align="center">Dimensions (In.) </div></td>
+        <td><div align="center">Default Price</div></td>
+        <td><div align="center">Base Price </div></td>
+        <td><div align="center">My Price </div></td>
+        <td><div align="center">My Profit </div></td>
+        <td><div align="center">Quantity &nbsp;</div></td>
+        <td><div align="center">Subtotal</div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>5x7</td>
+        <td>$
+          <input name="13d" type="text" id="13d" value="2.95" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="13c" type="text" id="13c" value="0.73" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="13a" type="text" id="13a" size="6" onchange="Calc(13)" /></td>
+        <td>$
+          <input name="13b" type="text" id="13b" size="6" onchange="profCalc(13)" /></td>
+        <td><div align="center">
+            <input name="13q" type="text" id="13q" size="4"  value="0" onchange="quant(13)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="13s" type="text" id="13s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+    </table>
+  </div>
+  <p align="center"><strong>1.43</strong></p>
+  <div align="center">
+    <table border="0">
+      <tr>
+        <td><div align="center">Frames</div></td>
+        <td><div align="center">Dimensions (In.) </div></td>
+        <td><div align="center">Default Price</div></td>
+        <td><div align="center">Base Price </div></td>
+        <td><div align="center">My Price </div></td>
+        <td><div align="center">My Profit </div></td>
+        <td><div align="center">Quantity &nbsp;</div></td>
+        <td><div align="center">Subtotal</div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>3.5x5</td>
+        <td>$
+          <input name="14d" type="text" id="14d" value="1.00" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="14c" type="text" id="14c" value="0.25" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="14a" type="text" id="14a" size="6" onchange="Calc(14)" /></td>
+        <td>$
+          <input name="14b" type="text" id="14b" size="6" onchange="profCalc(14)" /></td>
+        <td><div align="center">
+            <input name="14q" type="text" id="14q" size="4"  value="0" onchange="quant(14)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="14s" type="text" id="14s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+    </table>
+  </div>
+  <p align="center"><strong>1.50</strong></p>
+  <div align="center">
+    <table border="0">
+      <tr>
+        <td><div align="center">Frames</div></td>
+        <td><div align="center">Dimensions (In.) </div></td>
+        <td><div align="center">Default Price</div></td>
+        <td><div align="center">Base Price </div></td>
+        <td><div align="center">My Price </div></td>
+        <td><div align="center">My Profit </div></td>
+        <td><div align="center">Quantity &nbsp;</div></td>
+        <td><div align="center">Subtotal</div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>4x6</td>
+        <td>$
+          <input name="15d" type="text" id="15d" value="1.95" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="15c" type="text" id="15c" value="0.31" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="15a" type="text" id="15a" size="6" onchange="Calc(15)" /></td>
+        <td>$
+          <input name="15b" type="text" id="15b" size="6" onchange="profCalc(15)" /></td>
+        <td><div align="center">
+            <input name="15q" type="text" id="15q" size="4"  value="0" onchange="quant(15)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="15s" type="text" id="15s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>8x12</td>
+        <td>$
+          <input name="16d" type="text" id="16d" value="13.95" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="16c" type="text" id="16c" value="2.50" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="16a" type="text" id="16a" size="6" onchange="Calc(16)" /></td>
+        <td>$
+          <input name="16b" type="text" id="16b" size="6" onchange="profCalc(16)" /></td>
+        <td><div align="center">
+            <input name="16q" type="text" id="16q" size="4" value="0" onchange="quant(16)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="16s" type="text" id="16s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>10x15</td>
+        <td>$
+          <input name="17d" type="text" id="17d" value="16.95" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="17c" type="text" id="17c" value="4.25" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="17a" type="text" id="17a" size="6" onchange="Calc(17)" /></td>
+        <td>$
+          <input name="17b" type="text" id="17b" size="6" onchange="profCalc(17)" /></td>
+        <td><div align="center">
+            <input name="17q" type="text" id="17q" size="4" value="0" onchange="quant(17)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="17s" type="text" id="17s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>12x18</td>
+        <td>$
+          <input name="18d" type="text" id="18d" value="18.95" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="18c" type="text" id="18c" value="6.05" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="18a" type="text" id="18a" size="6" onchange="Calc(18)" /></td>
+        <td>$
+          <input name="18b" type="text" id="18b" size="6" onchange="profCalc(18)" /></td>
+        <td><div align="center">
+            <input name="18q" type="text" id="18q" size="4"  value="0" onchange="quant(18)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="18s" type="text" id="18s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>16x24</td>
+        <td>$
+          <input name="19d" type="text" id="19d" value="42.95" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="19c" type="text" id="19c" value="12.80" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="19a" type="text" id="19a" size="6" onchange="Calc(19)" /></td>
+        <td>$
+          <input name="19b" type="text" id="19b" size="6" onchange="profCalc(19)" /></td>
+        <td><div align="center">
+            <input name="19q" type="text" id="19q" size="4" value="0" onchange="quant(19)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="19s" type="text" id="19s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+      <tr>
+        <td>yes</td>
+        <td>20x30</td>
+        <td>$
+          <input name="20d" type="text" id="20d" value="49.95" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="20c" type="text" id="20c" value="13.99" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="20a" type="text" id="20a" size="6" onchange="Calc(20)" /></td>
+        <td>$
+          <input name="20b" type="text" id="20b" size="6" onchange="profCalc(20)" /></td>
+        <td><div align="center">
+            <input name="20q" type="text" id="20q" size="4" value="0" onchange="quant(20)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="20s" type="text" id="20s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>24x36</td>
+        <td>$
+          <input name="21d" type="text" id="21d" value="58.97" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="21c" type="text" id="21c" value="18.00" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="21a" type="text" id="21a" size="6" onchange="Calc(21)" /></td>
+        <td>$
+          <input name="21b" type="text" id="21b" size="6" onchange="profCalc(21)" /></td>
+        <td><div align="center">
+            <input name="21q" type="text" id="21q" size="4" value="0" onchange="quant(21)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="21s" type="text" id="21s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>30x40</td>
+        <td>$
+          <input name="22d" type="text" id="22d" value="64.97" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="22c" type="text" id="22c" value="22.70" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="22a" type="text" id="22a" size="6" onchange="Calc(22)" /></td>
+        <td>$
+          <input name="22b" type="text" id="22b" size="6" onchange="profCalc(22)" /></td>
+        <td><div align="center">
+            <input name="22q" type="text" id="22q" size="4" value="0" onchange="quant(22)" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="22s" type="text" id="22s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+    </table>
+  </div>
+  <p align="center"><strong>2.00</strong></p>
+  <div align="center">
+    <table border="0">
+      <tr>
+        <td><div align="center">Frames</div></td>
+        <td><div align="center">Dimensions (In.) </div></td>
+        <td><div align="center">Default Price</div></td>
+        <td><div align="center">Base Price </div></td>
+        <td><div align="center">My Price </div></td>
+        <td><div align="center">My Profit </div></td>
+        <td><div align="center">Quantity &nbsp;</div></td>
+        <td><div align="center">Subtotal</div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>4x8</td>
+        <td>$
+          <input name="23d" type="text" id="23d" value="2.49" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="23c" type="text" id="23c" value="0.55" size="6" maxlength="6" /></td>
+        <td>$
+          <input name="23a" type="text" id="23a" size="6" onchange="Calc(23)" /></td>
+        <td>$
+          <input name="23b" type="text" id="23b" size="6" onchange="profCalc(23)" /></td>
+        <td><div align="center">
+            <input name="23q" type="text" id="23q"  value="0" onchange="quant(23)" size="4" maxlength="4" />
+          </div></td>
+        <td><div align="center">$
+            <input name="23s" type="text" id="23s" size="6" value="0" maxlength="6" />
+          </div></td>
+      </tr>
+    </table>
+    <p align="right">Price Source: <a href="http://help.deviantart.com/337/" target="_blank">FAQ#337 </a></p>
+  </div>
+</div>
+
