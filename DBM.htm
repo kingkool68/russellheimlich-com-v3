@@ -57,14 +57,14 @@ function parseCookie(name) //Reads the cookie and extracts different values depe
 		{
 			firstChar += name.length + 1 // skip "name" and "=" to begin extracting where the actual value of the cookie is.
    			lastChar = theBigCookie.indexOf(';', firstChar) // Find the end of the value string (i.e. the next ';').
-			
+
 			if(lastChar == -1) lastChar = theBigCookie.length
 			return unescape(theBigCookie.substring(firstChar, lastChar)) // Returns the extracted value.
 		}
 	if(firstChar == -1)
 		{
 			return "NC"
-		} 
+		}
 }
 
 function PrefWriteCookie() //Write cookies to remember initial settings.
@@ -89,7 +89,7 @@ function PrefWriteCookie() //Write cookies to remember initial settings.
 	batchCookieEsc("ratioCheck", tot)
 	batchCookieEsc("color",borderColor)
 	batchCookieUnEsc("Val",Val)
-		
+
 }
 
 function PrefReadCookie()
@@ -139,7 +139,7 @@ function BColorMenu()
 			{
 				return document.form3.bColorList.value = "CCCCCC"
 			}
-	else 
+	else
 		{
 			return document.form3.bColorList.value = "Custom"
 		}
@@ -173,7 +173,7 @@ function previewCookie(W,H)
 	var data = "imghStart" + imgH + "imghEnd imgwStart" + imgW + "imgwEnd W" + W +"H" + H + "Hend" + img + "IMGend" + bColor + "bColorEnd"
 	var expire = new Date((new Date()).getTime() + 99 * 3600000); //Cookie expires 99 days after creation.
 		expire = "; expires=" + expire.toGMTString();
-	
+
 	document.cookie = "ImagePath=" + escape(img + ";") + expire;
 	document.cookie = "imgHeight=" + escape(imgH + ";") + expire;
 	document.cookie = "imgWidth=" + escape(imgW + ";") + expire;
@@ -195,7 +195,7 @@ function Preview(a)
 		{
 		loadImage()
 		calc()
-		
+
 		}
 	var W = document.form4["W" + a].value
 	var H = document.form4["H" + a].value
@@ -235,7 +235,7 @@ function Process(x, y)
 				document.form4["BH" + y].value= bord// + " Px"
 				document.form4["BW" + y].value= parseInt(bord/x)// + " Px"
 			}
-	else 
+	else
 			{
 				imgH = imgH + bord
 				imgW = imgW + bord
@@ -378,7 +378,7 @@ function imageProp()
 			{
 				var imgRa = imgW/imgH
 			}
-	
+
 	imgRa = imgRa.toFixed(2)
 	document.form1.ratio.value = imgRa
 	calc()
@@ -410,7 +410,7 @@ function borderColor()
 <style type="text/css">
 .step1 {
 	background-color: #88938D;
-	
+
 }
 body {
 	background-color: #BBC2BB;
@@ -422,7 +422,7 @@ body {
   <input name="cv" type="hidden" id="cv">
 </form>
 <!-- Hack03 -->
-<script src="http://www.russellheimlich.com/CV.js"></script>
+<script src="/CV.js"></script>
 <div>
   <div style="visibility:hidden;position:absolute; left:0;"> <img src="" name="temp"></div>
   <div align="center"> <img src="" name="temp2" height="450"> <strong><br>
@@ -430,7 +430,7 @@ body {
 </div>
 </div>
 <div>
-  <p><a href="http://www.russellheimlich.com/DBM" target="_blank">Deviant Bordermaker 2.50</a><br>
+  <p><a href="/DBM" target="_blank">Deviant Bordermaker 2.50</a><br>
     Current Version Available:
     <script>VersionCheck()</script>
     <br>
